@@ -4,7 +4,7 @@
     "href": "docs/wildlife/fw2.html",
     "title": "FW-2",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Thriving Habitats and Abundant Wildlife",
       "Fish and Wildlife",
@@ -16,7 +16,7 @@
     "href": "docs/wildlife/bh2.html",
     "title": "BH-2",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Thriving Habitats and Abundant Wildlife",
       "Bay Habitats",
@@ -28,14 +28,14 @@
     "href": "docs/footer.html",
     "title": "",
     "section": "",
-    "text": "Item 1\nItem 2\nItem 3\n\n\n\n\ndocs/footer.qmd"
+    "text": "Item 1\nItem 2\nItem 3\n\n\n\n\ndocs/footer.md"
   },
   {
     "objectID": "docs/communities/pe1.html",
     "href": "docs/communities/pe1.html",
     "title": "PE-1",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Informed, Engaged, and Responsible Communities",
       "Public Education",
@@ -47,7 +47,7 @@
     "href": "docs/communities/pa1.html",
     "title": "PA-1",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Informed, Engaged, and Responsible Communities",
       "Public Access",
@@ -59,7 +59,7 @@
     "href": "docs/clean-water-and-sediments/sw2.html",
     "title": "SW-2",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Clean Water and Sediments",
       "Stormwater",
@@ -71,7 +71,7 @@
     "href": "docs/clean-water-and-sediments/index.html",
     "title": "WQ-1",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Clean Water and Sediments",
       "Water Quality",
@@ -83,7 +83,7 @@
     "href": "docs/clean-water-and-sediments/sw1.html",
     "title": "SW-1",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Clean Water and Sediments",
       "Stormwater",
@@ -95,7 +95,7 @@
     "href": "docs/clean-water-and-sediments/wq2.html",
     "title": "WQ-2",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Clean Water and Sediments",
       "Water Quality",
@@ -107,7 +107,7 @@
     "href": "docs/communities/pa2.html",
     "title": "PA-2",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Informed, Engaged, and Responsible Communities",
       "Public Access",
@@ -119,7 +119,7 @@
     "href": "docs/communities/pe2.html",
     "title": "PE-2",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Informed, Engaged, and Responsible Communities",
       "Public Education",
@@ -131,7 +131,7 @@
     "href": "docs/wildlife/bh1.html",
     "title": "BH-1",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Thriving Habitats and Abundant Wildlife",
       "Bay Habitats",
@@ -143,7 +143,7 @@
     "href": "docs/wildlife/fw1.html",
     "title": "FW-1",
     "section": "",
-    "text": "docs/footer.qmd",
+    "text": "docs/footer.md",
     "crumbs": [
       "Thriving Habitats and Abundant Wildlife",
       "Fish and Wildlife",
