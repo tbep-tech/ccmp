@@ -15,6 +15,7 @@ website:
   search:
     show-item-context: true
     type: overlay
+  body-footer: docs/footer.md
   page-footer:
     left: |
       &copy; [Tampa Bay Estuary Program](https://tbep.org)
