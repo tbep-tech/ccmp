@@ -1,0 +1,33 @@
+---
+title: "WQ-1"
+format:
+  html: 
+    styles: stylesworking.css
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+::: bottom
+
+::: grid
+
+::: {.g-col-12 .g-col-md-6}
+### Action Plans
+
+[Clean Waters and Sediments](https://tbep.org)\
+[Thriving Habitats and Abundant Wildlife](https://tbep.org)\
+[Informed, Engaged, and Responsible Communities](https://tbep.org)\
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### Strategies
+
+[Strategic Plan](https://tbep.org)\
+[Research Priorities](https://tbep.org)\
+[Monitoring and Indicators Plan](https://tbep.org)
+:::
+
+:::
+
+:::

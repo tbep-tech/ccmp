@@ -15,14 +15,12 @@ website:
   search:
     show-item-context: true
     type: overlay
-  body-footer: docs/footer.md
+  # body-footer: docs/footer.qmd
   page-footer:
     left: |
       &copy; [Tampa Bay Estuary Program](https://tbep.org)
     center:
       - text: "Contact Us"
-        href: https://tbep.org
-      - text: "Our Mission"
         href: https://tbep.org
     right:
       - icon: github
@@ -36,7 +34,7 @@ website:
     collapse-below: lg
     left:
       - text: "Clean Water and Sediments"
-        href: docs/clean-water-and-sediments/index.qmd
+        href: docs/clean-water-and-sediments/wq1.qmd
       - text: "Thriving Habitats and Abundant Wildlife"
         href: docs/wildlife/bh1.qmd
       - text: "Informed, Engaged, and Responsible Communities"
@@ -55,7 +53,7 @@ website:
         - section: "Water Quality"
           contents:
             - text: "WQ-1"
-              href: docs/clean-water-and-sediments/index.qmd
+              href: docs/clean-water-and-sediments/wq1.qmd
             - text: "WQ-2"
               href: docs/clean-water-and-sediments/wq2.qmd
         - section: "Stormwater"
@@ -110,7 +108,7 @@ format:
       light: [cosmo]
     code-copy: true
     code-overflow: wrap
-    # css: styles.css
+    css: stylesworking.css
     grid:
       sidebar-width: 250px
       body-width: 900px
