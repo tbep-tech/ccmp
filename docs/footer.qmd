@@ -1,38 +1,41 @@
-::: {.footer-text}
-::: {.footer-container .black-background}
-::: {.footer-block}
+
+<div>
+---------
+
 ::: grid
 
+::: {.g-col-12 .g-col-md-6}
+### Action Plans
 
-::: {.g-col-12 .g-col-md-2}
-### Published by
-[![](images/rss-footer-new.png){fig-align="left"}](https://rss.org.uk/)
+[Clean Waters and Sediments](https://tbep.org)\
+[Thriving Habitats and Abundant Wildlife](https://tbep.org)\
+[Informed, Engaged, and Responsible Communities](https://tbep.org)\
 :::
-  ::: {.g-col-12 .g-col-md-2}
-### Our partners
-[![](images/asa-footer-new.png){fig-align="left"}](https://www.amstat.org/)
+
+::: {.g-col-12 .g-col-md-6}
+### Strategies
+
+[Strategic Plan](https://tbep.org)\
+[Research Priorities](https://tbep.org)\
+[Monitoring and Indicators Plan](https://tbep.org)
 :::
-::: {.g-col-12 .g-col-md-2}
-### With support from 
-[![](images/ati-footer-new.png){fig-align="left"}](https://www.turing.ac.uk/)
+
 :::
-  ::: {.g-col-12 .g-col-md-2}
+
+</div>
+
+<div>
+---------
+
+::: grid
+
+::: {.g-col-12 .g-col-md-6}
+[Contact Us](mailto:info.tbep.org)
 :::
-::: {.g-col-12 .g-col-md-2}
-### About us
-[Our aims](about-rwds.qmd)\
-[Our team](/viewpoints/editors-blog/posts/2022/10/18/meet-the-team.qmd)\
-[Partners and funders](rwds-partners.qmd)\
-[Contact us](contact.qmd)
+
+::: {.g-col-12 .g-col-md-6}
+[Our Mission](https://tbep.org/about-tbep/)
 :::
-::: {.g-col-12 .g-col-md-2}
-### Contribute
-[Call for contributions](/contributor-docs/call-for-contributions.qmd)\
-[Contributor guidelines](/contributor-docs/contributor-guidelines.qmd)\
-[Style guide](/contributor-docs/style-guide.qmd)
+
 :::
-:::
-:::
-:::
-:::
-  
+</div>

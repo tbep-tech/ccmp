@@ -8,8 +8,8 @@ website:
   twitter-card: true
   site-url: https://tbep-tech.github.io/ccmp
   repo-url: https://github.com/tbep-tech/ccmp
-  issue-url: https://github.com/tbep-tech/ccmp/issues
-  repo-actions: [edit, issue]
+  # issue-url: https://github.com/tbep-tech/ccmp/issues
+  # repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
   search:
@@ -19,9 +19,6 @@ website:
   page-footer:
     left: |
       &copy; [Tampa Bay Estuary Program](https://tbep.org)
-    center:
-      - text: "Contact Us"
-        href: https://tbep.org
     right:
       - icon: github
         href: https://github.com/tbep-tech
@@ -45,8 +42,10 @@ website:
         text: TBEP GitHub
 
   sidebar:
+  
     - id: clean-water-and-sediments
       title: "Clean Water and Sediments"
+      collapse-level: 1
       contents:
         - section: "Action"
         - '---'
@@ -65,6 +64,7 @@ website:
     
     - id: thriving-habitats-and-abundant-widlife
       title: "Thriving Habitats and Abundant Wildlife"
+      collapse-level: 1
       contents:
         - section: "Action"
         - '---'
@@ -83,6 +83,7 @@ website:
               
     - id: informed-engaged-and-responsible-community
       title: "Informed, Engaged, and Responsible Community"
+      collapse-level: 1
       contents:
         - section: "Action"
         - '---'
@@ -118,7 +119,9 @@ format:
 # filters:
 #   - filters/tools-tabset.lua
 
+execute:
+  echo: false
+  message: false
+  warning: false
 
-freeze: true
-
-editor: visual
+editor: source
