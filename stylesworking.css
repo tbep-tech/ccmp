@@ -1,5 +1,12 @@
-.bottom {
-    position: absolute;
-    bottom: 50px;
-    box-sizing: border-box;
+
+.lightgrey-background {
+  background-color: #d3d3d3;
+}
+
+.container {
+  width: 100%;
+}
+
+.mybody {
+  margin: 0; /* Remove default body margin for full width */
 }
