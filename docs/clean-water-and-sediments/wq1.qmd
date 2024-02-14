@@ -3,7 +3,15 @@ title: "WQ-1"
 ---
 
 ```{r}
+library(magrittr)
+source(here::here('R/funcs.R'))
+load(file = here::here('data/activities.RData'))
 lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
+```
+
+```{r}
+act <- activities[[rmarkdown::metadata$title]]
+reactable::reactable(act[, 1], details = row_details)
 ```
 
 {{< include ../footer.qmd >}}
