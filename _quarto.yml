@@ -53,15 +53,45 @@ website:
           contents:
             - text: "WQ-1"
               href: docs/clean-water-and-sediments/wq1.qmd
-            - text: "WQ-2"
-              href: docs/clean-water-and-sediments/wq2.qmd
-        - section: "Stormwater"
+            - text: "WQ-3"
+              href: docs/clean-water-and-sediments/wq3.qmd
+        - section: "Stormwater Runoff"
           contents:
             - text: "SW-1" 
               href: docs/clean-water-and-sediments/sw1.qmd
-            - text: "SW-2"
-              href: docs/clean-water-and-sediments/sw2.qmd
-    
+            - text: "SW-8"
+              href: docs/clean-water-and-sediments/sw8.qmd
+            - text: "SW-10"
+              href: docs/clean-water-and-sediments/sw10.qmd
+        - section: "Atmospheric Deposition"
+          contents:
+            - text: "AD-1"
+              href: docs/clean-water-and-sediments/ad1.qmd
+        - section: "Wastewater Discharge"
+          contents:
+            - text: "WW-1"
+              href: docs/clean-water-and-sediments/ww1.qmd
+            - text: "WW-2"
+              href: docs/clean-water-and-sediments/ww2.qmd
+            - text: "WW-3"  
+              href: docs/clean-water-and-sediments/ww3.qmd
+            - text: "WW-5"
+              href: docs/clean-water-and-sediments/ww5.qmd
+        - section: "Contaminants of Concern"
+          contents:
+            - text: "COC-1"
+              href: docs/clean-water-and-sediments/coc1.qmd
+            - text: "COC-4"
+              href: docs/clean-water-and-sediments/coc4.qmd
+        - section: "Pathogens"
+          contents:
+            - text: "PH-2"
+              href: docs/clean-water-and-sediments/ph2.qmd
+            - text: "PH-4"
+              href: docs/clean-water-and-sediments/ph4.qmd
+            - text: "PH-5"
+              href: docs/clean-water-and-sediments/ph5.qmd
+            
     - id: thriving-habitats-and-abundant-widlife
       title: "Thriving Habitats and Abundant Wildlife"
       collapse-level: 1
@@ -74,12 +104,48 @@ website:
               href: docs/wildlife/bh1.qmd
             - text: "BH-2"
               href: docs/wildlife/bh2.qmd
-        - section: "Fish and Wildlife"
+            - text: "BH-3"
+              href: docs/wildlife/bh3.qmd
+            - text: "BH-4"
+              href: docs/wildlife/bh4.qmd
+            - text: "BH-6"
+              href: docs/wildlife/bh6.qmd
+            - text: "BH-8"
+              href: docs/wildlife/bh8.qmd
+            - text: "BH-9"
+              href: docs/wildlife/bh9.qmd
+            - text: "BH-10"
+              href: docs/wildlife/bh10.qmd
+        - section: "Freshwater Inflow"
+          contents: 
+            - text: "FI-1"
+              href: docs/wildlife/fi1.qmd
+        - section: "Fish & Wildlife"
           contents:
             - text: "FW-1" 
               href: docs/wildlife/fw1.qmd
-            - text: "FW-2"
-              href: docs/wildlife/fw2.qmd
+            - text: "FW-3"
+              href: docs/wildlife/fw3.qmd
+            - text: "FW-5"
+              href: docs/wildlife/fw5.qmd
+            - text: "FW-6"
+              href: docs/wildlife/fw6.qmd
+        - section: "Dredging & Material Management"
+          contents:
+            - text: "DR-1"
+              href: docs/wildlife/dr1.qmd
+            - text: "DR-2"
+              href: docs/wildlife/dr2.qmd
+        - section: "Spill Prevention"
+          contents:
+            - text: "SP-1"
+              href: docs/wildlife/sp1.qmd
+            - text: "SP-2"
+              href: docs/wildlife/sp2.qmd
+        - section: "Invasive Species"
+          contents:
+            - text: "IS-2"
+              href: docs/wildlife/is2.qmd
               
     - id: informed-engaged-and-responsible-community
       title: "Informed, Engaged, and Responsible Community"
@@ -97,9 +163,17 @@ website:
           contents:
             - text: "PA-1" 
               href: docs/communities/pa1.qmd
-            - text: "PA-2"
-              href: docs/communities/pa2.qmd
-              
+        - section: "Climate Change"
+          contents:
+            - text: "CC-1"
+              href: docs/communities/cc1.qmd
+            - text: "CC-2"
+              href: docs/communities/cc2.qmd
+        - section: "Local Implementation"
+          contents: 
+            - text: "LI-1"
+              href: docs/communities/li1.qmd
+
 # bibliography: refs.bib
 
 format:
