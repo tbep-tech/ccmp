@@ -13,14 +13,14 @@ gs4_deauth()
 id <- '1q_upEllo0YniR2G_jEddRwPjP7WtgYBGqfOmSTAcC9g'
 sht <- read_sheet(id, sheet = 'All Activities')
 
-activities <- sht %>% 
+activities <- sht |> 
   rename(
     Description = `...3`
-  ) %>% 
-  fill(Action, .direction = "down") %>% 
-  select(-`Action Plan`, -Description) %>% 
-  separate(Activity, into = c('Activity', 'Description'), sep = '\\s', extra = 'merge') %>% 
-  split(.$Action) %>% 
-  map(~ .x %>% select(-Action))
+  ) |> 
+  fill(Action, .direction = "down") |> 
+  select(-`Action Plan`, -Description) |> 
+  separate(Activity, into = c('Activity', 'Description'), sep = '\\s', extra = 'merge') |> 
+  split(.$Action) |> 
+  map(~ .x |> select(-Action))
 
 save(activities, file = 'data/activities.RData')
