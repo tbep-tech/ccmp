@@ -27,12 +27,14 @@ act_tab <- function(ttl){
   
   datin <- activities[[ttl]]
   
+  if(is.null(datin))
+    return()
+  
   reactable::reactable(
     data.frame(datin[, 1]), 
     defaultColDef = reactable::colDef(
       name = 'Activities'
     ),
     details = function(index) row_details(datin, index)) 
-    
   
 }
