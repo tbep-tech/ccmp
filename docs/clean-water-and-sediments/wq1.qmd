@@ -1,11 +1,96 @@
 ---
 title: "WQ-1"
+
+toc: false
+margin-footer: |
+  RELATED ACTIONS: <br>
+  [AD-1](ad1.html) Continue to reduce nitrogen loading from atmospheric deposition <br>
+  [BH-1](../../docs/wildlife/bh1.html) Implement the Tampa Bay Habitat Master Plan <br>
+  [BH-9](../../docs/wildlife/bh9.html) Enhance ecosystem values of tidal tributaries <br>
+  [SW-1](sw1.html) Reduce nitrogen runoff from urban landscapes <br>
+  [SW-8](sw8.html) Expand adoption and implementation of best management practices for commercial and urban agriculture <br>
+  [SW-10](sw10.html)	Expand use of green infrastructure practices <br>
+  [WW-1](ww1.html) Expand the beneficial use of reclaimed water <br>
+  [WW-2](ww2.html) Extend central sewer service to priority areas now served by septic systems <br>
+  [WW-3](ww3.thml) Require standardized monitoring of wastewater discharges <br>
+  [WW-5](ww4.html) Reduce the occurrence of municipal sewer overflows to the bay
 ---
 
 ```{r}
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
+library(tbeptools)
 ```
+
+Implement the nutrient management strategy for Tampa Bay
+
+### OBJECTIVES:
+
+Continue to implement the nutrient management strategy for Tampa Bay to maintain water quality necessary to support seagrass at or above target levels. Document trends in water quality and track nutrient reduction and prevention actions within the watershed. Develop and implement nutrient criteria recommendations and management strategies for the bay’s tidal streams. 
+
+### STATUS: 
+
+Ongoing. The Tampa Bay Estuary Program (TBEP) continues to maintain the Nitrogen Reduction Action Plan Database and prepare Reasonable Assurance documentation for water quality requirements. TBEP further supported: 1) establishment of estimates for atmospheric deposition to Tampa Bay watershed sub basins and waters, 2) establishment of estimates of nitrogen loading from residential fertilizer and irrigation and corresponding nutrient load reductions associated with fertilizer restrictions and 3) development of numeric nutrient criteria recommendations for Tampa Bay. 
+
+### BACKGROUND:
+
+Controlling nitrogen input into the bay as a means to regain vital seagrass beds has been one of TBEP’s most prominent initiatives. Seagrasses were selected as a metric by which efforts to improve the bay are measured because of their overall importance as a bay habitat and nursery, and because they are an important barometer of water quality.
+
+[insert WQ-1-1 Feature photo-seagrasses.jpg]
+Caption: Because seagrass requires clear water to flourish, it is a valuable indicator of water quality in Tampa Bay. SOURCE: Jimmy White
+
+In 1995, TBEP adopted a goal of restoring seagrass to 1950 levels after decades of decline. Reaching this goal required collaboration from local governments, industries, and citizens to reduce nutrients throughout the watershed.  The nationally recognized Tampa Bay Nitrogen Management Consortium (TBNMC) — an alliance of more than 45 local governments, regulatory agencies and key industries bordering the bay — played a leading role in reducing nitrogen loadings in the bay. TBNMC members developed voluntary water quality and nutrient loading targets to support TBEP’s seagrass recovery goals.
+
+Between 1992 and 2021, this partnership implemented 496 nitrogen load reduction projects through a combined $836 million investment that precluded 950.3 tons/year of nitrogen (TN) from entering Tampa Bay.  Baywide nutrient loads declined and water clarity improved to the equivalent of the 1950s period and seagrass coverage reached a peak of 41,655 acres  in 2016, surpassing the revised restoration goal of 40,000 acres.  By  2022, the bay had only 30,137 acres of seagrasses, a significant decrease of 11,518 acres even though water quality standards were met in all bay segments except Old Tampa Bay. TBEP and partners will reassess the assimilative capacity for nitrogen, beginning with the Old Tampa Bay segment, continue to investigate major drivers causing this loss (see WQ-3), and continue to make significant investments towards implementing projects.
+
+
+```{r}
+#| fig-cap: "Baywide seagrass coverage versus management goal of 40,000 acres."
+#| fig-height: 3
+#| fig-width: 7
+ show_seagrasscoverage(seagrass)
+```
+
+In 1998, the U.S. Environmental Protection Agency (EPA) approved a regulatory Total Maximum Daily Load (TMDL) for Tampa Bay; in 2007, EPA required all permitted nutrient sources within the Tampa Bay watershed to adhere to annual numeric loading limits, or allocations, for their nitrogen discharge to Tampa Bay. The TBNMC proactively developed voluntary nitrogen loading limits for themselves and submitted those limits as recommended allocations to EPA and the Florida Department of Environmental Protection (FDEP), rather than relying on the regulatory agencies to develop the limits for them. Both EPA and FDEP encouraged and participated in this effort, which was led by TBEP.
+
+![Sources of nitrogen loading to Tampa Bay, 1970s versus current](https://github.com/tbep-tech/load-estimates/blob/main/figs/3dload_pies.png?raw=true){width=80%} 
+
+As outlined in the 2009 and 2012 Tampa Bay Reasonable Assurance documents, TBNMC members developed fair and equitable allocations for all 189 permitted sources within the watershed that total the federally-recognized TMDL for Tampa Bay. Consequently, both FDEP and EPA accepted the recommended allocations as meeting water quality requirements for Tampa Bay. In 2011, the TBNMC further developed recommended numeric nutrient criteria consistent with the bay’s nutrient loading targets, which were subsequently adopted by the State in 2012.
+
+[insert WQ-1-2 TBEP_APDB_Screenshot.png]
+Caption: Screenshot for TBEP Action Plan Database for tracking nitrogen management projects by Nitrogen Management Consortium Partners.
+
+The Tampa Bay nutrient management strategy has become a national and international model for successful watershed management collaborations. TBNMC success has utilized a multifaceted approach to reduce nutrient impacts to the bay, including stormwater treatment (see Action [SW-10](sw10.html)), wastewater reuse and aquifer recharge (see Action [WW-1](ww1.html)), septic conversions and reduction in sewer overflows (see Actions [WW-2](ww2.html), [WW-3](ww3.html) and [WW-5](ww5.html)), reduction in fertilizer use (see Action [SW-8](sw8.html)), process improvements for industrial manufacturing and power plants (see Action [AD-1](ad1.html)), habitat rehabilitation and restoration (see Action [BH-1](../../docs/wildlife/bh1.html)) and homeowner education (see Action [SW-1](sw1.html)).
+
+Examples (with corresponding reduction in Total Nitrogen, TN, where available) include:
+
+* Stormwater treatment projects such as the City of Clearwater’s Cliff Stephens Park Stormwater Retrofit Project (5.8 tons/yr TN reduction) 
+* Atmospheric deposition reduction projects such as Tampa Electric Company’s repowering of Gannon Power Plant Bayside (1.9 tons/yr TN reduction)
+* Industrial manufacturing process upgrades such as those at CF Industries (now Mosaic) Bartow Phosphate Complex (18 tons/yr TN reduction)
+* Agricultural water and fertilizer reductions such as citrus and row crop conversion to micro-irrigation in Hillsborough County (2 tons/yr TN reduction) 
+* Wastewater discharge to reuse such as Hillsborough County’s South County Reuse System (17.7 tons/yr TN reduction)
+* Regional restoration and stormwater treatment creation such as Southwest Florida Water Management District’s Cockroach Bay Restoration Project (0.7 tons/yr TN reduction)
+* Overlay districts requiring additional stormwater treatment such as Manatee County’s Development and Agricultural Overlay District in the Lake Manatee watershed (9.6 tons/yr TN reduction)
+* Residential fertilizer ordinances restricting the use of nitrogen fertilizer during the rainy season adopted by Pinellas County, Manatee County, and cities of St. Petersburg, Clearwater and Tampa (an estimated 6% reduction in TN stormwater runoff)
+* Stream and creek rehabilitation such as Pinellas County’s Allen’s Creek Rehabilitation Project (0.7 tons/yr TN reduction)
+* Lake sediment rehabilitation such as the City of St. Petersburg’s Lake Maggiore Dredging Project (1.7 tons/yr TN reduction)
+* Point discharge to deep well injection such as Tropicana’s Deep Well Injection Project (11 tons/yr TN reduction)
+* Education campaigns addressing homeowner actions to reduce stormwater runoff such as UF/IFAS Extension’s Florida Friendly Landscaping™ and TBEP’s Be Floridian campaign.
+
+[insert WQ-1-3 Map of EPC water sampling sites.png]
+Caption: Water quality sampling sites in Tampa Bay. SOURCE: EPCHC
+
+Periodic assessments of the bay’s condition using nutrient-related metrics are now required by FDEP for TBEP partners and the TBNMC. These reporting requirements include annual water quality reports and 5-year Reasonable Assurance (RA) demonstrations that assure that the Tampa Bay Nutrient Management Strategy continues to meet state and federal water quality requirements. Reporting elements in the RA document include 5-year nitrogen loadings from all sources, compliance assessments with approved allocations, water quality trends in each bay segment, and identification of current and future actions to reduce nutrient loadings to Tampa Bay.
+
+```{r}
+#| fig-cap: "The Water Quality Report Card summarizes the thousands of water quality records from EPCHC to simply convey the status of each bay segment relative to management targets and regulatory thresholds"
+#| fig-height: 8
+#| fig-width: 3
+show_matrix(epcdata, plotly = F)
+```
+
+Water quality and seagrass conditions in Old Tampa Bay fell below goals during the 2017-2021 RA period. Since hydrologically normalized TN loads are being met, but chl-a exceedances and seagrass losses are still occurring, the TBNMC will reassess the assimilative capacity of Old Tampa Bay. Furthermore, TBEP and Consortium partners continue to implement habitat restoration, stormwater infrastructure, and point source improvement projects focused in Old Tampa Bay and throughout the Tampa Bay watershed that cumulatively contribute to the bay’s overall ecological improvement.  The next Tampa Bay RA report, which covers the 2022-2026 period, is due to FDEP by December 2027. Additional planned and budgeted projects are expected to reduce TN loading by 70.5 tons per year. 
+
+Efforts to implement a similar nutrient management strategy in Tampa Bay tidal streams are underway (see Action [BH-9](../../docs/wildlife/bh9.html)). Ongoing research includes development of environmental indicators and thresholds of tidal stream health and nursery function to protect wetland systems against nutrient impairment and a management framework for their restoration. This framework establishes proactive metrics that can be utilized by partners to implement watershed restoration actions that can reduce nutrient inputs to tidal streams. An open science tidal tributaries dashboard shows a screening-level evaluation of water quality for 225 creeks. Research explores the relationship between nutrient dynamics and tidal stream condition, advancing regional knowledge of these important low-salinity habitats, as well as informing and prioritizing management actions that may be needed to protect or enhance the ecology of these systems.
 
 ```{r}
 act_tab(rmarkdown::metadata$title)
