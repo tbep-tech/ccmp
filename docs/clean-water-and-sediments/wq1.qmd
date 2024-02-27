@@ -3,7 +3,7 @@ title: "WQ-1"
 
 toc: false
 margin-footer: |
-  RELATED ACTIONS: <br>
+  ### RELATED ACTIONS: <br>
   [AD-1](ad1.html) Continue to reduce nitrogen loading from atmospheric deposition <br>
   [BH-1](../../docs/wildlife/bh1.html) Implement the Tampa Bay Habitat Master Plan <br>
   [BH-9](../../docs/wildlife/bh9.html) Enhance ecosystem values of tidal tributaries <br>
