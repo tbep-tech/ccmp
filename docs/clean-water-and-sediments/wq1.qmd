@@ -35,8 +35,7 @@ Ongoing. The Tampa Bay Estuary Program (TBEP) continues to maintain the Nitrogen
 
 Controlling nitrogen input into the bay as a means to regain vital seagrass beds has been one of TBEP’s most prominent initiatives. Seagrasses were selected as a metric by which efforts to improve the bay are measured because of their overall importance as a bay habitat and nursery, and because they are an important barometer of water quality.
 
-[insert WQ-1-1 Feature photo-seagrasses.jpg]
-Caption: Because seagrass requires clear water to flourish, it is a valuable indicator of water quality in Tampa Bay. SOURCE: Jimmy White
+![Because seagrass requires clear water to flourish, it is a valuable indicator of water quality in Tampa Bay. SOURCE: Jimmy White](../../img/WQ-1-1 Feature photo-seagrasses.jpg)
 
 In 1995, TBEP adopted a goal of restoring seagrass to 1950 levels after decades of decline. Reaching this goal required collaboration from local governments, industries, and citizens to reduce nutrients throughout the watershed.  The nationally recognized Tampa Bay Nitrogen Management Consortium (TBNMC) — an alliance of more than 45 local governments, regulatory agencies and key industries bordering the bay — played a leading role in reducing nitrogen loadings in the bay. TBNMC members developed voluntary water quality and nutrient loading targets to support TBEP’s seagrass recovery goals.
 
@@ -56,8 +55,7 @@ In 1998, the U.S. Environmental Protection Agency (EPA) approved a regulatory To
 
 As outlined in the 2009 and 2012 Tampa Bay Reasonable Assurance documents, TBNMC members developed fair and equitable allocations for all 189 permitted sources within the watershed that total the federally-recognized TMDL for Tampa Bay. Consequently, both FDEP and EPA accepted the recommended allocations as meeting water quality requirements for Tampa Bay. In 2011, the TBNMC further developed recommended numeric nutrient criteria consistent with the bay’s nutrient loading targets, which were subsequently adopted by the State in 2012.
 
-[insert WQ-1-2 TBEP_APDB_Screenshot.png]
-Caption: Screenshot for TBEP Action Plan Database for tracking nitrogen management projects by Nitrogen Management Consortium Partners.
+![Screenshot for TBEP Action Plan Database for tracking nitrogen management projects by Nitrogen Management Consortium Partners.](../../img/WQ-1-2 TBEP_APDB_Screenshot.png)
 
 The Tampa Bay nutrient management strategy has become a national and international model for successful watershed management collaborations. TBNMC success has utilized a multifaceted approach to reduce nutrient impacts to the bay, including stormwater treatment (see Action [SW-10](sw10.html)), wastewater reuse and aquifer recharge (see Action [WW-1](ww1.html)), septic conversions and reduction in sewer overflows (see Actions [WW-2](ww2.html), [WW-3](ww3.html) and [WW-5](ww5.html)), reduction in fertilizer use (see Action [SW-8](sw8.html)), process improvements for industrial manufacturing and power plants (see Action [AD-1](ad1.html)), habitat rehabilitation and restoration (see Action [BH-1](../../docs/wildlife/bh1.html)) and homeowner education (see Action [SW-1](sw1.html)).
 
@@ -76,8 +74,7 @@ Examples (with corresponding reduction in Total Nitrogen, TN, where available) i
 * Point discharge to deep well injection such as Tropicana’s Deep Well Injection Project (11 tons/yr TN reduction)
 * Education campaigns addressing homeowner actions to reduce stormwater runoff such as UF/IFAS Extension’s Florida Friendly Landscaping™ and TBEP’s Be Floridian campaign.
 
-[insert WQ-1-3 Map of EPC water sampling sites.png]
-Caption: Water quality sampling sites in Tampa Bay. SOURCE: EPCHC
+![Water quality sampling sites in Tampa Bay. SOURCE: EPCHC](../../img/WQ-1-3 Map of EPC water sampling sites.png)
 
 Periodic assessments of the bay’s condition using nutrient-related metrics are now required by FDEP for TBEP partners and the TBNMC. These reporting requirements include annual water quality reports and 5-year Reasonable Assurance (RA) demonstrations that assure that the Tampa Bay Nutrient Management Strategy continues to meet state and federal water quality requirements. Reporting elements in the RA document include 5-year nitrogen loadings from all sources, compliance assessments with approved allocations, water quality trends in each bay segment, and identification of current and future actions to reduce nutrient loadings to Tampa Bay.
 
