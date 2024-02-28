@@ -1,11 +1,66 @@
 ---
 title: "SW-1"
+
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [WW-1](ww1.html) Expand the beneficial use of reclaimed water <br>
+  [SW-10](sw10.html) Expand use of Green Infrastructure practices 
 ---
 
 ```{r}
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
 ```
+
+Reduce nitrogen runoff from urban landscapes 
+
+### OBJECTIVES: 
+
+Continue to support and improve local fertilizer ordinances. Expand Best Management Practices (BMPs) certification programs for general landscape maintenance personnel. Explore incentives for homeowners to replace high-maintenance landscapes with lower maintenance alternatives. Expand outreach to homeowner and condo associations about statewide laws supporting water-conserving landscapes in deed-restricted communities and recommended changes to landscape covenants to comply with those laws. Continue research to quantify reduction in nitrogen loadings from reduced fertilizer use.
+
+### STATUS: 
+
+This action, formerly Action SW-12, has been merged with related Actions SW-1, SW-2, SW-3 and SW-11 to focus on the broader theme of reducing overall runoff from urban and residential landscapes.
+
+### BACKGROUND:
+
+Residential fertilizer is a significant source of nitrogen to the bay, accounting for about 20% of the nitrogen carried in stormwater. The costs of treating stormwater from urban areas (estimated at $3,500 per pound of nitrogen removed, per the statewide Section 319h stormwater project database) led many bay area communities to adopt local fertilizer ordinances as a practical and cost-effective way to substantially reduce nitrogen inputs at little cost to taxpayers. The Tampa Bay Estuary Program (TBEP) was instrumental in the development and adoption of these city and county ordinances.
+
+![Landscapes with reduced turfgrass conserve water and reduce runoff. SOURCE: Nanette O’Hara](../../img/SW-1-1 Feature Photo.JPG)
+
+Most of the ordinances prohibit use of nitrogen fertilizers from June 1-September 30, when the region receives 60% of its average annual rainfall and the potential for fertilizer runoff is greatest. They also require use of slow-release nitrogen fertilizers outside the summer rainy season to minimize nutrient leaching.
+
+Ordinances in Pinellas County (and all 24 municipalities within the County) and the City of Tampa ban both use and sales of nitrogen lawn and landscape fertilizers in the summer. The Hillsborough County and Manatee County ordinances restrict use of these products in the summer. The Pasco County ordinance mirrors a statewide model that prohibits fertilizer application when flood or storm watches are issued or likely, or when heavy rains are expected. Effectiveness of ordinances without sales restrictions could be enhanced by amendments to require stores where fertilizer is sold to post signs about the laws and to identify compliant products.
+
+TBEP led regional fertilizer education efforts at the request of its Policy Board. The resulting Be Floridian campaign utilized social marketing principles to promote compliance with summer fertilizer bans. The campaign capitalized on the importance of water-based recreation to bay residents, urging them to “skip the fertilizer in the summer” to protect the waters that make living here fun. It also encouraged homeowners to “Garden Like A Floridian” by replacing turfgrass with lower-maintenance plants.
+
+![Billboards like this one along I-275 in St. Petersburg reminded residents to avoid use of fertilizer in the summer.](../../img/SW-1-2 Be Floridian LED billboard.jpg)
+
+Over a 5-year period, Be Floridian used billboards, print ads, digital ads, vehicle wraps, a resource-rich website, shareable infographics, an online pledge and targeted outreach at both community events and garden centers (including big box stores) that sell lawn care products. A dynamic social media presence was enhanced by the campaign’s plastic pink yard flamingo mascot. A traveling exhibit of yard flamingos painted by area artists toured museums, art centers, tourist attractions and an airport promoting the “Protect Our Fun” theme. More than 230,000 people viewed the unique artist-painted flock during its year-long tour of the region.
+
+Evaluations of Be Floridian showed that the campaign helped to boost knowledge of and compliance with the fertilizer ordinances. Fewer than 5% of respondents in a 2015 evaluation survey identified summer months as the best time to fertilize lawns, and 63% said they were less likely to use fertilizer in summer because of what they had learned (up from 47% in a 2012 survey). External social science surveys conducted as part of an overall evaluation of fertilizer practices and ordinance awareness also showed widespread awareness that fertilizer should not be applied before a heavy rain. That research also found that Pinellas County residents were more aware of fertilizer ordinances, and applied significantly less fertilizer to their lawns.
+
+![Pinellas County installed wraps on several fleet vehicles to promote pollution prevention.](../../img/SW-1-3 Photo of Pinellas County vehicle wrap.jpg)
+ 
+A variety of other educational programs continue to reinforce and expand outreach to homeowners, property managers and lawn care professionals. The longstanding Florida Yards & Neighborhoods Program (FY&N) administered by UF/IFAS Extension is delivered locally through county extension offices. The FY&N program promotes Florida-Friendly Landscaping™ to reduce water, fertilizer and pesticide use. Extension specialists also provide Best Management Practices training now required by state law for all commercial fertilizer applicators in Florida. 
+
+Additional training for general landscape maintenance personnel on key aspects of lawn care that influence water quality (such as management of grass clippings) is required in Pinellas and Manatee counties. That training is provided by county staff, but potentially could be expanded to additional counties and conducted by Extension specialists if funding were available. 
+
+More effort also should be directed to educating landscapers, irrigation contractors, homeowners, homeowner associations and property managers about reducing or eliminating fertilizer use where reclaimed water is used to irrigate lawns, since reclaimed water contains varying amounts of nutrients depending on source (see Action [WW-1](ww1.html)). Pinellas County developed a [map-based fertilizer reduction tool](https://www.google.com/url?q=https://pinellas-egis.maps.arcgis.com/apps/instant/lookup/index.html?appid%3D326153a964e3458993ec417dc3c12227&sa=D&source=docs&ust=1709125363299435&usg=AOvVaw1e1H165v406p8t3NT3VfCn){target="_blank"} for users to type in their address to learn the recommended fertilizer application rate based on the average nutrient concentration of the reuse irrigation water serving their property.
+
+Hillsborough and Pinellas counties also offer Adopt A Pond programs that teach residents how to improve management of stormwater ponds at the neighborhood level – including creation of vegetated shoreline buffer zones and reduced fertilizer and chemical use on neighborhood lawns that drain to the ponds. A comprehensive social marketing-based program led by UF/IFAS is increasing awareness and action to improve stormwater pond management among residents of the sprawling Lakewood Ranch community in Manatee and Sarasota counties.
+
+![A healthy neighborhood stormwater pond with a vegetated shoreline buffer and littoral zone. SOURCE: David Shafer](../../img/SW-1-4 A healthy stormwater pond David Shafer.jpg)
+ 
+Deed-restricted Homeowner Associations (HOAs) continue to be a major barrier to a shift in cultural norms toward less-lawn or no-lawn landscapes that require less water and fertilizer use. These barriers exist despite the passage of state laws allowing Florida-Friendly Landscaping™ in deed-restricted communities to conserve water. Court cases still have not clearly established a precedent that favors this law over HOA covenants, although some HOAs have updated their covenants and plant lists to allow more flexibility and integrate UF/IFAS recommendations for Florida-friendly plants.
+
+Incentives to conserve water and reduce high-maintenance turfgrass also are needed. One promising model is the new “Turf Swap” program in Alachua County. Starting in April 2017, the program will offer cash rebates to property owners that replace irrigated turf with Florida Friendly LandscapingTM.
+
+![A variety of Florida native and adapted plants create a beautiful no mow yard that needs little to no irrigation or fertilizer. SOURCE: UF/IFAS Extension](../../img/SW-1-5 Florida Friendly yard UF-IFAS SandraWilson.jpg)
+
+As of 2017, Pinellas County has a UF/IFAS Extension specialist dedicated to working with HOAs, condo associations and property managers. Pasco County’s FY&N coordinator also has had success in working with HOAs, and all the FY&N county programs consistently provide high-quality training and free assistance to homeowners across their geographic and demographic spectrums. Future efforts to reduce nitrogen from urban landscapes in the Tampa Bay watershed must focus on reaching and recruiting these key audiences.
+
+Additional research is needed to quantify the impact of fertilizer ordinances on water quality over time, and to improve ordinance compliance. A study coordinated by TBEP found that a minimum of 5-6 years of monitoring is needed to test for statistically significant differences in environmental data collected from Tampa Bay residential communities with different fertilizer ordinances. 
 
 ```{r}
 act_tab(rmarkdown::metadata$title)

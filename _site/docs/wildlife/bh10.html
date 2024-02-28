@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.533">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -342,9 +342,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="cell">
 <div class="cell-output-display">
-<p>Ipsum dui placerat mattis netus, dictumst – vestibulum potenti, leo posuere arcu mi nisl. Phasellus non ligula erat nullam gravida tristique ultrices, at turpis vivamus sapien eget dictumst lectus. Vitae mauris fringilla magnis at curabitur habitant ultrices cubilia turpis feugiat. Imperdiet eu viverra sociis convallis pharetra congue sapien commodo maecenas risus morbi aliquet, fringilla enim.</p>
-<p>Consectetur cras, torquent nulla habitasse id nec malesuada neque! Leo egestas quisque rhoncus, non, malesuada eu, phasellus sodales eleifend torquent. Dictum iaculis vivamus quis, platea ornare nascetur cras torquent ultrices ligula montes fames fusce erat odio orci odio massa.</p>
-<p>Dolor habitasse dapibus vehicula donec erat nulla nec pulvinar lobortis iaculis taciti.</p>
+<p>Lorem vivamus nulla imperdiet montes sociosqu netus. Class massa conubia in phasellus arcu cursus faucibus velit sodales platea natoque turpis. Mattis iaculis fringilla lacinia, magnis, interdum suspendisse, potenti mus purus. Odio conubia maecenas egestas sollicitudin vitae sollicitudin, torquent ultrices magnis phasellus. Vestibulum aenean mollis, lacus dignissim phasellus, platea eget blandit mi. Et rutrum nulla sociosqu natoque pharetra ornare pretium tellus fermentum, proin faucibus, arcu consequat lacinia tempor mus morbi dui, per – iaculis ut montes leo sodales cubilia sed convallis turpis mauris nam lectus.</p>
+<p>Adipiscing penatibus ut cum eros praesent tristique, natoque porta habitant placerat. Sagittis sociosqu hendrerit tortor nec quisque diam habitant. Erat pellentesque libero aliquam etiam consequat vitae; imperdiet eros sed. Penatibus erat integer pharetra quis luctus tincidunt, congue feugiat ligula nunc ultrices cum aptent parturient purus torquent hendrerit vehicula per.</p>
+<p>Adipiscing ut pretium dis vivamus consequat, tincidunt commodo nascetur scelerisque. Odio tincidunt sapien posuere, nullam inceptos sapien ultricies. Malesuada cras maecenas habitant eget purus dictum potenti. Ultrices integer sodales urna velit, proin nibh auctor rhoncus viverra! Fusce tempor venenatis interdum mi nisi, morbi habitasse phasellus, egestas magna tempor malesuada per aliquet: donec tortor convallis montes sapien metus duis.</p>
 </div>
 </div>
 <div class="cell">
@@ -546,7 +546,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {

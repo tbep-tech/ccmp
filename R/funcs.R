@@ -95,7 +95,6 @@ pyro_map <- function(phytodata, yr = 2021, mo = c('Jun', 'Oct')){
     ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), 
                                     width = grid::unit(0.75, "cm"))
   
-  
   dat_ext <- dat_ext |> 
     sf::st_as_sfc(dat_ext) |> 
     sf::st_transform(crs = 4326) |> 
