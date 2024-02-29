@@ -13,7 +13,6 @@ margin-footer: |
 ```{r}
 library(googledrive)
 library(googlesheets4)
-library(flextable)
 
 gs4_deauth()
 source(here::here('R/funcs.R'))
@@ -43,13 +42,12 @@ BMPs that have been verified and deemed effective at reducing pollutants by the 
 
 ```{r}
 #| tbl-cap: FDACS Adopted BMP Manuals
-sht <- read_sheet(params$id, sheet = rmarkdown::metadata$title, skip = 1, col_types = 'c')
-autofit(flextable(sht))
+sw8_tab(params$id, rmarkdown::metadata$title)
 ```
 
 Currently, if there is no applicable BMP manual for their livestock, farmers with diversified farm operations alternatively may adopt an approved conservation plan tailored to their operation (Rule 5M-12 Conservation Plans for Specified Agricultural Operations). Notably, facilities with large numbers of livestock in a confined area, known as animal feeding operations (AFOs) and concentrated animal feeding operations (CAFOs), are not regulated by FDACS. Instead, FDEP regulates AFOs under its industrial wastewater rules and CAFOs under its NPDES program. Hobby farmers are not currently enrolled in the FDACS BMP Program; however, FDACS plans to develop and adopt manuals for these operations.
 
-Appropriate BMPs are encouraged through technical and financial assistance and a streamlined regulatory process. Farmers who implement FDACS-adopted BMPs benefit from a presumption of compliance with state water quality standards for pollutants that the BMPs address. Farming operations in BMAP areas are required to implement FDACS-adopted BMPs, otherwise they must conduct prescribed water quality monitoring that is approved by FDEP or Southwest Florida Water Management District (SWFWMD) to demonstrate compliance with water quality standards. FDACS prioritizes outreach to commercial operators within BMAP areas. Producers who enroll in the FDACS BMP Program benefit from a presumption of compliance regardless of whether they are located within an adopted BMAP boundary. FDACS maintains a public mapviewer of [BMP enrollment by commodity type](https://www.google.com/url?q=https://gis.fdacs.gov/portal/apps/instant/interactivelegend/index.html?appid%3D3218360f54b141e99e58899456dd4514&sa=D&source=docs&ust=1709125363355156&usg=AOvVaw3A6Hk5L5W1sU1xmi4rtEr7){target="_blank"}.
+Appropriate BMPs are encouraged through technical and financial assistance and a streamlined regulatory process. Farmers who implement FDACS-adopted BMPs benefit from a presumption of compliance with state water quality standards for pollutants that the BMPs address. Farming operations in BMAP areas are required to implement FDACS-adopted BMPs, otherwise they must conduct prescribed water quality monitoring that is approved by FDEP or Southwest Florida Water Management District (SWFWMD) to demonstrate compliance with water quality standards. FDACS prioritizes outreach to commercial operators within BMAP areas. Producers who enroll in the FDACS BMP Program benefit from a presumption of compliance regardless of whether they are located within an adopted BMAP boundary. FDACS maintains a public mapviewer of [BMP enrollment by commodity type](https://gis.fdacs.gov/portal/apps/instant/interactivelegend/?appid=3218360f54b141e99e58899456dd4514){target="_blank"}.
 
 FDACS and SWFWMD incentivize adoption of BMPs through partnerships, such as the Facilitating Agricultural Resource Management Systems (FARMS) program that make it more feasible for farmers to implement new technologies. 
 * The mini-FARMS program is a partnership of FDACS and SWFWMD that provides small farmers (less than 100 irrigated acres) reimbursement for 75% of the cost (up to $5000) to implement water conserving BMP projects. Farmers must be enrolled in the FDACS BMP Program to be eligible for mini-FARMS grants. SWFWMD offers the FARMS cost-share program for any farm located in the SWFWMD.

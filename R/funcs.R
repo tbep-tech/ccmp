@@ -108,8 +108,6 @@ pyro_map <- function(phytodata, yr = 2021, mo = c('Jun', 'Oct')){
   
 }
 
-# tn total loading pie, ad emphasis -----------------------------------------------------------
-
 adload_plo <- function(){
   
   load(file = here::here('data/tnanndat.RData'))  
@@ -152,5 +150,36 @@ adload_plo <- function(){
     )
   
   return(p)
+  
+}
+
+
+# table functions -----------------------------------------------------------------------------
+
+sw8_tab <- function(id, action){
+  
+  sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
+  
+  out <- flextable::flextable(sht) |> 
+    flextable::autofit() 
+  
+  return(out)
+  
+}
+
+ww1_tab <- function(id, action){
+  
+  sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
+  
+  out <- flextable::flextable(sht[-c(1), ]) |> 
+    flextable::add_header(values = sht[1, ], top = F) |> 
+    flextable::merge_at(i = 1, j = 2:4, part = 'header') |>
+    flextable::merge_at(i = 1, j = 5:7, part = 'header') |> 
+    flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::border_remove() |> 
+    flextable::hline(i = 4, part = 'body') |> 
+    flextable::autofit()
+  
+  return(out)
   
 }
