@@ -107,3 +107,50 @@ pyro_map <- function(phytodata, yr = 2021, mo = c('Jun', 'Oct')){
   return(m)
   
 }
+
+# tn total loading pie, ad emphasis -----------------------------------------------------------
+
+adload_plo <- function(){
+  
+  load(file = here::here('data/tnanndat.RData'))  
+  
+  cols <- c('#427355', '#5C4A42', '#958984', '#004F7E', '#00806E')
+
+  toplo <- tnanndat |> 
+    dplyr::filter(year >= 2017 & year <= 2021) |> 
+    dplyr::filter(bay_segment == 'All Segments (- N. BCB)') |> 
+    dplyr::summarise(
+      tn_load = sum(tn_load), 
+      .by = source
+    ) |> 
+    dplyr::mutate(
+      source = factor(source, 
+                      levels = c('AD', 'DPS', 'GWS', 'IPS', 'NPS'),
+                      labels = c('Atmospheric\nDeposition', 'Municipal\nWastewater', 'Groundwater', 'Industrial\nWastewater', 'Stormwater\nRunoff')
+                      ), 
+      percent = paste0(round(tn_load / sum(tn_load) * 100, 0), '%'),
+      toemph = ifelse(source == 'Atmospheric\nDeposition', 'a', 'b')
+    )
+  
+  p <- ggplot2::ggplot(toplo, ggplot2::aes(y = reorder(source, tn_load), x = tn_load / 1000)) + 
+    ggplot2::geom_col(ggplot2::aes(fill = toemph), color = 'black', show.legend = F) + 
+    ggplot2::geom_text(ggplot2::aes(label = percent, size = toemph), hjust = -0.25, show.legend = F) +
+    ggplot2::scale_fill_manual(values = c('#004F7E', '#958984')) +
+    ggplot2::scale_x_continuous(expand = c(0, 0), limits = c(0, 1.1* max(toplo$tn_load / 1000))) +
+    ggplot2::theme_minimal(base_size = 14) +
+    ggplot2::scale_y_discrete(expand = c(0, 0)) +
+    ggplot2::theme(
+      panel.grid = ggplot2::element_blank(), 
+      # axis.text = ggplot2::element_text(size = 14) 
+    ) +
+    ggplot2::scale_size_manual(values = c(6, 4)) +
+    ggplot2::labs(
+      x = 'Tons (x 1000)', 
+      y = NULL,
+      title = 'Sources of nitrogen loading to Tampa Bay', 
+      subtitle = '2017 - 2021'
+    )
+  
+  return(p)
+  
+}

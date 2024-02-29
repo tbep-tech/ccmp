@@ -24,3 +24,8 @@ activities <- sht |>
   map(~ .x |> select(-Action))
 
 save(activities, file = 'data/activities.RData')
+
+# tn loading data -----------------------------------------------------------------------------
+
+download.file(url = 'https://github.com/tbep-tech/load-estimates/raw/main/data/tnanndat.RData', 
+              destfile = 'data/tnanndat.RData')
