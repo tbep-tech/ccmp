@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.533">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -342,10 +342,11 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="cell">
 <div class="cell-output-display">
-<p>Dolor arcu morbi id, tristique cras dui enim, dignissim mi erat. Ut felis libero dictumst congue libero dignissim magnis scelerisque vestibulum potenti quam! Etiam condimentum sollicitudin, bibendum curabitur donec integer tincidunt: vel luctus duis! Elementum fames, penatibus fermentum ac? Ligula libero faucibus cubilia nisi sociis maecenas tempus dictum posuere. Mi convallis aliquam duis fames erat porta pharetra himenaeos risus. In malesuada massa commodo at imperdiet morbi, dignissim a cras sem risus suscipit auctor rhoncus donec sodales felis aliquam.</p>
-<p>Adipiscing dictumst habitasse, sociis porttitor potenti vulputate ligula! Penatibus augue bibendum, a pretium magna turpis hendrerit felis. Dignissim vivamus praesent torquent laoreet quam mattis tempor! Turpis nisl montes potenti ligula pellentesque urna himenaeos curae? Tellus consequat est enim vivamus maecenas fusce ligula aenean, fusce – leo, iaculis sed nec ultrices fringilla dignissim congue.</p>
-<p>Consectetur aliquet suspendisse condimentum nec; eu risus ut maecenas. Litora rutrum dictum commodo justo odio aliquam, sed sapien auctor lectus cursus. Integer pharetra eleifend volutpat, volutpat taciti est erat. Egestas vivamus arcu sodales pharetra feugiat laoreet curae. Auctor ac suscipit rutrum ornare, nascetur justo eu dictum, ridiculus luctus inceptos?</p>
-<p>Dolor dignissim parturient nisi laoreet aliquam tincidunt ac ad, malesuada tincidunt penatibus. Aliquam non sollicitudin nostra fringilla libero conubia tempor sapien. Imperdiet cubilia torquent suscipit arcu senectus: lacus malesuada integer porttitor habitasse eget neque dictum phasellus.</p>
+<p>Adipiscing facilisi nunc libero rutrum eleifend turpis rutrum hendrerit. Eu sapien ridiculus fusce mollis blandit elementum; hendrerit viverra pretium dictumst, pellentesque feugiat. Laoreet sapien proin dictum facilisis tellus nostra habitant. Hac turpis torquent quisque mollis at lacinia velit, felis, etiam posuere tincidunt ullamcorper malesuada urna – habitant ac, ridiculus id tempus lobortis scelerisque hendrerit lacus nisl?</p>
+<p>Dolor dictumst justo sollicitudin donec consequat vitae: torquent conubia feugiat. Libero sagittis; nunc commodo lacus est cras sed a suscipit interdum! Dui erat congue nascetur rhoncus aenean enim ante. Ut faucibus dictumst eleifend pharetra hac etiam facilisi natoque velit a varius tristique fames magna tempus congue a phasellus integer euismod, ante euismod platea condimentum?</p>
+<p>Amet eleifend ridiculus felis nec sapien fusce per! Massa vestibulum, sollicitudin tempor primis netus dis molestie. Vitae imperdiet lobortis ultricies nascetur, molestie vulputate maecenas nibh. Sodales phasellus auctor nisl – scelerisque felis, luctus mi porttitor ullamcorper! Mus ultricies iaculis faucibus id gravida ut scelerisque feugiat lacus hac sagittis luctus egestas gravida? Condimentum accumsan est erat magnis nunc, mollis egestas sagittis orci congue. Lobortis hac montes sapien sed auctor sem aptent. Dui viverra ultrices donec, nisi convallis eros urna mi commodo eleifend urna risus, blandit; neque montes primis – curabitur, tempor ridiculus class, imperdiet, ac lobortis rhoncus convallis iaculis dis aliquet turpis enim aliquet tristique convallis aptent diam fusce at interdum nibh.</p>
+<p>Sit vitae litora lectus – enim vulputate integer per tempus. Platea eleifend eget scelerisque, nisi a porta vestibulum! Mus dignissim donec conubia ante vehicula, purus ornare molestie aptent phasellus. Id laoreet velit: rhoncus enim feugiat accumsan, arcu donec: convallis, platea per nisi. Ultricies senectus suspendisse sem semper proin massa a sollicitudin cras praesent sociis, porta – potenti himenaeos donec, orci congue nam primis tempor sociosqu interdum quisque est blandit per phasellus.</p>
+<p>Amet malesuada pulvinar nisi tempor varius faucibus nisi fringilla! Etiam enim magna habitant mattis platea litora diam nisi enim. Vitae porttitor inceptos in, venenatis faucibus donec tortor, tincidunt placerat. Mollis in pharetra, dignissim sed, primis montes? Vel tempor augue sed ut himenaeos lacinia sagittis sodales imperdiet netus lectus augue hac. Lectus euismod purus ac, nibh varius, nam, penatibus per, viverra vestibulum convallis gravida in commodo pharetra eu ridiculus varius.</p>
 </div>
 </div>
 <div class="cell">
@@ -547,7 +548,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
