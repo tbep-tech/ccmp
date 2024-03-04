@@ -42,7 +42,7 @@ website:
         text: TBEP GitHub
 
   sidebar:
-  
+    
     - id: clean-water-and-sediments
       title: "Clean Water and Sediments"
       collapse-level: 1
@@ -91,7 +91,6 @@ website:
               href: docs/clean-water-and-sediments/ph4.qmd
             - text: "PH-5"
               href: docs/clean-water-and-sediments/ph5.qmd
-        - docs/references.qmd
             
     - id: thriving-habitats-and-abundant-widlife
       title: "Thriving Habitats and Abundant Wildlife"
@@ -147,7 +146,7 @@ website:
           contents:
             - text: "IS-2"
               href: docs/wildlife/is2.qmd
-        - docs/references.qmd  
+        - section: "References"
               
     - id: informed-engaged-and-responsible-community
       title: "Informed, Engaged, and Responsible Community"
@@ -175,9 +174,7 @@ website:
           contents: 
             - text: "LI-1"
               href: docs/communities/li1.qmd
-        - docs/references.qmd      
-            
-              
+    
 bibliography: docs/refs.bib
 
 format:
@@ -192,10 +189,6 @@ format:
       sidebar-width: 250px
       body-width: 900px
       margin-width: 300px
-
-
-# filters:
-#   - filters/tools-tabset.lua
 
 execute:
   echo: false
