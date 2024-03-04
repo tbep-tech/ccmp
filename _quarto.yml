@@ -25,7 +25,7 @@ website:
         aria-label: Quarto GitHub
   navbar:
     background: light
-    logo: tarponlogo.png
+    logo: /img/tarponlogo.png
     logo-alt: "TBEP tarpon logo"
     title: false
     collapse-below: lg
@@ -91,6 +91,7 @@ website:
               href: docs/clean-water-and-sediments/ph4.qmd
             - text: "PH-5"
               href: docs/clean-water-and-sediments/ph5.qmd
+        - docs/references.qmd
             
     - id: thriving-habitats-and-abundant-widlife
       title: "Thriving Habitats and Abundant Wildlife"
@@ -146,6 +147,7 @@ website:
           contents:
             - text: "IS-2"
               href: docs/wildlife/is2.qmd
+        - docs/references.qmd  
               
     - id: informed-engaged-and-responsible-community
       title: "Informed, Engaged, and Responsible Community"
@@ -173,8 +175,10 @@ website:
           contents: 
             - text: "LI-1"
               href: docs/communities/li1.qmd
-
-# bibliography: refs.bib
+        - docs/references.qmd      
+            
+              
+bibliography: docs/refs.bib
 
 format:
   html:
