@@ -19,8 +19,8 @@ activities <- sht |>
   ) |> 
   fill(Action, .direction = "down") |> 
   select(-`Action Plan`, -Description) |> 
-  separate(Activity, into = c('Activity', 'Description'), sep = '\\s', extra = 'merge') |> 
-  split(.$Action) |> 
+  separate(Activity, into = c('Activity', 'Description'), sep = '\\s', extra = 'merge') 
+activities <- split(activities, activities$Action) |> 
   map(~ .x |> select(-Action))
 
 save(activities, file = 'data/activities.RData')

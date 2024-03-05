@@ -183,3 +183,17 @@ ww1_tab <- function(id, action){
   return(out)
   
 }
+
+coc1_tab <- function(id, action){
+  
+  sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
+
+  out <- flextable::flextable(sht) |> 
+    flextable::set_header_labels(`...1` = '') |>
+    flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::border_remove() |> 
+    flextable::autofit()
+  
+  return(out)
+  
+}
