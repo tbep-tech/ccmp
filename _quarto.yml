@@ -176,6 +176,11 @@ website:
               href: docs/communities/li1.qmd
     
 bibliography: docs/refs.bib
+# suppress-bibliography: true
+citeproc: true
+link-citations: true
+citations-hover: false
+citation-location: margin
 
 format:
   html:

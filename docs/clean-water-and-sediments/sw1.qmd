@@ -60,7 +60,7 @@ Incentives to conserve water and reduce high-maintenance turfgrass also are need
 
 As of 2017, Pinellas County has a UF/IFAS Extension specialist dedicated to working with HOAs, condo associations and property managers. Pasco County’s FY&N coordinator also has had success in working with HOAs, and all the FY&N county programs consistently provide high-quality training and free assistance to homeowners across their geographic and demographic spectrums. Future efforts to reduce nitrogen from urban landscapes in the Tampa Bay watershed must focus on reaching and recruiting these key audiences.
 
-Additional research is needed to quantify the impact of fertilizer ordinances on water quality over time, and to improve ordinance compliance. A study coordinated by TBEP found that a minimum of 5-6 years of monitoring is needed to test for statistically significant differences in environmental data collected from Tampa Bay residential communities with different fertilizer ordinances. 
+Additional research is needed to quantify the impact of fertilizer ordinances on water quality over time, and to improve ordinance compliance. A study coordinated by TBEP found that a minimum of 5-6 years of monitoring is needed to test for statistically significant differences in environmental data collected from Tampa Bay residential communities with different fertilizer ordinances [@tbep0215]. 
 
 ```{r}
 act_tab(rmarkdown::metadata$title)
