@@ -153,6 +153,34 @@ adload_plo <- function(){
   
 }
 
+# bacteria verified impaired wbids
+bacwbid_plo <- function(){
+  
+  tbshed <- st_make_valid(tbshed)
+  
+  # verified wbid polygons, run 60
+  # https://geodata.dep.state.fl.us/datasets/verified-list-waterbody-ids-wbids
+  # first request gets whole state (long)
+  # second request gets tampa bay and tampa bay tributaries group name, note that I can also search by parameter group, but query doesn't allow complex and/or logic
+  # vwbid <- st_read('https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/IMPAIRED_WATERS/MapServer/5/query?outFields=*&where=1%3D1&f=geojson', quiet = T)
+  vwbid = st_read("https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/IMPAIRED_WATERS/MapServer/5/query?where=GROUP_NAME%20%3D%20'Tampa%20Bay'%20OR%20GROUP_NAME%20%3D%20'Tampa%20Bay%20Tributaries'&outFields=GROUP_NAME,WATERBODY_CLASS,PARAMETER_ASSESSED,PARAMETER_GROUP,WBID&outSR=4326&f=geojson", quiet = T)
+
+  vwbid <- st_make_valid(vwbid)
+  
+  # make sure subset by tb watershed, retain only bacteria and unique wbids
+  tbvwbid <- vwbid[tbshed, ] |> 
+    dplyr::filter(PARAMETER_GROUP %in% c('Bacteria')) |> 
+    dplyr::select(-PARAMETER_GROUP, -PARAMETER_ASSESSED) |>
+    unique()
+  
+  p <- ggplot() +
+    annotation_map_tile(zoom = 10, type = 'cartolight', progress = 'none', quiet = T) +
+    geom_sf(data = tbvwbid, fill = 'red', col = 'red', alpha = 0.6) +
+    theme_minimal()
+  
+  return(p)
+  
+}
 
 # table functions -----------------------------------------------------------------------------
 
@@ -192,6 +220,26 @@ coc1_tab <- function(id, action){
     flextable::set_header_labels(`...1` = '') |>
     flextable::bg(bg = "lightgray", part = "header") |> 
     flextable::border_remove() |> 
+    flextable::autofit()
+  
+  return(out)
+  
+}
+
+ph5_tab <- function(id, action){
+  
+  sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
+  
+  out <- flextable::flextable(sht[-c(1), ]) |> 
+    flextable::set_header_labels(i = 1, `...1` = '') |>
+    flextable::add_header(values = sht[1, ], top = F) |> 
+    flextable::merge_at(i = 1, j = 2:3, part = 'header') |>
+    flextable::merge_at(i = 1, j = 4:5, part = 'header') |> 
+    flextable::merge_at(i = 1, j = 6:7, part = 'header') |> 
+    flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::border_remove() |> 
+    flextable::align(align = 'center', part = 'all', j = -1) |>
+    flextable::vline(j = c(3, 5), part = 'all') |> 
     flextable::autofit()
   
   return(out)
