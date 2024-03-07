@@ -182,6 +182,57 @@ bacwbid_plo <- function(){
   
 }
 
+# intertidal habitat 1950 and current
+intertidal_plo <- function(curyr = 2020){
+  
+  nms <- c('Mangrove Forests', 'Salt Marshes', 'Salt Barrens')
+           
+  # from 2017 HMPU bh1 graphic
+  ca1950 <- tibble::tibble(
+    name = 'ca1950',
+    HMPU_TARGETS = nms,
+    Acres = c(15894, 6621, 1371)
+  )
+  
+  # make sure year is valid
+  if(!curyr %in% acres$name)
+    stop('year not found')
+  
+  curr <- acres |> 
+    dplyr::filter(name == as.character(curyr)) |> 
+    dplyr::filter(HMPU_TARGETS %in% nms)
+  
+  toplo <- rbind(ca1950, curr) |> 
+    dplyr::mutate(
+      HMPU_TARGETS = factor(HMPU_TARGETS, levels = nms), 
+      name = factor(name, levels = c('ca1950', as.character(curyr)))
+    ) |> 
+    dplyr::mutate(
+      Acreslab = formatC(round(Acres, 0), format = 'd', big.mark = ',')
+    ) |> 
+    dplyr::arrange(name, HMPU_TARGETS)
+  
+  p <- ggplot2::ggplot(toplo, ggplot2::aes(x = 'x', y = Acres, fill = HMPU_TARGETS, group = name)) + 
+    ggplot2::geom_bar(stat = 'identity', position = 'fill', color = 'black') + 
+    ggplot2::geom_text(ggplot2::aes(label = Acreslab), position = ggplot2::position_fill(vjust = 0.5), size = 4.5, 
+                       color = 'white', fontface = 'bold') +
+    ggplot2::facet_wrap(~name) +
+    ggplot2::coord_polar('y', start = 0) +
+    ggplot2::theme_void() +
+    ggplot2::scale_fill_manual(values = c('#028576', '#427355', '#76923C')) + 
+    ggplot2::theme(
+      legend.position = 'bottom', 
+      strip.text = ggplot2::element_text(size = 15), 
+      legend.text = ggplot2::element_text(size = 13)
+    ) +  
+    ggplot2::labs(
+      fill = NULL
+    )
+  
+  return(p)
+  
+}
+
 # table functions -----------------------------------------------------------------------------
 
 sw8_tab <- function(id, action){

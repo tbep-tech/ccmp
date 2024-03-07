@@ -1,0 +1,73 @@
+---
+title: "SW-10"
+
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [WW-1](ww1.html) Expand the beneficial use of reclaimed water <br>
+  [BH-6](../../docs/wildlife/bh6.html) Encourage habitat enhancement along altered waterfront properties
+---
+
+```{r}
+source(here::here('R/funcs.R'))
+```
+
+Expand use of Green Infrastructure practices 
+
+### OBJECTIVES:
+
+Promote expanded use of Green Infrastructure practices to prevent and reduce nitrogen pollution. Promote development and delivery of tools and incentives to expand low impact/green infrastructure implementation, including: professional training; compatibility reviews of local government development codes and comprehensive plans; and demonstration sites. Encourage Tampa Bay Estuary Program (TBEP) partners to submit local projects that implement innovative building or site design techniques to the Action Plan Database of the Tampa Bay Nitrogen Management Consortium. Encourage adoption and implementation of regional policies facilitating low impact/green infrastructure development.
+
+### STATUS: 
+
+Revised from previous SW-10 Design and Implement a Low Impact Development Strategy.
+
+### BACKGROUND:
+
+Historically, stormwater management in Florida focused on rapidly removing rainwater from the built environment to avoid flooding. High volumes of polluted runoff were routed to the nearest receiving water body through extensive networks of gutters, ditches, canals and pipes. This management approach often resulted in polluted waterways, impacts to fish, wildlife and habitats and loss of economic and recreational opportunities that depend on healthy waters.
+
+![The Straz Center for the Performing Arts was the first building in Tampa with a green roof. It is located on the second level of Ferguson Hall. SOURCE: Straz Center](../../img/SW-10-1 Feature Photo_Straz Center green roof.jpg)
+
+Florida Law requires that all new and redevelopment projects manage the first inch of rainfall onsite rather than discharging to storm drains. The Florida Department of Environmental Protection (FDEP) and the Southwest Florida Water Management District (SWFWMD) have determined that Environmental Resource Permit (ERP) applicants for new construction discharges in the Tampa Bay watershed must meet more stringent standards by demonstrating net improvement (i.e., no degradation) to waterways, because Tampa Bay is not meeting all water quality standards in all areas of the bay. 
+
+Communities across Florida are now replacing outdated stormwater management systems with more innovative ones that can simultaneously reduce flooding while protecting the natural environment. These practices may also advance beneficial uses of reclaimed water (see Action [WW-1](ww1.html)) and comprehensive management of water resources within the watershed. 
+
+Green Infrastructure practices (also known as Low Impact Development or Low Impact Design) reduce and treat stormwater at its source, minimizing the volume of water and pollution discharged from the built environment. At the city or county scale, Green Infrastructure is a patchwork of natural areas that provides habitat, flood protection, cleaner air and cleaner water. At the neighborhood or site scale, green stormwater management systems mimic nature by soaking up and storing water, thereby reducing flow of pollutants to water bodies.
+
+#### EXAMPLES OF GREEN INFRASTRUCTURE TECHNIQUES:
+
+* Pervious surfaces for parking areas, walkways, and drives can reduce runoff from small rain events, allowing gradual infiltration into underlying soils. Pervious surfaces include pavers, bricks, gravel, shell and porous concretes.
+* Retention areas like rain gardens, vegetated swales and recessed tree islands are small depressions designed to capture runoff and allow it to evaporate or percolate into the ground. Associated vegetation can take up water and nutrients. 
+* Vegetative buffers and littoral zones around shorelines, ponds and waterways can filter pollutants and litter from runoff before it enters a waterbody. Specifically, biological communities (including bacteria) provide valuable nutrient removal services. Harvestable floating vegetated islands can increase the effective area over which plants can remove nutrient pollution from conventional detention ponds (see Action [BH-6](../../docs/wildlife/bh6.html)).
+* Rainwater harvesting systems, such as rain barrels and cisterns, can capture rainfall and store it for later use.
+* Canopy trees and green roofs can intercept rainfall before it hits the ground. A U.S. Environmental Protection Agency (EPA) study found that for every 10 percent increase in tree cover (up to 60%), water treatment costs decreased by approximately 20 percent [@usepa2007]. 
+
+![A rain garden at the Bette Walker Discovery Garden at Hillsborough County Extension. Photo by Lynn Barber](../../img/SW-10-2 Photo_Rain Garden.jpg)
+
+Green Infrastructure techniques can produce cost savings for developers and property owners-—including reduced paving, fewer or smaller stormwater conveyance structures and less land lost to conventional stormwater pond construction. An analysis of 17 case studies across the United States reported a 15 to 80 percent cost savings over conventional stormwater methods, with only a few exceptions.1 Many benefits were not monetized in this review, including improvements to water quality, human and environmental health, recreational opportunities, aesthetic value, property value, natural habitat and quality of life. Consideration of these broader watershed-scale benefits is important to evaluating the overall cost-benefits of Green Infrastructure applied on a parcel or local scale and is an important area for more research.
+
+A variety of barriers exist to implementing Green Infrastructure, including lack of awareness of techniques; lack of accurate information about costs and benefits; limited opportunities for technical training and practice; homeowner association rules and deed restrictions; and outdated language in development codes and comprehensive plans that impede innovative practices. For example, a 2014 review of Hillsborough County construction and development codes identified a variety of provisions that discouraged, limited or otherwise prevented the use of low-impact development techniques [@tbep0814].
+
+A survey of Florida developers, professionals and government officials identified potential strategies for overcoming some of these barriers [@clark2008], including:
+
+* Education, outreach and marketing to the building community and public;
+* Land development code and comprehensive plan language amendments;
+* Incentives for advanced stormwater treatment, such as integrating stormwater Best Management Practices (BMPs) with open space and landscape code requirements;
+* Research and demonstration projects;
+* Professional training for both public and private sector representatives responsible for design and review of stormwater systems.
+
+The stormwater regulatory environment in Florida is slowly evolving to encourage and facilitate adoption of Green Infrastructure principles and techniques.
+ 
+FDEP drafted a new Statewide Stormwater Treatment Rule in 2010, which was never adopted. The effort was renewed with a new series of rule-making workshops in 2022 and 2023. If adopted, it would be the first update since the original 1982 rule. The draft rule proposes to increase the level of nutrient removal required from stormwater treatment systems serving new development, such that post-development nutrient loads do not exceed loads from comparable natural, undeveloped areas. The draft rule aims to create a unified statewide standard supporting the underlying objectives of low-impact development.
+
+The Florida Legislature adopted a statewide ERP Rule (Chapter 62-330, F.A.C.) in 2013. A new two-volume Applicant’s Manual accompanies the Rule. Applicant’s Handbook Volume I is applicable statewide and provides general background and summaries of relevant statutes, rules, types of permits, system operation and maintenance and other general topics. Applicant’s Handbook Volume II contains Water Management District-specific design and performance criteria for stormwater quantity, quality, flood control and other special basin-specific criteria. The new ERP Rule and accompanying Applicant’s Manuals require that new stormwater management systems that discharge directly or indirectly into impaired waters must provide net improvement for the pollutants that contribute to the water body’s impairment. To do this, a higher level of treatment is necessary to assure that the permit creates a net environmental benefit. However, in many cases, redevelopment is often exempt from the stricter stormwater treatment standards, for all or part of the redeveloped property.
+
+![Vegetative shorelines help filter and treat runoff entering stormwater ponds.](../../img/SW-10-3 Photo_Vegetated Pond Shoreline.jpg)
+
+Adopted in 2017 and revised in 2021, Pinellas County’s new [stormwater manual](https://pinellas.gov/stormwater-manual/){target="_blank"} is designed to be used in conjunction with the Pinellas County Comprehensive Plan and Land Development Code. Recognizing that Pinellas County is almost entirely built-out, the manual and revised development codes incorporate a variety of Green Infrastructure techniques especially appropriate to redevelopment, adaptive reuse and retrofits. Hillsborough County adopted a [stormwater manual](https://www.hillsboroughcounty.org/library/hillsborough/media-center/documents/public-works/ttm/ttm-2021/stormwater-management-technical-manual-october-2021.pdf){target="_blank"} in 2021. The TBEP, in partnership with the Tampa Bay Regional Planning Council, is planning a two-phase project in 2024 to develop a multi-jurisdictional stormwater master plan in the Old Tampa Bay watershed and implement high priority stormwater retrofits to reduce nonpoint source nutrient loads in the region.
+
+```{r}
+act_tab(rmarkdown::metadata$title)
+```
+
+{{< include ../footer.qmd >}}

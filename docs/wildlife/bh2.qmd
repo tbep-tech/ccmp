@@ -1,11 +1,71 @@
 ---
 title: "BH-2"
+
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [BH-1](bh1.html) Implement the Tampa Bay Habitat Master Plan <br>
+  [BH-3](bh3.html) Reduce propeller scarring of seagrass and pursue seagrass transplanting opportunities
 ---
 
 ```{r}
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
 ```
+
+Establish and implement mitigation criteria
+
+### OBJECTIVES:
+
+Support progress toward habitat restoration goals by implementing mitigation criteria specific to Tampa Bay watersheds, for unavoidable wetland impacts. Identify priority sites for mitigation banks and off-site mitigation that help to achieve adopted targets for critical coastal habitats, including seagrasses, saltwater wetlands, freshwater wetlands and hard bottom habitats. Collaborate with the private sector to evaluate and improve mitigation. Establish long-term monitoring of mitigation sites across multiple habitats.
+
+### STATUS:
+
+Ongoing. Action expanded to include recommendations for on- and off-site mitigation developed through the Mitigation Criteria Working Group. The Habitat Master Plan (2020 Update) and the 2014 Freshwater Wetland Master Plan include tools for directing future mitigation where most ecologically beneficial. Evaluations of mitigation success can provide a framework to improve permitting and monitoring programs across multiple habitats.
+
+### BACKGROUND:
+
+Mitigation involves restoring, enhancing, preserving or creating habitats to offset development-related impacts to wetlands, streams, seagrasses and other aquatic resources. 
+Unlike restoration or preservation done primarily to enhance or maintain habitat quantity and quality, mitigation is required for permitted impacts that damage or destroy wetlands and other aquatic habitats. Federal, state, regional and local agencies regulate mitigation activities. 
+
+![An evaluation of freshwater wetland mitigation projects in Hillsborough County indicated that larger wetlands provided more ecosystem services and performed better than smaller wetlands surrounded by urban development. SOURCE:  Nanette O’Hara.](../../img/BH-2-1-Feature-Photo_freshwater-wetland.jpg)
+
+Currently, mitigation can be achieved using three mechanisms:
+
+* Mitigation banks (Large mitigation areas that offer “credits” for impacts. Banks must demonstrate successful restoration prior to releasing or selling credits). 
+* In-lieu fee programs (Monetary contributions to another entity to implement an identified large mitigation project).
+* Permittee-responsible mitigation (The permit applicant conducts the mitigation Activity).
+
+Preservation, restoration and acquisition of existing wetlands is preferred. However, if wetland impacts are unavoidable, specific guidelines govern how, where and what type of mitigation must be conducted, and monitoring of project success. Mitigation may involve creation, enhancement, restoration or preservation of habitats. It can occur on the same site as the development activities, if space allows; off-site at an appropriate location; or at a mitigation bank. Long-term success of mitigation projects is variable and highly dependent upon the location, size, type of habitat created and maintenance provided.
+
+Regulatory agencies generally prefer mitigation banking or use of in-lieu fees because the larger scale and scope of these tools maximizes habitat benefits — especially when mitigation for smaller wetland mitigation projects (less than a few acres) can be bundled into larger parcels. There are multiple existing and planned mitigation banks in the bay watershed for both private and public development and infrastructure activities. The majority offer freshwater mitigation credits. Several mitigation banks are currently under review by regulatory agencies, but are not yet approved to release credits. Service areas for permitted mitigation banks generally encompass an entire watershed; applicants may choose to use credits from a bank in the same watershed to fulfill mitigation requirements. 
+
+![Successful restoration and mitigation projects can provide habitat for snook and other recreationally or commercially important fish species. SOURCE: Greg Urbano](../../img/BH-2-2_Weedon Panorama- Greg Urbano.jpg)
+
+The Environmental Protection Commission of Hillsborough County (EPCHC), in association with the University of South Florida and other regional partners, evaluated the success of freshwater wetland mitigation projects permitted in Hillsborough County since 1987. The review compares the original mitigation designs to current status, using standardized wetland assessment methods. Preliminary findings show a 38% loss in total wetland area for the 63 constructed wetlands assessed; the majority of sites evaluated are one acre or less. 
+
+Forested wetlands mature more slowly but better mimic functions of comparable natural wetlands than non-forested (grassy) wetland mitigation projects. One solution may be to include both forested and non-forested components in freshwater mitigation efforts. Fire is critical to the success of grassy wetlands but is rarely employed in management of these areas. 
+
+![Mitigation for forested freshwater wetlands, including mixed hardwood swamps, is generally less successful than for non-forested, grassy wetlands. SOURCE:  Nanette O’Hara](../../img/BH-2-3_Photo_forested-wetland.jpg)
+
+The Habitat Master Plan (2020 Update) reviewed regulatory issues and options for compensatory mitigation that could potentially contribute significantly to the attainment of watershed-level habitat protection and restoration goals beyond publicly funded efforts [@tbep0720]. Both the EPCHC study and the Habitat Master Plan (2020 Update) reinforce the need for more rigorous mitigation criteria to prevent deterioration of wetland quality and quantity in the bay watershed.
+
+Among the issues in need of clarification and consensus:
+
+* Concerns that mitigation banks or in-lieu fee programs will be preferentially established where land is cheaper, even though these areas may be far removed from the actual wetland impacts. This is of particular concern in urban areas, where land costs are higher. Currently, mitigation outside the impacted watershed is rarely approved, but not prohibited. However, mitigation within the same sub-basin is not required, potentially creating wetland deficits in some areas.
+* Loss of small isolated wetlands (less than ½-acre) for which mitigation is not required. These “frog ponds” are especially important for amphibians and the wading birds that feed on them.
+* Whether private entities should be allowed to conduct mitigation activities on public lands.
+* Whether public agencies should purchase large tracts of land specifically for future mitigation purposes, and whether acquisition of land alone can be used to satisfy mitigation requirements.
+* Whether monitoring is stringent enough, and of adequate duration, to adequately assess long-term success. Additionally, there is no standardization of monitoring reports, so what is approved as successful by permitting agencies varies widely. Improvements in water quality and utilization of mitigation areas by fish and wildlife are rarely considered.
+* Whether the current system, which utilizes credits based on type and quality of impacted and restored habitats, adequately compensates for wetland losses. For example, the current “No Net Loss” policy presents challenges to permitting agencies in moving beyond type-for-type mitigation. 
+* Potential secondary impacts to natural wetlands adjacent to development, such as changes in water quantity and quality. For example, increased runoff may alter hydrology, drowning native vegetation and creating artificial “ponded” wetlands dominated by nuisance plants like cattails and primrose willow that do not provide the same ecological benefits. Research is needed to examine and quantify these impacts and to improve transitional zones from manmade to natural wetlands.
+
+Although existing mitigation criteria focuses on freshwater wetlands, improvements are also needed in mitigating impacts to estuarine habitats such as seagrasses, marshes, mangroves and hard bottom habitats. Options that restore entire communities rather than a single habitat should be investigated, especially with regard to systems as varied as hard bottom communities.
+
+![Mangroves quickly recruit into newly restored tidal wetlands in Tampa Bay. SOURCE:  Nanette O’Hara.](../../img/BH-2-4_Mangrove seedlings.jpg)
+
+Opportunities for seagrass mitigation are generally limited to transplanting, often at high cost and with varying success (see Action [BH-3](bh3.html)). Since the vast majority of the bay’s seagrass gains are a result of increased water clarity from reduced nitrogen loadings, port authorities and other entities have requested use of pollution-reduction projects (such as stormwater or wastewater treatment) as mitigation for seagrass impacts in lieu of transplanting. This alternative is generally not permitted; however,  recent projects to remove manmade causeways blocking tidal circulation at Fort De Soto Park and along the eastern portion of the Courtney Campbell Causeway  serve as  successful models. The Fort De Soto project, sponsored by SWFWMD, FDOT, and Pinellas County, directly impacted about one-quarter acre of seagrasses but resulted in improved water quality and almost 200 acres of seagrass expansion in the interior waters of the park. Seagrass mitigation credits were allowed for this work. Whether water quality in the proposed mitigation site is sufficient to foster seagrass growth is a key factor in such projects. An analysis of 20 seagrass mitigation projects around Florida is now being conducted by FWC and funded by FDEP; this study will help identify successful techniques for future consideration.
+
+Mitigation criteria for other sensitive habitats, including hard bottom and live bottom, have not been established. TBEP developed protection and restoration targets for hard bottom in 2020; appropriate mitigation strategies could be explored to achieve those targets. Monitoring of mitigation associated with ship channel expansion and natural gas pipeline construction projects suggests that recreating structural hard bottom, such as limestone or rock reefs or outcroppings, is much simpler and more successful than transplanting the soft corals and sponges that grow on the hard substrates. 
 
 ```{r}
 act_tab(rmarkdown::metadata$title)
