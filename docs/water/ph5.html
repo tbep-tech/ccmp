@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.533">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PH-5</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../docs/water/ph4.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": true,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../../site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="../../site_libs/tabwid-1.1.3/tabwid.js"></script>
+<script src="../../site_libs/core-js-2.5.3/shim.min.js"></script>
+<script src="../../site_libs/react-18.2.0/react.min.js"></script>
+<script src="../../site_libs/react-18.2.0/react-dom.min.js"></script>
+<script src="../../site_libs/reactwidget-1.0.0/react-tools.js"></script>
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../../site_libs/reactable-0.4.4/reactable.css" rel="stylesheet">
+<script src="../../site_libs/reactable-binding-0.4.4/reactable.js"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="PH-5">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://tbep-tech.github.io/ccmp/docs/water/tarponlogo.png">
+<meta name="twitter:title" content="PH-5">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://tbep-tech.github.io/ccmp/docs/water/tarponlogo.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/tarponlogo.png" alt="TBEP tarpon logo" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../docs/water/wq1.html" aria-current="page"> 
+<span class="menu-text">Clean Water and Sediments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../docs/wildlife/bh1.html"> 
+<span class="menu-text">Thriving Habitats and Abundant Wildlife</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../docs/communities/pe1.html"> 
+<span class="menu-text">Informed, Engaged, and Responsible Communities</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <a href="https://github.com/tbep-tech/ccmp" title="TBEP GitHub" class="quarto-navigation-tool px-1" aria-label="TBEP GitHub"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/water/ph2.html">Pathogens</a></li><li class="breadcrumb-item"><a href="../../docs/water/ph5.html">PH-5</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Action</span></span>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Water Quality</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/wq1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WQ-1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/wq3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WQ-3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Stormwater Runoff</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/sw1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SW-1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/sw8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SW-8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/sw10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SW-10</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Atmospheric Deposition</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/ad1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AD-1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Wastewater Discharge</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/ww1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WW-1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/ww2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WW-2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/ww3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WW-3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/ww5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WW-5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Contaminants of Concern</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/coc1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">COC-1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/coc4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">COC-4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+ <span class="menu-text">Pathogens</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/ph2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PH-2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/ph4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PH-4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../docs/water/ph5.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">PH-5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div class="quarto-margin-footer"><section id="related-actions" class="level3 margin-footer-item">
+<h3 data-anchor-id="related-actions">RELATED ACTIONS: <br></h3>
+<p><a href="../../docs/wildlife/bh3.html">BH-3</a> Reduce propeller scarring of seagrass and pursue seagrass transplanting opportunities <br> <a href="../../docs/wildlife/fw1.html">FW-1</a> Increase on-water enforcement of environmental regulations <br> <a href="../../docs/communities/pa1.html">PA-1</a> Provide for and manage recreational uses of the bay <br> <a href="../../docs/communities/pe1.html">PE-1</a> Promote public involvement in bay restoration and protection <br> <a href="ph4.html">PH-4</a> Reduce fecal contamination from humans and pets in bay area waters <br> <a href="../../docs/wildlife/sp2.html">SP-2</a> Evaluate and update spill response plans for priority areas</p>
+</section></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/water/ph2.html">Pathogens</a></li><li class="breadcrumb-item"><a href="../../docs/water/ph5.html">PH-5</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">PH-5</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Reduce pollution from recreational boaters</p>
+<section id="objectives" class="level3">
+<h3 class="anchored" data-anchor-id="objectives">OBJECTIVES:</h3>
+<p>Continue to promote marina, boatyard and boater education and best practices. Increase availability of sewage pumpout stations and mobile pumpout vessels. Encourage creation of appropriately sited mooring fields near sewage pumpout facilities or services. Encourage enforcement of rules prohibiting sewage discharges, especially for liveaboards and unmaintained vessels outside of marinas or mooring fields. Survey and identify problem areas for unregulated liveaboards. Support state and local programs to remove derelict vessels.</p>
+</section>
+<section id="status" class="level3">
+<h3 class="anchored" data-anchor-id="status">STATUS:</h3>
+<p>Moved from Action WQ-2 and revised to focus on waste management issues associated with recreational boats.</p>
+</section>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">BACKGROUND:</h3>
+<p>Pollution resulting from improper boating practices includes sewage discharges, release of toxic chemicals, oil and fuel spills, stormwater runoff from marinas and boatyards, abandoned and derelict vessels, marine debris and discarded monofilament line or other fishing gear. This action focuses on the need for additional sewage pumpout services for marinas, identification and management of liveaboards, removal of derelict vessels and continued education about clean boating practices for boaters, marinas and mooring fields. Other boating impacts (such as handling of waste and monofilament line, and safe operation in manatee and seagrass areas) are addressed elsewhere in the CCMP (see Actions <a href="../../docs/communities/pe1.html">PE-1</a>, <a href="../../docs/communities/pa1.html">PA-1</a>, <a href="../../docs/wildlife/bh3.html">BH-3</a> and <a href="../../docs/wildlife/fw1.html">FW-1</a>).</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../img/PH-5-1_Photo_Derelict Vessel.jpg" class="img-fluid figure-img"></p>
+<figcaption>Removal of derelict vessels is often a lengthy and costly process for state and local agencies.</figcaption>
+</figure>
+</div>
+<p>More than 150,000 boats are registered in Hillsborough, Manatee, Pasco and Pinellas Counties, according to the Florida Department of Highway Safety and Motor Vehicles. The number of registered vessels in the Tampa Bay area grew by fifteen percent between 2016 and 2022 with Manatee County registrations increasing by forty-three percent. Pinellas County ranked second and Hillsborough County fifth in number of registered boats statewide in 2022. The vast majority of these boats are 16 to 26 feet long. The popularity of recreational boating highlights the need for baywide adoption of responsible boating practices to protect water quality, human health and aquatic habitats.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="tabwid"><style>.cl-5e34c0cc{}.cl-5e0f9cc0{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-5e2bd20a{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-5e2bd214{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-5e2bf01e{width:1.134in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf028{width:0.795in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf029{width:0.795in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(102, 102, 102, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf032{width:0.625in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(102, 102, 102, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf033{width:0.625in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(102, 102, 102, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf03c{width:0.795in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(102, 102, 102, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf03d{width:1.134in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf03e{width:0.795in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf03f{width:0.795in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(102, 102, 102, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf046{width:0.625in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(102, 102, 102, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf047{width:0.625in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(102, 102, 102, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf048{width:0.795in;background-color:rgba(211, 211, 211, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(102, 102, 102, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf049{width:1.134in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf050{width:0.795in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf051{width:0.795in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(102, 102, 102, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf052{width:0.625in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(102, 102, 102, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf053{width:0.625in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(102, 102, 102, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf05a{width:0.795in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(102, 102, 102, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf05b{width:1.134in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf05c{width:0.795in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf05d{width:0.795in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(102, 102, 102, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf064{width:0.625in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(102, 102, 102, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf065{width:0.625in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 1pt solid rgba(102, 102, 102, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-5e2bf066{width:0.795in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 1pt solid rgba(102, 102, 102, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-5e34c0cc"><caption><p>Florida Boat Registrations by County for 2016 and 2022. SOURCE:
+Florida Department of Highway Safety and Motor Vehicles</p></caption><thead><tr style="overflow-wrap:break-word;"><th class="cl-5e2bf01e"><p class="cl-5e2bd20a"><span class="cl-5e0f9cc0"></span></p></th><th colspan="2" class="cl-5e2bf028"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">Pleasure</span></p></th><th colspan="2" class="cl-5e2bf032"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">Commercial</span></p></th><th colspan="2" class="cl-5e2bf03c"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">Total</span></p></th></tr><tr style="overflow-wrap:break-word;"><th class="cl-5e2bf03d"><p class="cl-5e2bd20a"><span class="cl-5e0f9cc0"></span></p></th><th class="cl-5e2bf03e"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">2016</span></p></th><th class="cl-5e2bf03f"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">2022</span></p></th><th class="cl-5e2bf046"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">2016</span></p></th><th class="cl-5e2bf047"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">2022</span></p></th><th class="cl-5e2bf048"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">2016</span></p></th><th class="cl-5e2bf03e"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">2022</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-5e2bf049"><p class="cl-5e2bd20a"><span class="cl-5e0f9cc0">Hillsborough</span></p></td><td class="cl-5e2bf050"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">39910</span></p></td><td class="cl-5e2bf051"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">41671</span></p></td><td class="cl-5e2bf052"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">744</span></p></td><td class="cl-5e2bf053"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">659</span></p></td><td class="cl-5e2bf05a"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">40782</span></p></td><td class="cl-5e2bf050"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">42330</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-5e2bf05b"><p class="cl-5e2bd20a"><span class="cl-5e0f9cc0">Manatee</span></p></td><td class="cl-5e2bf05c"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">17662</span></p></td><td class="cl-5e2bf05d"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">25713</span></p></td><td class="cl-5e2bf064"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">714</span></p></td><td class="cl-5e2bf065"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">751</span></p></td><td class="cl-5e2bf066"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">18527</span></p></td><td class="cl-5e2bf05c"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">26464</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-5e2bf05b"><p class="cl-5e2bd20a"><span class="cl-5e0f9cc0">Pasco</span></p></td><td class="cl-5e2bf05c"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">23643</span></p></td><td class="cl-5e2bf05d"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">29629</span></p></td><td class="cl-5e2bf064"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">406</span></p></td><td class="cl-5e2bf065"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">484</span></p></td><td class="cl-5e2bf066"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">24136</span></p></td><td class="cl-5e2bf05c"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">30113</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-5e2bf05b"><p class="cl-5e2bd20a"><span class="cl-5e0f9cc0">Pinellas</span></p></td><td class="cl-5e2bf05c"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">48029</span></p></td><td class="cl-5e2bf05d"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">53657</span></p></td><td class="cl-5e2bf064"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">1211</span></p></td><td class="cl-5e2bf065"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">1094</span></p></td><td class="cl-5e2bf066"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">49754</span></p></td><td class="cl-5e2bf05c"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">54751</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-5e2bf05b"><p class="cl-5e2bd20a"><span class="cl-5e0f9cc0">Totals</span></p></td><td class="cl-5e2bf05c"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">129244</span></p></td><td class="cl-5e2bf05d"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">150670</span></p></td><td class="cl-5e2bf064"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">3075</span></p></td><td class="cl-5e2bf065"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">2988</span></p></td><td class="cl-5e2bf066"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">133199</span></p></td><td class="cl-5e2bf05c"><p class="cl-5e2bd214"><span class="cl-5e0f9cc0">153658</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+<p>The Florida Department of Environmental Protection (FDEP) promotes clean boating practices through a variety of programs, including the Clean Marina Program, Clean Boatyard Program, Clean Marine Retailer Program and Clean Boater Program. These voluntary recognition and designation programs provide no-cost assistance to marinas and boatyards in implementing Best Management Practices to protect sensitive habitats, manage waste and stormwater, prevent spills and prepare for emergencies. There are 45 designated Clean Marinas or Clean Boatyards in the Tampa Bay region.</p>
+<p>Discharging raw sewage into waterways threatens environmental and human health. The Clean Vessel Act of 1992 prohibits discharge of sewage into Florida’s inland and offshore waters extending nine miles out into the Gulf of Mexico. Boaters must legally store sewage generated onboard using an approved treatment device or holding tank and use an authorized waste dump receptacle, pumpout facility or pumpout vessel to permanently dispose of waste when in port.</p>
+<p>Permits for new marinas and mooring fields, or renovations to existing ones, do not automatically require pumpout facilities or pumpout vessels. They are typically required, however, if the proposed marina or mooring field includes slips for liveaboards, or there are water quality issues in the area. Clean Marinas are encouraged, but not required, to provide pumpout facilities. As of summer 2017, pumpout facilities are available at 55 marinas in the four coastal counties of Tampa Bay, and 26 of these are Clean Marinas.</p>
+<p>The Clean Vessel Act established a grant program administered by the U.S. Fish and Wildlife Service, which provides funding for purchase, installation, maintenance, repair and operation of boater pumpout and dump stations. The City of Clearwater purchased a pumpout vessel with Clean Vessel Act funding and provides mobile pumpout services one day a week. Facilities receiving funding from the Act must make pumpout services available to the public for free, or for a nominal charge. As of December 2015, the Act has prevented more than 20 million gallons of sewage from contaminating Florida waterways.</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../img/PH-5-2 PumpOut Locations.jpg" class="img-fluid figure-img"></p>
+<figcaption>Marinas with pumpout facilities in theTampa Bay Region. Designated Clean Marinas are encouraged but not required to provide pumpout stations. SOURCE: FDEP</figcaption>
+</figure>
+</div>
+<p>Increasing access to authorized waste disposal receptacles and pumpout facilities and improving boater understanding about the legal, environmental and human health consequences of illegal sewage discharges are important strategies to reduce sewage pollution from recreational boaters.</p>
+<p>Special attention is required to identify and address illegal sewage discharges from liveaboards and unmaintained vessels outside of regulated marinas and mooring fields. A unified, shared spatial database of liveaboards or unmaintained boats across the Tampa Bay Area is needed to better understand the distribution and abundance of these vessels in the area and to prioritize management actions (e.g., enforcement, relocation to marinas, creation of regulated mooring fields or additional pump out vessels to service these locations) at local trouble spots. Enforcement action is hampered by difficulties in catching violators in the act. Trouble spots may include areas around Hurricane Hole, Terra Ceia, Williams Park Boat Ramp, Clearwater Memorial Causeway and Davis Island Boat Ramp. Increasing the availability or capacity of appropriately sited mooring fields may reduce illegal sewage discharges by aggregating boats in managed areas with adjacent or mobile pumpout services.</p>
+<p>Abandoned and derelict vessels can cause environmental damage by physically impacting sensitive marine and coastal habitats (see Action <a href="../../docs/wildlife/bh4.html">BH-4</a>) or by discharging sewage, oil, toxic chemicals and marine debris.</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../img/PH-5-3_Photo_liveaboards.jpg" class="img-fluid figure-img"></p>
+<figcaption>A baywide inventory of liveaboards is needed to assist in identifying “hotspots” for sewage discharge. SOURCE: Nanette O’Hara</figcaption>
+</figure>
+</div>
+<p>Vessels can be classified by law enforcement as “derelict” if they are “left, stored, or abandoned in a wrecked, junked, or substantially dismantled condition upon any public waters of this state, at any port in this state without the consent of the agency having jurisdiction thereof, or docked or grounded at or beached upon the property of another without the consent of the owner of the property.” Severe storms, such as hurricanes, are often a catalyst for the creation of additional derelict vessels.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Florida law defines a vessel at risk of becoming derelict as:</p>
+<ul>
+<li>One that is taking on or has taken on water without an effective means to get the water out;</li>
+<li>One with spaces that are designed to be enclosed but are incapable of being sealed off or remain open to the elements for extended periods of time;</li>
+<li>One that has broken loose or is in danger of breaking loose from its anchor;</li>
+<li>One that is left or stored aground unattended in such a condition to prevent the vessel from getting underway, or;</li>
+<li>One that is listing due to water intrusion, or is sunk or partially sunk.</li>
+</ul>
+</div>
+</div>
+<p>It is unlawful in Florida to store, leave or abandon any derelict vessel in state waters. The Florida Fish and Wildlife Conservation Commission (FWC) or any law enforcement agency can relocate or remove any derelict vessel in the state and the vessel owner is liable for all costs. However, the time between initial identification of a derelict vessel and its eventual removal can be a long and drawn-out process, and removal is costly. In 2021, the Legislature passed a new law that empowers law enforcement to take action on at-risk vessels. For 2022, the Florida Legislature allocated $8.3 million for derelict vessel removal statewide. Hillsborough County owns its own salvage equipment for derelict vessel removal. Pinellas pays a per-foot removal fee to a contracted marine salvage company, with costs covered by the county’s share of boat registration fees.</p>
+<p>The FWC’s At-Risk Vessel Program allows law enforcement agents to identify vessels at risk of becoming derelict, before they become a problem. Law enforcement officers can tag these vessels and issue violation notices to owners who refuse to improve a vessel’s seaworthiness and secure mooring or storage. At-risk vessels are tracked in a <a href="https://experience.arcgis.com/experience/decfb6b7ca024ac98f6f900d86784d09?views=View-1" target="_blank">statewide database</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="reactable html-widget html-fill-item" id="htmlwidget-1bfbf04c990895e0859e" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1bfbf04c990895e0859e">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Activity":["PH-5.1","PH-5.2","PH-5.3","PH-5.4"]},"columns":[{"id":".details","name":"","type":null,"sortable":false,"resizable":false,"filterable":false,"searchable":false,"width":45,"align":"center","details":[{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Encourage greater participation in the Clean Vessel Act grant program to finance sewage pumpout stations at marinas, or mobile pumpout services. Consider rulemaking or changes to comprehensive land use plans to require new and renovated marinas, as appropriate, to provide sewage pumpout facilities or pumpout services. Explore additional incentives to encourage operation and use of mobile pumpout services."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["FDEP, local governments for rulemaking or changes to local plans and promotion of Clean Vessel Act grant; Sea Grant to assist in outreach to marinas regarding the Clean Vessel Act."]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing"]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$ The Clean Vessel Act provides funding for purchase, installation, maintenance, repair and operation of boater pumpout and dump stations and for the purchase of pumpout vessels."]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide"]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Increased availability of sewage pumpout facilities in the Tampa Bay Area. Reduced sewage discharges from boaters."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Improved water and habitat quality in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Sewage pumpout facilities and vessels."]}]},{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Create a unified regional database of liveaboard vessels in the Tampa Bay Area to identify extent of problem and prioritize trouble spots. Increase enforcement of rules prohibiting sewage discharges, especially for liveaboards and unmaintained or potentially derelict vessels in trouble spots. Encourage creation of appropriately sited mooring fields near sewage pumpout facilities or within service areas of pumpout vessels."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["FDEP, FWC, Coast Guard, Sea Grant, local governments, TBEP"]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing. Improvements to derelict vessel removal initiated in St. Petersburg in 2019/2020"]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$ FWC; Federal, state or local grants"]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide, especially trouble spots."]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Relocation of boats anchored over or nearby sensitive habitat to regulated mooring fields. Reduced sewage discharges from boaters. Improved boater knowledge and bay stewardship."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Improved water and habitat quality in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Increased availability of mooring fields. Boater education. Enforcement capacity and action."]}]},{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Continue to promote marina, boatyard and boater outreach, education and best practices. Promote FDEP’s Clean Marina, Clean Boatyard and Clean Boater Programs. Support education and outreach to boaters about proper handling/prevention/disposal of marine debris, sewage and unwanted vessels."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["FDEP, local governments, Sea Grant. A new education center operated by St. Petersburg College may offer opportunities for students to assist in education of nearby boat owners and facility managers."]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing"]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$ Federal, state or local grants"]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide"]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Improved boater knowledge. Reduced boater pollution. Reduced runoff pollution from marinas and boatyards."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Improved water and habitat quality in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Education and outreach"]}]},{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Support local and state programs to remove derelict vessels. Continue funding for At-Risk Vessel Program and derelict vessel identification and removal. Support education and outreach to prevent vessel abandonment."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["TBEP, FWC, local law enforcement"]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing; initiated for St. Petersburg; statewide improvements initiated in 2021/2022"]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$$ Local boat registration fees, state funding for FWC At-Vessel Risk Program."]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide"]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Fewer derelict vessels. Less sewage, oil, toxic chemicals and marine debris discharged into the bay."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Improved water and habitat quality in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Boater education. Derelict vessel removal."]}]}]},{"id":"Activity","name":"Activities","type":"character"}],"dataKey":"335631b30321634d0548758945341438"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div>
+<hr>
+<div class="grid">
+<section id="action-plans" class="level3 g-col-12 g-col-md-6">
+<h3 class="anchored" data-anchor-id="action-plans">Action Plans</h3>
+<p><a href="https://tbep.org">Clean Waters and Sediments</a><br>
+<a href="https://tbep.org">Thriving Habitats and Abundant Wildlife</a><br>
+<a href="https://tbep.org">Informed, Engaged, and Responsible Communities</a><br>
+</p>
+</section>
+<section id="strategies" class="level3 g-col-12 g-col-md-6">
+<h3 class="anchored" data-anchor-id="strategies">Strategies</h3>
+<p><a href="https://tbep.org">Strategic Plan</a><br>
+<a href="https://tbep.org">Research Priorities</a><br>
+<a href="https://tbep.org">Monitoring and Indicators Plan</a></p>
+</section>
+</div>
+</div>
+<div>
+<hr>
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<p><a href="mailto:info.tbep.org">Contact Us</a></p>
+</div>
+<div class="g-col-12 g-col-md-6">
+<p><a href="https://tbep.org/about-tbep/">Our Mission</a></p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../docs/water/ph4.html" class="pagination-link  aria-label=" ph-4"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">PH-4</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© <a href="https://tbep.org">Tampa Bay Estuary Program</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/tbep-tech">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
