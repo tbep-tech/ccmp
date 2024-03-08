@@ -1,11 +1,62 @@
 ---
 title: "BH-3"
+
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [FW-1](fw1.html) Increase on-water enforcement of environmental regulations <br>
+  [FW-6](fw6.html) Preserve the diversity and abundance of bay wildlife <br>
+  [PE-1](../../docs/communities/pe1.html) Promote public involvement in bay restoration and protection <br>
+  [PE-2](../../docs/communities/pe2.html) Promote public education about key issues affecting the bay
 ---
 
 ```{r}
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
 ```
+
+Reduce propeller scarring of seagrass and pursue seagrass transplanting opportunities
+
+### OBJECTIVES: 
+
+Enhance seagrass recovery by reducing propeller scarring of seagrass; evaluate effectiveness of seagrass planting techniques; pursue seagrass restoration opportunities at appropriate sites and continue boater education.
+
+### STATUS: 
+
+Ongoing. Action updated to reflect adoption of extensive manatee protection zones that also protect seagrasses. Action also updates propeller scarring and seagrass transplanting research. Strategy revised to focus scope of seagrass transplanting program, and to evaluate effectiveness of manatee zones in reducing propeller scarring. Targeted boater education is an important element of this Action.
+
+### BACKGROUND:
+
+Seagrasses create important habitat and forage for many important bay species (see Action [BH-1](bh1.html)). Seagrass meadows are relatively fragile and can easily be damaged by human activity, such as careless boat operation that leaves propeller scars resembling plowed furrows. 
+
+![A diver measures the width of a prop scar in a seagrass bed. SOURCE: Florida Department of Environmental Protection](../../img/BH-3-1_Photo_Diver measures prop scar.jpg)
+
+Substantial progress has been made in implementing actions which may reduce seagrass scarring. An extensive network of year-round and seasonal slow speed zones established primarily for manatee protection also serves to safeguard seagrasses in shallow nearshore waters — although adequate enforcement of these zones remains a challenge (see Actions [FW-1](fw1.html) and [FW-6](fw6.html)). Slow speed zones generally encompass waters 6 feet deep or less, mirroring the average depth range of seagrass beds in the bay.
+
+No-motor or “poll and troll” zones at Weedon Island and sections of Fort De Soto Park also help protect manatees and seagrasses by restricting use of internal combustion engines in shallow waters. No-entry security zones around MacDill Air Force Base and Port Manatee provide de facto seagrass protection.
+
+Seagrass scarring is a persistent problem. New boaters or boaters new to Tampa Bay may find themselves suddenly grounded in the bay’s shallows and resort to “propeller dredging” through grass beds to reach deeper water.  Boater education about safe navigation in shallow waters is an important solution to reduce seagrass scarring. TBEP initiated a project in 2021 to map  hot spots and conduct targeted education through the  Be Seagrass Safe campaign.  In addition, TBEP has allocated funding to develop digital technologies (including electronic chart displays, smartphones and other emerging platforms) that provide real-time information to boaters and alert them when they are entering slow-speed or no-motor zones.
+
+![Propeller scars in seagrasses in Lower Tampa Bay near Fort De Soto Park. SOURCE: Tampa Bay Watch](../../img/BH-3-2_island point prop scars far.jpg)
+
+A statewide survey of seagrass scars conducted in 1995 found that 65% of seagrasses within Hillsborough County, 45% of seagrasses within Manatee County and 42% of seagrasses within Pinellas County were lightly to severely scarred [@tbep1496]. The 1995 survey preceded adoption of the slow-speed manatee protection and no-motor zones now in place. Slow speed and no-motor zone regulations have not been evaluated in more than 15 years to determine if, and to what extent, they have reduced scarring or promoted healing of scars. A recent analysis of the 2020 SWFWMD seagrass coverage maps found heavy scarring (>20%) in the areas near Terra Ceia (Manatee County) and Fort De Soto (Pinellas County), and moderate scarring (5-20%) in areas near Cockroach Bay (Hillsborough County) [@tbep1422].
+
+Initial studies indicated that scarred beds may take 3.6 to 6.4 years to return to normal density, if no additional damage occurs during that period.  However, more recent research conducted by the Environmental Protection Commission of Hillsborough County (EPCHC) and the University of South Florida in the Cockroach Bay Aquatic Preserve showed that [prop scars can heal rapidly](https://southeastaquatics.net/projects/habitat-projects-2009/improving-management-of-seagrass-resources-through-restoration-and-assessment-1){target="_blank"}. The EPCHC study, which utilized side-scan sonar, found that shoal grass (*Halodule wrightii*) recolonized scarred areas within 6 months. Recovery also was observed in turtle grass (*Thalassia testudinum*) beds. Pinellas County officials also reported success with using “sediment tubes” to facilitate regrowth of shoal grass in prop scars, as part of mitigation for the Belleair Beach Causeway Bridge. 
+
+More research is needed to determine whether these results can be reliably replicated in other scarred areas with different sediment types and currents, and for slower-growing manatee grass (*Thalassia* or *Syringoidum filiforme*). Although the impacts of seagrass scars on fish and shellfish have not been well studied, research conducted in 2002 in Tampa Bay and Charlotte Harbor showed no significant declines in species abundance in beds with up to 50% scarring [@bell2002]. 
+
+![Volunteers assist in a seagrass planting project. SOURCE:  Tampa Bay Watch.](../../img/BH-3-3 seagrass transplanting.jpg)
+
+Although limited seagrass transplanting has been implemented in several areas around Tampa Bay, evaluation of successful techniques and monitoring of seagrass transplantation success is needed. Only about 100 acres of the 20,000-acre increase in bay seagrasses since 1990 has resulted from transplanting efforts — water quality improvements account for the vast majority of gains. Restoring seagrasses naturally through nutrient management should continue to be the primary focus of restoration efforts.
+
+However, transplanting may be a locally important tool for “jump-starting” restoration where seagrass recovery is lagging, sudden losses occur (e.g., due to a spill or extreme weather event) or as mitigation for unavoidable impacts. Several methods of transplanting seagrasses have been employed in Tampa Bay. Early efforts utilizing small units of seagrass had poor survival rates, as the newly planted grasses were easily washed away by tides and currents. More recent projects have had success transplanting larger clumps or “sods” of seagrass that include the native soil and intact root systems. These units — measuring about 8 inches by 8 inches — are often able to withstand more turbulent water conditions until the grass is fully established.
+
+A multi-year project conducted by Tampa Bay Watch and the City of Tampa at MacDill Air Force Base transplanted manatee grass from a natural “donor site” to a nearby location using the sod technique. After two years, seagrass coverage in the transplant area increased 28-fold. Nearly a decade after the first transplantation effort at this location, seagrass cover has continued to expand. An additional quarter-acre of manatee grass was transplanted in six plots in 2012 by EPCHC and Tampa Bay Watch; by late 2015, a 75% increase was observed. It is difficult to determine whether this recovery, and similar restoration or mitigation efforts, is the result of natural recruitment or transplanting activities. Beginning in 2024, TBEP will  partner with the Florida Fish and Wildlife Research Institute (FWRI) to monitor transplanted seagrass “sods”  near Wolf Branch Creek in Middle Tampa Bay, where manatee grazing may be affecting seagrass coverage.
+
+![Seagrass for transplanting projects is typically harvested from healthy “donor beds.” SOURCE: Tampa Bay Watch](../../img/BH-3-4_Photo_seagrass transplant.jpg)
+
+Seagrass survival is influenced by multiple factors, including water clarity, sediment type, rainfall, epiphyte coverage and wave energy. Location and depth at which plantings occur may be more important than the technique used. Just like land-based plants require specific optimum environmental conditions to flourish, transplanted seagrass, regardless of technique, will not survive if the location and environment are not appropriate.  
+
+Mitigation for construction-related impacts typically requires permittees to track and report survival to the permitting agencies for a limited period only. Long-term monitoring (greater than 3 years) of restoration and mitigation projects is needed to determine the most cost-effective and successful methods and to identify appropriate planting strategies.
 
 ```{r}
 act_tab(rmarkdown::metadata$title)

@@ -233,6 +233,36 @@ intertidal_plo <- function(curyr = 2020){
   
 }
 
+# get rdata from github
+# try simple load, download if fail
+rdataload <- function(flurl){
+  
+  fl <- basename(flurl)
+  obj <- gsub('\\.RData$', '', fl)
+  
+  # try simple load
+  ld <- try(load(url(flurl)), silent = T)
+  
+  # return x if load worked
+  if(!inherits(ld, 'try-error')){
+    out <- get(obj)
+  }
+  
+  # download x if load failed
+  if(inherits(ld, 'try-error')){
+    
+    fl <- paste(tempdir(), fl, sep = '/')
+    download.file(flurl, destfile = fl, quiet = T)
+    load(file = fl)
+    out <- get(obj)
+    suppressMessages(file.remove(fl))
+    
+  }
+  
+  return(out)
+  
+}
+
 # table functions -----------------------------------------------------------------------------
 
 sw8_tab <- function(id, action){
@@ -291,6 +321,63 @@ ph5_tab <- function(id, action){
     flextable::border_remove() |> 
     flextable::align(align = 'center', part = 'all', j = -1) |>
     flextable::vline(j = c(3, 5), part = 'all') |> 
+    flextable::autofit()
+  
+  return(out)
+  
+}
+
+# this gets seagrass and oyster coverage estimate by segment
+bh4_tab <- function(maxyr = 2022){
+  
+  segs <- c('Old Tampa Bay', 'Hillsborough Bay', 'Middle Tampa Bay', 'Lower Tampa Bay', 'Boca Ciega Bay', 'Manatee River', 'Terra Ceia Bay')
+  
+  intseg <- sgseg |> 
+    dplyr::filter(segment %in% segs) |>
+    st_make_valid()
+  
+  sgurl <- paste0('https://github.com/tbep-tech/hmpu-workflow/raw/master/data/sgdat', maxyr, '.RData')
+  sgdatraw <- rdataload(sgurl)
+  
+  sgdat <- sgdatraw |> 
+    dplyr::filter(FLUCCSCODE %in% c(6540, 9113, 9116)) |> 
+    dplyr::mutate(
+      hab = dplyr::case_when(
+        FLUCCSCODE == 6540 ~ 'Oyster',
+        FLUCCSCODE == 9113 ~ 'Patchy seagrass',
+        FLUCCSCODE == 9116 ~ 'Continuous seagrass'
+      )
+    ) |>
+    st_transform(st_crs(intseg)) |> 
+    st_intersection(intseg)
+  
+  sgdat <- sgdat |>
+    dplyr::mutate(
+      acres = st_area(x = sgdat),
+      acres = units::set_units(acres, acres)
+    ) |> 
+    st_set_geometry(NULL) |> 
+    dplyr::summarise(
+      acres = sum(acres), 
+      .by = c(segment, hab)
+    )
+  
+  totab <- sgdat |> 
+    dplyr::mutate(
+      segment = factor(segment, levels = segs), 
+      hab = factor(hab, levels = c('Patchy seagrass', 'Continuous seagrass', 'Oyster'), 
+                   labels = c('Patchy seagrass (acres)', 'Continuous seagrass (acres)', 'Oyster (acres)')
+      ), 
+      acres = formatC(round(acres, 1), format = 'f', big.mark = ',', digits = 1)
+    ) |> 
+    tidyr::pivot_wider(names_from = hab, values_from = acres) |> 
+    dplyr::arrange(segment)
+  
+  out <- flextable::flextable(totab) |> 
+    flextable::set_header_labels(i = 1, `segment` = 'Bay segment') |>
+    flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::border_remove() |> 
+    flextable::align(align = 'center', part = 'all', j = -1) |>
     flextable::autofit()
   
   return(out)

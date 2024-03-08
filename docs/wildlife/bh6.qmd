@@ -4,7 +4,6 @@ title: "BH-6"
 
 ```{r}
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
 ```
 
 ```{r}
