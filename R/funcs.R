@@ -1,46 +1,40 @@
-# create expandable content for reactable
-row_details <- function(datin, index){
+
+# utility functions ---------------------------------------------------------------------------
+
+# get rdata from github
+# try simple load, download if fail
+rdataload <- function(flurl){
   
-  action <- datin[index, ] |> 
-    dplyr::select(-Activity)
+  fl <- basename(flurl)
+  obj <- gsub('\\.RData$', '', fl)
   
-  # make names in actino an h3 header
-  hds <- names(action) |> 
-    lapply(htmltools::h3)
+  # try simple load
+  ld <- try(load(url(flurl)), silent = T)
   
-  ps <- action |> 
-    lapply(htmltools::p)
-  
-  out <- NULL
-  for(i in 1:ncol(action)){
-    out <- c(out, hds[i], ps[i])
+  # return x if load worked
+  if(!inherits(ld, 'try-error')){
+    out <- get(obj)
   }
   
-  htmltools::div(out)
+  # download x if load failed
+  if(inherits(ld, 'try-error')){
+    
+    fl <- paste(tempdir(), fl, sep = '/')
+    download.file(flurl, destfile = fl, quiet = T)
+    load(file = fl)
+    out <- get(obj)
+    suppressMessages(file.remove(fl))
+    
+  }
+  
+  return(out)
   
 }
 
-# activities table
-act_tab <- function(ttl){
-  
-  load(file = here::here('data/activities.RData'))
-  
-  datin <- activities[[ttl]]
-  
-  if(is.null(datin))
-    return()
-  
-  reactable::reactable(
-    data.frame(datin[, 1]), 
-    defaultColDef = reactable::colDef(
-      name = 'Activities'
-    ),
-    details = function(index) row_details(datin, index)) 
-  
-}
+# data-driven graphics ------------------------------------------------------------------------
 
 # pyro map otb
-pyro_map <- function(phytodata, yr = 2021, mo = c('Jun', 'Oct')){
+pyro_plo <- function(yr = 2021, mo = c('Jun', 'Oct')){
   
   otbsta <- stations |> dplyr::filter(bay_segment == 'OTB') |> dplyr::pull(epchc_station)
   
@@ -173,12 +167,14 @@ bacwbid_plo <- function(){
     dplyr::select(-PARAMETER_GROUP, -PARAMETER_ASSESSED) |>
     unique()
   
-  p <- ggplot() +
+  m <- ggplot() +
     annotation_map_tile(zoom = 10, type = 'cartolight', progress = 'none', quiet = T) +
+    ggspatial::annotation_scale(location = 'br', unit_category = 'metric') +
+    ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
     geom_sf(data = tbvwbid, fill = 'red', col = 'red', alpha = 0.6) +
     theme_minimal()
   
-  return(p)
+  return(m)
   
 }
 
@@ -233,33 +229,123 @@ intertidal_plo <- function(curyr = 2020){
   
 }
 
-# get rdata from github
-# try simple load, download if fail
-rdataload <- function(flurl){
+# map of ccha sites
+cchasites_plo <- function(){
+
+  tranloc <- rdataload('https://github.com/tbep-tech/ccha-sampling-effort/raw/main/data/tranloc.RData')
   
-  fl <- basename(flurl)
-  obj <- gsub('\\.RData$', '', fl)
+  tomap <- tranloc |> 
+    st_centroid()
+  tomap <- tomap |> 
+    dplyr::mutate(
+      lon = st_coordinates(tomap)[, 1], 
+      lat = st_coordinates(tomap)[, 2]
+    )
+
+  dat_ext <- tomap |>
+    st_buffer(dist = 10000) |>
+    st_bbox() |>
+    unname()
+
+  m <- ggplot2::ggplot() +
+    ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
+    ggspatial::annotation_scale(location = 'bl', unit_category = 'metric') +
+    ggspatial::annotation_north_arrow(location = 'tr', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
+    ggplot2::geom_sf(data = tomap, inherit.aes = F, size = 2) +
+    ggrepel::geom_text_repel(data = tomap, ggplot2::aes(label = site, x = lon, y = lat), inherit.aes = F) +
+    ggplot2::labs(
+      x = NULL, 
+      y = NULL
+    ) +
+    ggplot2::theme_minimal() +
+    ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
   
-  # try simple load
-  ld <- try(load(url(flurl)), silent = T)
+  return(m)
   
-  # return x if load worked
-  if(!inherits(ld, 'try-error')){
-    out <- get(obj)
+}
+
+# map of tidal creeks in tb watershed
+tdlcrk_plo <- function(maxyr = 2022){
+  
+  cols <- c('#ADD8E6', '#2DC938', '#E9C318', '#EE7600', '#FF4040')
+  names(cols) <- c('No Data', 'Monitor', 'Caution', 'Investigate', 'Prioritize')
+  
+  tomap <- tidalcreeks[tbshed, ] 
+  scrs <- anlz_tdlcrk(tomap, iwrraw, yr = maxyr) |> 
+    dplyr::select(id, score) |> 
+    dplyr::mutate(
+      score = factor(score, levels = names(cols))
+    )
+  
+  tomap <- tomap |> 
+    dplyr::left_join(scrs, by = c('id'))
+  
+  dat_ext <- tomap |>
+    st_centroid() |> 
+    st_buffer(dist = 10000) |>
+    st_bbox() |>
+    unname()
+  
+  m <- ggplot2::ggplot() +
+    ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
+    ggspatial::annotation_scale(location = 'bl', unit_category = 'metric') +
+    ggspatial::annotation_north_arrow(location = 'tr', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
+    ggplot2::geom_sf(data = tomap, ggplot2::aes(col = score, fill = score), inherit.aes = F, linewidth = 0.75) +
+    ggplot2::scale_color_manual(values = cols) +
+    ggplot2::scale_fill_manual(values = cols) + 
+    ggplot2::labs(
+      x = NULL, 
+      y = NULL, 
+      color = NULL, 
+      fill = NULL
+    ) +
+    ggplot2::theme_minimal() +
+    ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
+  
+  return(m)
+  
+}  
+  
+# activity table ------------------------------------------------------------------------------
+
+# create expandable content for reactable
+row_details <- function(datin, index){
+  
+  action <- datin[index, ] |> 
+    dplyr::select(-Activity)
+  
+  # make names in actino an h3 header
+  hds <- names(action) |> 
+    lapply(htmltools::h3)
+  
+  ps <- action |> 
+    lapply(htmltools::p)
+  
+  out <- NULL
+  for(i in 1:ncol(action)){
+    out <- c(out, hds[i], ps[i])
   }
   
-  # download x if load failed
-  if(inherits(ld, 'try-error')){
-    
-    fl <- paste(tempdir(), fl, sep = '/')
-    download.file(flurl, destfile = fl, quiet = T)
-    load(file = fl)
-    out <- get(obj)
-    suppressMessages(file.remove(fl))
-    
-  }
+  htmltools::div(out)
   
-  return(out)
+}
+
+# activities table
+act_tab <- function(ttl){
+  
+  load(file = here::here('data/activities.RData'))
+  
+  datin <- activities[[ttl]]
+  
+  if(is.null(datin))
+    return()
+  
+  reactable::reactable(
+    data.frame(datin[, 1]), 
+    defaultColDef = reactable::colDef(
+      name = 'Activities'
+    ),
+    details = function(index) row_details(datin, index)) 
   
 }
 

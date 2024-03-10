@@ -9,8 +9,8 @@ margin-footer: |
 ---
 
 ```{r}
-source(here::here('R/funcs.R'))
 library(tbeptools)
+source(here::here('R/funcs.R'))
 ```
 
 Reduce frequency and duration of harmful algal blooms
@@ -43,7 +43,7 @@ Species associated with HABs in Tampa Bay include:
 #| fig-cap: "Distribution of *Pyrodinium* cysts in Old Tampa Bay. SOURCE: EPCHC"
 #| fig-height: 5
 #| fig-width: 6
-pyro_map(phytodata)
+pyro_plo()
 ```
 
 The extent and duration of some HABs can be mitigated by reducing nutrient pollution that fuels their growth. Although Tampa Bay meets water quality management goals in most years in most bay segments (see Action [WQ-1](wq1.html)), HABs occur regularly in Old Tampa Bay, a bay segment that inconsistently meets water quality targets. In particular, blooms of the potentially toxic dinoflagellate *Pyrodinium bahamense* are occurring more frequently and for longer duration, with blooms occurring regularly since 2000. However, these blooms have yet to produce harmful ecological impacts — such as fish and shellfish toxicity resulting in large fish kills or widespread, low dissolved oxygen events. Therefore, they have been characterized as nuisance algal blooms. The factors that drive *Pyrodinium* blooms in Old Tampa Bay are not fully understood, but the formation of resting cysts and establishment of *Pyrodinium* resting cyst beds is important for bloom recurrence each year.
