@@ -1,11 +1,69 @@
 ---
 title: "FW-1"
+
+params:
+  id: '1kgSuFUHFWv1NOg2W_5eTUU6ZUmRbBuv1vgby22wwF0A'
+  
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [FW-6](fw6.html) Preserve the diversity and abundance of bay wildlife <br>
+  [PA-1](../../docs/communities/pa1.html) Provide for and manage recreational uses of the bay <br>
+  [PH-5](../../docs/water/ph5.html) Reduce pollution from recreational boaters
 ---
 
 ```{r}
+library(googledrive)
+library(googlesheets4)
+
+gs4_deauth()
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
 ```
+
+Increase on-water enforcement of environmental regulations 
+
+### OBJECTIVES: 
+
+Improve enforcement of environmental regulations protecting fish and wildlife by supporting marine law enforcement efforts via sustainable funding, education of personnel, adoption of new technologies and boater and angler education. 
+
+### STATUS: 
+
+Ongoing. This action has been expanded to incorporate enforcement of manatee protection zones. Action also expanded to increase compliance with environmental laws through targeted education using new technologies, improve reporting and response times and revive a regional effort to support increased funding for on-water enforcement. Boater and angler education to reduce the need for enforcement is an important element of this Action.
+
+### BACKGROUND:
+
+Adequate enforcement of local, state and federal laws protecting fish and wildlife remains a challenge in the Tampa Bay Area. The need to balance human uses with ecosystem needs will increase as the bay draws more boaters, anglers and other recreational enthusiasts.
+
+![Officer on the water. SOURCE: Tim Donovan](../../img/FW-1-1 Photo 2 officer on water-tim donovan.jpg)
+
+The number of registered pleasure and commercial boats in the three counties bordering the bay increased 13.3%, from 109,063 to 123,545, between 2016 and 2022. At the same time, however, local governments reduced or eliminated their marine patrol units when tax revenues sagged during the economic downturn of 2008–2011. The main on-water enforcement agency, the Florida Fish and Wildlife Conservation Commission’s (FWC) Division of Law Enforcement, has been stretched thin in recent years. FWC assumed additional duties related to Homeland Security, especially escorts of large commercial ships transiting the bay.
+
+FWC’s merger of fresh and saltwater law enforcement agencies has expanded the pool of officers trained to enforce both salt and freshwater regulations, with added flexibility to shift officers to “hot spots” or priority problems, such as illegal gill-netting. Additionally, all law enforcement rangers with Florida’s state parks were reassigned to FWC in 2011. 
+
+```{r}
+#| tbl-cap: "2016 versus 2022 Florida Boat Registrations for Tampa Bay Counties SOURCE: Florida Department of Highway Safety and Motor Vehicles"
+fw1_tab(params$id, rmarkdown::metadata$title)
+```
+
+Despite these changes, fewer than 40 FWC officers (including lieutenants and captains who spend limited time in the field) are available to provide continuous on-water coverage in Tampa Bay. That equates to one officer for every 2,636 boats. There are frequent staffing shortfalls as officers typically only remain with FWC for about five years before taking more lucrative positions with federal or local law enforcement agencies. Citizens who report potential violations are often frustrated when officers are unable to respond in a timely fashion, or at all.
+  
+The small FWC staff is charged with ever-increasing responsibilities both on and off the water, from enforcing safe boating laws and the bay’s extensive manatee protection zones, to ensuring that sport and commercial fishermen comply with gear and harvest restrictions, to responding to nuisance alligator complaints, enforcing hunting regulations, and even conducting state-required inspections of homemade vessels.
+
+Prospects for a substantial boost in FWC personnel appear dim, and requests to increase the percentage of revenues from the Saltwater Fishing License allocated to marine law enforcement have not been successful. One bright spot may be an increase in local city or county marine officers, as tax revenues rebound and communities respond to growing natural resource and boating safety concerns within their own waters. 
+
+![As of 2017, about 40 state marine enforcement officers patrol Tampa Bay, one for every 2,636 boats. SOURCE: FWC](../../img/FW-1-2 Photo 1 FWC officers.jpg)
+
+This action encourages utilization of new technologies, such as mobile applications and text messages tagged with GPS locations, to facilitate timely reporting and response to violations. Also recommended is the possible revival of the “Coastwatch” volunteer program that trains citizens who are on the water frequently to identify and report violations directly to local FWC officers. Participants would receive training in key resource protection laws and direct contact numbers for law enforcement officers, bypassing the central dispatch system. This may not result in faster response time to any individual infraction, but would be useful in alerting officers to priority problem areas for targeted enforcement — for example, hot spots of manatee zone violations, illegal netting and boating while intoxicated. The program also would improve communication and collaboration among frequent bay users and law enforcement in general, leading to enhanced enforcement. 
+
+Continued education and awareness of boating safety protocols to reduce impacts on wildlife will reduce some of the need for regulatory remedies. The Tampa Bay Estuary Program (TBEP) is a leader in boater education, partnering with FWC to develop the popular Boating and Angling Guide to Tampa Bay (including an interactive, web-based version) and with Audubon Florida on localized guides to Hillsborough Bay, Boca Ciega Bay and Lower Tampa Bay.  TBEP’s Bay Mini Grant program funded Tampba Bay Waterkeeper to develop and launch a Patrol Program in 2023.
+
+TBEP’s Manatee Awareness Coalition (MAC) helps coordinate boater education efforts among a diverse alliance of boating groups, scientists, bay managers and manatee advocates to increase compliance with the bay’s extensive network of manatee protection zones. Regulated areas include both seasonal and year-round slow speed zones, as well as two no-entry areas adjacent to warm-water outfalls at TECO’s Big Bend Power Plant in Apollo Beach and Duke Energy’s Bartow Power Plant at Weedon Island. The Big Bend plant is among Florida’s most important winter manatee refuges; the Bartow plant is a valuable secondary refuge. The MAC worked with FWC and navigation providers Garmin and Navionics to add Tampa Bay manatee zones to navigation software (and related mobile phone applications) used by boaters. The next innovation should be electronic alarms on personal navigation or smartphone devices that alert boaters when they are about to enter a manatee protection zone.
+
+![Tampa Bay has an extensive network of seasonal and year-round slow speed zones to protect manatees.](../../img/FW-1-3 Manatees.jpg)
+
+Ultimately, additional funds for law enforcement are needed to adequately keep pace with increased use (and potential abuse) of the bay and its valuable habitats and inhabitants. Funding for enforcement, as well as marine research and management, could come from reviving the license fee for shoreline anglers. A \$9 fee enacted in 2009 was expected to generate \$900,000–\$1.2 million a year in revenues, but was repealed a year later. The license is now free and voluntary.
+
+Enforcement funds could also come from requiring that residents and/or non-residents using professional fishing guides purchase an individual fishing license. An estimated 2 million tourists fished in Florida in 2014, far outpacing any other state. Currently, charter captains purchase an annual license that covers all anglers on board their boat.
 
 ```{r}
 act_tab(rmarkdown::metadata$title)

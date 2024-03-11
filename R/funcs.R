@@ -306,6 +306,55 @@ tdlcrk_plo <- function(maxyr = 2022){
   
 }  
   
+# scallop search counts
+scallop_plo <- function(){
+  
+  # data from dashboard, only back to 2007
+  cntdat <- rdataload('https://github.com/tbep-tech/scallop-search/raw/master/data/cntdat.RData')
+  
+  # format cntdat for year tally only 
+  toplo <- cntdat |> 
+    dplyr::summarise(
+      cnt = sum(`Scallops found`, na.rm = T), 
+      .by = yr
+    )
+  
+  # historical and missind data from 2017 ccmp graphic (FW-3)
+  histdat <- tibble::tibble(
+    yr = c(1996, 1997, 1998, 1999, 2000, 2004, 2005, 2006, 2012, 2013, 2016),
+    cnt = c(75, 79, 27, 21, 18, 12, 1, 17, 12, 51, 54)
+  )
+  
+  # combine
+  toplo <- rbind(histdat, toplo) |> 
+    dplyr::arrange(yr) |> 
+    dplyr::mutate(
+      ind = 1:dplyr::n()
+    )
+  
+  # plot
+  p <- ggplot2::ggplot(toplo, ggplot2::aes(x = ind, y = cnt)) +
+    ggplot2::geom_line(color = 'grey') + 
+    ggplot2::geom_point(pch = 21, fill = '#427355', size = 3) +
+    ggplot2::scale_x_continuous(breaks = toplo$ind, labels = toplo$yr) +
+    ggplot2::scale_y_continuous(limits = c(0, 1.05 * max(toplo$cnt))) +
+    ggplot2::geom_text(ggplot2::aes(label = cnt), vjust = -1, hjust = 0.5) +
+    ggplot2::labs(
+      x = NULL, 
+      y = 'Scallops found'
+    ) +
+    ggplot2::theme_minimal() +
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(angle = 45, hjust = 1),
+      panel.grid.major.x = ggplot2::element_blank(),
+      panel.grid.minor.x = ggplot2::element_blank(),
+      panel.grid.minor.y = ggplot2::element_blank()
+    )
+  
+  return(p)
+  
+}
+
 # activity table ------------------------------------------------------------------------------
 
 # create expandable content for reactable
@@ -464,6 +513,26 @@ bh4_tab <- function(maxyr = 2022){
     flextable::bg(bg = "lightgray", part = "header") |> 
     flextable::border_remove() |> 
     flextable::align(align = 'center', part = 'all', j = -1) |>
+    flextable::autofit()
+  
+  return(out)
+  
+}
+
+fw1_tab <- function(id, action){
+  
+  sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
+  sht$`2016` <- as.numeric(sht$`2016`)
+  sht$`2022` <- as.numeric(sht$`2022`)  
+  sht$`% Increase` = ((sht$`2022` - sht$`2016`) / sht$`2016`) * 100
+
+  out <- flextable::flextable(sht) |> 
+    flextable::set_header_labels(i = 1, `...1` = '') |>
+    flextable::colformat_double(j = 2:3, digits = 0, big.mark = ",") |>
+    flextable::colformat_double(j = 4, digits = 1) |>
+    flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::align(align = 'left', part = 'all') |> 
+    flextable::border_remove() |> 
     flextable::autofit()
   
   return(out)
