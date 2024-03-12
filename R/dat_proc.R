@@ -2,6 +2,8 @@ library(googledrive)
 library(googlesheets4)
 library(tidyverse)
 library(reactable)
+library(haven)
+library(here)
 
 # get activities table from Google Drive ------------------------------------------------------
 
@@ -23,9 +25,69 @@ activities <- sht |>
 activities <- split(activities, activities$Action) |> 
   map(~ .x |> select(-Action))
 
-save(activities, file = 'data/activities.RData')
+save(activities, file = here('data/activities.RData'))
 
 # tn loading data -----------------------------------------------------------------------------
 
 download.file(url = 'https://github.com/tbep-tech/load-estimates/raw/main/data/tnanndat.RData', 
-              destfile = 'data/tnanndat.RData')
+              destfile = here('data/tnanndat.RData'))
+
+# FIM data from FTP ---------------------------------------------------------------------------
+
+ftp_url <- "ftp://ftp.floridamarine.org/users/fim/DataMgt/Inshore_SAS_Data/FIM_inshore_SAS_database_library_20240222.zip"
+
+temp_dir <- tempdir()
+
+# Download the zip file from FTP to temporary directory
+temp_file <- paste0(temp_dir, "/", basename(ftp_url))
+download.file(url = ftp_url, destfile = temp_file, mode = "wb", quiet = FALSE)
+
+# Unzip the file
+unzip(temp_file, exdir = temp_dir)
+
+# extracted file path
+file_path <- paste0(temp_dir, "/", gsub('\\.zip$', '/', basename(ftp_url)))
+
+# import original SAS data
+phyraw <- read_sas(paste0(file_path, 'tbm_physical.sas7bdat'))
+bioraw <- read_sas(paste0(file_path, 'tbm_biology_number.sas7bdat'))
+sppraw <- read_sas(paste0(file_path, 'species_codes.sas7bdat'))
+
+unlink(temp_dir, recursive = TRUE)
+
+# physical (site) data
+# filter zones A-E for TB proper
+# filter gear type 20 (21.3-m seine)
+# filter by stratum (if wanted) to return shoreline ('S') and/or offshore (>5 m from shore, 'A','B'), we can include both, but will need to add to methods section
+# filter reference with loc info
+# filter by project "AM" to return standard monitoring sites, others are special projects - may not change the output much
+phydat <- phyraw |> 
+  mutate(
+    date = ymd(date)
+  ) |> 
+  filter(Zone %in% c('A', 'B', 'C', 'D', 'E')) |> 
+  #filter(Project =='AM') 
+  filter(Gear == 20) |> 
+  #filter (Stratum %in% c('A','B')) |> 
+  select(Reference, date)
+
+# species codes
+sppdat <- sppraw |> 
+  select(NODCCODE, Commonname) 
+
+# species count data
+biodat <- bioraw |> 
+  select(Reference, Species_record_id, NODCCODE, Number) |> 
+  left_join(sppdat, by = 'NODCCODE')
+
+# filter by species of interest
+sppdat <- biodat |> 
+  filter(Commonname %in% c('Pink Shrimp', 'Red Drum', 'Spotted Seatrout')) |> 
+  select(Reference, Number, Commonname)
+
+# join all an create complete
+fimdat <- left_join(phydat, sppdat, by = 'Reference', relationship = 'one-to-many') |> 
+  complete(Commonname, nesting(Reference, date), fill = list(Number = 0)) |> 
+  na.omit()
+
+save(fimdat, file = here('data/fimdat.RData'))

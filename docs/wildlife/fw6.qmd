@@ -1,10 +1,84 @@
 ---
 title: "FW-6"
+
+params:
+  id: '1kgSuFUHFWv1NOg2W_5eTUU6ZUmRbBuv1vgby22wwF0A'
+  
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [FW-1](fw1.html) Increase on-water enforcement of environmental regulations <br>
+  [FW-3](fw3.html) Achieve a sustainable bay scallop population <br>
+  [FW-5](fw5.html) Continue and expand the Critical Fisheries Monitoring Program <br>
+  [BH-1](bh1.html) Implement the Tampa Bay Habitat Master Plan <br>
+  [BH-2](bh2.html) Establish and implement mitigation criteria <br>
+  [BH-3](bh3.html) Reduce propeller scarring of seagrass and pursue seagrass transplanting opportunities <br>
+  [BH-9](bh9.html) Enhance ecosystem values of tidal tributaries <br>
+  [DR-1](dr1.html) Implement beneficial uses of dredged material in Tampa Bay <br>
+  [DR-2](dr2.html) Continue to minimize impacts to wildlife and their habitats from dredging activities <br>
+  [IS-2](is2.html) Support prevention, eradication or management of invasive species in Tampa Bay and its watershed <br>
+  [PA-1](../../docs/communities/pa1.html) Provide for and manage recreational uses of the bay <br>
+  [PE-1](../../docs/communities/pe1.html) Promote public involvement in bay restoration and protection
 ---
 
 ```{r}
+library(googledrive)
+library(googlesheets4)
+
+gs4_deauth()
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
+```
+
+Preserve the diversity and abundance of bay wildlife  
+
+### OBJECTIVES:
+
+An umbrella action to protect important fish and wildlife populations in the bay watershed, specifically by supporting research; habitat protection and restoration, compliance with laws to protect fish and wildlife; and education initiatives that foster species diversity and abundance. Support research, management and education to protect listed species and other important wildlife populations in the Tampa Bay watershed. Implement the Bay Habitats Action Plan to achieve targets and goals for critical fish and wildlife habitats. Continue and expand scientific and community-based wildlife monitoring programs. Give priority consideration to TBEP Bay Mini-Grant projects that address listed and potentially imperiled species. Identify species about which more data is needed to assess status. 
+
+### STATUS:
+
+Ongoing. Action expanded to address a variety of threats to fish and wildlife, including climate change. Revised action specifically addresses colonial waterbirds and beach-nesting shorebirds. Strategy encourages support for research, management and monitoring of listed, threatened and endangered species, as well as unlisted species for which information gaps exist.
+
+### BACKGROUND:
+
+The Tampa Bay Area supports more than 40 species listed as Threatened or Endangered by the United States Fish and Wildlife Service (USFWS) or listed as Threatened or Species of Special Concern by the Florida Fish and Wildlife Conservation Commission (FWC). They inhabit a wide variety of habitats from the bay proper to its mangrove islands, rivers, tidal streams, marshes, freshwater wetlands, sandy beaches and upland forests. Many species require different habitats at various life stages.
+
+![A Great Egret in spectacular courtship display. Egrets, herons, ibis and other wading birds nest in colonies on mangrove islands in Tampa Bay. SOURCE: Gerold Morrison](../../img/FW-6-1 great egret.jpg)
+
+Many of the bay’s most visible and beloved species are well-documented. For example, Audubon first began protecting and monitoring colonial waterbird populations in 1934;  Audubon staff currently manage and assess 30 nesting colonies on islands in and around Tampa Bay. Sea turtle nests on bay area beaches and barrier islands are [surveyed and safeguarded](https://myfwc.maps.arcgis.com/apps/webappviewer/index.html?id=8e6e45efc47a4c69941ddcb097cb195a){target="_blank"} annually. In 2016, 1595 loggerhead turtle nests were confirmed. Green and leatherback turtle nests are very rare on Tampa Bay area beaches. Research has shown that the bay itself is an important nursery area for juvenile Kemp’s ridley sea turtles, one of the world’s most endangered species.
+
+```{r}
+#| tbl-cap: "Loggerhead Turtle Nesting 2018-2022 on beaches of Tampa Bay. SOURCE: FWC"
+fw6turtles_tab(params$id, paste(rmarkdown::metadata$title, 'turtles'))
+```
+
+The status of many other species is unclear, and basic population assessments are lacking. For example, little is known about diamondback terrapin populations in Tampa Bay because the animals are shy, reclusive and difficult to study.
+
+Protecting and enhancing fish and wildlife populations requires a combination of management and educational strategies, including habitat protection and restoration, assessment and monitoring, enactment and enforcement of laws that protect vulnerable species, and education of citizens and visitors. These overall strategies ideally take into account multiple threats to the long-term health of the bay’s fish and wildlife:
+
+* Habitat loss or degradation
+* Competition from invasive species
+* Overharvesting
+* Pollution
+* Natural disasters, such as hurricanes 
+* Climate change, including increased air and water temperatures, sea level rise, changes in precipitation and ocean acidification
+
+Protecting and restoring key habitats, including priority nesting and nursery areas, seasonal refuges and critical travel or migration pathways, is a fundamental basis for sustaining diverse and abundant fish and wildlife populations. Restoration activities that create habitat mosaics of functional ecosystems will prove more resilient in the future (See Actions [BH-1](bh1.html) and [CC-1](../../docs/communities/cc1.html)).
+
+![The Richard T. Paul Alafia Bird Sanctuary is among the nation’s most important nesting areas for colonial waterbirds such as the roseate spoonbill. SOURCE: Florida Audubon](../../img/FW-6-2_Photo_roseate spoonbill at Alafia Bank.jpg)
+
+Tidal streams are nursery areas for fish. More than 100 tidal streams flow to the bay from major rivers to tiny creeks a person could jump across. Many begin in the far reaches of the watershed. These streams are vitally important to foraging birds and juvenile fish, including snook. Researchers are working to identify tidal stream habitat features most favored by juvenile snook, and to test management techniques. Protecting and restoring tidal streams is expected to bolster the bay’s snook populations, which support a recreational fishery that generates more than \$1 million in annual revenues (see Action [BH-9](bh9.html)).
+
+Beaches are vital for shorebirds. More than 45,000 pairs of beach-nesting birds, such as the snowy plover, American oystercatcher, black skimmer, laughing gull and least tern, lay their eggs and raise their young on area beaches. Fragmentation, degradation and erosion of suitable beach nesting habitat, and increased disturbance by recreational beachgoers, threaten the continued existence of these charismatic birds. FWC, Audubon Florida, and Eckerd College staff work with land managers to protect critical nesting areas at Egmont Key National Wildlife Refuge and Shell Key County Preserve. Volunteer “Bird Stewards” attend to vulnerable beach nesting colony sites on busy weekends, educating beachgoers about the need to steer clear of shorebird colonies.
+
+Enforcement is also needed in critical nesting areas. People and their pets can trample nests and cause parent birds to take flight, leaving eggs or hatchlings vulnerable to predators and hot summer temperatures. 
+
+Beach renourishment, where and when appropriate, can help to maintain existing nest sites and create additional habitats. Man-made spoil islands used for disposal of material dredged from the bay bottom can serve a similar benefit (see Actions DR-1 and DR-2).
+
+Mangrove islands support colonial waterbirds. Bay mangrove islands support some of the most diverse waterbird nesting colonies in North America, annually hosting approximately 40,000 to 50,000 breeding pairs at nearly 30 estuary island sites and another 10 inland colony sites within the watershed. Some 23 species nest in colonies and another six species nest in or near bird colonies. Populations of several species (reddish egret, roseate spoonbill, American oystercatcher) are stable or increasing, while others are in decline (snowy egret, little blue heron, tricolored heron and white ibis). 
+
+```{r}
+tmp <- sf::st_read('https://atoll.floridamarine.org/arcgis/rest/services/Projects_FWC/WaterBirds/MapServer/0/query?returnGeometry=true&where=1=1&outFields=*&f=geojson')
 ```
 
 ```{r}

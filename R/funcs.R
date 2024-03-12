@@ -355,6 +355,55 @@ scallop_plo <- function(){
   
 }
 
+# fim catch plot
+fim_plo <- function(){
+  
+  load(file = here::here('data/fimdat.RData'))  
+
+  # cols <- c('#427355', '#5C4A42', '#958984', '#004F7E', '#00806E')
+  cols <- c('#5C4A42', '#004F7E', '#00806E')
+  
+  toplo <- fimdat |> 
+    dplyr::mutate(
+      yr = lubridate::year(date),
+      Commonname = factor(Commonname, levels = c('Pink Shrimp', 'Red Drum', 'Spotted Seatrout'))
+    ) |> 
+    dplyr::summarise(
+      avev = mean(Number), 
+      lov = t.test(Number)$conf.int[1],
+      hive = t.test(Number)$conf.int[2],
+      .by = c('yr', 'Commonname')
+    ) |> 
+    dplyr::filter(yr >= 1995)
+  
+  p <- ggplot2::ggplot(toplo, ggplot2::aes(x = yr, y = avev, color = Commonname, fill = Commonname)) +
+    ggplot2::geom_line() +
+    ggplot2::geom_errorbar(ggplot2::aes(ymin = lov, ymax = hive), width = 0.25) +
+    ggplot2::geom_point(pch = 21, color = 'black', size = 3) +
+    ggplot2::facet_wrap(~Commonname, scales = 'free_y', ncol = 1) +
+    ggplot2::scale_color_manual(values = cols) +
+    ggplot2::scale_fill_manual(values = cols) +
+    ggplot2::scale_y_continuous(expand = c(0, 0)) +
+    ggplot2::coord_cartesian(ylim = c(0, NA)) +
+    ggplot2::labs(
+      x = NULL, 
+      y = 'Number per set'
+    ) +
+    ggplot2::theme_minimal() + 
+    ggplot2::theme(
+      legend.position = 'none', 
+      panel.grid.minor.y = ggplot2::element_blank(), 
+      strip.text = ggplot2::element_text(size = 12),
+      # panel.grid.major.x = ggplot2::element_blank(),
+      panel.grid.minor.x = ggplot2::element_blank(),
+      axis.title.y = ggplot2::element_text(size = 12), 
+      axis.text.x = ggplot2::element_text(size = 11)
+    )
+    
+  return(p)
+  
+}
+
 # activity table ------------------------------------------------------------------------------
 
 # create expandable content for reactable
@@ -532,6 +581,25 @@ fw1_tab <- function(id, action){
     flextable::colformat_double(j = 4, digits = 1) |>
     flextable::bg(bg = "lightgray", part = "header") |> 
     flextable::align(align = 'left', part = 'all') |> 
+    flextable::border_remove() |> 
+    flextable::autofit()
+  
+  return(out)
+  
+}
+
+fw6turtles_tab <- function(id, action){
+
+  sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
+  sht <- na.omit(sht)
+  sht <- sht |> 
+    dplyr::mutate_at(dplyr::vars(-County), as.numeric)
+  
+  out <- flextable::flextable(sht) |> 
+    flextable::colformat_double(j = 2:ncol(sht), digits = 0, big.mark = ",") |>
+    flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::align(align = 'left', part = 'all') |> 
+    flextable::bold(i = 4) |> 
     flextable::border_remove() |> 
     flextable::autofit()
   
