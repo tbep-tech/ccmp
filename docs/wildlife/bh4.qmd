@@ -39,7 +39,7 @@ In 2016 the Southwest Florida Water Management District (SWFWMD) mapped an estim
 
 ```{r}
 #| tbl-cap: "Seagrass and Oyster Reef Extent by Bay Segment. SOURCE: SWFWMD"
-bh4_tab(maxyr = 2022)
+bh4_tab()
 ```
 
 SWFWMD has completed two other projects to locate, characterize and create finer-scale thematic maps of hard bottom and oyster reef habitats in Tampa Bay. The first project, funded by the Tampa Bay Environmental Restoration Fund (TBERF), focused on the southeast region of Tampa Bay from the mouth of the Little Manatee River to the mouth of Terra Ceia bay. The second project, funded by SWFWMD, focused on Old Tampa Bay, areas adjacent to MacDill Air Force Base, Terra Ceia Bay and the mouth of the Manatee River. Additionally, TBEP was awarded a grant from Pinellas County’s settlement funds from the Deepwater Horizon accident to map hard bottom habitat in bay waters offshore southeastern Pinellas County, using similar techniques as were employed by SWFWMD. Results of this work (completed in 2019) added to the mapped extent of these habitats within the bay [@tbep0819]. These mapping projects included field surveys utilizing a combination of side scan sonar, underwater video and ground truthing. Ground truthing will categorize biological communities associated with various hard bottom habitats, bathymetric relief, natural or artificial hard bottom and contiguous reef or hard rubble. 

@@ -1,11 +1,62 @@
 ---
 title: "SP-2"
+
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [SP-1](sp1.html) Continue implementation of advanced technology to improve coordination of ship movements in Tampa Bay <br>
+  [PA-1](../../docs/communities/pa1.html) Provide for and manage recreational uses of the bay <br>
+  [FW-6](fw6.html) Preserve the diversity and abundance of bay wildlife <br>
+  [PE-1](../../docs/communities/pe1.html) Promote public involvement in bay restoration and protection
 ---
 
 ```{r}
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
 ```
+
+Evaluate and update oil and hazardous material spill response plans for priority areas 
+
+### OBJECTIVES: 
+
+Monitor implementation of oil and hazardous material spill response plans. Encourage greater participation of the bay area environmental community in review of the Area Contingency Plan. Improve communication between stakeholders regarding planning and response for spills. Support maintenance of pre-staged equipment and deployment training for priority areas in the bay.
+
+### STATUS: 
+
+Maintain and expand action to encourage greater communication and participation among stakeholders, including increased engagement between United States Coast Guard, spill responders and the environmental community and periodic training for partners and volunteers. 
+
+### BACKGROUND:
+
+From March 30th to April 9th, 2021 approximately 215 million gallons of mixed seawater-process water from Piney Point were discharged into Tampa Bay. The Tampa Bay Estuary Program mobilized a coordinated [environmental monitoring response](https://tbep.org/piney-point/){target="_blank"} to understand conditions immediately prior to, during, and after the onset of the initial discharge into Lower Tampa Bay. Prior to that incident, a major chemical spill in 2004 released 65 million gallons of acidic process water from a containment system at the Mosaic fertilizer manufacturing plant into Archie Creek and Hillsborough Bay during Hurricane Frances.
+
+A major oil spill occurred in Tampa Bay in 1993, when a three-vessel collision at the mouth of the bay spilled 300,000 gallons of oil. In September 2023, 20,500 gallons of water and crude oil and 6.4 tons of oily debris were recovered from the inner harbor of Port Manatee after a spill from an unknown source. The spill was contained within the port with the cleanup and investigation costing  $1.17 million.
+
+![Ongoing research conducted by the University of South Florida is providing important insights into the long-term impacts of the 2010 Deepwater Horizon spill in the Gulf of Mexico. SOURCE: USF](../../img/SP-2-1 Spill Response-USF research ship.jpg)
+
+The United States Coast Guard Area Contingency Plan (USCG ACP) is the guiding document for response and cleanup of oil or other hazardous material spills in Tampa Bay. Now completely digital, the ACP comprehensively describes response protocols, provides an inventory of equipment and personnel and identifies sensitive areas and natural resources. It is reviewed annually, and individual elements are updated as needed. A full-scale test of the Plan is conducted every four years, at a cost of more than \$100,000, with smaller “tabletop” tests done more frequently.
+
+Spatial analysis tools developed by the Florida Fish and Wildlife Conservation Commission (FWC) for the Florida Marine Spill Analysis System are an important component of the Plan. The tools allow users to view geographic data, maps and imagery depicting sensitive ecological resources, public beaches and populations — or create custom maps to predict potential spill impacts. The vulnerability of coastal resources to spill impacts is characterized using an Environmental Sensitivity Index, with 10 being most sensitive and 1 being least sensitive. Areas of Tampa Bay considered most at risk from spills include the Cockroach Bay and Terra Ceia Aquatic Preserves, and the waters around Fort DeSoto Park. 
+
+A powerful feature is the ability to produce real-time maps during a spill; this asset helped coordinate deployment of equipment and personnel in Florida during the 2010 Deepwater Horizon spill in the Gulf of Mexico. 
+
+![The U.S. Coast Guard Air Station in Clearwater provides air reconnaissance and support for spill monitoring and cleanup operations throughout the Gulf of Mexico.](../../img/SP-2-2 coast guard station.jpg)
+
+Unannounced drills to test the region’s readiness to respond to a major spill are conducted four times each year by the USCG. These involve agencies across all levels of government, as well as a regional oil spill cooperative of industries that handle hazardous cargo, such as petroleum products and chemicals used in fertilizer processing. The Tampa Bay Regional Planning Council assists with these exercises through the Local Emergency Planning Committee (LEPC). The LEPC also helps to collect and track information about hazardous materials over a 6-county region. 
+
+A Tampa Bay Spill Committee composed of representatives of the USCG, local and state environmental agencies, port tenants, law enforcement, and emergency responders meets monthly to work cooperatively on ways to reduce spills, including regular inspections of facilities with chemical or petroleum products.
+
+Additionally, facilities that handle anhydrous ammonia have an Ammonia Working Group that meets monthly to review safety and discuss best practices for operation and maintenance. Spill planning and response also is a key concern of the Tampa Harbor Safety and Security Committee. The staff coordinator of the Agency on Bay Management is a member of this committee; an alternate is needed to ensure consistent representation. 
+
+About 8,000 feet of oil boom is pre-staged in four trailers at E. G. Simmons Park near Cockroach Bay Aquatic Preserve for rapid deployment and anchoring to prevent oil from reaching sensitive areas.  The equipment is old and not regularly inspected or maintained. In 2021, the Hillsborough County Marine Safety Unit (MSU) conducted an inventory of one trailer revealing twenty sections of 100’ X 18” of serviceable containment boom, anchors, chain, and mooring buoys. In 2023, the MSU is developing plans for the transportation, maintenance, and deployment of the equipment and working to identify the condition of additional equipment deposited at the site. This inventory will be followed by training with the equipment for future deployment.
+
+The most recent training session in deploying the boom was held after the Deepwater Horizon spill. This is the only pre-staged equipment for an ecologically sensitive area within Tampa Bay; other important areas that could benefit from pre-spill planning, equipment storage and deployment training include Weedon Island Preserve, Fort De Soto Park, Terra Ceia Aquatic Preserve and the Richard T. Paul Alafia Bank Audubon bird sanctuaries. 
+
+![Extensive mangrove islands and seagrass beds place Hillsborough County’s Cockroach Bay Aquatic Preserve at high risk of significant damage from oil spills.](../../img/SP-2-3 cockroach bay.jpg)
+
+During the 1993 oil spill, Tampa Bay wildfire rescuers gained international attention for their success in rehabilitating oiled birds. Today, there is a potentially severe shortage of locally-based trained volunteers, certified rehabilitators and facilities to handle oiled wildlife, especially seabirds. The USCG does not have a database of trained volunteers, but many biologists have Hazardous Waste Operations and Emergency Response (HAZWOPER) training. The USCG ACP includes specific points of contact for different types of animals and third party contractors who can respond to emergencies.
+
+Following the Deepwater Horizon oil spill in 2010, TBEP staff provided input to state and federal damage assessment efforts. Tampa Bay monitoring programs provide important baseline information for assessing pre-spill conditions and for predicting spill trajectories in the bay. Baseline monitoring, coupled with regional, state or national modeling efforts (such as NOAA’s Operational Nowcast and Forecast Hydrodynamic Model Systems), is a powerful tool for forecasting spill behavior and impacts. Post-spill research being conducted by the University of South Florida, FWC and others is providing new and important insights into the long-term ecological effects of spills.
+
+In general, the Tampa Bay region has made significant strides in spill readiness and demonstrated an admirable spirit of cooperation among public and private interests. More active and consistent engagement with the environmental community will help ensure that up-to-date information about vulnerable coastal resources is incorporated in the ACP, and that the bay’s most vulnerable areas and wildlife populations are broadly recognized priorities for protection in the event of a spill.
 
 ```{r}
 act_tab(rmarkdown::metadata$title)

@@ -1,11 +1,75 @@
 ---
 title: "DR-2"
+
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [BH-2](bh2.html) Establish and implement mitigation criteria <br>
+  [BH-4](bh4.html) Identify hard bottom communities and avoid impacts <br>
+  [BH-6](bh6.html) Encourage habitat enhancement along altered waterfront properties <br>
+  [DR-1](dr1.html) Develop a plan for beneficial uses of dredged material in Tampa Bay  
 ---
 
 ```{r}
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
 ```
+
+Continue to minimize impacts to bay wildlife and their habitats from dredging activities
+
+### OBJECTIVES: 
+
+Improve dredging and dredged material disposal practices to minimize impacts to wildlife and their habitats. Support research to better understand and quantify the effects of dredging on wildlife. Develop recommendations for Best Management Practices (BMPs) for regional beach and shoreline renourishment projects to better safeguard key species. Track development of new technologies to better protect wildlife during dredging. 
+
+### STATUS: 
+
+New Action
+
+### BACKGROUND:
+
+Dredging operations, including removal and disposal of dredged materials, can kill, injure, impact reproduction or alter the behavior of bay wildlife — including shorebirds, sea turtles and manatees. The type of dredging equipment used, as well as the location, timing and duration of the project, influence which wildlife species may be affected.
+
+![Clamshell dredging in Tampa Bay. This technique uses a “clamshell” bucket with hinged jaws, suspended from a crane aboard a barge. SOURCE: Nanette O’Hara](../../img/DR-2-1 clamshell dredging.jpg)
+
+Potential dredging impacts to Tampa Bay wildlife include:
+
+* Disturbance or destruction of nesting habitats for turtles or shorebirds during placement of dredged material on beaches or spoil islands.
+* Smothering of shoreline bivalve and crab populations during placement of dredged materials on beaches, destroying feeding grounds for shorebirds and important recreational fish.
+* Reduction of sea turtle nesting success due to incompatible sediment types placed on nesting beaches.
+* Physical impacts to manatees and sea turtles during active dredging operations, such as hopper dredge buckets.
+* Collisions with wildlife during movement of vessels associated with dredging operations.
+* Higher turbidity levels caused by resuspension of sediment during dredging. 
+* Increased light levels associated with dredging operations at night. Nighttime dredging also poses inherent risks to manatees and other animals, as they are less likely to be visible. 
+* Displacement, smothering or death of benthic organisms such as worms or snails or small, bottom-dwelling fishes during dredging and transport activities.
+	
+Precautions to minimize impacts of dredging activities exist. For example, federal regulations require the United States Army Corps of Engineers (USACE) to consult with the National Oceanic and Atmospheric Administration’s National Marine Fisheries Service (NOAA NMFS) on all federally authorized dredging projects. Prudent scheduling of projects can avoid or minimize disruption to shorebird or sea turtle nesting. Trained observers may alert project personnel to the presence of sea turtles or manatees, and temporarily halt dredging to avoid conflicts. Moreover, gear modifications, such as drag deflectors that prevent sea turtles from being drawn into hopper dredges, can prevent deaths and injuries.
+
+![Physical impacts to manatees and turtles can occur during active dredging operations, such as this juvenile loggerhead sea turtle.](../../img/DR-2-2 Photo_juvenile sea turtle.jpg)
+
+Strategies for protecting wildlife during and after dredging have been developed by agencies such as the Florida Department of Environmental Protection (FDEP), the Florida Fish and Wildlife Conservation Commission (FWC), NMFS and the United States Fish and Wildlife Service (USFWS).
+ 
+FWC’s standard manatee protection conditions are required protocols during active dredging and include: trained observers who can halt in-water operations when manatees are observed within a 50-foot radius; idle speed/no wake operation of vessels at all times when draft is less than four-feet clearance; use of siltation or turbidity barriers that do not entangle or entrap manatees; immediate reporting of collisions or injuries; and erecting speed zone signs prior to all in-water project activities. Manatee observers were extensively used during excavation and installation of the Gulfstream natural gas pipeline that runs underneath Tampa Bay. No standardized training or certification is required for observers; they are approved on a case-by-case basis. Additionally, there is no outright prohibition on nighttime dredging with clamshell buckets, although no manatee injuries have been reported from clamshell dredging at night in Tampa Bay.
+
+USFWS has taken the lead on measures to protect nesting sea turtles, while NOAA has led efforts to reduce dredging-related mortality of sea turtles and sawfish. An annual “incidental take” allowance of sea turtles applies to all federal dredging projects using hopper dredges in the Gulf of Mexico.
+
+Audubon Florida’s Coastal Islands Sanctuaries staff plays a critical role in providing guidance to reduce impacts to birds that nest on two large manmade islands in Hillsborough Bay, 2D and 3D, by identifying nesting times and providing observers during dredge disposal operations. These Dredge Material Management Areas (DMMAs) are important disposal sites for ongoing maintenance dredging of shipping channels and port facilities conducted by the USACE and Port Tampa Bay. 
+
+![Manmade islands in Hillsborough Bay, 2D and 3D, are bird nesting areas. SOURCE: TBEP](../../img/DR-2-3 MAP 2D and 3D islands.jpg){width=50%}
+
+Together, islands 2D and 3D annually host nesting pairs of 14 species, including imperiled American Oystercatchers, Least Terns, and Black Skimmers, and one of the most important Laughing Gull colonies in the United States.
+
+Local Audubon managers have worked cooperatively with USACE and Port Tampa Bay to develop a Migratory Bird Protection Policy and detailed Site-Specific Bird Protection Plan for dredging activities on DMMA 2D and 3D. This Plan is reviewed by the multi-stakeholder Migratory Bird Protection Committee coordinated by Port Tampa Bay. Guidelines in the Plan are incorporated in dredging contracts as requirements or recommended practices.
+
+Dredging offers opportunities to enhance wildlife protection, through beneficial use of dredge material to create or restore habitat. For example, material from the dredging of the turning basin at the mouth of the Alafia River was placed on the shoreline of the Richard T. Paul Alafia Bank Bird Sanctuary to slow erosion of this extremely valuable colonial waterbird nesting colony (see Action [BH-6](bh6.html)). The 2019 Regional Sediment Management Plan for Tampa Bay [@hershorin2019], a systems approach to managing sediments to maximize environmental and economic benefits, recommends beneficial use projects that improve wildlife habitat (see Action [DR-1](dr1.html)). 
+
+Renourishment of area beaches with dredged material from Tampa Bay is generally avoided because the material is typically not of sufficient quality to meet state requirements for use on sandy beaches. These rules offer some protection to nesting turtles and shorebirds; however, concerns about the impact of renourishment on sea turtles and beach-nesting birds remain. Use of coarse material, along with compaction from heavy equipment, may prevent turtles or beach-nesting birds from successfully excavating nests; and the slope and elevation of the completed projects may inhibit nesting, or lead to flooding of nests. Placing fill on beaches during nesting periods may remove important nursery areas for all or a significant portion of that nesting season. Relocation, when necessary, may not be as successful.
+
+![The type of material used for beach renourishment, as well as the timing and placement, may reduce the nesting success of sea turtles on barrier island beaches. SOURCE:  Blair Witherington](../../img/DR-2-4 loggerhead turtle.jpg)
+
+In 2015, Egmont Key received dredged material that did not meet state criteria as an emergency measure to reduce erosion threatening historic structures on the island. USACE funded a study by Eckerd College researchers in summer 2016 to assess whether, and to what extent, turtle nesting was affected. Egmont Key also is an important and vulnerable nursery for beach-nesting birds, particularly Laughing Gulls and Royal and Sandwich Terns.
+
+USACE is investigating improvements to operating procedures to better protect wildlife. Current initiatives include more advanced sighting techniques for marine mammals (such as thermal or infrared technology) that can be performed by human observers. 
+
+Improved coordination and communication about dredging activities, standardized training of on-water observers, and technological advances can enhance protection of bay wildlife during dredging and disposal activities in the future.
 
 ```{r}
 act_tab(rmarkdown::metadata$title)

@@ -73,13 +73,39 @@ Beaches are vital for shorebirds. More than 45,000 pairs of beach-nesting birds,
 
 Enforcement is also needed in critical nesting areas. People and their pets can trample nests and cause parent birds to take flight, leaving eggs or hatchlings vulnerable to predators and hot summer temperatures. 
 
-Beach renourishment, where and when appropriate, can help to maintain existing nest sites and create additional habitats. Man-made spoil islands used for disposal of material dredged from the bay bottom can serve a similar benefit (see Actions DR-1 and DR-2).
+Beach renourishment, where and when appropriate, can help to maintain existing nest sites and create additional habitats. Man-made spoil islands used for disposal of material dredged from the bay bottom can serve a similar benefit (see Actions [DR-1](dr1.html) and [DR-2](dr2.html)).
 
 Mangrove islands support colonial waterbirds. Bay mangrove islands support some of the most diverse waterbird nesting colonies in North America, annually hosting approximately 40,000 to 50,000 breeding pairs at nearly 30 estuary island sites and another 10 inland colony sites within the watershed. Some 23 species nest in colonies and another six species nest in or near bird colonies. Populations of several species (reddish egret, roseate spoonbill, American oystercatcher) are stable or increasing, while others are in decline (snowy egret, little blue heron, tricolored heron and white ibis). 
 
 ```{r}
-tmp <- sf::st_read('https://atoll.floridamarine.org/arcgis/rest/services/Projects_FWC/WaterBirds/MapServer/0/query?returnGeometry=true&where=1=1&outFields=*&f=geojson')
+#| fig-cap: "Active waterbird colonies in the Tampa Bay watershed. SOURCE: [FWC](https://myfwc.maps.arcgis.com/apps/webappviewer/index.html?id=cdd4eb21e8284d2dbeb2b0e4596b7ea0){target='_blank'}"
+#| fig-width: 5
+#| fig-height: 6
+#| fig-align: center
+#| out-width: 60%
+waterbird_plo()
 ```
+
+The two islands comprising the Richard T. Paul Alafia Bank Bird Sanctuary are among the largest and most diverse waterbird colonies in the continental United States, with nearly 18,000 nesting pairs of 16 to 20 species of birds. Erosion, caused by storm waves and boat wakes, is a significant threat to these and other nesting island and shorelines in the watershed. More than 2,000 feet of oyster reef was created as a wave break for Alafia Bank to slow erosion, improve water quality, and promote growth of salt marsh and mangroves. Another 4,750 feet of living shoreline is being installed with funds from the federal RESTORE Act. 
+
+In November 2016, FWC created 13 new and five expanded Critical Wildlife Areas (CWA) in Florida, designed to protect important habitat sites where wildlife nest, breed and forage. A new CWA was established at Dot-Dash-Dit Island at the mouth of the Braden River, which hosts the bay’s only coastal colony of wood storks. The existing CWA at Alafia Bank was expanded. The designation creates a 100-foot buffer around these bird colonies with year-round closures to protect them. Identification of suitable alternative colony nest sites is needed, as natural disasters may eliminate entire nesting populations or habitats. Additionally, colonies may abandon a nesting site for unknown reasons.
+
+A variety of wildlife already is monitored in the bay watershed—from routine sampling of benthic creatures on the bay bottom by the Environmental Protection Commission of Hillsborough County (EPCHC), to stock assessments of popular sportfish by FWC, to manatee counts conducted in the winter when manatees congregate at power plants.
+
+![Tampa Electric’s Big Bend Power Plant is an important warm-water refuge for manatees in the winter. Visitors from near and far come to see the animals in the discharge canal. SOURCE: FWC](../../img/FW-6-3 Photo 4 manatees at TECO.jpg)
+
+The Tampa Bay Estuary Program’s Bay Mini-Grant program has funded baseline surveys of seahorses and pipefish, neo-tropical migratory songbirds, diamondback terrapins and a rare freshwater turtle recently “re-discovered” in the Alafia River. Community-based programs enlist citizen volunteers to report sightings of mating horseshoe crabs (FWC), count bay scallops (Tampa Bay Watch), collect abandoned, derelict crab traps that continue to ‘ghost fish’ (Tampa Bay Watch), retrieve and recycle fishing line that can entangle and kill birds (Tampa Bay Watch, Audubon Florida), and train “Bird Stewards” to help protect posted shorebird nest sites.
+
+In 2016, FWC adopted new rules for imperiled species detailed in a comprehensive Imperiled Species Management Plan (ISMP) which became effective January 2017. The ISMP addresses individual species in Action Plans containing specific conservation goals, objectives and actions. In addition, the ISMP describes integrated conservation strategies to benefit multiple species and their shared habitats. It focuses on 57 imperiled species in Florida.
+
+```{r}
+#| tbl-cap: 'Endangered, threatened or at risk species in the Tampa Bay watershed. SOURCE: USFWS, [FWC](https://myfwc.com/media/1945/threatened-endangered-species.pdf){target="_blank"}'
+fw6species_tab(params$id, paste(rmarkdown::metadata$title, 'species'))
+```
+
+TBEP participates in collaborative partnerships within the Tampa Bay and Southwest Florida region to review and coordinate habitat restoration and protection initiatives (see Actions [BH-1](bh1.html), [BH-2](bh2.html), [BH-3](bh3.html), and [BH-9](bh9.html)). These initiatives include identification of priority sites for acquisition and mitigation. 
+
+TBEP has been a leader in educating bay users about responsible water recreation, through boating guides, ethical fishing information and sponsorship of “Leave No Trace” outdoor etiquette workshops. TBEP also informs waterfront homeowners about ways to enhance their shorelines for fish and wildlife, and about coexisting with wildlife.
 
 ```{r}
 act_tab(rmarkdown::metadata$title)

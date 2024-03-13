@@ -1,11 +1,68 @@
 ---
 title: "DR-1"
+
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [BH-4](bh4.html) Identify hard bottom communities and avoid impacts <br>
+  [PA-1](../../docs/communities/pa1.html) Provide for and manage recreational uses of the bay
 ---
 
 ```{r}
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
 ```
+
+Develop a plan for beneficial uses of dredged material in Tampa Bay
+
+### OBJECTIVES: 
+
+Coordinate projects that generate dredged material with those that could use the material for beneficial uses. Complete the Tampa Bay Regional Sediment Management Plan to develop and prioritize locations for utilization of sediment generated through dredging activities. Continue to encourage and implement environmentally beneficial uses of dredged material. 
+
+### STATUS: 
+
+Ongoing. Long-term Dredged Material Management Plan (DMMP) was adopted in 2002 and updated in 2011. Regional Sediment Management Plan was completed in 2019. High priority projects are: Continued research, dredging and restoration activities included in the Dredged Hole Habitat Assessment; longshore bar creation; McKay Bay dredged hole restoration; and Egmont Key shoreline stabilization. Focus of this action shifted to implementation of beneficial use projects.
+
+### BACKGROUND:
+
+Tampa Bay has three major ports or deep-draft harbors: Port Tampa Bay, Port Manatee and the Port of St. Petersburg. Port Tampa Bay (formerly the Port of Tampa) is among the nation’s busiest, handling one-third of the cargo moving in and out of Florida and some 900,000 cruise ship passengers yearly. Port Manatee is the closest U.S. deepwater seaport to the expanded Panama Canal — important exports include citrus juices, phosphate products and construction equipment. 
+
+![Bay managers are working with area ports and the U.S. Army Corps of Engineers to beneficially use material that must be scooped from shipping channels and berths to maintain safe navigation. SOURCE: Nanette O’Hara](../../img/DR-1-1 Photo 2 Dredge Port Redwing.jpg)
+
+Dredging to maintain the bay’s approximately 80 miles of nautical highways, which can be 43 feet deep in places, generates from 1 to 1.5 million cubic yards of material annually. Dredging is conducted primarily by the United States Army Corps of Engineers (USACE), which maintains all federal channels. Port Tampa Bay and Port Manatee maintain regional channels and port facilities [@tbep0393].
+
+Maintenance dredging occurs on a regular schedule with sections or “cuts” of the channels dredged each year to ensure safe navigation. In general, areas in the upper bay are dredged every 4-6 years; the lower bay is dredged every 8-10 years, and Port Manatee is dredged every 3-5 years. Dredging to create new channels, port berths or port-related development occurs on an intermittent, less frequent basis. New berths may generate from 300,000 to 400,000 cubic yards of material, while expanding or deepening existing channels could general several million cubic yards of material.
+
+![SOURCE: US Army Corps of Engineers](../../img/DR-1-2_dredging by the numbers infographic.png)
+
+Sediments dredged from the upper bay, where most dredging historically occurred, has traditionally been piped onto two man–made islands in Hillsborough Bay (Dredged Material Management Areas 2D and 3D). Dikes on these islands have been raised over time to increase their total capacity. Material dredged from the lower bay is generally placed on the shoreline of Egmont Key, an island at the mouth of Tampa Bay. Material dredged from Manatee Harbor is typically placed at upland locations on Port Manatee property. Dredged materials are occasionally placed at other upland locations to facilitate habitat restoration projects. An Ocean Dredged Material Disposal Site, approximately 18 miles offshore of Egmont Key, is still available, but has not been used since the late 1990s. 
+
+![Two manmade islands in Tampa Bay are important disposal sites for dredged material. SOURCE: Port Tampa Bay](../../img/DR-1-4 Photo 3 spoil island 3D.jpg)
+
+USACE is required to develop a Dredged Material Management Plan (DMMP) for each of its federal navigation projects to demonstrate sufficient disposal capacity for a minimum of 20 years. DMMPs describe how much new material will be dredged during any proposed deepening and widening work; the volumes to be dredged to maintain the federal channels; and how dredged materials will be managed in an economically and environmentally sound manner. The Tampa Harbor DMMP was originally approved in 2002 [@tbep0100] and updated in 2011 [@usace2011]. Input to Plan updates is provided by the Tampa Bay Dredging Advisory Group, a sub-committee of the Tampa Bay Estuary Program (TBEP) Technical Advisory Committee. 
+
+The USACE worked with Tampa Bay stakeholders to identify the most viable opportunities for beneficial use of dredged materials. This new effort is referred to as Regional Sediment Management (RSM), a systems approach to managing sediments to maximize environmental and economic benefits. A review of RSM implementation strategies and recommendations for ecosystem restoration in Tampa Bay was completed in 2019 [@hershorin2019]. RSM recommended strategies for ecosystem restoration include: 1) beach renourishment, 2) nearshore placement, 3) dredged hole filling, 4) island creation/stabilization, 5) longshore pbars, and 6) thin layer placement for mitigating sea-level rise.
+
+![A deep dredge hole at Port Tampa Bay has been partially filled to improve water quality. SOURCE: Dennis Crnolatas](../../img/DR-1-3 Dredge hole McKay Bay.jpg)
+
+Implementing beneficial uses of dredge material can be challenging because USACE must identify the “least-cost, environmentally acceptable” placement option. Transportation costs associated with beneficial uses may be high. A complicating factor is that most dredged material from Tampa Bay is silty material that is not ideal for some beneficial uses, including beach nourishment. 
+
+Despite these constraints, USACE can often conduct beneficial use projects at low or no additional cost, if regional consensus about desired projects is proactive and projects are aligned with maintenance dredging schedules. Under USACE’s Continuing Authorities Program small-scale beneficial use projects may be implemented in shorter timeframes.
+
+Filling holes in the bay left from decades-old dredging projects (such as creation of residential finger-fill canals) offers one potential beneficial use, where filling or partially filling the holes will improve habitat value and foster seagrass recovery.
+
+In 2012, Port Tampa Bay and the Southwest Florida Water Management District partnered on a project to partially fill the McKay Bay dredge hole to improve water quality. The project utilized dredge material from port expansion and mitigation activities. Two other holes, MacDill Runway and Big Island, have been partially filled since the 2005 study. 
+
+TBEP led a research project completed in 2019 to determine the ecological value of ten dredged holes in the bay based on water and sediment quality and importance as fish habitat [@tbep0219]. Four dredged holes were recommended for management activities, including partial or total fill to alleviate sediment toxicity and/or low dissolved oxygen issues and create the potential for seagrass habitat.
+
+![Dredge holes evaluated for potential restoration or enhancements as fisheries habitat. SOURCE: TBEP](../../img/DR-1-5 _ Map of dredge holes.png){width=50%}
+
+Dredged material also could be used to fill old mosquito control ditches, or to re-create shallow-water sandbars in the bay. The longshore bar concept was tested in a pilot project adjacent to MacDill Air Force Base as a strategy for restoring seagrass [@tbep0613]. The project evaluated the wave-dampening effectiveness of four different materials: riprap, rubble, reef balls and a sandbar covered with small riprap.
+
+Project results to date have been inconclusive regarding seagrass expansion. However, the bars have maintained their structural integrity, provide fish habitat and appear to dampen wave energy. Similar projects in other coastal areas, such as North Carolina, have documented success in improving seagrass habitat. Although not a cost-effective, long-term strategy for seagrass recovery in Tampa Bay, it may be viable when appropriate fill material is available and historic longshore bars can be restored. Another possibility is to create sandbars that will gradually erode, allowing seagrasses to migrate inland as sea level rises.
+
+Use of rocky dredged material to create additional hard bottom habitat in Tampa Bay will be examined in the hard bottom mapping project (see Action [BH-4](bh4.html)). 
+
+Other potential beneficial uses for dredged material include creation of habitat for nesting shorebirds, construction of nearshore bars for coastal storm protection, filling of borrow pits and artificial “lakes” close to the bay and thin-layer placement of sediment within coastal wetlands to prevent erosion as sea level rises.
 
 ```{r}
 act_tab(rmarkdown::metadata$title)

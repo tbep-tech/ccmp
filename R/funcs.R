@@ -404,6 +404,45 @@ fim_plo <- function(){
   
 }
 
+waterbird_plo <- function(){
+  
+  # from https://myfwc.maps.arcgis.com/apps/webappviewer/index.html?id=cdd4eb21e8284d2dbeb2b0e4596b7ea0
+  # rest API here https://atoll.floridamarine.org/arcgis/rest/services/Projects_FWC/WaterBirds/MapServer
+  # seems like "water bird colonies" layer uses STATUS90 as status
+  rawdat <- sf::st_read('https://atoll.floridamarine.org/arcgis/rest/services/Projects_FWC/WaterBirds/MapServer/0/query?returnGeometry=true&where=1=1&outFields=*&f=geojson', quiet = T)
+  
+  data(file = 'tbshed', package = 'tbeptools')
+  
+  tomap <- rawdat[tbshed, ] |> 
+    dplyr::select(status = STATUS90) |> 
+    dplyr::mutate(
+      status = factor(status, levels = c('Active', 'Inactive', 'Not checked'))
+    ) 
+  
+  cols <- c(Active = '#2DC938', Inactive = '#CC3231', `Not checked` = '#E9C318')
+    
+  m <- ggplot2::ggplot() +
+    ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
+    ggspatial::annotation_scale(location = 'br', unit_category = 'metric') +
+    ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
+    ggplot2::geom_sf(data = tomap, ggplot2::aes(fill = status), col = 'black', pch = 21, inherit.aes = F, size = 3) +
+    # ggplot2::scale_color_manual(values = cols) +
+    ggplot2::scale_fill_manual(values = cols) + 
+    ggplot2::labs(
+      x = NULL, 
+      y = NULL, 
+      color = NULL, 
+      fill = NULL
+    ) +
+    ggplot2::theme_minimal() +
+    ggplot2::theme(
+      legend.position = 'top'
+    )
+  
+  return(m)
+  
+}
+
 # activity table ------------------------------------------------------------------------------
 
 # create expandable content for reactable
@@ -512,39 +551,11 @@ ph5_tab <- function(id, action){
 }
 
 # this gets seagrass and oyster coverage estimate by segment
-bh4_tab <- function(maxyr = 2022){
+bh4_tab <- function(){
+  
+  load(file = here::here('data/sgdat.RData'))
   
   segs <- c('Old Tampa Bay', 'Hillsborough Bay', 'Middle Tampa Bay', 'Lower Tampa Bay', 'Boca Ciega Bay', 'Manatee River', 'Terra Ceia Bay')
-  
-  intseg <- sgseg |> 
-    dplyr::filter(segment %in% segs) |>
-    st_make_valid()
-  
-  sgurl <- paste0('https://github.com/tbep-tech/hmpu-workflow/raw/master/data/sgdat', maxyr, '.RData')
-  sgdatraw <- rdataload(sgurl)
-  
-  sgdat <- sgdatraw |> 
-    dplyr::filter(FLUCCSCODE %in% c(6540, 9113, 9116)) |> 
-    dplyr::mutate(
-      hab = dplyr::case_when(
-        FLUCCSCODE == 6540 ~ 'Oyster',
-        FLUCCSCODE == 9113 ~ 'Patchy seagrass',
-        FLUCCSCODE == 9116 ~ 'Continuous seagrass'
-      )
-    ) |>
-    st_transform(st_crs(intseg)) |> 
-    st_intersection(intseg)
-  
-  sgdat <- sgdat |>
-    dplyr::mutate(
-      acres = st_area(x = sgdat),
-      acres = units::set_units(acres, acres)
-    ) |> 
-    st_set_geometry(NULL) |> 
-    dplyr::summarise(
-      acres = sum(acres), 
-      .by = c(segment, hab)
-    )
   
   totab <- sgdat |> 
     dplyr::mutate(
@@ -601,6 +612,34 @@ fw6turtles_tab <- function(id, action){
     flextable::align(align = 'left', part = 'all') |> 
     flextable::bold(i = 4) |> 
     flextable::border_remove() |> 
+    flextable::autofit()
+  
+  return(out)
+  
+}
+
+fw6species_tab <- function(id, action){
+
+  sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
+  
+  # find class rows
+  grys <- which(sht$`Common Name` %in% c('Birds', 'Fishes and Elasmobranchs', 'Insects', 'Mammals', 'Reptiles'))
+  
+  # find footer data and remove from sht
+  allna <- which(rowSums(is.na(sht)) == ncol(sht))
+  fts <-sht[(allna + 1):nrow(sht), 'Common Name', drop = T]
+  sht <- sht[1:(allna - 1), ]
+  
+  out <- flextable::flextable(sht) |> 
+    flextable::bg(bg = "lightgray", part = "header") |>
+    flextable::bg(bg = 'lightgrey', part = 'body', i = grys) |>
+    flextable::align(align = 'left', part = 'all') |> 
+    flextable::italic(j = 2, part = 'body') |> 
+    flextable::bold(i = grys, part = 'body') |>
+    flextable::bold(i = 1, part = 'header') |> 
+    flextable::border_remove() |> 
+    flextable::add_footer_lines(values = fts) |>
+    flextable::fontsize(size = 8, part = 'footer') |>
     flextable::autofit()
   
   return(out)

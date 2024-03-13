@@ -32,6 +32,47 @@ save(activities, file = here('data/activities.RData'))
 download.file(url = 'https://github.com/tbep-tech/load-estimates/raw/main/data/tnanndat.RData', 
               destfile = here('data/tnanndat.RData'))
 
+
+# seagrass data intersected with bay segments -------------------------------------------------
+
+maxyr <- 2022
+
+segs <- c('Old Tampa Bay', 'Hillsborough Bay', 'Middle Tampa Bay', 'Lower Tampa Bay', 'Boca Ciega Bay', 'Manatee River', 'Terra Ceia Bay')
+
+data('sgseg', package = 'tbeptools')
+
+intseg <- sgseg |> 
+  dplyr::filter(segment %in% segs) |>
+  sf::st_make_valid()
+
+sgurl <- paste0('https://github.com/tbep-tech/hmpu-workflow/raw/master/data/sgdat', maxyr, '.RData')
+sgdatraw <- rdataload(sgurl)
+
+sgdat <- sgdatraw |> 
+  dplyr::filter(FLUCCSCODE %in% c(6540, 9113, 9116)) |> 
+  dplyr::mutate(
+    hab = dplyr::case_when(
+      FLUCCSCODE == 6540 ~ 'Oyster',
+      FLUCCSCODE == 9113 ~ 'Patchy seagrass',
+      FLUCCSCODE == 9116 ~ 'Continuous seagrass'
+    )
+  ) |>
+  sf::st_transform(sf::st_crs(intseg)) |> 
+  sf::st_intersection(intseg)
+
+sgdat <- sgdat |>
+  dplyr::mutate(
+    acres = sf::st_area(x = sgdat),
+    acres = units::set_units(acres, acres)
+  ) |> 
+  sf::st_set_geometry(NULL) |> 
+  dplyr::summarise(
+    acres = sum(acres), 
+    .by = c(segment, hab)
+  )
+
+save(sgdat, file = here::here('data/sgdat.RData'))
+
 # FIM data from FTP ---------------------------------------------------------------------------
 
 ftp_url <- "ftp://ftp.floridamarine.org/users/fim/DataMgt/Inshore_SAS_Data/FIM_inshore_SAS_database_library_20240222.zip"
