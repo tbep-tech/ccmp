@@ -443,6 +443,84 @@ waterbird_plo <- function(){
   
 }
 
+gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 5){
+  
+  gaddat <- rdataload('https://github.com/tbep-tech/State-of-the-Bay/raw/master/data/gaddat.RData')
+  
+  datsum <- gaddat |> 
+    dplyr::filter(year >= 2019) |> 
+    dplyr::mutate(
+      nvols = nadults + nyouth
+    ) |> 
+    # select(-nadults, -nyouth) |> 
+    tidyr::pivot_longer(-year, names_to = 'var', values_to = 'val') |> 
+    dplyr::group_by(var) |> 
+    dplyr::summarise(
+      val = sum(val, na.rm = T), 
+      .groups = 'drop'
+    ) |> 
+    tidyr::pivot_wider(names_from = 'var', values_from = 'val') |> 
+    dplyr::mutate(
+      ntons = nlbs / 2e3, 
+      ntons = round(ntons, 1)
+    ) |> 
+    dplyr::mutate_all(function(x) format(x, big.mark = ',', scientific = FALSE))
+  
+  txt <- tibble::tibble(
+    name = c('nevent', 'nvols', 'nlbs', 'nplants', 'npartner'),
+    info = c('Event areas are prioritized by the presence of excessive litter & native habitat degradation, often overlapping with neighborhoods that have historically not received the support to facilitate restorative activities.',
+             paste(datsum$nadults, 'adults &', datsum$nyouth, 'youths helped to protect and restore the bay this season.'),
+             'Including trash, invasive plants & marine debris.', 
+             "Native plants increase the bay's resiliency a& restore crucial wildlife habitat.",
+             'Our partners play an invaluable role in recruiting volunteers to help us put in work!'
+    ), 
+    txtadd = c('EVENTS', 'VOLUNTEERS', 'LBS REMOVED', 'PLANTS INSTALLED', 'PARTNERS'),
+    icon = paste0('fa-', c('calendar', 'users', 'trash', 'tree', 'handshake-o')), 
+    txtcols = c("#08306B", "#08306B", "#F7FBFF", "#F7FBFF", "#F7FBFF")
+  )
+  
+  cols <- nrow(txt) / rows
+  
+  toplo <- datsum |> 
+    tidyr::pivot_longer(dplyr::everything()) |> 
+    dplyr::inner_join(txt, by = 'name') |> 
+    tidyr::unite('value', value, txtadd, sep = ' ') |> 
+    dplyr::mutate(
+      h = h,
+      w = w,
+      icon = emojifont::fontawesome(icon),
+      font_family = 'fontawesome-webfont',
+      name = factor(name, levels = rev(txt$name))
+    ) |>  
+    dplyr::arrange(name) |> 
+    dplyr::mutate(
+      x = rep(seq(0, (!!w + padding) * cols - 1, !!w + padding), times = rows),
+      y = rep(seq(0, (!!h + padding) * rows - 1, !!h + padding), each = cols),
+      info = stringr::str_wrap(info, 75)
+    )
+  
+  p <- ggplot2::ggplot(toplo, ggplot2::aes(x, y, height = h, width = w, label = info)) +
+    ggplot2::geom_tile(ggplot2::aes(fill = name)) +
+    ggplot2::geom_text(fontface = "bold", size = 12,
+                       ggplot2::aes(label = value, x = x - w/2.2, y = y + h/4, color = name), hjust = 0) +
+    ggplot2::geom_text(size = 7, lineheight = 0.5,
+                       ggplot2::aes(color = name, label = info, x = x - w/2.2, y = y - h/6), hjust = 0) +
+    ggplot2::coord_fixed() +
+    ggplot2::scale_fill_brewer(type = "cont", palette = "Blues", direction = -1) +
+    ggplot2::scale_color_manual(values = toplo$txtcols) +
+    ggplot2::geom_text(size = 32, ggplot2::aes(label = icon, family = font_family,
+                             x = x + w/2.5, y = y + h/14), alpha = 0.25) +
+    ggplot2::theme_void() +
+    ggplot2::guides(
+      fill = 'none', 
+      color = 'none'
+    )
+  
+  return(p)
+  
+}
+  
+
 # activity table ------------------------------------------------------------------------------
 
 # create expandable content for reactable

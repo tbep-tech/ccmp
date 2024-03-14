@@ -1,11 +1,98 @@
 ---
 title: "PE-2"
+
+toc: false
+margin-footer: |
+  ### RELATED ACTIONS: <br>
+  [BH-6](../../docs/wildlife/bh6.html) Encourage habitat enhancement along altered waterfront properties <br>
+  [FW-1](../../docs/wildlife/fw1.html) Increase on-water enforcement of environmental regulations on the bay <br>
+  [PA-1](pa1.html) Provide for and manage recreational uses of the bay <br>
+  [PE-1](pe1.html) Promote public involvement in bay restoration and protection <br>
+  [PH-4](../../docs/water/ph4.html) Reduce fecal contamination from humans and pets in Tampa Bay Area waters <br>
+  [PH-5](../../docs/water/ph5.html) Reduce pollution from recreational boaters <br>
+  [SW-1](../../docs/water/sw1.html) Reduce nitrogen runoff from urban landscapes <br>
+  [SW-10](../../docs/water/sw10.html) Expand use of Green Infrastructure practices <br>
+  [SW-8](../../docs/water/sw8.html) Expand adoption and implementation of Best Management Practices for commercial and urban agriculture <br>
+  [WW-2](../../docs/water/ww2.html) Extend central sewer service to priority areas now served by septic systems <br>
+  [WW-5](../../docs/water/ww5.html) Reduce the occurrence of municipal sewer overflows to the bay
 ---
 
 ```{r}
 source(here::here('R/funcs.R'))
-lorem::ipsum(paragraphs = sample(1:5, 1), avg_words_per_sentence = sample(10:20, 1))
 ```
+
+Promote public education about key issues affecting the bay
+
+### OBJECTIVES: 
+
+Educate citizens about key problems facing the bay and how they can participate in solutions. 
+
+### STATUS: 
+
+Ongoing. TBEP has implemented regional education campaigns addressing invasive plants and animals; bay-friendly boating; manatee protection; pet waste disposal; and fertilizer use. TBEP’s varied communication tools have included boating guides; doorhangers; posters; children’s books; classroom teaching modules; field trips and workshops on specific topics; and a host of social media tools. TBEP has been a regional leader in development of educational programs utilizing principles of social marketing to drive behavior change.
+
+### BACKGROUND:
+
+The Tampa Bay Estuary Program continues to emphasize the importance of environmental education to the long-term health of the bay by creating a constituency of informed, involved community members. This mission is aided by a Community Advisory Committee (CAC) composed of residents from a variety of backgrounds and interests who support TBEP’s community outreach. With limited staff and financial resources, TBEP has adopted a strategic approach to educational programming:
+
+* Identify and close gaps in environmental education
+* Emphasize cost-effectiveness
+* Maximize partnerships
+
+![Teachers use dip nets to collect fish and shellfish from waters around Weedon Island Preserve as part of a training workshop sponsored by TBEP. SOURCE: TBEP](../../img/PE-2-1_Feature Photo_teacher workshop.jpg)
+
+This three-pronged guidance has allowed TBEP to develop highly focused, innovative and measurable education programs, including the Pooches for the Planet pet waste disposal initiative, the Be Floridian fertilizer education campaign, and Pipe Up!, a campaign to encourage homeowners to inspect and repair or replace private lateral sewer lines.
+
+TBEP strives to avoid duplication of educational programming already being successfully delivered by other agencies or organizations with greater personnel and financial resources. Instead, TBEP focuses on audiences and issues that other organizations are not addressing, specifically emerging issues that have been identified as important to bay improvement. In this way, TBEP’s efforts serve as pilot or foundational programs that can be adopted and adapted by TBEP partners. 
+
+Recent examples of key issues for which TBEP has provided regional leadership in education include:
+
+* Be Floridian Fertilizer Education Campaign - TBEP was tasked by its Policy Board to develop a regional campaign to support local fertilizer ordinances. Be Floridian implemented and evaluated a 5-year behavior change marketing campaign in Manatee, Pinellas and Tampa using multiple tools — including billboards, bus wraps, digital ads and retail store outreach — to reduce use of nitrogen lawn and landscape fertilizers in the summer rainy season. The campaign has since been adopted by Pinellas and Sarasota counties, and the Indian River Lagoon watershed, with elements incorporated in other statewide and national stormwater education programs. (see Action [SW-1](../../docs/water/sw1.html)).
+* Pooches for the Planet Pet Waste Education - This innovative campaign encourages dog owners to bag and properly dispose of pet waste to prevent harmful bacteria and excess nutrients from entering the bay (see Action [PH-4](../../docs/water/ph4.html)). The campaign utilized pledges, signs, pet waste bag stations, partnerships with animal shelters, pet-related businesses and neighborhoods, direct outreach to veterinary clinics, and GPS mapping of dog waste piles in several parks and preserves to document a positive change over time as a result of these educational efforts. 
+* Wild and Wonderful Tampa Bay Training Workshops for Recreation Departments - TBEP developed a one-week module for recreation department summer camps using fun, hands-on activities to provide basic information about our local environment, and individual actions to protect it, to urban kids who might not otherwise have access to these lessons (see Action [PE-1](pe1.html)). TBEP also held workshops to train recreation department instructors and other informal environmental educators in using the module and activities.
+* Pipe Up Keep Poop In Its Place - This behavior change campaign aims to reduce nutrient and bacterial pollution in Tampa Bay by encouraging homeowners and homebuyers to inspect, repair, or replace aging private lateral sewer lines to prevent sanitary sewer overflows into Tampa Bay and its watershed (see WW-5). Campaign strategies include a website with videos and digital ads on Realtor.com, Facebook, and Instagram targeting home inspectors and homebuyers of older homes.
+
+TBEP’s outreach has always sought to be cost-effective. In recent years, evolving digital technology has led to a dramatic shift in the way people receive and share information. TBEP now prints far fewer educational materials such as brochures, boating guides and teacher curricula, and makes most new materials available exclusively via the web. 
+
+![TBEP’s Bay Mini-Grant program provides funding for community-based restoration and education programs, including hands-on learning opportunities for children.](../../img/PE-2-2_Photo-Canterbury students.jpg)
+ 
+Entire campaigns have and will continue to rely primarily on multimedia web delivery, with increasing use of mobile-friendly design, applications and social media platforms to deliver messaging that targets specific audiences. Social research prior to campaign development, testing of message effectiveness and evaluation/modification to ensure success are cost-effective investments that ensure TBEP education efforts are reaching the appropriate audience and making a measurable difference. For example, Be Floridian targeted its messages to homeowners who maintain their own yards or pay a landscape professional to do so. 
+
+The \#LoveTampaBay campaign, launched in late 2016, is exclusively a digital initiative to boost awareness of the bay’s prominent role in our economic and emotional well-being. The campaign features  digital postcards of people and places in Tampa Bay, grouped around five major themes: Community, Science, Jobs, Art and Home. Users can share these postcards on social media platforms, and also u share their own images on Instagram using the #LoveTampaBay hashtag. 
+
+TBEP seeks out and collaborates with partners who have specific expertise and resources to contribute to key education initiatives. These partnerships amplify and expand the reach of our messaging, while ensuring a strong scientific foundation. 
+
+![Estuary Academy participants learn how to build and operate simple Remote Underwater Vehicles. SOURCE: TBEP](../../img/PE-2-3 Photo_ROV workshop.jpg)
+
+A recent example is Eyes On The Bay (see Action [IS-2](../../docs/wildlife/is2.html)). TBEP developed this comprehensive, multi-year project to enlist citizens’ help in preventing and managing plant and animal bio-invasions. Eyes On The Bay targeted specific audiences with tailored information and tools. 
+
+Products included:
+
+* A compact, spiral-bound field guide to invasive plants in the bay watershed;
+* The Wicked Weeds video for homeowners with step-by-step instruction in eradicating common backyard invasive plants;
+* Laminated Boaters Alert and Divers Alert waterproof cards for boaters and divers on existing and potential marine invaders, with info on how to report sightings;
+* Intruders in Paradise, an in-depth classroom module for middle-school students; and
+* Two children’s books about the hazards of dumping aquarium fish into marine waters, one for children in pre-K through 2nd grade, and the other for grades 3-5. 
+* Key partners joining TBEP in development and distribution of these products included Florida Sea Grant, Hillsborough County Extension, the University of Central Florida, the Florida Native Plant Society and the Hillsborough Invasive Species Task Force.
+
+TBEP’s Community Advisory Committee provides important support for educational efforts. CAC members contribute a wide range of services, such as: 
+
+* Reviewing Bay Mini-Grant applications annually;
+* Selecting the winner of the Golden Mangrove award for most outstanding Mini-Grant project;
+* Participating in Give-A-Day for the Bay workdays;
+* Representing TBEP at tabling events such as community festivals; 
+* Providing input on TBEP goals and programs; and
+* Serving as a liaison between the Program and the public.
+
+CAC members may be appointed by Policy Board members, or elected to at-large posts by the committee members. A maximum of 27 CAC members are allowed. In 2015, Policy Board approved the CAC’s proposal to develop a specific plan to engage local students in volunteering to improve the bay. CAC members are currently building a pilot community engagement effort to involve Eckerd College students in bay restoration. Long-range goals are for this effort to become a self-sustaining partnership and continue to find partners at local universities (see Action [PE-1](pe1.html)).
+
+![TBEP has supported production of several educational materials in Spanish, including this Boating Guide to Hillsborough Bay.](../../img/PE-2-4 Photo_Spanish Guide.jpg)
+
+As part of the CCMP (2017 Update), TBEP contracted an [evaluation](https://drive.google.com/file/d/11HmGMEZ4NGRH23MPfFgUCVoI-5BRv9bw/view){target="_blank"} of ongoing outreach activities, which resulted in TBEP identifying core communication and outreach strategies to diversify audiences and program impact, utilize more social science research techniques, and develop more meaningful indicators and metrics. The Communications Plan will be revised in 2024.
+
+TBEP’s 2021-2025 Strategic Plan [@tbep1220] identified the cornerstone strategy of story building as a powerful, evidence-based technique to inspire behavior change and lasting awareness of the estuary. The TBEP Bipartisan Infrastructure Law Equity Strategy and Equitable Stakeholder Engagement Memorandum further guide efforts to better engage underserved communities and identify programmatic initiatives that reflect the diverse needs of the Tampa Bay community. These new equity strategies are incorporated in the CCMP (2023 Interim Update).
+
+As education will always be needed, this action should remain in the CCMP in perpetuity. Future implementation should capitalize on existing programs and partnerships wherever possible, but TBEP should also continue its leadership role in identifying areas of need and developing innovative, effective and measurable programs to inform citizens about the bay and involve them in its protection.
 
 ```{r}
 act_tab(rmarkdown::metadata$title)
