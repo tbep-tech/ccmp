@@ -18,7 +18,7 @@ website:
   # body-footer: docs/footer.qmd
   page-footer:
     left: |
-      &copy; [Tampa Bay Estuary Program](https://tbep.org)
+      &copy; Tampa Bay Estuary Program. All Right Reserved. [Contact](https://tbep.org/about-tbep/contact/) | [Accountability Act](https://tbep.org/uniform-special-district-accountability-act/) | [Privacy](https://tbep.org/privacy-policy/)
     right:
       - icon: github
         href: https://github.com/tbep-tech
@@ -49,6 +49,7 @@ website:
       contents:
         - section: "Action"
         - '---'
+        # - section: "![](../../icons/WQ.jpg){width=15%} Water Quality"
         - section: "Water Quality"
           contents:
             - text: "WQ-1"

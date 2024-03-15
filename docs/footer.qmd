@@ -7,17 +7,18 @@
 ::: {.g-col-12 .g-col-md-6}
 ### Action Plans
 
-[Clean Waters and Sediments](https://tbep.org)\
-[Thriving Habitats and Abundant Wildlife](https://tbep.org)\
-[Informed, Engaged, and Responsible Communities](https://tbep.org)\
+[Clean Waters and Sediments](docs/water/wq1.qmd)\
+[Thriving Habitats and Abundant Wildlife](docs/wildlife/bh1.qmd)\
+[Informed, Engaged, and Responsible Communities](docs/communities/pe1.qmd)\
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ### Strategies
 
-[Strategic Plan](https://tbep.org)\
-[Research Priorities](https://tbep.org)\
-[Monitoring and Indicators Plan](https://tbep.org)
+[Strategic Plan](https://drive.google.com/file/d/11xohuoaHDxNHRqgXoOHdI37FpWvac_rn/view){target="_blank"}\
+[Research Priorities](https://docs.google.com/spreadsheets/d/1BQr7yTjES7w3DuuHF4rVcJFkTg5ZBPK8yvD3Ixkwsc0/edit?usp=sharing){target="_blank"}\
+[Monitoring and Indicators Plan](https://drive.google.com/file/d/1H8_zpDT56m6fEGDlRNbRRoE3-tHYF7lH/view){target="_
+blank"}\
 :::
 
 :::
@@ -30,7 +31,7 @@
 ::: grid
 
 ::: {.g-col-12 .g-col-md-6}
-[Contact Us](mailto:info.tbep.org)
+[Contact Us](https://tbep.org/about-tbep/contact/)
 :::
 
 ::: {.g-col-12 .g-col-md-6}

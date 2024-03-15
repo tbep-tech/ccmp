@@ -56,10 +56,36 @@ h6 {
   font-size: 20px;
 }
 
-.navbar-nav li a:hover, .navbar-nav > .active > a {
-  color: #fff !important;
-  background-color:#5c4a42!important;
-  background-image: none !important;
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #f57d05; !important;
+}
+
+.navbar-nav li a:hover {
+  color: #f57d05 !important;
+}
+
+/* sidebar styles */
+div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
+  color: #f57d05 !important;
+}
+
+/* footer */
+
+.nav-footer {
+  background-color:#00806E;
+  color: #BFE0DD;
+  font-family: 'Roboto'; /* main tab fonts */
+  font-size: 18px;
+}
+
+.nav-footer a:hover {
+    color: #fff; !important;
+    font-weight: 400;
+}
+
+.nav-footer a, .nav-footer a:active, .nav-footer a:visited {
+    color: #BFE0DD;
+    font-weight: 400;
 }
 
 /* sidebar */
@@ -74,14 +100,6 @@ h6 {
   background-color: #95898430; /* gray with alpha */
 }
 
-#editor-map { /* this sets map editor height dynamically if in sidebar */
-  height: calc(100vh - 60px) !important;
-} 
-
-#map { /* this sets map height dynamically if in sidebar */
-  height: calc(100vh - 60px) !important;
-} 
-
 /* sub sections */
 
 .level3 {
@@ -91,13 +109,6 @@ h6 {
 }
 
 .chart-title {
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-style: italic;
-  color: #958984;
-}
-
-.nav-tabs {
   font-family: 'Roboto';
   font-weight: 300;
   font-style: italic;
@@ -138,12 +149,6 @@ h6 {
 }
 .irs-single {
   background: #00806E;
-}
-
-/* tabset top border */
-
-.nav-tabs-custom > .nav-tabs > li.active {
-  border-top-color: #00806E;
 }
 
 /* bar chart formatting for reactable */
