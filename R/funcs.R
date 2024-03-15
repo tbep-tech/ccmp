@@ -520,6 +520,63 @@ gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 5){
   
 }
   
+seagrassph_plo <- function(){
+  
+  data(seagrass, package = 'tbeptools')
+  load(file = here::here('data/phdat.RData'))
+  
+  # scaling factor for phrsc
+  fct <- 15
+  
+  cols <- c('#427355', '#5C4A42', '#958984', '#004F7E', '#00806E')
+  sgplo <- seagrass |> 
+    dplyr::filter(Year >= 1982)
+  
+  toplo <- dplyr::full_join(sgplo, phdat, by = dplyr::join_by(Year == yr))  |> 
+    dplyr::arrange(Year) |> 
+    dplyr::mutate(
+      Acres = Acres / 1e3,
+      phrsc = scales::rescale(ph, to = c(fct, max(Acres, na.rm = T))),
+      period = ifelse(Year >= 1983, 'Recovery Period', 'Eutrophic Period'),
+      period = factor(period, levels = c('Eutrophic Period', 'Recovery Period'))
+    )
+  
+  # sort out first y axis labels from ph rescale
+  trgrng <- range(toplo$ph, na.rm = T)
+  sclrng <- range(toplo$phrsc, na.rm = T)
+  slo <- (trgrng[2] - trgrng[1]) / (sclrng[2] - sclrng[1])
+  int <- trgrng[1] - (sclrng[1] * slo)
+  
+  brks <- seq(0, max(toplo$Acres, na.rm = T), by = 10)
+  lbs <- round(brks * slo + int, 1)
+  
+  p <- ggplot2::ggplot(toplo, ggplot2::aes(x = Year)) +
+    ggplot2::geom_col(ggplot2::aes(y = Acres), fill = '#00806E') +
+    ggplot2::geom_point(ggplot2::aes(y = phrsc,
+                                     fill = period), pch = 21, size = 3) +
+    ggplot2::scale_fill_manual(values = c('Eutrophic Period' = '#FA8D29', 'Recovery Period' = '#45B6FC')) +
+    ggplot2::geom_smooth(formula = y ~ x, data = toplo[toplo$period == 'Recovery Period', ], 
+                         ggplot2::aes(y = phrsc), method = 'lm', se = F, color = '#0062CF') +
+    ggplot2::scale_y_continuous(
+      name = 'Tampa Bay Average Mid-Depth pH', 
+      breaks = brks, labels = lbs,
+      sec.axis = ggplot2::sec_axis(~., name = 'Tampa Bay Seagrass Acreage (x1000)')
+    ) +
+    ggplot2::labs(
+      x = NULL, 
+      fill = NULL
+      ) +
+    ggplot2::theme_minimal() +
+    ggplot2::theme(
+      legend.position = 'top', 
+      panel.grid.minor = ggplot2::element_blank(), 
+      axis.text.x = ggplot2::element_text(size = 11), 
+      legend.text = ggplot2::element_text(size = 11)
+    )
+  
+  return(p)
+  
+}
 
 # activity table ------------------------------------------------------------------------------
 

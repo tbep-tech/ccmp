@@ -4,6 +4,7 @@ library(tidyverse)
 library(reactable)
 library(haven)
 library(here)
+library(tbeptools)
 
 # get activities table from Google Drive ------------------------------------------------------
 
@@ -132,3 +133,24 @@ fimdat <- left_join(phydat, sppdat, by = 'Reference', relationship = 'one-to-man
   na.omit()
 
 save(fimdat, file = here('data/fimdat.RData'))
+
+# epc ph data ---------------------------------------------------------------------------------
+
+fl <- 'epcdatall.xlsx'
+phdatraw <- read_importwq(fl, download_latest = T, all = T)
+
+phdat <- phdatraw |> 
+  select(epchc_station, SampleTime, yr, ph = `pH-M`) |> 
+  summarise(
+    ph = mean(ph, na.rm = T),
+    .by = c(epchc_station, yr)
+  ) |> 
+  summarise(
+    ph = mean(ph, na.rm = T),
+    .by = c(yr)
+  ) |> 
+  arrange(yr)
+
+save(phdat, file = here('data/phdat.RData'))
+
+file.remove(fl)
