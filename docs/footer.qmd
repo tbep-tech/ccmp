@@ -7,9 +7,9 @@
 ::: {.g-col-12 .g-col-md-6}
 ### Action Plans
 
-[Clean Waters and Sediments](docs/water/wq1.qmd)\
-[Thriving Habitats and Abundant Wildlife](docs/wildlife/bh1.qmd)\
-[Informed, Engaged, and Responsible Communities](docs/communities/pe1.qmd)\
+[Clean Waters and Sediments](https://tbep-tech.github.io/ccmp/docs/water/wq1.html)\
+[Thriving Habitats and Abundant Wildlife](https://tbep-tech.github.io/ccmp/docs/wildlife/fw1.html)\
+[Informed, Engaged, and Responsible Communities](https://tbep-tech.github.io/ccmp/docs/communities/pe1.html)\
 :::
 
 ::: {.g-col-12 .g-col-md-6}
