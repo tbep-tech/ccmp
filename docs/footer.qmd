@@ -1,42 +1,64 @@
-
-<div>
----------
-
-::: grid
-
-::: {.g-col-12 .g-col-md-6}
+::: {#action-plans .fullwidth-footer}
 ### Action Plans
 
-[Clean Waters and Sediments](https://tbep-tech.github.io/ccmp/docs/water/wq1.html)\
-[Thriving Habitats and Abundant Wildlife](https://tbep-tech.github.io/ccmp/docs/wildlife/fw1.html)\
-[Informed, Engaged, and Responsible Communities](https://tbep-tech.github.io/ccmp/docs/communities/pe1.html)\
+::: {.footer-menu}
+
+#### Clean Water and Sediments
+[Water Quality](https://tbep.org)
+[Stormwater](https://tbep.org)
+[Atmospheric Deposition](https://tbep.org)
+[Wastewater](https://tbep.org)
+[Contaminants of Concern](https://tbep.org)
+[Public Health](https://tbep.org)
+
+#### Thriving Habitats & Wildlife
+[Bay Habitats](https://tbep.org)
+[Freshwater Inflow](https://tbep.org)
+[Fish and Wildlife](https://tbep.org)
+[Invasive Species](https://tbep.org)
+[Dredge Management](https://tbep.org)
+[Spill Prevention](https://tbep.org)
+
+#### Informed, Engaged & Responsible Community
+[Public Access](https://tbep.org)
+[Public Education](https://tbep.org)
+[Climate Change](https://tbep.org)
+[Local Implementation](https://tbep.org)
+
+#### Endnotes
+[Acronyms](https://tbep.org)
+[Citations](https://tbep.org)
+[List of All Actions](https://tbep.org)
+[Who We Are](https://tbep.org)
+:::
 :::
 
-::: {.g-col-12 .g-col-md-6}
+::: {#strategies .fullwidth-footer}
 ### Strategies
 
-[Strategic Plan](https://drive.google.com/file/d/11xohuoaHDxNHRqgXoOHdI37FpWvac_rn/view){target="_blank"}\
-[Research Priorities](https://docs.google.com/spreadsheets/d/1BQr7yTjES7w3DuuHF4rVcJFkTg5ZBPK8yvD3Ixkwsc0/edit?usp=sharing){target="_blank"}\
-[Monitoring and Indicators Plan](https://drive.google.com/file/d/1H8_zpDT56m6fEGDlRNbRRoE3-tHYF7lH/view){target="_
-blank"}\
+::: {.footer-menu}
+
+[Strategic Plan](https://tbep.org)
+[Research Priorities](https://tbep.org)
+[Monitoring and Indicators Plan](https://tbep.org)
+[Implementing & Financing Plan](https://tbep.org)
+[Communications Plan](https://tbep.org)
+[Climate Action Plan](https://tbep.org)
+:::
 :::
 
+::: {#about .fullwidth-footer}
+::: {.footer-menu}
+### Contact Us
+Tampa Bay Estuary Program  
+263 13th Ave. S., Suite 350  
+St. Petersburg, FL 33701  
+(727)-893-2765
+[info@tbep.org](mailto:info.tbep.org)
+
+### About TBEP
+
+The mission of the Tampa Bay Estuary Program is to build partnerships to restore and protect Tampa Bay through implementation of a 
+[scientifically sound, community-based management plan.](https://tbep.org/about-tbep/)
 :::
-
-</div>
-
-<div>
----------
-
-::: grid
-
-::: {.g-col-12 .g-col-md-6}
-[Contact Us](https://tbep.org/about-tbep/contact/)
 :::
-
-::: {.g-col-12 .g-col-md-6}
-[Our Mission](https://tbep.org/about-tbep/)
-:::
-
-:::
-</div>

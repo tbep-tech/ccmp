@@ -1,7 +1,8 @@
 ---
 title: "SW-1"
-
 toc: false
+params:
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 margin-footer: |
   ### RELATED ACTIONS: <br>
   [WW-1](ww1.html) Expand the beneficial use of reclaimed water <br>
@@ -12,24 +13,29 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Reduce nitrogen runoff from urban landscapes 
+## Reduce nitrogen runoff from urban landscapes {.sub-title}
 
-### OBJECTIVES: 
+[Skip to Activities](#activities)
 
+### Objectives 
+
+::: {#intro}
 Continue to support and improve local fertilizer ordinances. Expand Best Management Practices (BMPs) certification programs for general landscape maintenance personnel. Explore incentives for homeowners to replace high-maintenance landscapes with lower maintenance alternatives. Expand outreach to homeowner and condo associations about statewide laws supporting water-conserving landscapes in deed-restricted communities and recommended changes to landscape covenants to comply with those laws. Continue research to quantify reduction in nitrogen loadings from reduced fertilizer use.
 
-### STATUS: 
+### Status 
 
 This action, formerly Action SW-12, has been merged with related Actions SW-1, SW-2, SW-3 and SW-11 to focus on the broader theme of reducing overall runoff from urban and residential landscapes.
 
-### BACKGROUND:
+### Background
 
 Residential fertilizer is a significant source of nitrogen to the bay, accounting for about 20% of the nitrogen carried in stormwater. The costs of treating stormwater from urban areas (estimated at $3,500 per pound of nitrogen removed, per the statewide Section 319h stormwater project database) led many bay area communities to adopt local fertilizer ordinances as a practical and cost-effective way to substantially reduce nitrogen inputs at little cost to taxpayers. The Tampa Bay Estuary Program (TBEP) was instrumental in the development and adoption of these city and county ordinances.
 
 ![Landscapes with reduced turfgrass conserve water and reduce runoff. SOURCE: Nanette O’Hara](../../img/SW-1-1 Feature Photo.JPG)
 
 Most of the ordinances prohibit use of nitrogen fertilizers from June 1-September 30, when the region receives 60% of its average annual rainfall and the potential for fertilizer runoff is greatest. They also require use of slow-release nitrogen fertilizers outside the summer rainy season to minimize nutrient leaching.
+:::
 
+::: {#more}
 Ordinances in Pinellas County (and all 24 municipalities within the County) and the City of Tampa ban both use and sales of nitrogen lawn and landscape fertilizers in the summer. The Hillsborough County and Manatee County ordinances restrict use of these products in the summer. The Pasco County ordinance mirrors a statewide model that prohibits fertilizer application when flood or storm watches are issued or likely, or when heavy rains are expected. Effectiveness of ordinances without sales restrictions could be enhanced by amendments to require stores where fertilizer is sold to post signs about the laws and to identify compliant products.
 
 TBEP led regional fertilizer education efforts at the request of its Policy Board. The resulting Be Floridian campaign utilized social marketing principles to promote compliance with summer fertilizer bans. The campaign capitalized on the importance of water-based recreation to bay residents, urging them to “skip the fertilizer in the summer” to protect the waters that make living here fun. It also encouraged homeowners to “Garden Like A Floridian” by replacing turfgrass with lower-maintenance plants.
@@ -60,8 +66,13 @@ Incentives to conserve water and reduce high-maintenance turfgrass also are need
 
 As of 2017, Pinellas County has a UF/IFAS Extension specialist dedicated to working with HOAs, condo associations and property managers. Pasco County’s FY&N coordinator also has had success in working with HOAs, and all the FY&N county programs consistently provide high-quality training and free assistance to homeowners across their geographic and demographic spectrums. Future efforts to reduce nitrogen from urban landscapes in the Tampa Bay watershed must focus on reaching and recruiting these key audiences.
 
-Additional research is needed to quantify the impact of fertilizer ordinances on water quality over time, and to improve ordinance compliance. A study coordinated by TBEP found that a minimum of 5-6 years of monitoring is needed to test for statistically significant differences in environmental data collected from Tampa Bay residential communities with different fertilizer ordinances [@tbep0215]. 
+Additional research is needed to quantify the impact of fertilizer ordinances on water quality over time, and to improve ordinance compliance. A study coordinated by TBEP found that a minimum of 5-6 years of monitoring is needed to test for statistically significant differences in environmental data collected from Tampa Bay residential communities with different fertilizer ordinances [@tbep0215].
+:::
 
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### Activities
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

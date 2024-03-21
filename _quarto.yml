@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: _site
-
 website:
   image: "tarponlogo.png"
   open-graph: true
@@ -12,86 +11,76 @@ website:
   # repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
-  search:
-    show-item-context: true
-    type: overlay
+  search: false
   # body-footer: docs/footer.qmd
   page-footer:
     left: |
-      &copy; Tampa Bay Estuary Program. All Right Reserved. [Contact](https://tbep.org/about-tbep/contact/) | [Accountability Act](https://tbep.org/uniform-special-district-accountability-act/) | [Privacy](https://tbep.org/privacy-policy/)
+      &copy; [Tampa Bay Estuary Program](https://tbep.org). All Rights Reserved. [Contact](https://tbep.org/about-tbep/contact/) | [Accountability Act](https://tbep.org/uniform-special-district-accountability-act/) | [Privacy](https://tbep.org/privacy-policy/) | [Site Credit](https://tangram3ds.com/)
     right:
       - icon: github
         href: https://github.com/tbep-tech
         aria-label: Quarto GitHub
   navbar:
     background: light
-    logo: /img/tarponlogo.png
-    logo-alt: "TBEP tarpon logo"
-    title: false
     collapse-below: lg
+    title: "{{< meta params.navtitle >}}"
     left:
-      - text: "Clean Water and Sediments"
-        href: docs/water/wq1.qmd
-      - text: "Thriving Habitats and Abundant Wildlife"
+      - text: "Water"
+        href: docs/clean-water-and-sediments/wq1.qmd
+      - text: "Wildlife"
         href: docs/wildlife/bh1.qmd
-      - text: "Informed, Engaged, and Responsible Communities"
+      - text: "Community"
         href: docs/communities/pe1.qmd
-    tools:
-      - icon: github
-        href: https://github.com/tbep-tech/ccmp
-        text: TBEP GitHub
-
   sidebar:
     
-    - id: water
+    - id: clean-water-and-sediments
       title: "Clean Water and Sediments"
       collapse-level: 1
       contents:
         - section: "Action"
         - '---'
-        # - section: "![](../../icons/WQ.jpg){width=15%} Water Quality"
         - section: "Water Quality"
           contents:
             - text: "WQ-1"
-              href: docs/water/wq1.qmd
+              href: docs/clean-water-and-sediments/wq1.qmd
             - text: "WQ-3"
-              href: docs/water/wq3.qmd
+              href: docs/clean-water-and-sediments/wq3.qmd
         - section: "Stormwater Runoff"
           contents:
             - text: "SW-1" 
-              href: docs/water/sw1.qmd
+              href: docs/clean-water-and-sediments/sw1.qmd
             - text: "SW-8"
-              href: docs/water/sw8.qmd
+              href: docs/clean-water-and-sediments/sw8.qmd
             - text: "SW-10"
-              href: docs/water/sw10.qmd
+              href: docs/clean-water-and-sediments/sw10.qmd
         - section: "Atmospheric Deposition"
           contents:
             - text: "AD-1"
-              href: docs/water/ad1.qmd
+              href: docs/clean-water-and-sediments/ad1.qmd
         - section: "Wastewater Discharge"
           contents:
             - text: "WW-1"
-              href: docs/water/ww1.qmd
+              href: docs/clean-water-and-sediments/ww1.qmd
             - text: "WW-2"
-              href: docs/water/ww2.qmd
+              href: docs/clean-water-and-sediments/ww2.qmd
             - text: "WW-3"  
-              href: docs/water/ww3.qmd
+              href: docs/clean-water-and-sediments/ww3.qmd
             - text: "WW-5"
-              href: docs/water/ww5.qmd
+              href: docs/clean-water-and-sediments/ww5.qmd
         - section: "Contaminants of Concern"
           contents:
             - text: "COC-1"
-              href: docs/water/coc1.qmd
+              href: docs/clean-water-and-sediments/coc1.qmd
             - text: "COC-4"
-              href: docs/water/coc4.qmd
+              href: docs/clean-water-and-sediments/coc4.qmd
         - section: "Pathogens"
           contents:
             - text: "PH-2"
-              href: docs/water/ph2.qmd
+              href: docs/clean-water-and-sediments/ph2.qmd
             - text: "PH-4"
-              href: docs/water/ph4.qmd
+              href: docs/clean-water-and-sediments/ph4.qmd
             - text: "PH-5"
-              href: docs/water/ph5.qmd
+              href: docs/clean-water-and-sediments/ph5.qmd
             
     - id: thriving-habitats-and-abundant-widlife
       title: "Thriving Habitats and Abundant Wildlife"
@@ -115,6 +104,8 @@ website:
               href: docs/wildlife/bh8.qmd
             - text: "BH-9"
               href: docs/wildlife/bh9.qmd
+            - text: "BH-10"
+              href: docs/wildlife/bh10.qmd
         - section: "Freshwater Inflow"
           contents: 
             - text: "FI-1"
@@ -145,6 +136,7 @@ website:
           contents:
             - text: "IS-2"
               href: docs/wildlife/is2.qmd
+        - section: "References"
               
     - id: informed-engaged-and-responsible-community
       title: "Informed, Engaged, and Responsible Community"
@@ -182,6 +174,24 @@ citation-location: margin
 
 format:
   html:
+    anchor-sections: false
+    include-after-body:
+      text: |
+        <script type="application/javascript">
+          function readMore() {
+            var moreText = document.getElementById("more");
+            var introText = document.getElementById("intro");            
+            var btnText = document.getElementById("readMore");
+            if (moreText.style.display === "none") {
+              btnText.innerHTML = "Read more";
+              moreText.style.display = "none";
+            } else {
+              btnText.style.display = "none";
+              introText.style.maskImage = "none";
+              moreText.style.display = "grid";
+            }
+          }
+        </script>    
     toc: true
     theme:
       light: [cosmo]
@@ -192,7 +202,6 @@ format:
       sidebar-width: 250px
       body-width: 900px
       margin-width: 300px
-
 execute:
   echo: false
   message: false
