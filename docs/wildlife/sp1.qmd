@@ -1,6 +1,7 @@
 ---
 title: "SP-1"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -12,10 +13,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Continue implementation of advanced technology to improve coordination of ship movements in Tampa Bay
+## Continue implementation of advanced technology to improve coordination of ship movements in Tampa Bay {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Secure permanent funding for the PORTS navigational system; track and monitor technological advances in navigation to improve maritime safety; support dedicated funding for Cooperative Vessel Tracking Service; Support development of programming, training and research to improve maritime and port safety, security and sustainability through the Center for Maritime and Port Studies at University of South Florida.
 
 ### STATUS: 
@@ -25,7 +29,9 @@ Ongoing.
 ### BACKGROUND:
 
 This action has been substantially completed since it was first included in the original Comprehensive Conservation Management Plan (CCMP) for Tampa Bay. However, ongoing funding remains uncertain, including money for navigational enhancements that would expand the versatility of the system and improve the overall safety of maritime operations. 
+:::
 
+::: {#more}
 ![A Coast Guardsman managing maritime traffic using AIS and radar. SOURCE: US Coast Guard](../../img/SP-1-1 Coast Guard managing marine traffic with AIS and radar.jpg)
 
 The Physical Oceanographic Real-Time System (PORTS) continues to provide real-time information about tides, winds and currents in Tampa Bay to all mariners, including recreational boaters, through a network of data collection buoys and sensors located at key positions around the bay. PORTS is maintained by NOAA’s National Ocean Service and housed at the University of South Florida Department of Marine Science. The system can be accessed online or by telephone.
@@ -49,7 +55,12 @@ In addition to PORTS, maritime safety has been greatly enhanced by the implement
 Tampa Bay is on the cutting edge of another evolution in maritime navigation: Virtual, or electronic, Aids to Navigation (ATONs). Virtual channel markers, linked to transponders and Automatic Identification System (AIS) displays now on all large vessels, may eventually replace physical buoys and markers, with their ongoing maintenance/repair costs and safety concerns. Tampa Bay is one of a handful of pilot sites where the Coast Guard is testing virtual ATONs. Full implementation throughout the bay would cost an estimated \$4 million, and likely would require funding through federal sources other than the Coast Guard, or through the local port/maritime community. The cost for smaller commercial vessels (such as charter fishing or sailing boats) and recreational boaters to upgrade to the AIS-integrated navigation systems necessary to utilize virtual ATONs is an important consideration. 
 
 Research into future tools to reduce the potential for ship groundings or collisions; improve port and vessel security; and foster the overall, long-term sustainability of Tampa Bay’s economically important maritime commerce is being assisted by the development of a new Center for Maritime and Port Studies at University of South Florida. The Center will support research into maritime technologies and train the next generation of maritime professionals, with environmental sustainability as a key component of instruction.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

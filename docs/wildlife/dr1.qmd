@@ -1,6 +1,7 @@
 ---
 title: "DR-1"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -12,10 +13,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Develop a plan for beneficial uses of dredged material in Tampa Bay
+## Develop a plan for beneficial uses of dredged material in Tampa Bay {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Coordinate projects that generate dredged material with those that could use the material for beneficial uses. Complete the Tampa Bay Regional Sediment Management Plan to develop and prioritize locations for utilization of sediment generated through dredging activities. Continue to encourage and implement environmentally beneficial uses of dredged material. 
 
 ### STATUS: 
@@ -25,7 +29,9 @@ Ongoing. Long-term Dredged Material Management Plan (DMMP) was adopted in 2002 a
 ### BACKGROUND:
 
 Tampa Bay has three major ports or deep-draft harbors: Port Tampa Bay, Port Manatee and the Port of St. Petersburg. Port Tampa Bay (formerly the Port of Tampa) is among the nation’s busiest, handling one-third of the cargo moving in and out of Florida and some 900,000 cruise ship passengers yearly. Port Manatee is the closest U.S. deepwater seaport to the expanded Panama Canal — important exports include citrus juices, phosphate products and construction equipment. 
+:::
 
+::: {#more}
 ![Bay managers are working with area ports and the U.S. Army Corps of Engineers to beneficially use material that must be scooped from shipping channels and berths to maintain safe navigation. SOURCE: Nanette O’Hara](../../img/DR-1-1 Photo 2 Dredge Port Redwing.jpg)
 
 Dredging to maintain the bay’s approximately 80 miles of nautical highways, which can be 43 feet deep in places, generates from 1 to 1.5 million cubic yards of material annually. Dredging is conducted primarily by the United States Army Corps of Engineers (USACE), which maintains all federal channels. Port Tampa Bay and Port Manatee maintain regional channels and port facilities [@tbep0393].
@@ -63,7 +69,12 @@ Project results to date have been inconclusive regarding seagrass expansion. How
 Use of rocky dredged material to create additional hard bottom habitat in Tampa Bay will be examined in the hard bottom mapping project (see Action [BH-4](bh4.html)). 
 
 Other potential beneficial uses for dredged material include creation of habitat for nesting shorebirds, construction of nearshore bars for coastal storm protection, filling of borrow pits and artificial “lakes” close to the bay and thin-layer placement of sediment within coastal wetlands to prevent erosion as sea level rises.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

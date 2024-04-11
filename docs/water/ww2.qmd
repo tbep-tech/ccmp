@@ -1,6 +1,7 @@
 ---
 title: "WW-2"
-
+params:
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -13,10 +14,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Extend central sewer service to priority areas now served by septic systems
+## Extend central sewer service to priority areas now served by septic systems {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Identify and prioritize hotspots of nutrient and bacteria contamination from septic tanks and small package plants, and convert to central sewer as opportunities arise. Develop nitrogen loading estimates for septic systems in the Tampa Bay area. Support adoption of new septic system nitrogen reduction technology and requirements for regular maintenance and inspection.
 
 ### STATUS: 
@@ -26,7 +30,9 @@ Ongoing. Local municipal partners have mapped septic systems and made progress e
 ### BACKGROUND:
 
 Overall, bay-wide nitrogen loadings from septic systems are minor when compared to other sources, such as stormwater and air pollution (see Action [WQ-1](wq1.html)). A 1995 study estimated the total nitrogen loading to the bay from septic systems at 220 tons/yr, about 5% of the total [@ayres1995]. A 2016 study of septic systems located within 200 meters of a waterbody within the ungaged basins of Tampa Bay estimated 4,666 septic systems contribute 40 tons of TN per year with 32% of the load flowing to Hillsborough Bay and 28% flowing to Manatee River [@janicki2016].
+:::
 
+::: {#more}
 ![Expansion of Hillsborough’s South County WWTP will allow treatment of 10 million gallons of wastewater daily — enough to accommodate growth in the area through 2025. SOURCE: Gresham Smith and Partners](../../img/WW-2-1 Feature Photo_ South County sewer plant.jpg)
 
 While nitrogen loading from septic systems is a concern, so are other chemicals including phosphates and “emerging contaminants” such as pharmaceuticals, personal care products, and microplastics (see Action [COC-4](coc4.html)), and bacterial pollution (see Action [PH-4](ph4.html)). Failed septic systems in residential or rural areas can contribute large numbers of coliform and other bacteria to surface and groundwater, especially in areas with large concentrations of older septic systems more prone to malfunctioning. Poorly maintained package plants (small privately owned wastewater treatment plants (WWTPs) are also of concern. Over the last decade, several of these have been closed and wastewater flow consolidated with larger, more efficient municipal WWTPs.
@@ -52,7 +58,12 @@ The project also developed a nitrogen fate and transport model to estimate nitro
 As of July 1, 2023, State legislation mandated that enhanced nutrient-reducing septic systems are required within [watersheds with established nutrient TMDLs and BMAPs](https://fdep.maps.arcgis.com/apps/instant/sidebar/index.html?appid=dbb5433133db4012a4355a08cacaaa12){target="_blank"}, and where central sewer service is unavailable.  Regular inspections for septic systems near wells and surface waters remain an important issue to be addressed, potentially as initiatives arise as a result of the 2020 Clean Waterways Act, which transferred responsibility for implementing the Florida Statutes and regulations applicable to [OSTDS](https://floridadep.gov/water/onsite-sewage){target="_blank"} to the Florida Department of Environmental Protection.
 
 Locally, city and county permits issued through the National Pollutant Discharge Elimination System (NPDES) offer a mechanism for addressing chronic failures of septic systems and package plants. Local Land Development Codes may also address problem areas with repeated failures of septic systems.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

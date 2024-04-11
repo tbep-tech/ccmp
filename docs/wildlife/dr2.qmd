@@ -1,6 +1,7 @@
 ---
 title: "DR-2"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -14,10 +15,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Continue to minimize impacts to bay wildlife and their habitats from dredging activities
+## Continue to minimize impacts to bay wildlife and their habitats from dredging activities {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Improve dredging and dredged material disposal practices to minimize impacts to wildlife and their habitats. Support research to better understand and quantify the effects of dredging on wildlife. Develop recommendations for Best Management Practices (BMPs) for regional beach and shoreline renourishment projects to better safeguard key species. Track development of new technologies to better protect wildlife during dredging. 
 
 ### STATUS: 
@@ -27,7 +31,9 @@ New Action
 ### BACKGROUND:
 
 Dredging operations, including removal and disposal of dredged materials, can kill, injure, impact reproduction or alter the behavior of bay wildlife — including shorebirds, sea turtles and manatees. The type of dredging equipment used, as well as the location, timing and duration of the project, influence which wildlife species may be affected.
+:::
 
+::: {#more}
 ![Clamshell dredging in Tampa Bay. This technique uses a “clamshell” bucket with hinged jaws, suspended from a crane aboard a barge. SOURCE: Nanette O’Hara](../../img/DR-2-1 clamshell dredging.jpg)
 
 Potential dredging impacts to Tampa Bay wildlife include:
@@ -70,7 +76,12 @@ In 2015, Egmont Key received dredged material that did not meet state criteria a
 USACE is investigating improvements to operating procedures to better protect wildlife. Current initiatives include more advanced sighting techniques for marine mammals (such as thermal or infrared technology) that can be performed by human observers. 
 
 Improved coordination and communication about dredging activities, standardized training of on-water observers, and technological advances can enhance protection of bay wildlife during dredging and disposal activities in the future.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

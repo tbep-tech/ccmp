@@ -1,6 +1,7 @@
 ---
 title: "PH-4"
-
+params:
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -20,10 +21,12 @@ library(sf)
 source(here::here('R/funcs.R'))
 ```
 
-Reduce fecal contamination from humans and pets in bay area waters 
+## Reduce fecal contamination from humans and pets in bay area waters {.sub-title}
+[Skip to Activities](#activities)
 
-### OBJECTIVES:
+### OBJECTIVES: 
 
+::: {#intro}
 Reduce pet and human waste fecal contamination in Tampa Bay Area waters designated Class III “fishable and swimmable.” Conduct research to better quantify sources of fecal contamination. Include strategies to address hot spots in these water segments in Basin Management Action Plans (BMAPs). Expand waterborne fecal contamination monitoring to additional areas where people and pets congregate. Continue to educate the public about proper disposal of pet waste.
 
 ### STATUS:
@@ -35,7 +38,9 @@ Considerable progress has been made in addressing proper disposal of pet waste. 
 ### BACKGROUND:
 
 Tampa Bay supports a wide range of aquatic recreational activities, including boating, fishing, swimming, and paddle-boarding. The health of Tampa Bay’s waters is linked to our region’s economy, environment and quality of life. Fecal contamination of waterways can contribute bacteria, viruses and parasites that cause a variety of illnesses ranging from rashes, infections and diarrhea to more serious and life-threatening conditions. 
+:::
 
+::: {#more}
 ![The shoreline on the western side of the Gandy Bridge is a traditional recreational area without restroom facilities. SOURCE: Tampa Tribune](../../img/PH-4-1_Photo_Gandy Beach.jpg)
 
 Many bay waters and tributaries experience fecal contamination periodically from a variety of sources, including sewer overflows, wildlife, domestic livestock, pets and humans. Potential problem areas include recreational areas without restroom facilities, marinas and mooring fields where discharges of waste from liveaboard boaters may occur (see Action [PH-5](ph5.html)) or urban waterfronts with large homeless populations.
@@ -88,7 +93,12 @@ Pooches for the Planet applied social marketing principles to encourage dog owne
 ![An information station at Rivercrest Park in Tampa was part of TEBP’s Pooches for the Planet pet waste education campaign.](../../img/PH-4-4 Photo dog at information station.jpg)
 
 Significant pet waste educational programming also was sponsored by the Southwest Florida Water Management District, and implemented by the Keep America Beautiful affiliates in the area. Pet waste education is now a regular part of environmental education in the Tampa Bay region, and pet waste bag stations are installed and maintained at all area dog parks and dog beaches, as well as many other city and county parks. 
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

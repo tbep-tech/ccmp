@@ -1,6 +1,7 @@
 ---
 title: "WW-3"
-
+params:
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -12,10 +13,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Require standardized monitoring and reporting of wastewater discharges
+## Require standardized monitoring and reporting of wastewater discharges {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Require standardized monitoring and reporting of wastewater discharges to improve the accuracy and timeliness of pollutant loading estimates. Provide access to an up-to-date, publicly accessible database of industrial and domestic wastewater discharges. Develop and maintain an ongoing Tampa Bay-specific summary of information for loadings of core pollutants reported to the monitoring database. 
 
 ### STATUS:
@@ -25,7 +29,9 @@ Ongoing. Action revised to incorporate new information on improvements to report
 ### BACKGROUND:
 
 Improved water quality has produced a resurgence of healthy seagrass meadows and associated fish and invertebrate communities in Tampa Bay. Protecting these gains requires diligent monitoring of pollutant inputs (loading) to the bay. The Tampa Bay Estuary Program (TBEP) regularly [estimates loadings](https://tbep.org/tampa-bay-nitrogen-loads/){target="_blank"} of core pollutants, including total nitrogen (TN), total phosphorus (TP), total suspended solids (TSS) and more recently, biochemical oxygen demand (BOD). 
+:::
 
+::: {#more}
 ![The South Cross Bayou Water Reclamation Facility is Pinellas County’s largest wastewater treatment plant. SOURCE: Pinellas County](../../img/WW-3-1_Feature Photo_South Cross Bayou.jpg)
 
 Pollutant loadings are estimated from a variety of sources, including atmospheric deposition, domestic and industrial point sources, groundwater, springs and nonpoint sources. Accuracy and timeliness of pollutant loading calculations is critical to development of loading estimates used by the Tampa Bay Nitrogen Management Consortium (NMC) to prepare [Tampa Bay Reasonable Assurance (RA)](https://drive.google.com/file/d/18HHMx4U6vHNrFyepEFuoTJ_sEKyTA_gu/view){target="_blank} documents. These data also are needed for Basin Management Action Plans (BMAPs) and other documents necessary to meet regulatory requirements and for tracking the long-term recovery of the bay (see Action [WQ-1](wq1.html)). 
@@ -46,7 +52,12 @@ TBEP’s primary interest is consistent reporting of TN to accurately calculate 
 Another challenge to calculating accurate and timely pollutant loading estimates for WWTPs was that facilities traditionally could submit DMRs in hand-written or paper format. This required FDEP to enter data into databases by hand, which took time and could lead to data entry errors and significant lags in reporting data. 
 
 EPA recently promulgated E-reporting rule 80 FR 64063, which requires NPDES permitted facilities to electronically report and share data. This improvement will enhance transparency by providing a timelier, complete, more accurate and nationally consistent set of data in a more accessible form. As of December 2016, FDEP requires all NPDES wastewater and stormwater facilities to submit DMRs through their web-based Electronic Discharge Monitoring Report System (EzDMR). Compliance data from DMRs is accessible to the public through FDEP’s OCULUS website. Locally, the Environmental Protection Commission of Hillsborough County also maintains records of DMRs. 
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

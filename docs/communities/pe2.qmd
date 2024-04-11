@@ -1,6 +1,7 @@
 ---
 title: "PE-2"
-
+params:
+  navtitle: <i class="fa fa-hand-holding-droplet"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -21,10 +22,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Promote public education about key issues affecting the bay
+## Promote public education about key issues affecting the bay {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Educate citizens about key problems facing the bay and how they can participate in solutions. 
 
 ### STATUS: 
@@ -39,6 +43,9 @@ The Tampa Bay Estuary Program continues to emphasize the importance of environme
 * Emphasize cost-effectiveness
 * Maximize partnerships
 
+:::
+
+::: {#more}
 ![Teachers use dip nets to collect fish and shellfish from waters around Weedon Island Preserve as part of a training workshop sponsored by TBEP. SOURCE: TBEP](../../img/PE-2-1_Feature Photo_teacher workshop.jpg)
 
 This three-pronged guidance has allowed TBEP to develop highly focused, innovative and measurable education programs, including the Pooches for the Planet pet waste disposal initiative, the Be Floridian fertilizer education campaign, and Pipe Up!, a campaign to encourage homeowners to inspect and repair or replace private lateral sewer lines.
@@ -93,7 +100,12 @@ As part of the CCMP (2017 Update), TBEP contracted an [evaluation](https://drive
 TBEP’s 2021-2025 Strategic Plan [@tbep1220] identified the cornerstone strategy of story building as a powerful, evidence-based technique to inspire behavior change and lasting awareness of the estuary. The TBEP Bipartisan Infrastructure Law Equity Strategy and Equitable Stakeholder Engagement Memorandum further guide efforts to better engage underserved communities and identify programmatic initiatives that reflect the diverse needs of the Tampa Bay community. These new equity strategies are incorporated in the CCMP (2023 Interim Update).
 
 As education will always be needed, this action should remain in the CCMP in perpetuity. Future implementation should capitalize on existing programs and partnerships wherever possible, but TBEP should also continue its leadership role in identifying areas of need and developing innovative, effective and measurable programs to inform citizens about the bay and involve them in its protection.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

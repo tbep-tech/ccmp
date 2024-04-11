@@ -1,6 +1,7 @@
 ---
 title: "PA-1"
-
+params:
+  navtitle: <i class="fa fa-hand-holding-droplet"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -18,10 +19,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Provide for and manage recreational uses of the bay
+## Provide for and manage recreational uses of the bay {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Provide adequate and appropriate public access to the bay, and support responsible recreational use and enjoyment.
 
 ### STATUS:
@@ -33,7 +37,9 @@ New Action
 Tampa Bay is renowned for its spectacular waters, bay habitats and fish and wildlife. It provides popular recreational opportunities to residents and visitors alike and is foundational to the community’s quality of life. Every year, tourism and recreation in Tampa Bay generate 47,704 jobs that produce over \$1.6 billion in personal income, resulting in \$4.8 billion in total output [@tbep0923].
 
 Over 3 million residents call the Tampa-St. Petersburg-Clearwater Metropolitan Area home. Another 5 million people visit the area each year. Continued growth of resident and tourist populations will create challenges for managers to ensure adequate and appropriate public access, while managing suitable and responsible recreational uses, natural resource protection and user conflicts.
+:::
 
+::: {#more}
 ![Fishing from boats, kayaks, piers or shore is the most popular water-based recreational activity in the bay area. SOURCE: Neil Taylor](../../img/PA-1-1_yakset-nt.jpg)
 
 Providing adequate and appropriate access to recreational opportunities in Tampa Bay is essential to supporting the economy and quality of life of residents. Nurturing interest and personal connections to the bay is important to building public support and partnerships for community-based stewardship. In addition, preserving coastal habitats and open space will be critical over the long term for maintaining options to adapt and respond to sea level rise and other climate change stressors.
@@ -98,7 +104,12 @@ Florida is world-renowned for its recreational fishing. In 2020, recreational an
 The Tampa Bay Estuary Program (TBEP) has been a leader in providing boater and angler education, partnering with FWC, Audubon and other organizations to produce printed and web-based boating and angling guides to the bay; an Ethical Angler Wallet Card showing harvest and bag limits for popular sportfish, in both English and Spanish; and Bay-Friendly Boater Kits coordinated by TBEP’s Manatee Awareness Coalition (see Actions [PE-2](pe2.html), [FW-1](../../docs/wildlife/fw1.html) and [FW-6](../../docs/wildlife/fw6.html)).
 
 Hunting is an important outdoor sport in areas of the bay watershed. As waterfowl populations have increased, duck hunting has become a popular activity in southern Hillsborough County from the Bullfrog Creek area south to the Little Manatee River. Hunters can be important advocates for land acquisition and management; however, conflicts between hunters, fishermen and even waterfront residents in duck-hunting areas will need to be addressed with growth and increased recreational use of the bay’s southeast shore.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

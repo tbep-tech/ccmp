@@ -3,7 +3,7 @@ title: "PH-5"
 
 params:
   id: '1kgSuFUHFWv1NOg2W_5eTUU6ZUmRbBuv1vgby22wwF0A'
-  
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -23,10 +23,13 @@ gs4_deauth()
 source(here::here('R/funcs.R'))
 ```
 
-Reduce pollution from recreational boaters 
+## Reduce pollution from recreational boaters  {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Continue to promote marina, boatyard and boater education and best practices. Increase availability of sewage pumpout stations and mobile pumpout vessels. Encourage creation of appropriately sited mooring fields near sewage pumpout facilities or services. Encourage enforcement of rules prohibiting sewage discharges, especially for liveaboards and unmaintained vessels outside of marinas or mooring fields. Survey and identify problem areas for unregulated liveaboards. Support state and local programs to remove derelict vessels.
 
 ### STATUS: 
@@ -37,7 +40,9 @@ Moved from Action WQ-2 and revised to focus on waste management issues associate
 
 Pollution resulting from improper boating practices includes sewage discharges, release of toxic chemicals, oil and fuel spills, stormwater runoff from marinas and boatyards, abandoned and derelict vessels, marine debris and discarded monofilament line or other fishing gear.
 This action focuses on the need for additional sewage pumpout services for marinas, identification and management of liveaboards, removal of derelict vessels and continued education about clean boating practices for boaters, marinas and mooring fields. Other boating impacts (such as handling of waste and monofilament line, and safe operation in manatee and seagrass areas) are addressed elsewhere in the CCMP (see Actions [PE-1](../../docs/communities/pe1.html), [PA-1](../../docs/communities/pa1.html), [BH-3](../../docs/wildlife/bh3.html) and [FW-1](../../docs/wildlife/fw1.html)).
+:::
 
+::: {#more}
 ![Removal of derelict vessels is often a lengthy and costly process for state and local agencies.](../../img/PH-5-1_Photo_Derelict Vessel.jpg)
 
 More than 150,000 boats are registered in Hillsborough, Manatee, Pasco and Pinellas Counties, according to the Florida Department of Highway Safety and Motor Vehicles. The number of registered vessels in the Tampa Bay area grew by fifteen percent between 2016 and 2022 with Manatee County registrations increasing by forty-three percent. Pinellas County ranked second and Hillsborough County fifth in number of registered boats statewide in 2022. The vast majority of these boats are 16 to 26 feet long. The popularity of recreational boating highlights the need for baywide adoption of responsible boating practices to protect water quality, human health and aquatic habitats.
@@ -81,7 +86,12 @@ Florida law defines a vessel at risk of becoming derelict as:
 It is unlawful in Florida to store, leave or abandon any derelict vessel in state waters. The Florida Fish and Wildlife Conservation Commission (FWC) or any law enforcement agency can relocate or remove any derelict vessel in the state and the vessel owner is liable for all costs. However, the time between initial identification of a derelict vessel and its eventual removal can be a long and drawn-out process, and removal is costly. In 2021, the Legislature passed a new law that empowers law enforcement to take action on at-risk vessels. For 2022, the Florida Legislature allocated $8.3 million for derelict vessel removal statewide.  Hillsborough County owns its own salvage equipment for derelict vessel removal. Pinellas pays a per-foot removal fee to a contracted marine salvage company, with costs covered by the county’s share of boat registration fees. 
 
 The FWC’s At-Risk Vessel Program allows law enforcement agents to identify vessels at risk of becoming derelict, before they become a problem. Law enforcement officers can tag these vessels and issue violation notices to owners who refuse to improve a vessel’s seaworthiness and secure mooring or storage. At-risk vessels are tracked in a [statewide database](https://experience.arcgis.com/experience/decfb6b7ca024ac98f6f900d86784d09?views=View-1){target="_blank"}.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

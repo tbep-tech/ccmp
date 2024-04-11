@@ -1,6 +1,7 @@
 ---
 title: "CC-2"
-
+params:
+  navtitle: <i class="fa fa-hand-holding-droplet"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -14,10 +15,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Understand and address effects of ocean acidification 
+##  Understand and address effects of ocean acidification {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Improve understanding of acidification status of Tampa Bay. Examine potential role of seagrasses in Tampa Bay to buffer ocean acidification trends in the Gulf of Mexico and provide refuges for organisms vulnerable to increasing acidification. Include ocean acidification issues and mitigation solutions in outreach and education materials.
 
 ### STATUS: 
@@ -27,7 +31,9 @@ New Action
 ### BACKGROUND:
 
 Despite the vast size of the oceans, data show that ocean chemistry has shifted in response to increased carbon dioxide in the atmosphere. Carbon dioxide reacts with seawater to produce carbonic acid, increasing the acidity (lowering the pH) of seawater. This phenomenon, known as ocean acidification (OA), has produced a 30\% increase in ocean acidity since the Industrial Revolution (a decrease in pH of 0.11). As the concentration of carbon dioxide in the atmosphere increases, the ocean absorbs more of it, and as surface layers gradually mix into deep water, the entire ocean is affected.
+:::
 
+::: {#more}
 ![Seagrasses may provide an important marine refuge by buffering the impacts of ocean acidification for fish and shellfish. SOURCE: Jimmy White](../../img/CC-2-1_Feature Photo_seagrass with blenny.jpg)
 
 The decrease in ocean pH disrupts the balance of minerals in the water and makes it more difficult for marine organisms such as shellfish, plankton and corals to produce and maintain calcium carbonate, the primary component of their hard skeletons and shells. Ocean acidification can cause deformities in larval stages of organisms, increasing mortality. In some species of shellfish and fish, especially in the juvenile stages, OA can also impair metabolism, immune system, sensory functions and reproduction. This can impact the entire marine food web and negatively affect recreational and commercial fisheries.
@@ -50,7 +56,12 @@ Through December 2022, TBEP and the US Geological Survey continued a collaborati
 Actions already being taken to reduce CO2 emissions from the burning of fossil fuels will help slow the effects of ocean acidification. Furthermore, conserving and restoring marine habitats will strengthen ecosystem resilience to climate change and enhance ecosystem health (See Actions [CC-1](cc1.html), [BH-1](../../docs/wildlife/bh1.html), [FW-3](../../docs/wildlife/fw3.html) and [FW-6](../../docs/wildlife/fw6.html)).
 
 Reducing nutrient loading to estuaries can also help prevent acidification caused by excess CO2 production when nutrient-fueled algal blooms die and decay. Continuing to manage nutrient loading to Tampa Bay is therefore an important action that also helps address global ocean acidification (see Actions [WQ-1](../../docs/water/wq1.html), [WQ-3](../../docs/water/wq3.html), [SW-1](../../docs/water/sw1.html), [SW-8](../../docs/water/sw8.html) and [SW-10](../../docs/water/sw10.html)).
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

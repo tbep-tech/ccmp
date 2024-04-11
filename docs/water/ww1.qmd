@@ -3,6 +3,7 @@ title: "WW-1"
 
 params:
   id: '1kgSuFUHFWv1NOg2W_5eTUU6ZUmRbBuv1vgby22wwF0A'
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
   
 toc: false
 margin-footer: |
@@ -19,10 +20,15 @@ gs4_deauth()
 source(here::here('R/funcs.R'))
 ```
 
-Expand the beneficial use of reclaimed water
+## Expand the beneficial use of reclaimed water {.sub-title}
 
 ### OBJECTIVES:
 
+[Skip to Activities](#activities)
+
+### OBJECTIVES: 
+
+::: {#intro}
 Encourage and expand beneficial water reuse to reduce nutrient loadings from wastewater discharges and enhance ecosystem benefits. Track the regional strategy and practices for Aquifer Storage and Recovery (ASR) and direct recharge projects to strengthen understanding of their cumulative effect on ground and surface water quantity and quality. Strengthen understanding of the contribution of nutrients and other constituents from beneficial uses of reclaimed water to Tampa Bay. 
 
 ### STATUS: 
@@ -32,7 +38,9 @@ Ongoing. Nitrogen load estimates to Tampa Bay from all sources, including reclai
 ### BACKGROUND:
 
 Use of reclaimed water in the Tampa Bay watershed continues to grow rapidly, with dozens of new projects expected to be online by 2022, reducing the region’s dependence on groundwater while preventing nutrient-rich wastewater effluent from discharging into the bay. New technologies for treating and disposing of wastewater and stormwater are being tested and implemented, continuing to advance the Tampa Bay Area’s national reputation for innovation.
+:::
 
+::: {#more}
 ![Pasco County plans to use reclaimed water to recharge wetlands, such as these at Crews Lake Wilderness Park. SOURCE: Pasco County](../../img/WW-1-1_Feature Photo_Crews lake.jpg)
 
 Reclaimed water can provide a valuable source of freshwater to the bay area — for example, to enhance wetlands, prevent saltwater intrusion into coastal areas or to augment low-salinity habitats identified as important for juvenile fisheries. For that reason, TBEP has encouraged water managers and local governments to retain reclaimed water within the bay watershed.
@@ -71,7 +79,12 @@ The City of St. Petersburg is designing an innovative wastewater reuse project a
 Most reclaimed water construction projects include educational components that promote the value and benefits of efficient and effective water management. SWFWMD and local government utilities provide outreach to homeowners, school facility managers, government buildings, parks and open spaces, hospitals and golf courses on the proper application and maintenance of reclaimed water systems for landscaped areas. SWFWMD has a well-developed web page on water reclamation and reuse information, including GIS and other data, as well as educational publications. The Pinellas County South Cross Bayou Water Reclamation Facility and the St. Petersburg facilities offer tours and educational programming.
 
 The Florida-Friendly Landscaping™ Program, delivered by UF/IFAS County Extension offices throughout the region, emphasizes water conservation and efficient use of alternative water sources for watering. Additional education is needed to inform residents, golf course and property managers that fertilizer application can be reduced or eliminated where reclaimed water is used for irrigation. This message was a key theme of TBEP’s Be Floridian fertilizer education campaign. Pinellas County currently provides an [online map](https://pinellas-egis.maps.arcgis.com/apps/instant/lookup/index.html?appid=326153a964e3458993ec417dc3c12227){target="_blank"} of reclaimed water service areas, with corresponding fertilizer recommendations. 
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

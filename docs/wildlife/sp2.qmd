@@ -1,6 +1,7 @@
 ---
 title: "SP-2"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -14,10 +15,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Evaluate and update oil and hazardous material spill response plans for priority areas 
+## Evaluate and update oil and hazardous material spill response plans for priority areas {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Monitor implementation of oil and hazardous material spill response plans. Encourage greater participation of the bay area environmental community in review of the Area Contingency Plan. Improve communication between stakeholders regarding planning and response for spills. Support maintenance of pre-staged equipment and deployment training for priority areas in the bay.
 
 ### STATUS: 
@@ -29,7 +33,9 @@ Maintain and expand action to encourage greater communication and participation 
 From March 30th to April 9th, 2021 approximately 215 million gallons of mixed seawater-process water from Piney Point were discharged into Tampa Bay. The Tampa Bay Estuary Program mobilized a coordinated [environmental monitoring response](https://tbep.org/piney-point/){target="_blank"} to understand conditions immediately prior to, during, and after the onset of the initial discharge into Lower Tampa Bay. Prior to that incident, a major chemical spill in 2004 released 65 million gallons of acidic process water from a containment system at the Mosaic fertilizer manufacturing plant into Archie Creek and Hillsborough Bay during Hurricane Frances.
 
 A major oil spill occurred in Tampa Bay in 1993, when a three-vessel collision at the mouth of the bay spilled 300,000 gallons of oil. In September 2023, 20,500 gallons of water and crude oil and 6.4 tons of oily debris were recovered from the inner harbor of Port Manatee after a spill from an unknown source. The spill was contained within the port with the cleanup and investigation costing  $1.17 million.
+:::
 
+::: {#more}
 ![Ongoing research conducted by the University of South Florida is providing important insights into the long-term impacts of the 2010 Deepwater Horizon spill in the Gulf of Mexico. SOURCE: USF](../../img/SP-2-1 Spill Response-USF research ship.jpg)
 
 The United States Coast Guard Area Contingency Plan (USCG ACP) is the guiding document for response and cleanup of oil or other hazardous material spills in Tampa Bay. Now completely digital, the ACP comprehensively describes response protocols, provides an inventory of equipment and personnel and identifies sensitive areas and natural resources. It is reviewed annually, and individual elements are updated as needed. A full-scale test of the Plan is conducted every four years, at a cost of more than \$100,000, with smaller “tabletop” tests done more frequently.
@@ -57,7 +63,12 @@ During the 1993 oil spill, Tampa Bay wildfire rescuers gained international atte
 Following the Deepwater Horizon oil spill in 2010, TBEP staff provided input to state and federal damage assessment efforts. Tampa Bay monitoring programs provide important baseline information for assessing pre-spill conditions and for predicting spill trajectories in the bay. Baseline monitoring, coupled with regional, state or national modeling efforts (such as NOAA’s Operational Nowcast and Forecast Hydrodynamic Model Systems), is a powerful tool for forecasting spill behavior and impacts. Post-spill research being conducted by the University of South Florida, FWC and others is providing new and important insights into the long-term ecological effects of spills.
 
 In general, the Tampa Bay region has made significant strides in spill readiness and demonstrated an admirable spirit of cooperation among public and private interests. More active and consistent engagement with the environmental community will help ensure that up-to-date information about vulnerable coastal resources is incorporated in the ACP, and that the bay’s most vulnerable areas and wildlife populations are broadly recognized priorities for protection in the event of a spill.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

@@ -1,6 +1,7 @@
 ---
 title: "BH-8"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -18,10 +19,13 @@ library(sf)
 source(here::here('R/funcs.R'))
 ```
 
-Continue and enhance habitat mapping and monitoring programs
+## Continue and enhance habitat mapping and monitoring programs {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Expand habitat mapping and monitoring programs to assess extent and quality of bay habitats, including seagrass, benthic, hard-bottom, emergent coastal and associated upland habitats. Assess new technologies as they become available. Assess the need for  additional monitoring of effects of emerging contaminants on benthic habitats and increased monitoring in tidal tributaries. 
 
 ### STATUS:
@@ -31,7 +35,9 @@ Ongoing. Action is revised to recognize the evolving role of emerging technologi
 ### BACKGROUND:
 
 Substantial progress has been made to map and monitor bay habitats to inform habitat restoration and protection targets (see Action [BH-1](bh1.html)). The Habitat Master Plan (2020 Update) incorporates restoration and protection targets for critical habitat types in Tampa Bay [@tbep0720].
+:::
 
+::: {#more}
 ![Biologists record the type and abundance of marsh plants in a sampling grid at Upper Tampa Bay Park, one of the long-term monitoring sites in TBEP’s Critical Coastal Habitat Assessment. SOURCE: Lindsay Cross](../../img/BH-8-1_Feature Photo_vegetation monitoring.jpg)
 
 The Southwest Florida Water Management District (SWFWMD) continues to map seagrass acreage every two years using aerial photography, while local government partners have helped ground-truth seagrass quality at selected transects throughout the bay since 1988 and 1998, respectively. Seagrass communities are vulnerable to environmental variability (such as heavy rainfall events) and human impacts (such as boat propellers and groundings). After reaching a historic peak of 41,655 acres  in 2016, the bay had only 30,137acres of seagrasses in 2022, a significant decrease of 11,518 acres even though water quality standards were met in all bay segments except Old Tampa Bay. Continued biennial mapping of baywide seagrass coverage is necessary to identify and prioritize affected areas.
@@ -56,7 +62,12 @@ cchasites_plo()
 Changes in freshwater wetland habitat were mapped for the entire Tampa Bay watershed using land cover map products derived from aerial imagery taken in 1950 and 2020. Maps were analyzed to compare the change in quantity and quality of wetland habitat over time. These data were used to help set restoration and protection targets in the Habitat Master Plan (2020 Update) (see Action [BH-1](bh1.html)).
 
 In the Tampa Bay watershed, coastal uplands are important buffers between sensitive tidal wetlands and urban and agricultural development. Ongoing mapping of coastal upland habitats is necessary to assess development pressures and update targets and goals.  A comprehensive mapping program for invasive plants does not exist, although various agencies maintain some location-specific information about invasive plants on their environmental lands. These local data could be augmented via citizen science using mobile devices.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

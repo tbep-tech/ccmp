@@ -3,7 +3,7 @@ title: "SW-8"
 
 params:
   id: '1kgSuFUHFWv1NOg2W_5eTUU6ZUmRbBuv1vgby22wwF0A'
-  
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -18,10 +18,13 @@ gs4_deauth()
 source(here::here('R/funcs.R'))
 ```
 
-Expand adoption and implementation of Best Management Practices for commercial and urban agriculture
+## Expand adoption and implementation of Best Management Practices for commercial and urban agriculture {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Expand utilization of agricultural Best Management Practices (BMPs) to reduce nitrogen runoff to the bay. Target increased BMP participation from farms in priority areas where Total Maximum Daily Load regulations (TMDLs) or Basin Management Action Plans (BMAPs) exist. Support regional cost-sharing programs for implementing BMPs. Expand education about best practices to community gardens and homeowners with vegetable gardens, backyard chickens, horses or livestock.
 
 ### STATUS: 
@@ -31,7 +34,9 @@ Ongoing. The Florida Department of Agriculture and Consumer Services (FDACS) has
 ### BACKGROUND:
 
 Non-point source pollutants from agriculture include nutrients from fertilizer and animal waste and pesticides. With improvements in irrigation and fertilization practices, public acquisition of former croplands and ongoing conversion of more intensive agricultural operations for commercial and residential development, nitrogen loading from agricultural sources has decreased in some areas in the Tampa Bay watershed. Some types of agriculture, such as cow/calf operations on pastures, may generate less nutrient runoff than residential development with highly maintained lawns. Urban agriculture (including community and backyard vegetable gardens and chicken coops) is increasing in popularity due to rising demand for homegrown and locally sourced foods.
+:::
 
+::: {#more}
 ![](../../img/SW-8-1 Feature Photo-strawberry field.jpg)
 
 Agriculture is an important economic driver in the region — Hillsborough, Polk and Manatee counties are among the top 6 Florida counties in value of agricultural products sold. Based on [2017–2021 estimates](https://tbep.org/tampa-bay-nitrogen-loads/){target="_blank"} from the Tampa Bay Estuary Program’s Nitrogen Management Consortium, agriculture accounts for about 20% (approximately 759 tons of the 3,959 tons per year average) of total nitrogen loading to the bay from nonpoint source runoff. 
@@ -62,7 +67,12 @@ With the passage of the Clean Waterways Act (2020), FDACS is expected to increas
 UF/IFAS Extension Agents provide outreach to both commercial and non-commercial operators to encourage BMP adoption. Outreach to rural hobby operators (e.g., horse boarding facilities, alpaca ranches, rabbit breeding operations), especially with property adjacent to waterways, should be a focus. In addition, education should be extended to urban farmers with a greater potential to contribute pollution to stormwater runoff, including community gardens, backyard gardens and chicken coops. 
 
 With the growing popularity and interest among urban homeowners in backyard chicken coops, Pinellas County (and five of its municipalities), the City of Tampa, Polk County, and Manatee County have adopted backyard chicken ordinances. Some ordinances have setback requirements for the coop, which can help minimize stormwater pollution from waste. UF/IFAS is developing a Backyard Poultry 101 Workshop for Small Farms Agents in several counties, which will likely include recommendations for managing waste.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

@@ -52,14 +52,14 @@ pyro_plo <- function(yr = 2021, mo = c('Jun', 'Oct')){
       .by = epchc_station
     ) |> 
     sf::st_as_sf(coords = c('lon', 'lat'), crs = 4326) 
-
-  dat_ext <- tomap |> 
-    sf::st_bbox() |> 
-    sf::st_as_sfc() |> 
-    sf::st_buffer(dist = units::set_units(2, kilometer)) |>
-    sf::st_bbox() |> 
-    unname()
   
+  # dat_ext <- tomap |> 
+  #   sf::st_bbox() |> 
+  #   sf::st_as_sfc() |> 
+  #   sf::st_buffer(dist = units::set_units(20, kilometer)) |>
+  #   sf::st_bbox() |> 
+  #   unname()
+
   m <- ggplot2::ggplot() +
     ggspatial::annotation_map_tile(zoom = 12, quiet = TRUE, progress = "none", type = 'cartolight', cachedir = system.file("rosm.cache", package = "ggspatial"))  
   
@@ -84,19 +84,19 @@ pyro_plo <- function(yr = 2021, mo = c('Jun', 'Oct')){
     ) 
 
   m <- m +
-    ggspatial::annotation_scale(location = 'br', unit_category = 'metric')
+    ggspatial::annotation_scale(location = 'bl', unit_category = 'metric')
   m <- m +
-    ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), 
+    ggspatial::annotation_north_arrow(location = 'tr', which_north = "true", height = grid::unit(0.75, "cm"), 
                                     width = grid::unit(0.75, "cm"))
   
-  dat_ext <- dat_ext |> 
-    sf::st_as_sfc(dat_ext) |> 
-    sf::st_transform(crs = 4326) |> 
-    sf::st_bbox()
-  
-  # set coordinates because vector not clipped
-  m <- m +
-    ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
+  # dat_ext <- dat_ext |> 
+  #   sf::st_as_sfc(dat_ext) |> 
+  #   sf::st_transform(crs = 4326) |> 
+  #   sf::st_bbox()
+  # 
+  # # set coordinates because vector not clipped
+  # m <- m +
+  #   ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
   
   return(m)
   
@@ -257,8 +257,8 @@ cchasites_plo <- function(){
       x = NULL, 
       y = NULL
     ) +
-    ggplot2::theme_minimal() +
-    ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
+    ggplot2::theme_minimal() #+
+    # ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
   
   return(m)
   
@@ -299,8 +299,8 @@ tdlcrk_plo <- function(maxyr = 2022){
       color = NULL, 
       fill = NULL
     ) +
-    ggplot2::theme_minimal() +
-    ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
+    ggplot2::theme_minimal()# +
+    # ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
   
   return(m)
   

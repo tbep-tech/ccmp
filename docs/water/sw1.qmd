@@ -17,16 +17,16 @@ source(here::here('R/funcs.R'))
 
 [Skip to Activities](#activities)
 
-### Objectives 
+### OBJECTIVES: 
 
 ::: {#intro}
 Continue to support and improve local fertilizer ordinances. Expand Best Management Practices (BMPs) certification programs for general landscape maintenance personnel. Explore incentives for homeowners to replace high-maintenance landscapes with lower maintenance alternatives. Expand outreach to homeowner and condo associations about statewide laws supporting water-conserving landscapes in deed-restricted communities and recommended changes to landscape covenants to comply with those laws. Continue research to quantify reduction in nitrogen loadings from reduced fertilizer use.
 
-### Status 
+### STATUS: 
 
 This action, formerly Action SW-12, has been merged with related Actions SW-1, SW-2, SW-3 and SW-11 to focus on the broader theme of reducing overall runoff from urban and residential landscapes.
 
-### Background
+### BACKGROUND:
 
 Residential fertilizer is a significant source of nitrogen to the bay, accounting for about 20% of the nitrogen carried in stormwater. The costs of treating stormwater from urban areas (estimated at $3,500 per pound of nitrogen removed, per the statewide Section 319h stormwater project database) led many bay area communities to adopt local fertilizer ordinances as a practical and cost-effective way to substantially reduce nitrogen inputs at little cost to taxpayers. The Tampa Bay Estuary Program (TBEP) was instrumental in the development and adoption of these city and county ordinances.
 
@@ -72,7 +72,7 @@ Additional research is needed to quantify the impact of fertilizer ordinances on
 ```{=html}
 <button onclick=readMore() id="readMore">Read More</button>
 ```
-### Activities
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

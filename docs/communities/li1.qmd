@@ -1,6 +1,7 @@
 ---
 title: "LI-1"
-
+params:
+  navtitle: <i class="fa fa-hand-holding-droplet"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -11,10 +12,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Incorporate CCMP goals and actions in local government comprehensive plans, land development regulations or ordinances
+## Incorporate CCMP goals and actions in local government comprehensive plans, land development regulations or ordinances {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Encourage local government stakeholders to identify and prioritize goals and actions from Tampa Bay Estuary Program’s Comprehensive Conservation and Management Plan (CCMP) that relate to their own efforts. Demonstrate links between CCMP goals and actions to the most appropriate elements of local government comprehensive plans, land development regulations, code of ordinances or other guidance documents. Provide model language based on CCMP goals and actions that can be adopted or adapted by TBEP local government partners in their planning and guidance documents. 
 
 ### STATUS: 
@@ -24,7 +28,9 @@ New Action. This Action has been completed.
 ### BACKGROUND:
 
 The Tampa Bay Estuary Program (TBEP) first adopted a science-based Comprehensive Conservation and Management Plan (CCMP) for Tampa Bay in 1997. Major updates were completed in 2006 and 2017, plus a minor revision with the 2023 Interim Update. The CCMP presents strategies for addressing water and sediment quality, bay habitats, fish and wildlife, dredging, spill prevention and response, invasive species, climate change and public involvement, access and education throughout the bay watershed.
+:::
 
+::: {#more}
 ![Davis Island Boat Basin in Tampa. SOURCE: Nanette O’Hara](../../img/LI-1-1_Feature Photo_Davis Island Boat Basin.jpg)
 
 Local government and regulatory partners of TBEP have formally committed to implementing CCMP goals through adoption of an Interlocal Agreement. The Agreement, the first of its kind among the nation’s 28 National Estuary Programs, represents a pledge by TBEP’s partners to work together to accomplish CCMP goals and actions. 
@@ -42,7 +48,12 @@ The 2017 CCMP Update provided multiple additional areas in which concrete, actio
 In 2016, TBEP contracted with the Tampa Bay Regional Planning Council (TBRPC) to provide guidance to local governments on how to incorporate elements of the CCMP into existing planning tools. The resulting Comprehensive Conservation & Management Plan – Local Government Comprehensive Plan Crosswalk Project aims to 1) prioritize CCMP goals and actions suitable for inclusion in local government comprehensive plans, land development regulations or other guidance documents, 2) identify relevant elements, goals, objectives and policies in local government regulatory frameworks to serve as the most appropriate vehicle for incorporating CCMP priority goals and actions, and 3) provide model language based on CCMP goals and actions for local government consideration. 
 
 The Crosswalk Project, completed in 2020, shared final recommendations and model language with local government officials, planners and resource managers at a regional workshop in 2018. Ongoing technical assistance will be provided to local governments as they consider adapting and adopting these recommendations in their comprehensive plans, land development regulations and other guidance documents.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

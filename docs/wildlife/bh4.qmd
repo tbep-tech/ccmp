@@ -1,6 +1,7 @@
 ---
 title: "BH-4"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -15,10 +16,13 @@ library(tbeptools)
 source(here::here('R/funcs.R'))
 ```
 
-Identify hard bottom communities and avoid impacts
+## Identify hard bottom communities and avoid impacts {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Identify and protect hard bottom and oyster reef habitats in Tampa Bay. Map and monitor existing oyster reef habitat; develop bay-wide goals for oyster reef habitat creation and protection; monitor animal use of reef habitat; support community-based oyster reef habitat restoration; and support mooring fields and buoys to protect hard bottom habitat.
 
 ### STATUS:
@@ -28,7 +32,9 @@ Ongoing. Action revised from “Restrict impacts to hard bottom communities and 
 ### BACKGROUND:
 
 Hard bottom habitats in Tampa Bay include fossilized corals, rubble, limestone, other natural “reef-like” material and artificial reefs. They provide important substrate for the attachment of benthic species, including sponges, corals and oysters, and attract and support a diverse assemblage of marine invertebrates and fish, including many recreationally important species.
+:::
 
+::: {#more}
 ![An Atlantic spadefish in a hard bottom area of Lower Tampa Bay is lured into camera range with a bait cage suspended from a PVC deployment unit. SOURCE:  FWC](../../img/BH-4-1_Spadefish_GraySnap_grunt.jpg)
 
 Oyster reefs are formed by the cumulative buildup of shell material from successive generations of oysters. They occur predominantly in shallow nearshore areas, especially in brackish waters near creek and river mouths. Oyster reefs provide a number of ecological, economic and recreational benefits, including food and habitat for a large number of species. They also can reduce erosion, stabilize shorelines and improve water quality.
@@ -73,7 +79,12 @@ Additional hard bottom impacts are likely in Tampa Bay as a result of dredging a
 ![Sheepshead and spottail pinfish are captured by an underwater camera on a hard-bottom reef in Tampa Bay. SOURCE:  Walt Jaap](../../img/BH-4-4 Hard Bottom sheepshead and spottail pinfish.jpg)
 
 Impacts to hard bottom and oyster reef habitats are not easily mitigated, and greater recognition and protection of these rare habitats is needed. Therefore, the effectiveness of current permitting and mitigation rules in preserving hard bottom and oyster reef habitats throughout the bay warrants evaluation. 
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

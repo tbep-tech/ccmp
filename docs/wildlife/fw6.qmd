@@ -3,7 +3,7 @@ title: "FW-6"
 
 params:
   id: '1kgSuFUHFWv1NOg2W_5eTUU6ZUmRbBuv1vgby22wwF0A'
-  
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -29,10 +29,13 @@ gs4_deauth()
 source(here::here('R/funcs.R'))
 ```
 
-Preserve the diversity and abundance of bay wildlife  
+## Preserve the diversity and abundance of bay wildlife {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 An umbrella action to protect important fish and wildlife populations in the bay watershed, specifically by supporting research; habitat protection and restoration, compliance with laws to protect fish and wildlife; and education initiatives that foster species diversity and abundance. Support research, management and education to protect listed species and other important wildlife populations in the Tampa Bay watershed. Implement the Bay Habitats Action Plan to achieve targets and goals for critical fish and wildlife habitats. Continue and expand scientific and community-based wildlife monitoring programs. Give priority consideration to TBEP Bay Mini-Grant projects that address listed and potentially imperiled species. Identify species about which more data is needed to assess status. 
 
 ### STATUS:
@@ -42,7 +45,9 @@ Ongoing. Action expanded to address a variety of threats to fish and wildlife, i
 ### BACKGROUND:
 
 The Tampa Bay Area supports more than 40 species listed as Threatened or Endangered by the United States Fish and Wildlife Service (USFWS) or listed as Threatened or Species of Special Concern by the Florida Fish and Wildlife Conservation Commission (FWC). They inhabit a wide variety of habitats from the bay proper to its mangrove islands, rivers, tidal streams, marshes, freshwater wetlands, sandy beaches and upland forests. Many species require different habitats at various life stages.
+:::
 
+::: {#more}
 ![A Great Egret in spectacular courtship display. Egrets, herons, ibis and other wading birds nest in colonies on mangrove islands in Tampa Bay. SOURCE: Gerold Morrison](../../img/FW-6-1 great egret.jpg)
 
 Many of the bay’s most visible and beloved species are well-documented. For example, Audubon first began protecting and monitoring colonial waterbird populations in 1934;  Audubon staff currently manage and assess 30 nesting colonies on islands in and around Tampa Bay. Sea turtle nests on bay area beaches and barrier islands are [surveyed and safeguarded](https://myfwc.maps.arcgis.com/apps/webappviewer/index.html?id=8e6e45efc47a4c69941ddcb097cb195a){target="_blank"} annually. In 2016, 1595 loggerhead turtle nests were confirmed. Green and leatherback turtle nests are very rare on Tampa Bay area beaches. Research has shown that the bay itself is an important nursery area for juvenile Kemp’s ridley sea turtles, one of the world’s most endangered species.
@@ -106,7 +111,12 @@ fw6species_tab(params$id, paste(rmarkdown::metadata$title, 'species'))
 TBEP participates in collaborative partnerships within the Tampa Bay and Southwest Florida region to review and coordinate habitat restoration and protection initiatives (see Actions [BH-1](bh1.html), [BH-2](bh2.html), [BH-3](bh3.html), and [BH-9](bh9.html)). These initiatives include identification of priority sites for acquisition and mitigation. 
 
 TBEP has been a leader in educating bay users about responsible water recreation, through boating guides, ethical fishing information and sponsorship of “Leave No Trace” outdoor etiquette workshops. TBEP also informs waterfront homeowners about ways to enhance their shorelines for fish and wildlife, and about coexisting with wildlife.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

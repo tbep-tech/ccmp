@@ -1,6 +1,7 @@
 ---
 title: "IS-2"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -14,10 +15,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Support prevention, eradication or management of invasive species in Tampa Bay and its watershed
+## Support prevention, eradication or management of invasive species in Tampa Bay and its watershed {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Manage or eradicate existing invasive plants and animals and prevent future invasions, by informing homeowners, landowners, natural resource managers, ecotourism providers and outdoor enthusiasts about the harmful ecological and economic impacts of invasive plants and animals. Involve them in preventing, eradicating or managing invasive species. Support continued research and implementation of appropriate biological controls for invasive plants.
 
 ### STATUS:
@@ -27,7 +31,9 @@ Ongoing. Action title revised from 2006 CCMP Implement a public education progra
 ### BACKGROUND:
 
 Citizens now have more access than ever to information about invasive plants and animals via web-based sources and tools they can use to eradicate invasive species in their own yards and communities. Some high-profile invaders, such as Burmese pythons and lionfish, have been extensively publicized in mainstream media and are now widely recognized by the public as ecological threats.
+:::
 
+::: {#more}
 ![Lionfish were first reported off Florida’s East Coast in 1985, and rapidly spread throughout the state. These highly adaptable predators of juvenile native fishes are found in shallow waters as well as deep offshore wrecks. SOURCE: FWC](../../img/IS-2-1_lionfish-close.jpg)
 
 Unfortunately, efforts to eradicate invasive species almost always come too late, after an invader has spread beyond reasonable hope of control. Even when threats are recognized quickly — as with lionfish — the population may multiply so rapidly and/or into such inaccessible areas that elimination becomes impossible, and management or containment is the only feasible remedy. However, when detected early enough, it is possible to prevent or eliminate invasive species — the toxic invasive marine alga, *Caulerpa taxifolia*, was successfully eradicated from California — or to limit their spread into critically important natural areas such as parks and preserves.
@@ -85,7 +91,12 @@ Sustaining momentum and interest has been a challenge, as the CISMA has no forma
 Collaborative and consistent messaging to successfully prevent or minimize the impacts of invasive plant and animals will remain a priority need, especially as new residents, unfamiliar with Florida’s unique climate and natural systems and extreme vulnerability to invaders, continue to move to the Tampa Bay region. 
 
 This action supports early detection networks and seeks to expand opportunities for scientists, resource managers, resource users and the public to share information about potentially devastating invasions and to work cooperatively to prevent or limit their ecological impact.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

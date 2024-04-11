@@ -1,6 +1,7 @@
 ---
 title: "AD-1"
-
+params:
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -17,10 +18,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Continue to reduce nitrogen loading from atmospheric deposition  
+## Continue to reduce nitrogen loading from atmospheric deposition {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro} 
 Continue to support power plant upgrades and transitions to alternate energy sources. Continue to support initiatives to reduce atmospheric nitrogen pollution from vehicles. Expand the number of air monitoring stations for atmospheric nitrogen. Support research to better understand and quantify the contribution of atmospheric deposition to stormwater runoff. Support public education about the link between air and water quality.
 
 ### STATUS: 
@@ -30,7 +34,9 @@ Revised Action. Formerly Action AD-1 Continue atmospheric deposition studies to 
 ### BACKGROUND:
 
 Reducing nitrogen input (loading) to Tampa Bay is a core management objective for the Tampa Bay Estuary Program (TBEP) and its partners (see Action [WQ-1](wq1.html)). Reductions in nitrogen pollution are linked to improved water quality, recovery of seagrass meadows and associated marine life and other environmental and human health benefits.
+:::
 
+::: {#more}
 ![TECO’s 23-megawatt solar array near the Big Bend Power Station is capable of powering more than 3,300 homes. SOURCE:  Tampa Electric](../../img/AD-1-1 Photo_TECO Big Bend.jpg)
 
 Nitrogen (N) pollution can reach Tampa Bay from a variety of sources, including stormwater runoff from non-point sources (e.g., urban fertilizer runoff or septic systems — see Actions [SW-1](sw1.html), [SW-8](sw8.html), [SW-10](sw10.html), [WW-2](ww2.html)), point sources (e.g., a wastewater treatment plant — see Actions [WW-3](ww3.html) and [WW-5](ww5.html)), groundwater and springs and atmospheric deposition. Atmospheric nitrogen can reach bay waters directly through deposition from rainfall and dust and indirectly through stormwater runoff carrying atmospheric nitrogen deposited on impervious surfaces in the watershed.
@@ -83,7 +89,12 @@ Many opportunities exist to promote energy conservation that saves consumers mon
 * UF/IFAS Extension provides a wealth of general information about energy efficiency and “living green” including specific information about energy-efficient lighting, heating, cooling and landscaping.
 
 Despite significant reductions in nitrogen emissions from power plants and vehicles and improved energy efficiency of buildings and appliances, rapid population growth in the Tampa Bay Area may offset some of these gains. As population size and energy demand grow, continuing reductions in per capita energy use and air pollution will be needed, especially from vehicles, to maintain and improve the region’s water quality and quality of life. 
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

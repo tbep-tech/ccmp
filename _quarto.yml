@@ -32,7 +32,7 @@ website:
       - text: "Community"
         href: docs/communities/pe1.qmd
   sidebar:
-    
+  
     - id: clean-water-and-sediments
       title: "Clean Water and Sediments"
       collapse-level: 1
@@ -136,7 +136,6 @@ website:
           contents:
             - text: "IS-2"
               href: docs/wildlife/is2.qmd
-        - section: "References"
               
     - id: informed-engaged-and-responsible-community
       title: "Informed, Engaged, and Responsible Community"
@@ -175,6 +174,9 @@ citation-location: margin
 format:
   html:
     anchor-sections: false
+    include-before-body:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     include-after-body:
       text: |
         <script type="application/javascript">
