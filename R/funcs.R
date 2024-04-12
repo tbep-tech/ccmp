@@ -53,13 +53,13 @@ pyro_plo <- function(yr = 2021, mo = c('Jun', 'Oct')){
     ) |> 
     sf::st_as_sf(coords = c('lon', 'lat'), crs = 4326) 
   
-  # dat_ext <- tomap |> 
-  #   sf::st_bbox() |> 
-  #   sf::st_as_sfc() |> 
-  #   sf::st_buffer(dist = units::set_units(20, kilometer)) |>
-  #   sf::st_bbox() |> 
-  #   unname()
-
+  dat_ext <- tomap |> 
+    sf::st_bbox() |> 
+    sf::st_as_sfc() |> 
+    sf::st_buffer(dist = units::set_units(2, kilometer)) |>
+    sf::st_bbox() |> 
+    unname()
+  
   m <- ggplot2::ggplot() +
     ggspatial::annotation_map_tile(zoom = 12, quiet = TRUE, progress = "none", type = 'cartolight', cachedir = system.file("rosm.cache", package = "ggspatial"))  
   
@@ -82,21 +82,21 @@ pyro_plo <- function(yr = 2021, mo = c('Jun', 'Oct')){
       subtitle = 'Old Tampa Bay, EPCHC stations',
       title = ttl
     ) 
-
-  m <- m +
-    ggspatial::annotation_scale(location = 'bl', unit_category = 'metric')
-  m <- m +
-    ggspatial::annotation_north_arrow(location = 'tr', which_north = "true", height = grid::unit(0.75, "cm"), 
-                                    width = grid::unit(0.75, "cm"))
   
-  # dat_ext <- dat_ext |> 
-  #   sf::st_as_sfc(dat_ext) |> 
-  #   sf::st_transform(crs = 4326) |> 
-  #   sf::st_bbox()
-  # 
-  # # set coordinates because vector not clipped
-  # m <- m +
-  #   ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
+  m <- m +
+    ggspatial::annotation_scale(location = 'br', unit_category = 'metric')
+  m <- m +
+    ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), 
+                                      width = grid::unit(0.75, "cm"))
+  
+  dat_ext <- dat_ext |> 
+    sf::st_as_sfc(dat_ext) |> 
+    sf::st_transform(crs = 4326) |> 
+    sf::st_bbox()
+  
+  # set coordinates because vector not clipped
+  m <- m +
+    ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
   
   return(m)
   
@@ -107,7 +107,7 @@ adload_plo <- function(){
   load(file = here::here('data/tnanndat.RData'))  
   
   cols <- c('#427355', '#5C4A42', '#958984', '#004F7E', '#00806E')
-
+  
   toplo <- tnanndat |> 
     dplyr::filter(year >= 2017 & year <= 2021) |> 
     dplyr::filter(bay_segment == 'All Segments (- N. BCB)') |> 
@@ -119,7 +119,7 @@ adload_plo <- function(){
       source = factor(source, 
                       levels = c('AD', 'DPS', 'GWS', 'IPS', 'NPS'),
                       labels = c('Atmospheric\nDeposition', 'Municipal\nWastewater', 'Groundwater', 'Industrial\nWastewater', 'Stormwater\nRunoff')
-                      ), 
+      ), 
       percent = paste0(round(tn_load / sum(tn_load) * 100, 0), '%'),
       toemph = ifelse(source == 'Atmospheric\nDeposition', 'a', 'b')
     )
@@ -158,7 +158,7 @@ bacwbid_plo <- function(){
   # second request gets tampa bay and tampa bay tributaries group name, note that I can also search by parameter group, but query doesn't allow complex and/or logic
   # vwbid <- st_read('https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/IMPAIRED_WATERS/MapServer/5/query?outFields=*&where=1%3D1&f=geojson', quiet = T)
   vwbid = st_read("https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/IMPAIRED_WATERS/MapServer/5/query?where=GROUP_NAME%20%3D%20'Tampa%20Bay'%20OR%20GROUP_NAME%20%3D%20'Tampa%20Bay%20Tributaries'&outFields=GROUP_NAME,WATERBODY_CLASS,PARAMETER_ASSESSED,PARAMETER_GROUP,WBID&outSR=4326&f=geojson", quiet = T)
-
+  
   vwbid <- st_make_valid(vwbid)
   
   # make sure subset by tb watershed, retain only bacteria and unique wbids
@@ -182,7 +182,7 @@ bacwbid_plo <- function(){
 intertidal_plo <- function(curyr = 2020){
   
   nms <- c('Mangrove Forests', 'Salt Marshes', 'Salt Barrens')
-           
+  
   # from 2017 HMPU bh1 graphic
   ca1950 <- tibble::tibble(
     name = 'ca1950',
@@ -231,7 +231,7 @@ intertidal_plo <- function(curyr = 2020){
 
 # map of ccha sites
 cchasites_plo <- function(){
-
+  
   tranloc <- rdataload('https://github.com/tbep-tech/ccha-sampling-effort/raw/main/data/tranloc.RData')
   
   tomap <- tranloc |> 
@@ -241,12 +241,12 @@ cchasites_plo <- function(){
       lon = st_coordinates(tomap)[, 1], 
       lat = st_coordinates(tomap)[, 2]
     )
-
+  
   dat_ext <- tomap |>
     st_buffer(dist = 10000) |>
     st_bbox() |>
     unname()
-
+  
   m <- ggplot2::ggplot() +
     ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
     ggspatial::annotation_scale(location = 'bl', unit_category = 'metric') +
@@ -257,8 +257,8 @@ cchasites_plo <- function(){
       x = NULL, 
       y = NULL
     ) +
-    ggplot2::theme_minimal() #+
-    # ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
+    ggplot2::theme_minimal() +
+    ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
   
   return(m)
   
@@ -299,13 +299,13 @@ tdlcrk_plo <- function(maxyr = 2022){
       color = NULL, 
       fill = NULL
     ) +
-    ggplot2::theme_minimal()# +
-    # ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
+    ggplot2::theme_minimal() +
+    ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
   
   return(m)
   
 }  
-  
+
 # scallop search counts
 scallop_plo <- function(){
   
@@ -359,7 +359,7 @@ scallop_plo <- function(){
 fim_plo <- function(){
   
   load(file = here::here('data/fimdat.RData'))  
-
+  
   # cols <- c('#427355', '#5C4A42', '#958984', '#004F7E', '#00806E')
   cols <- c('#5C4A42', '#004F7E', '#00806E')
   
@@ -399,7 +399,7 @@ fim_plo <- function(){
       axis.title.y = ggplot2::element_text(size = 12), 
       axis.text.x = ggplot2::element_text(size = 11)
     )
-    
+  
   return(p)
   
 }
@@ -420,7 +420,7 @@ waterbird_plo <- function(){
     ) 
   
   cols <- c(Active = '#2DC938', Inactive = '#CC3231', `Not checked` = '#E9C318')
-    
+  
   m <- ggplot2::ggplot() +
     ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
     ggspatial::annotation_scale(location = 'br', unit_category = 'metric') +
@@ -509,7 +509,7 @@ gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 5){
     ggplot2::scale_fill_brewer(type = "cont", palette = "Blues", direction = -1) +
     ggplot2::scale_color_manual(values = toplo$txtcols) +
     ggplot2::geom_text(size = 32, ggplot2::aes(label = icon, family = font_family,
-                             x = x + w/2.5, y = y + h/14), alpha = 0.25) +
+                                               x = x + w/2.5, y = y + h/14), alpha = 0.25) +
     ggplot2::theme_void() +
     ggplot2::guides(
       fill = 'none', 
@@ -519,7 +519,7 @@ gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 5){
   return(p)
   
 }
-  
+
 seagrassph_plo <- function(){
   
   data(seagrass, package = 'tbeptools')
@@ -565,7 +565,7 @@ seagrassph_plo <- function(){
     ggplot2::labs(
       x = NULL, 
       fill = NULL
-      ) +
+    ) +
     ggplot2::theme_minimal() +
     ggplot2::theme(
       legend.position = 'top', 
@@ -654,7 +654,7 @@ ww1_tab <- function(id, action){
 coc1_tab <- function(id, action){
   
   sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
-
+  
   out <- flextable::flextable(sht) |> 
     flextable::set_header_labels(`...1` = '') |>
     flextable::bg(bg = "lightgray", part = "header") |> 
@@ -720,7 +720,7 @@ fw1_tab <- function(id, action){
   sht$`2016` <- as.numeric(sht$`2016`)
   sht$`2022` <- as.numeric(sht$`2022`)  
   sht$`% Increase` = ((sht$`2022` - sht$`2016`) / sht$`2016`) * 100
-
+  
   out <- flextable::flextable(sht) |> 
     flextable::set_header_labels(i = 1, `...1` = '') |>
     flextable::colformat_double(j = 2:3, digits = 0, big.mark = ",") |>
@@ -735,7 +735,7 @@ fw1_tab <- function(id, action){
 }
 
 fw6turtles_tab <- function(id, action){
-
+  
   sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
   sht <- na.omit(sht)
   sht <- sht |> 
@@ -754,7 +754,7 @@ fw6turtles_tab <- function(id, action){
 }
 
 fw6species_tab <- function(id, action){
-
+  
   sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
   
   # find class rows
