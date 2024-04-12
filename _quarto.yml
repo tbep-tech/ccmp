@@ -26,7 +26,7 @@ website:
     title: "{{< meta params.navtitle >}}"
     left:
       - text: "Water"
-        href: docs/clean-water-and-sediments/wq1.qmd
+        href: docs/water/wq1.qmd
       - text: "Wildlife"
         href: docs/wildlife/bh1.qmd
       - text: "Community"
@@ -42,45 +42,45 @@ website:
         - section: "Water Quality"
           contents:
             - text: "WQ-1"
-              href: docs/clean-water-and-sediments/wq1.qmd
+              href: docs/water/wq1.qmd
             - text: "WQ-3"
-              href: docs/clean-water-and-sediments/wq3.qmd
+              href: docs/water/wq3.qmd
         - section: "Stormwater Runoff"
           contents:
             - text: "SW-1" 
-              href: docs/clean-water-and-sediments/sw1.qmd
+              href: docs/water/sw1.qmd
             - text: "SW-8"
-              href: docs/clean-water-and-sediments/sw8.qmd
+              href: docs/water/sw8.qmd
             - text: "SW-10"
-              href: docs/clean-water-and-sediments/sw10.qmd
+              href: docs/water/sw10.qmd
         - section: "Atmospheric Deposition"
           contents:
             - text: "AD-1"
-              href: docs/clean-water-and-sediments/ad1.qmd
+              href: docs/water/ad1.qmd
         - section: "Wastewater Discharge"
           contents:
             - text: "WW-1"
-              href: docs/clean-water-and-sediments/ww1.qmd
+              href: docs/water/ww1.qmd
             - text: "WW-2"
-              href: docs/clean-water-and-sediments/ww2.qmd
+              href: docs/water/ww2.qmd
             - text: "WW-3"  
-              href: docs/clean-water-and-sediments/ww3.qmd
+              href: docs/water/ww3.qmd
             - text: "WW-5"
-              href: docs/clean-water-and-sediments/ww5.qmd
+              href: docs/water/ww5.qmd
         - section: "Contaminants of Concern"
           contents:
             - text: "COC-1"
-              href: docs/clean-water-and-sediments/coc1.qmd
+              href: docs/water/coc1.qmd
             - text: "COC-4"
-              href: docs/clean-water-and-sediments/coc4.qmd
+              href: docs/water/coc4.qmd
         - section: "Pathogens"
           contents:
             - text: "PH-2"
-              href: docs/clean-water-and-sediments/ph2.qmd
+              href: docs/water/ph2.qmd
             - text: "PH-4"
-              href: docs/clean-water-and-sediments/ph4.qmd
+              href: docs/water/ph4.qmd
             - text: "PH-5"
-              href: docs/clean-water-and-sediments/ph5.qmd
+              href: docs/water/ph5.qmd
             
     - id: thriving-habitats-and-abundant-widlife
       title: "Thriving Habitats and Abundant Wildlife"
