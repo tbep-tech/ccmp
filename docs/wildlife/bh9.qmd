@@ -1,6 +1,7 @@
 ---
 title: "BH-9"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -15,10 +16,13 @@ library(sf)
 source(here::here('R/funcs.R'))
 ```
 
-Enhance ecosystem values of tidal tributaries
+## Enhance ecosystem values of tidal tributaries {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Improve the ecosystem value of tidal tributaries of Tampa Bay. Develop indicators of tidal tributary health and function. Continue monitoring in tidal tributaries. Identify and implement projects to remove artificial barriers in tidal tributaries. Improve public awareness of the value and benefits of healthy tidal tributaries.
   
 ### STATUS: 
@@ -28,7 +32,9 @@ Ongoing. Originally added to the CCMP as a 2012 Amendment, this revision incorpo
 ### BACKGROUND:
 
 Tidal tributaries are an important, diverse and often-neglected ecosystem in the bay watershed. Distinctly different from freshwater systems and the open bay, these variable-salinity streams, creeks and back-water systems serve an important niche in fisheries production, nutrient cycling, wading bird foraging and flood prevention or detention.
+:::
 
+::: {#more}
 ![A typical tidal tributary in Tampa Bay. SOURCE: TBEP](../../img/BH-9-1_Feature Photo-tidal creek.jpg)
 
 Since 2006, select tidal creeks of the Tampa Bay watershed have been monitored to evaluate tidal patterns, shoreline vegetation, fish populations, sediment quality and nutrient levels (see Action [FW-5](fw5.html)). Despite water quality often characterized by low dissolved oxygen levels and higher relative nutrient and chlorophyll levels, these systems have been shown to support high densities of juvenile fishes and baitfish species. Research coordinated by the Tampa Bay Estuary Program (TBEP) found that juvenile snook — a premier sport fish — were up to 36 times more abundant inside the sampled tributaries than outside [@tbep0208].
@@ -69,7 +75,12 @@ Public workshops held in conjunction with both of these pilot projects highlight
 ![Sampling of tidal creeks throughout the watershed is enhancing knowledge of their value to fisheries. SOURCE: Nanette O’Hara](../../img/BH-9-3_Photo-Tidal Tributaries sampling.jpg)
 
 Together, these research, monitoring and restoration efforts represent a comprehensive approach to improved overall management and protection of tidal tributaries throughout the bay watershed.
- 
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

@@ -1,6 +1,7 @@
 ---
 title: "BH-3"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -14,10 +15,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Reduce propeller scarring of seagrass and pursue seagrass transplanting opportunities
+## Reduce propeller scarring of seagrass and pursue seagrass transplanting opportunities {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Enhance seagrass recovery by reducing propeller scarring of seagrass; evaluate effectiveness of seagrass planting techniques; pursue seagrass restoration opportunities at appropriate sites and continue boater education.
 
 ### STATUS: 
@@ -27,7 +31,9 @@ Ongoing. Action updated to reflect adoption of extensive manatee protection zone
 ### BACKGROUND:
 
 Seagrasses create important habitat and forage for many important bay species (see Action [BH-1](bh1.html)). Seagrass meadows are relatively fragile and can easily be damaged by human activity, such as careless boat operation that leaves propeller scars resembling plowed furrows. 
+:::
 
+::: {#more}
 ![A diver measures the width of a prop scar in a seagrass bed. SOURCE: Florida Department of Environmental Protection](../../img/BH-3-1_Photo_Diver measures prop scar.jpg)
 
 Substantial progress has been made in implementing actions which may reduce seagrass scarring. An extensive network of year-round and seasonal slow speed zones established primarily for manatee protection also serves to safeguard seagrasses in shallow nearshore waters — although adequate enforcement of these zones remains a challenge (see Actions [FW-1](fw1.html) and [FW-6](fw6.html)). Slow speed zones generally encompass waters 6 feet deep or less, mirroring the average depth range of seagrass beds in the bay.
@@ -57,7 +63,12 @@ A multi-year project conducted by Tampa Bay Watch and the City of Tampa at MacDi
 Seagrass survival is influenced by multiple factors, including water clarity, sediment type, rainfall, epiphyte coverage and wave energy. Location and depth at which plantings occur may be more important than the technique used. Just like land-based plants require specific optimum environmental conditions to flourish, transplanted seagrass, regardless of technique, will not survive if the location and environment are not appropriate.  
 
 Mitigation for construction-related impacts typically requires permittees to track and report survival to the permitting agencies for a limited period only. Long-term monitoring (greater than 3 years) of restoration and mitigation projects is needed to determine the most cost-effective and successful methods and to identify appropriate planting strategies.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

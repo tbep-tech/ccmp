@@ -1,6 +1,7 @@
 ---
 title: "WQ-3"
-
+params:
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -13,10 +14,13 @@ library(tbeptools)
 source(here::here('R/funcs.R'))
 ```
 
-Reduce frequency and duration of harmful algal blooms
+## Reduce frequency and duration of harmful algal blooms {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Continue to implement the Tampa Bay Nutrient Management Strategy to reduce the potential for harmful algal blooms (HABs) to occur or be exacerbated by excessive nutrient inputs. Support additional research on regionally occurring algal bloom species that have the potential to affect Tampa Bay. Continue education on the causes and effects of HABs in Tampa Bay.
 
 ### STATUS:
@@ -26,7 +30,9 @@ New Action. Prior Tampa Bay Estuary Program (TBEP) contributions include: 1) fun
 ### BACKGROUND:
 
 A HAB is the proliferation of a toxic algal species that negatively affects natural resources or humans. Blooms occur when algae reproduce or accumulate at abundances much greater than normal for specific geographic areas. Because HABs can discolor water, they are sometimes referred to as ‘red tides’ or ‘brown tides’ depending on the algal species. However, this terminology can be confusing because HABs do not always discolor the water and discolored water may also be caused by non-harmful algal species or other phenomena.
+:::
 
+::: {#more}
 ![ Blooms of a harmful algae called *Pyrodinium bahamense* have occurred in Old Tampa Bay every summer since 2000. SOURCE: Dorian Photography](../../img/WQ-3-1 Feature Photo pyrodinium bloom south of Courtney Campbell Causeway-dorian photography credit.jpg)
 
 Occurrence of algal blooms is influenced by environmental factors  — such as water temperature, light and nutrient availability, rainfall and water circulation  — as well as biotic interactions such as competition with other algae and grazing by zooplankton and shellfish. HABs can negatively affect ecosystems by shading seagrasses, disrupting food webs and killing wildlife. High biomass blooms can contribute to the formation of low oxygen “dead-zones,” and some HAB species produce potent toxins harmful to people and marine life. 
@@ -57,7 +63,12 @@ The Indian River Lagoon (IRL) on Florida’s east coast provides a cautionary ex
 The environmental, economic, and social impact of the significant red tide event in 2017-2019 was documented retroactively through analysis of crowd-sourced information from the social media platform Twitter. An open science social media dashboard that is responsive to episodic HAB and spill events is under development. FWC maintains a toll-free Fish Kill Reporting Hotline and online reporting form and, in response to public concern, the Florida Department of Environmental Protection (FDEP) launched a similar toll-free Bloom Reporting Hotline and online reporting form for residents to report algal blooms. 
 
 In April 2021, harmful algae blooms resulted from  an emergency release of ~215 million gallons of contaminated water into Tampa Bay from the aging phosphogypsum stacks of the former phosphate processing plant at Piney Point. TBEP coordinated the efforts of numerous partners to document, analyze, and communicate the bay’s response by developing an [open science data portal](https://shiny.tbep.org/piney-point){target="_blank"} for the community and researchers to make sense of the more than 12,000 data points.
+:::
 
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

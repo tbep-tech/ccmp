@@ -3,6 +3,7 @@ title: "COC-1"
 
 params:
   id: '1kgSuFUHFWv1NOg2W_5eTUU6ZUmRbBuv1vgby22wwF0A'
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
   
 toc: false
 margin-footer: |
@@ -21,10 +22,13 @@ gs4_deauth()
 source(here::here('R/funcs.R'))
 ```
 
-Address hot spots of sediment contamination in the bay  
+## Address hot spots of sediment contamination in the bay {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Identify and remediate priority “hot spots” of sediment contamination in the bay. Continue sediment quality and benthic monitoring in the bay and expand to tidal tributaries and rivers. Incorporate benthic community targets in management plans. 
 
 ### STATUS:
@@ -34,7 +38,9 @@ Ongoing. Using the Tampa Bay Benthic Index, eight priority hot spots were identi
 ### BACKGROUND:
 
 Monitoring of benthic, or bottom, habitats has been ongoing since 1993 with more than 1,500 samples analyzed for environmental contamination, including chemical and physical indicators and biological indicators like benthic community composition. The Environmental Protection Commission of Hillsborough County (EPCHC) coordinates the Tampa Bay Benthic Monitoring Program with participation from Manatee and Pinellas Counties.
+:::
 
+::: {#more}
 ![Scientists prepare to sift through a sample of bay sediment to look for benthic invertebrates.](../../img/COC-1-1 Feature Photo_benthic sampling.jpg)
 
 Over the last 20 years, the condition of [Tampa Bay benthic communities](https://tbep.org/tampa-bay-benthic-index/){target="_blank"} baywide has been “Fair” to “Poor”, with “Good” conditions in Middle and Lower Tampa Bay in most years and lower trending scores in Old Tampa Bay and Hillsborough Bay. Based on these long term monitoring data, increased benthic monitoring of major river systems (e.g., Hillsborough, Palm, Alafia and Little Manatee Rivers) and minor tidal tributaries is needed (see Action [BH-8](../../docs/wildlife/bh8.html)), and benthic community indicators and targets should be incorporated into tidal stream habitat management plans (see Actions [BH-1](../../docs/wildlife/bh1.html) and [BH-9](../../docs/wildlife/bh9.html)).
@@ -72,7 +78,12 @@ Through a cooperative effort of TBEP partners, a Sediment Quality Action Plan (S
 ![Ecosystem impacts from contaminated sediments can manifest across the food web from planktonic organisms and benthic infauna to fish and birds who feed on them. SOURCE: TBEP](../../img/COC-1-3 McKay Bay sediment contamination diagram.png)
 
 Follow-up studies in 2014, funded by the Tampa Bay Environmental Restoration Fund, showed McKay Bay sediments are toxic to some animals. In tests of a variety of fish and shellfish, PAHs found in clam tissues exceeded U.S. Environmental Protection Agency thresholds for ecological effects in some areas; and two PAHs found in test animal tissue exceeded EPA screening levels for human health of subsistence fishers at all McKay Bay sites. These results highlight the need for continuing risk assessments and tracking of updated standards. The last baywide risk assessment for COCs was published in 1995.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

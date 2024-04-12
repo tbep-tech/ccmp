@@ -1,6 +1,7 @@
 ---
 title: "BH-2"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -12,10 +13,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Establish and implement mitigation criteria
+## Establish and implement mitigation criteria {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Support progress toward habitat restoration goals by implementing mitigation criteria specific to Tampa Bay watersheds, for unavoidable wetland impacts. Identify priority sites for mitigation banks and off-site mitigation that help to achieve adopted targets for critical coastal habitats, including seagrasses, saltwater wetlands, freshwater wetlands and hard bottom habitats. Collaborate with the private sector to evaluate and improve mitigation. Establish long-term monitoring of mitigation sites across multiple habitats.
 
 ### STATUS:
@@ -26,7 +30,9 @@ Ongoing. Action expanded to include recommendations for on- and off-site mitigat
 
 Mitigation involves restoring, enhancing, preserving or creating habitats to offset development-related impacts to wetlands, streams, seagrasses and other aquatic resources. 
 Unlike restoration or preservation done primarily to enhance or maintain habitat quantity and quality, mitigation is required for permitted impacts that damage or destroy wetlands and other aquatic habitats. Federal, state, regional and local agencies regulate mitigation activities. 
+:::
 
+::: {#more}
 ![An evaluation of freshwater wetland mitigation projects in Hillsborough County indicated that larger wetlands provided more ecosystem services and performed better than smaller wetlands surrounded by urban development. SOURCE:  Nanette O’Hara.](../../img/BH-2-1-Feature-Photo_freshwater-wetland.jpg)
 
 Currently, mitigation can be achieved using three mechanisms:
@@ -66,7 +72,12 @@ Although existing mitigation criteria focuses on freshwater wetlands, improvemen
 Opportunities for seagrass mitigation are generally limited to transplanting, often at high cost and with varying success (see Action [BH-3](bh3.html)). Since the vast majority of the bay’s seagrass gains are a result of increased water clarity from reduced nitrogen loadings, port authorities and other entities have requested use of pollution-reduction projects (such as stormwater or wastewater treatment) as mitigation for seagrass impacts in lieu of transplanting. This alternative is generally not permitted; however,  recent projects to remove manmade causeways blocking tidal circulation at Fort De Soto Park and along the eastern portion of the Courtney Campbell Causeway  serve as  successful models. The Fort De Soto project, sponsored by SWFWMD, FDOT, and Pinellas County, directly impacted about one-quarter acre of seagrasses but resulted in improved water quality and almost 200 acres of seagrass expansion in the interior waters of the park. Seagrass mitigation credits were allowed for this work. Whether water quality in the proposed mitigation site is sufficient to foster seagrass growth is a key factor in such projects. An analysis of 20 seagrass mitigation projects around Florida is now being conducted by FWC and funded by FDEP; this study will help identify successful techniques for future consideration.
 
 Mitigation criteria for other sensitive habitats, including hard bottom and live bottom, have not been established. TBEP developed protection and restoration targets for hard bottom in 2020; appropriate mitigation strategies could be explored to achieve those targets. Monitoring of mitigation associated with ship channel expansion and natural gas pipeline construction projects suggests that recreating structural hard bottom, such as limestone or rock reefs or outcroppings, is much simpler and more successful than transplanting the soft corals and sponges that grow on the hard substrates. 
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

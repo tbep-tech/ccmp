@@ -1,6 +1,7 @@
 ---
 title: "BH-1"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -17,10 +18,13 @@ library(tbeptools)
 source(here::here('R/funcs.R'))
 ```
 
-Implement the Tampa Bay Habitat Master Plan
+## Implement the Tampa Bay Habitat Master Plan {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Implement the Tampa Bay Habitat Master Plan (2020 Update) to restore and protect key bay habitats under “Maximize the Potential” management paradigm, taking into account anticipated population growth, changing land use patterns, and impacts of climate change and sea level rise. Support research and monitoring necessary to meet data and information gaps for priority habitats targets. Continue to encourage restoration and protection of priority habitats, through acquisition and restoration programs.
 
 ### STATUS:
@@ -30,7 +34,9 @@ Ongoing. Strategy revised to incorporate research, monitoring and recommendation
 ### BACKGROUND:
 
 The Tampa Bay Estuary Program and its partners have made significant progress in restoring and protecting key coastal habitats in Tampa Bay. This work is guided by the Tampa Bay Habitat Master Plan (2020 Update), and tracked in the [Habitat Restoration and Protection Database](https://tampabay.wateratlas.usf.edu/restoration/){target="_blank"}.
+:::
 
+::: {#more}
 ![Habitat restoration at the Cockroach Bay Aquatic Preserve in south Hillsborough features extensive tidal wetlands valuable as fish nurseries. Photo by Donna Bollenbach.](../../img/BH-1-1 Feature Photo Habitat Master Plan.jpg)
  
 The first Tampa Bay Habitat Master Plan, completed in 1996, set targets for restoration and protection of mangrove forests, salt marsh, low-salinity habitat in tidal tributaries, isolated small wetlands important as forage areas for estuarine-nesting birds and salt barrens, and introduced the management paradigm of “Restoring the Balance” [@tbep0995]. This paradigm recommended the restoration of priority coastal habitats to similar proportions as they occurred historically (circa 1950), to provide a full mosaic of habitats necessary to support fish and wildlife throughout their life cycles. It recognized that some habitats have been lost in greater proportions than others and prioritized their protection and restoration. The 1996 Habitat Master Plan was updated in 2010 [@tbep0609].
@@ -145,7 +151,12 @@ The first Tampa Bay Habitat Master Plan identified 28 sites for acquisition, pro
 The Habitat Master Plan (2020) carries forward the 2010  recommendation to  develop a federal-state-local-private partnership to provide the framework for linking watershed-level planning goals for restoration with federal, state and local wetland compensatory mitigation. It further recommends improving coordination between regulatory and resource management programs in the Tampa Bay watershed through the TBEP Habitat Restoration Consortium.
 
 Coastal land available for restoration and acquisition is dwindling as development expands. Accordingly, projects further up in the watershed are gaining importance. This shift in focus recognizes that habitats — such as tidal tributaries and freshwater wetlands far removed from the bay proper — are critical to its health and is consistent with the need to move up slope to accommodate rising sea levels. 
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

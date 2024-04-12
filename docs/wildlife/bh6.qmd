@@ -1,6 +1,7 @@
 ---
 title: "BH-6"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -14,10 +15,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Encourage habitat enhancement along altered waterfront properties
+## Encourage habitat enhancement along altered waterfront properties {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Expand use of living shorelines instead of traditional seawalls along waterfront properties. Support demonstration projects; explore regulatory rule revisions to support living shorelines; assess the use of living shorelines to mitigate climate change; and support education of waterfront homeowners about the benefits of living shorelines.
 
 ### STATUS:
@@ -27,7 +31,9 @@ Ongoing. Revised to broaden focus on softening shorelines of privately and publi
 ### BACKGROUND:
 
 Extensive industrial, commercial and residential development has dramatically reshaped the bay’s natural shorelines, especially in urban areas. TBEP’s first assessment of habitat losses, conducted in the early 1990s, estimated that more than half of the natural shoreline of Boca Ciega bay was altered by widespread dredging of hardened, finger-fill residential canals.
+:::
 
+::: {#more}
 ![Natural recruitment of mangroves at a seawall enhancement project at Water Works Park in Tampa. SOURCE:  Victoria Parsons](../../img/BH-6-1_Feature Photo_Ulele Living Shoreline.jpg)
 
 Although new “canal communities” are prohibited, the original developments remain, and vertical seawalls, revetments, riprap and bulkheads still dominate new waterfront development. Property owners in Florida are allowed to replace most existing seawalls without a permit. A 2015 report from Restore America’s Estuaries, offers mounting evidence that hardened, artificial shorelines increase erosion, harm water quality and magnify storm damage and flooding [@rae2015]. The report also notes that seawalls and other hardened shores provide poor habitat for fish and wildlife.
@@ -55,7 +61,12 @@ Barriers are both institutional and educational. Creation of a living shoreline 
 The Vertical Oyster Garden project, a partnership with Sarasota Bay Estuary Program, Manatee County and TBEP, encourages dock owners to help restore oysters by adopting strings of recycled oyster shells collected from local restaurants and hanging them off their dock. When suspended in brackish water, they provide an ideal habitat for young larval oysters to settle and grow.
 
 Hardened structures are often necessary to protect property in areas of high wave energy and will remain a visible feature along bay and river shorelines. This action seeks to expand use of living shorelines in areas of moderate to low wave energy.  The Habitat Master Plan (2020 Update) incorporates definitions and opportunities for living shorelines [@tbep0720].
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

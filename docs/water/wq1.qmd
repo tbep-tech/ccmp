@@ -1,6 +1,8 @@
 ---
 title: "WQ-1"
 
+params:
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -21,10 +23,13 @@ source(here::here('R/funcs.R'))
 library(tbeptools)
 ```
 
-Implement the nutrient management strategy for Tampa Bay
+## Implement the nutrient management strategy for Tampa Bay {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES:
 
+::: {#intro}
 Continue to implement the nutrient management strategy for Tampa Bay to maintain water quality necessary to support seagrass at or above target levels. Document trends in water quality and track nutrient reduction and prevention actions within the watershed. Develop and implement nutrient criteria recommendations and management strategies for the bay’s tidal streams. 
 
 ### STATUS: 
@@ -34,7 +39,9 @@ Ongoing. The Tampa Bay Estuary Program (TBEP) continues to maintain the Nitrogen
 ### BACKGROUND:
 
 Controlling nitrogen input into the bay as a means to regain vital seagrass beds has been one of TBEP’s most prominent initiatives. Seagrasses were selected as a metric by which efforts to improve the bay are measured because of their overall importance as a bay habitat and nursery, and because they are an important barometer of water quality.
+:::
 
+::: {#more}
 ![Because seagrass requires clear water to flourish, it is a valuable indicator of water quality in Tampa Bay. SOURCE: Jimmy White](../../img/WQ-1-1 Feature photo-seagrasses.jpg)
 
 In 1995, TBEP adopted a goal of restoring seagrass to 1950 levels after decades of decline [@tbep0720]. Reaching this goal required collaboration from local governments, industries, and citizens to reduce nutrients throughout the watershed.  The nationally recognized Tampa Bay Nitrogen Management Consortium ([TBNMC](https://www.google.com/url?q=https://drive.google.com/file/d/18HHMx4U6vHNrFyepEFuoTJ_sEKyTA_gu/view&sa=D&source=docs&ust=1709557983205607&usg=AOvVaw3MKB9jBt6qmhmdeaRk10W8){target="_blank"}) — an alliance of more than 45 local governments, regulatory agencies and key industries bordering the bay — played a leading role in reducing nitrogen loadings in the bay. TBNMC members developed voluntary water quality and nutrient loading targets to support TBEP’s seagrass recovery goals.
@@ -88,7 +95,12 @@ show_matrix(epcdata, plotly = F)
 Water quality and seagrass conditions in Old Tampa Bay fell below goals during the 2017-2021 RA period. Since hydrologically normalized TN loads are being met, but chl-a exceedances and seagrass losses are still occurring, the TBNMC will reassess the assimilative capacity of Old Tampa Bay. Furthermore, TBEP and Consortium partners continue to implement habitat restoration, stormwater infrastructure, and point source improvement projects focused in Old Tampa Bay and throughout the Tampa Bay watershed that cumulatively contribute to the bay’s overall ecological improvement.  The next Tampa Bay RA report, which covers the 2022-2026 period, is due to FDEP by December 2027. Additional planned and budgeted projects are expected to reduce TN loading by 70.5 tons per year. 
 
 Efforts to implement a similar nutrient management strategy in Tampa Bay tidal streams are underway (see Action [BH-9](../../docs/wildlife/bh9.html)). Ongoing research includes development of environmental indicators and thresholds of tidal stream health and nursery function to protect wetland systems against nutrient impairment and a management framework for their restoration [@tbep1121]. This framework establishes proactive metrics that can be utilized by partners to implement watershed restoration actions that can reduce nutrient inputs to tidal streams. An open science [tidal tributaries dashboard](https://shiny.tbep.org/tidalcreek-dash/){target="_blank"} shows a screening-level evaluation of water quality for 225 creeks. Research explores the relationship between nutrient dynamics and tidal stream condition, advancing regional knowledge of these important low-salinity habitats, as well as informing and prioritizing management actions that may be needed to protect or enhance the ecology of these systems.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

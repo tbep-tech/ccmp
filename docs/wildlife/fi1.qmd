@@ -1,6 +1,7 @@
 ---
 title: "FI-1"
-
+params:
+  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -12,10 +13,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Maintain seasonal freshwater flows in rivers
+## Maintain seasonal freshwater flows in rivers {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Establish and maintain minimum seasonal freshwater flows in rivers by completing and fully implementing the Minimum Flows and Levels (MFLs) for Tampa Bay Area tributaries. Evaluate the ecological effects of MFLs on rivers and lakes in the watershed. Assess changes in freshwater inflows over time resulting from both consumptive water use and climate change.
 
 ### STATUS: 
@@ -25,7 +29,9 @@ Ongoing. MFLs have been established and adopted for the Hillsborough River, Alaf
 ### BACKGROUND:
 
 Maintaining minimum seasonal freshwater flows and levels (MFLs) in rivers in the Tampa Bay watershed helps maintain the critical hydro-biological habitat characteristics of the estuary. River water volume and flow rates govern depth, salinity, dissolved oxygen, pH, and water temperature, which in turn sustain biological communities. The timing and volume of freshwater inflow is also critical to enhancing ecosystem services of tidal tributaries, especially as essential fish habitat (see Action [BH-9](bh9.html)).
+:::
 
+::: {#more}
 ![Alderman’s Ford on the Alafia River. The volume and timing of freshwater flows in the tidal stretches of rivers is essential to the ecology of the estuary. The tea-colored waters carry a rich soup of organic material to the lower river and bay. SOURCE: SWFWMD](../../img/FI-1-1 Photo Alafia-river-small-rapids.jpg)
 
 State legislation enacted in 1996 directs Water Management Districts to set MFLs for rivers, lakes and springs that define the limits at which further withdrawals would be “significantly harmful to the water resources or ecology of the area.” MFLs are used in the Districts’ water supply planning, water use permitting and environmental resource permitting programs to ensure that withdrawals do not cause environmental harm. Each District takes into account timing and volume of freshwater inflows as well as minimum flows when developing MFLs. Regional water supply development and water reuse plans reflect the challenges of balancing water supply, wastewater disposal and ecological concerns (see Action [WW-1](../../docs/water/ww1.html)).
@@ -43,7 +49,12 @@ SWFWMD has established MFLs for the Hillsborough River, Alafia River, Tampa Bypa
 Minimum flows are continuously monitored at multiple locations on most rivers by SWFWMD and the U.S. Geological Survey through gauge stations that measure flow rates and conductivity. If actual flows are or anticipated to be (within 20 years) below established minimum flows, state law requires the Water Management Districts to develop a recovery or prevention strategy. Strategies might include alternative supply development, conservation measures, augmentation of flows or reductions in permitted withdrawals. Additional monitoring specific to the recovery strategy is usually required; for example, for water quality variables including nutrients and dissolved oxygen or biological communities. Other data are collected by SWFWMD and local partners as needs and opportunities arise. TBEP facilitates development of estimated baywide hydrologic freshwater flow and nutrient loads every five years, as an element of the Tampa Bay Reasonable Assurance document.
 
 Established minimum flows are being met for Crystal Springs, Upper Hillsborough River, Alafia River (including Lithia and Buckhorn Springs), Tampa Bypass Canal and upper Braden River. A 2023 assessment indicated minimum flow requirements for the Lower Hillsborough River were met most of the time throughout the 5-year assessment period, with full achievement of minimum flows in 2023. Water from Sulphur Springs and the Tampa Bypass Canal has been used to supplement flows on the Lower Hillsborough since 2007-2008. All activities and projects proposed in the adopted recovery strategy are either underway, completed, or have been deemed not viable or actionable.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

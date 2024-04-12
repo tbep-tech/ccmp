@@ -1,6 +1,7 @@
 ---
 title: "COC-4"
-
+params:
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -13,10 +14,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Identify and understand emerging contaminants
+## Identify and understand emerging contaminants {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Identify sources and understand impacts of contaminants found in pharmaceuticals, personal care products and microplastics. Promote education to reduce pollution from microplastics and emerging contaminants.
 
 ### STATUS:
@@ -26,7 +30,9 @@ New Action
 ### BACKGROUND:
 
 Aquatic environments are the ultimate reservoirs for many man-made chemical contaminants. The toxicity of pesticides and industrial chemicals, such as DDT, chlordane, dieldrin and PCBs, is well documented and their use banned or discontinued decades ago. Nevertheless, they persist in aquatic sediments and bioaccumulate in fish and wildlife in Tampa Bay (see Action [COC-1](coc1.html)).
+:::
 
+::: {#more}
 ![Students from Eckerd College collect water samples to analyze for microplastics. SOURCE: David Hastings](../../img/COC-4-1 Feature Photo_microplastic sampling.jpg)
 
 The presence and potential effects of synthetic or natural endocrine or hormone disruptors is an emerging concern for fish and wildlife, as well as human health in Tampa Bay. Endocrine disrupting compounds (EDCs) mimic the functions of natural hormones, affecting growth, reproduction and development in aquatic organisms, especially fish. They include polybrominated diphenyl ethers (PBDEs — used as a flame retardant in clothing, furniture and electronics), perfluorinated and polyfluoroalkyl substances (PFAS),  and bisphenol A (BPA — used to make plastic), which can be acutely toxic to fish and wildlife. Even at low levels these compounds can disrupt hormonal systems over time. Another class of EDCs comes from ethinyl estradiol — a synthetic estrogen used in oral contraceptives — which has been found in aquatic environments downstream of wastewater treatment plants. EDCs are also found in pesticides, insecticides and fungicides.
@@ -56,7 +62,12 @@ Microplastics could be sampled as part of monthly water quality sampling for Tam
 The statewide Florida Microplastic Awareness Project, funded by a 2015 NOAA Marine Debris Grant, seeks to train citizen scientists to collect and analyze water samples for microplastics. An important goal of this project is to increase public awareness of how plastics in local waterways are connected to human sources. The program also includes an online pledge for actions that can reduce plastic marine debris. Training workshops using the filtered water sample method were held by Pinellas County UF/IFAS Extension in 2016 and 2017, including training for the UF/IFAS Florida Water Stewardship Program and a Pinellas County-wide workshop on litter. The Florida Aquarium is also a project partner.
 
 With an award of EPA’s Trash Free Waters grant in 2019, TBEP and partners deployed and maintained 12 trash capture devices within the Tampa Bay watershed. At each site, project partners regularly clean out captured trash and record the unique characteristics of the debris. The data will be used to help identify the sources and develop a litter management plan template for Tampa Bay and other Gulf of Mexico estuaries.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

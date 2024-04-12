@@ -1,6 +1,7 @@
 ---
 title: "CC-1"
-
+params:
+  navtitle: <i class="fa fa-hand-holding-droplet"></i> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -15,10 +16,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Improve ability of bay habitats to adapt to a changing climate
+## Improve ability of bay habitats to adapt to a changing climate {.sub-title}
+
+[Skip to Activities](#activities)
 
 ### OBJECTIVES: 
 
+::: {#intro}
 Identify coastal habitats vulnerable to climate change and potential buffer areas upslope of coastal habitats. Identify methods to improve the resiliency of vulnerable bay habitats to sea level rise. Continue to investigate the carbon sequestration benefits of coastal habitats (“blue carbon”). Enhance community understanding of the potential impacts of changing climate on coastal habitats, and encourage actions to help mitigate effects. 
   
 ### STATUS: 
@@ -28,7 +32,9 @@ New action adopted in 2014 to support ongoing and future research and restoratio
 ### BACKGROUND:
 
 Estuaries like Tampa Bay are particularly vulnerable to many climate change stressors, such as sea level rise (SLR), ocean acidification (see Action [CC-2](cc2.html)), warming temperatures and changes in precipitation and storm intensity. These stressors pose a variety of risks to coastal habitats.
+:::
 
+::: {#more}
 ![A lifeguard station during a King Tide at Fort De Soto Park provides a preview of rising sea levels. SOURCE: Holly Greening](../../img/CC-1-1_Feature Photo_ Lifeguard station at Fort deSoto.jpg)
 
 Sea level rise may increase shoreline erosion and lead to loss of beaches, salt marshes and coastal wetlands. As higher salinity waters move upslope and upstream, plant zonation will shift; where adjacent areas are developed and there is no room to migrate, coastal wetlands will become submerged. Warmer waters may promote the spread of existing or new invasive species, increased algal growth rates, decreased water clarity and low dissolved oxygen. Frequent drought or extreme flooding may alter hydrologic conditions resulting in changes to species composition and ecological function of habitats. Increased storm intensity may lead to increased nutrient pollution to the bay and shoreline erosion.
@@ -64,7 +70,12 @@ Already, sea level rise is being addressed in habitat restoration projects condu
 The full scope of climate change risks to the Tampa Bay Estuary is not well understood by the public; therefore, educating community members on potential impacts and actions to mitigate these impacts is an important goal of TBEP. In partnership with the Sarasota Bay Estuary Program, TBEP coordinated a photo-documentary project called “Chasing the Waves.” Local citizens were recruited to become “Tide Watchers” by taking photos of areas at low tide and at extremely high, or “king” tides, to document impacts of rising waters on structures and shorelines. While only a temporary phenomenon, king tides provide a preview of possible impacts of sea level rise when today’s high tides will become tomorrow’s low tides. Community photos were featured on a photo-sharing website, and a traveling exhibition was viewed by more than 155,000 people at county buildings, libraries and museums throughout the Tampa Bay watershed.
 
 In 2022, TBEP partnered with the National Wildlife Federation to make a short storytelling film about climate risks and solutions called [Dear Tampa Bay](https://www.youtube.com/watch?v=W-X4EZi3QFg){target="_blank}. The film was screened dozens of times across the Tampa Bay area and was followed up with expert-led boat tours, surveys, and focus groups. The campaign was assessed to evaluate the effect of storytelling and experiential learning on climate risk and resilience beliefs, attitudes, understanding of risk, sense of ability to act, and support for available solutions.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```

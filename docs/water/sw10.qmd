@@ -1,6 +1,8 @@
 ---
 title: "SW-10"
 
+params:
+  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
@@ -12,10 +14,13 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 ```
 
-Expand use of Green Infrastructure practices 
+## Expand use of Green Infrastructure practices {.sub-title}
 
-### OBJECTIVES:
+[Skip to Activities](#activities)
 
+### OBJECTIVES: 
+
+::: {#intro}
 Promote expanded use of Green Infrastructure practices to prevent and reduce nitrogen pollution. Promote development and delivery of tools and incentives to expand low impact/green infrastructure implementation, including: professional training; compatibility reviews of local government development codes and comprehensive plans; and demonstration sites. Encourage Tampa Bay Estuary Program (TBEP) partners to submit local projects that implement innovative building or site design techniques to the Action Plan Database of the Tampa Bay Nitrogen Management Consortium. Encourage adoption and implementation of regional policies facilitating low impact/green infrastructure development.
 
 ### STATUS: 
@@ -25,7 +30,9 @@ Revised from previous SW-10 Design and Implement a Low Impact Development Strate
 ### BACKGROUND:
 
 Historically, stormwater management in Florida focused on rapidly removing rainwater from the built environment to avoid flooding. High volumes of polluted runoff were routed to the nearest receiving water body through extensive networks of gutters, ditches, canals and pipes. This management approach often resulted in polluted waterways, impacts to fish, wildlife and habitats and loss of economic and recreational opportunities that depend on healthy waters.
+:::
 
+::: {#more}
 ![The Straz Center for the Performing Arts was the first building in Tampa with a green roof. It is located on the second level of Ferguson Hall. SOURCE: Straz Center](../../img/SW-10-1 Feature Photo_Straz Center green roof.jpg)
 
 Florida Law requires that all new and redevelopment projects manage the first inch of rainfall onsite rather than discharging to storm drains. The Florida Department of Environmental Protection (FDEP) and the Southwest Florida Water Management District (SWFWMD) have determined that Environmental Resource Permit (ERP) applicants for new construction discharges in the Tampa Bay watershed must meet more stringent standards by demonstrating net improvement (i.e., no degradation) to waterways, because Tampa Bay is not meeting all water quality standards in all areas of the bay. 
@@ -65,7 +72,12 @@ The Florida Legislature adopted a statewide ERP Rule (Chapter 62-330, F.A.C.) in
 ![Vegetative shorelines help filter and treat runoff entering stormwater ponds.](../../img/SW-10-3 Photo_Vegetated Pond Shoreline.jpg)
 
 Adopted in 2017 and revised in 2021, Pinellas County’s new [stormwater manual](https://pinellas.gov/stormwater-manual/){target="_blank"} is designed to be used in conjunction with the Pinellas County Comprehensive Plan and Land Development Code. Recognizing that Pinellas County is almost entirely built-out, the manual and revised development codes incorporate a variety of Green Infrastructure techniques especially appropriate to redevelopment, adaptive reuse and retrofits. Hillsborough County adopted a [stormwater manual](https://www.hillsboroughcounty.org/library/hillsborough/media-center/documents/public-works/ttm/ttm-2021/stormwater-management-technical-manual-october-2021.pdf){target="_blank"} in 2021. The TBEP, in partnership with the Tampa Bay Regional Planning Council, is planning a two-phase project in 2024 to develop a multi-jurisdictional stormwater master plan in the Old Tampa Bay watershed and implement high priority stormwater retrofits to reduce nonpoint source nutrient loads in the region.
-
+:::
+  
+```{=html}
+<button onclick=readMore() id="readMore">Read More</button>
+```
+### ACTIVITIES
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
