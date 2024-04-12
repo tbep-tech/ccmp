@@ -104,8 +104,6 @@ website:
               href: docs/wildlife/bh8.qmd
             - text: "BH-9"
               href: docs/wildlife/bh9.qmd
-            - text: "BH-10"
-              href: docs/wildlife/bh10.qmd
         - section: "Freshwater Inflow"
           contents: 
             - text: "FI-1"

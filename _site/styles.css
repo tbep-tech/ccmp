@@ -135,6 +135,16 @@ li.nav-item:nth-child(1) .nav-link.active {
   color: var(--color);
 }
 
+li.nav-item:nth-child(2) .nav-link.active {
+  background: white;
+  color: var(--color);
+}
+
+li.nav-item:nth-child(3) .nav-link.active {
+  background: white;
+  color: var(--color);
+}
+
 li.nav-item {
   font-weight: 500;
 }

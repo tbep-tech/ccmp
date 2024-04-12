@@ -1,7 +1,7 @@
 ---
 title: "PA-1"
 params:
-  navtitle: <i class="fa fa-hand-holding-droplet"></i> Thriving Habitats and Abundant Wildlife
+  navtitle: <i class="fa fa-handshake"></i> Informed, Engaged, and Responsible Community
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
