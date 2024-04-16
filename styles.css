@@ -67,7 +67,7 @@ h6 {
 
 a.navbar-brand {
   margin: 0;
-  color: white;
+  color: white !important;
   font-size: 2em;
   font-weight: normal;
   text-transform: uppercase;
@@ -445,7 +445,7 @@ button#readMore:hover {
   justify-content: space-evenly;
 }
 .fullwidth-footer h3,.fullwidth-footer p {
-  grid-column: page-start-inset/page-end-inset;
+  grid-column: page-start-inset/page-end-inset !important;
   margin-top: 0;
 }
 #action-plans {
