@@ -50,7 +50,7 @@ Minimum flows are continuously monitored at multiple locations on most rivers by
 
 Established minimum flows are being met for Crystal Springs, Upper Hillsborough River, Alafia River (including Lithia and Buckhorn Springs), Tampa Bypass Canal and upper Braden River. A 2023 assessment indicated minimum flow requirements for the Lower Hillsborough River were met most of the time throughout the 5-year assessment period, with full achievement of minimum flows in 2023. Water from Sulphur Springs and the Tampa Bypass Canal has been used to supplement flows on the Lower Hillsborough since 2007-2008. All activities and projects proposed in the adopted recovery strategy are either underway, completed, or have been deemed not viable or actionable.
 :::
-  
+
 ```{=html}
 <button onclick=readMore() id="readMore">Read More</button>
 ```
