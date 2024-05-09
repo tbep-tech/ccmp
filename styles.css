@@ -617,3 +617,10 @@ section#activities h3 {
   display: true;
   color: white !important;
 }
+
+.acronym {
+  display: inline-block;
+  width: 50px; /* Adjust as needed */
+  text-align: left;
+  margin-right: 50px; /* Adjust as needed */
+}

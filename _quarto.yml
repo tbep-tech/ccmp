@@ -160,6 +160,12 @@ website:
             - text: "LI-1"
               href: docs/communities/li1.qmd
       
+    - id: research-priorities
+      title: "Research Priorities"
+      collapse-level: 1
+      contents: 
+        href: docs/priorities.qmd
+        
 bibliography: docs/refs.bib
 # suppress-bibliography: true
 citeproc: true
