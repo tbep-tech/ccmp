@@ -26,7 +26,7 @@
 [Local Implementation](../communities/li1.html)
 
 #### Endnotes
-[Acronyms](acronyms.html)
+[Acronyms](../misc/acronyms.html)
 [List of All Actions](https://tbep.org)
 [Who We Are](https://tbep.org/about-tbep/who-we-are/)
 :::
