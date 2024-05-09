@@ -10,7 +10,7 @@ website:
   # repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
-  search: false
+  search: true
   page-footer:
     left: |
       &copy; [Tampa Bay Estuary Program](https://tbep.org). All Rights Reserved. [Contact](https://tbep.org/about-tbep/contact/) | [Accountability Act](https://tbep.org/uniform-special-district-accountability-act/) | [Privacy](https://tbep.org/privacy-policy/) | [Site Credit](https://tangram3ds.com/)
@@ -159,7 +159,7 @@ website:
           contents: 
             - text: "LI-1"
               href: docs/communities/li1.qmd
-    
+      
 bibliography: docs/refs.bib
 # suppress-bibliography: true
 citeproc: true
