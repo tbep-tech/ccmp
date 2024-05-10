@@ -624,3 +624,8 @@ section#activities h3 {
   text-align: left;
   margin-right: 50px; /* Adjust as needed */
 }
+
+.blank {
+  color: black !important;
+  display: none;
+}
