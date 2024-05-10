@@ -165,6 +165,16 @@ website:
         section: " "
         href: docs/misc/acronyms.qmd
         
+    - id: priorities
+      contents: 
+        section: " "
+        href: docs/misc/priorities.qmd
+        
+    - id: implement
+      contents: 
+        section: " "
+        href: docs/misc/implement.qmd
+        
 bibliography: docs/refs.bib
 # suppress-bibliography: true
 citeproc: true

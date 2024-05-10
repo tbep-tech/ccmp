@@ -629,3 +629,7 @@ section#activities h3 {
   color: black !important;
   display: none;
 }
+
+.boldtxt {
+  font-weight: bold;
+}

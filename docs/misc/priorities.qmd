@@ -1,0 +1,22 @@
+---
+params:
+  id: '1BQr7yTjES7w3DuuHF4rVcJFkTg5ZBPK8yvD3Ixkwsc0'
+  navtitle: Research Priorities
+toc: false
+---
+
+```{r}
+library(googledrive)
+library(googlesheets4)
+
+gs4_deauth()
+source(here::here('R/funcs.R'))
+```
+
+```{r}
+researchpriorities_tab(params$id)
+```
+
+<span class="blank">@empty</span>
+
+{{< include ../footer.qmd >}}

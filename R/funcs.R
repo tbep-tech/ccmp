@@ -780,3 +780,29 @@ fw6species_tab <- function(id, action){
   return(out)
   
 }
+
+researchpriorities_tab <- function(id){
+  
+  sht <- read_sheet(id, sheet = 'Formatted Research Priorities', col_types = 'c')
+  
+  heads <- c('Water Quality and Sediments', 'Bay Habitats', 'Fish and Wildlife', 'Climate Change', 'Public Access, Education, and Involvement')
+  cols <- c('#2CAFC0', '#427355', '#427355', '#534D75', '#534D75')
+  inds <- which(sht$`RESEARCH PRIORITIES` %in% heads)
+  
+  out <- sht |> 
+    dplyr::select(`RESEARCH PRIORITIES`) |> 
+    flextable::flextable() |>
+    flextable::autofit() |> 
+    flextable::align(align = "center", part = "header") |>
+    flextable::bold(part = "header") |>
+    flextable::color(i = inds, color = "white", part = "body") |>
+    flextable::bg(bg = cols[1], i = inds[1], part = "body") |> 
+    flextable::bg(bg = cols[2], i = inds[2], part = "body") |> 
+    flextable::bg(bg = cols[3], i = inds[3], part = "body") |> 
+    flextable::bg(bg = cols[4], i = inds[4], part = "body") |> 
+    flextable::bg(bg = cols[5], i = inds[5], part = "body") |> 
+    flextable::border_remove()
+  
+  return(out)
+  
+}

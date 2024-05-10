@@ -38,9 +38,9 @@
 ::: {.footer-menu}
 
 [Strategic Plan](https://drive.google.com/file/d/11xohuoaHDxNHRqgXoOHdI37FpWvac_rn/view)
-[Research Priorities](https://drive.google.com/file/d/1j-PO6qdOj_bYcBoPFDNnrO1_lghQZ7e_/view?usp=sharing)
+[Research Priorities](../misc/priorities.html)
 [Monitoring and Indicators Plan](https://drive.google.com/file/d/1H8_zpDT56m6fEGDlRNbRRoE3-tHYF7lH/view)
-[Implementing & Financing Plan](https://tbep.org)
+[Implementing & Financing Plan](../misc/implement.html)
 [Communications Plan](https://drive.google.com/file/d/11HmGMEZ4NGRH23MPfFgUCVoI-5BRv9bw/view)
 [Climate Action Plan](https://drive.google.com/file/d/1Sc4l2D4s7kZF-7vmbCZUp4-BHwu_24Eq/view?usp=drive_link)
 :::
