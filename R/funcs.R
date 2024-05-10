@@ -834,8 +834,8 @@ allactions_tab <- function(id){
       actionlnk = paste0(tolower(gsub('\\-', '', Action)), '.html'),
       actionlnk = dplyr::case_when(
         Strategy == 'Clean Water and Sediments' ~ paste0('https://tbep-tech.github.io/ccmp/docs/water/', actionlnk),
-        Strategy == 'Thriving Habitats and Abundant Wildlife' ~ paste0('https://tbep-tech.github.io/ccmp//docs/wildlife/', actionlnk),
-        Strategy == 'Informed, Engaged, and Responsible Community' ~ paste0('https://tbep-tech.github.io/ccmp//docs/communities/', actionlnk)
+        Strategy == 'Thriving Habitats and Abundant Wildlife' ~ paste0('https://tbep-tech.github.io/ccmp/docs/wildlife/', actionlnk),
+        Strategy == 'Informed, Engaged, and Responsible Community' ~ paste0('https://tbep-tech.github.io/ccmp/docs/communities/', actionlnk)
       )
     ) |> 
     # dplyr::select(-actionlnk) |> 
