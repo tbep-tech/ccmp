@@ -55,6 +55,7 @@ In addition to PORTS, maritime safety has been greatly enhanced by the implement
 Tampa Bay is on the cutting edge of another evolution in maritime navigation: Virtual, or electronic, Aids to Navigation (ATONs). Virtual channel markers, linked to transponders and Automatic Identification System (AIS) displays now on all large vessels, may eventually replace physical buoys and markers, with their ongoing maintenance/repair costs and safety concerns. Tampa Bay is one of a handful of pilot sites where the Coast Guard is testing virtual ATONs. Full implementation throughout the bay would cost an estimated \$4 million, and likely would require funding through federal sources other than the Coast Guard, or through the local port/maritime community. The cost for smaller commercial vessels (such as charter fishing or sailing boats) and recreational boaters to upgrade to the AIS-integrated navigation systems necessary to utilize virtual ATONs is an important consideration. 
 
 Research into future tools to reduce the potential for ship groundings or collisions; improve port and vessel security; and foster the overall, long-term sustainability of Tampa Bay’s economically important maritime commerce is being assisted by the development of a new Center for Maritime and Port Studies at University of South Florida. The Center will support research into maritime technologies and train the next generation of maritime professionals, with environmental sustainability as a key component of instruction.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

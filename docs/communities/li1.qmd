@@ -48,6 +48,7 @@ The 2017 CCMP Update provided multiple additional areas in which concrete, actio
 In 2016, TBEP contracted with the Tampa Bay Regional Planning Council (TBRPC) to provide guidance to local governments on how to incorporate elements of the CCMP into existing planning tools. The resulting Comprehensive Conservation & Management Plan – Local Government Comprehensive Plan Crosswalk Project aims to 1) prioritize CCMP goals and actions suitable for inclusion in local government comprehensive plans, land development regulations or other guidance documents, 2) identify relevant elements, goals, objectives and policies in local government regulatory frameworks to serve as the most appropriate vehicle for incorporating CCMP priority goals and actions, and 3) provide model language based on CCMP goals and actions for local government consideration. 
 
 The Crosswalk Project, completed in 2020, shared final recommendations and model language with local government officials, planners and resource managers at a regional workshop in 2018. Ongoing technical assistance will be provided to local governments as they consider adapting and adopting these recommendations in their comprehensive plans, land development regulations and other guidance documents.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

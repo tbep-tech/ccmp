@@ -78,6 +78,7 @@ Through a cooperative effort of TBEP partners, a Sediment Quality Action Plan (S
 ![Ecosystem impacts from contaminated sediments can manifest across the food web from planktonic organisms and benthic infauna to fish and birds who feed on them. SOURCE: TBEP](../../img/COC-1-3 McKay Bay sediment contamination diagram.png)
 
 Follow-up studies in 2014, funded by the Tampa Bay Environmental Restoration Fund, showed McKay Bay sediments are toxic to some animals. In tests of a variety of fish and shellfish, PAHs found in clam tissues exceeded U.S. Environmental Protection Agency thresholds for ecological effects in some areas; and two PAHs found in test animal tissue exceeded EPA screening levels for human health of subsistence fishers at all McKay Bay sites. These results highlight the need for continuing risk assessments and tracking of updated standards. The last baywide risk assessment for COCs was published in 1995.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

@@ -63,6 +63,7 @@ During the 1993 oil spill, Tampa Bay wildfire rescuers gained international atte
 Following the Deepwater Horizon oil spill in 2010, TBEP staff provided input to state and federal damage assessment efforts. Tampa Bay monitoring programs provide important baseline information for assessing pre-spill conditions and for predicting spill trajectories in the bay. Baseline monitoring, coupled with regional, state or national modeling efforts (such as NOAA’s Operational Nowcast and Forecast Hydrodynamic Model Systems), is a powerful tool for forecasting spill behavior and impacts. Post-spill research being conducted by the University of South Florida, FWC and others is providing new and important insights into the long-term ecological effects of spills.
 
 In general, the Tampa Bay region has made significant strides in spill readiness and demonstrated an admirable spirit of cooperation among public and private interests. More active and consistent engagement with the environmental community will help ensure that up-to-date information about vulnerable coastal resources is incorporated in the ACP, and that the bay’s most vulnerable areas and wildlife populations are broadly recognized priorities for protection in the event of a spill.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

@@ -51,7 +51,8 @@ TBEP’s primary interest is consistent reporting of TN to accurately calculate 
 
 Another challenge to calculating accurate and timely pollutant loading estimates for WWTPs was that facilities traditionally could submit DMRs in hand-written or paper format. This required FDEP to enter data into databases by hand, which took time and could lead to data entry errors and significant lags in reporting data. 
 
-EPA recently promulgated E-reporting rule 80 FR 64063, which requires NPDES permitted facilities to electronically report and share data. This improvement will enhance transparency by providing a timelier, complete, more accurate and nationally consistent set of data in a more accessible form. As of December 2016, FDEP requires all NPDES wastewater and stormwater facilities to submit DMRs through their web-based Electronic Discharge Monitoring Report System (EzDMR). Compliance data from DMRs is accessible to the public through FDEP’s OCULUS website. Locally, the Environmental Protection Commission of Hillsborough County also maintains records of DMRs. 
+EPA recently promulgated E-reporting rule 80 FR 64063, which requires NPDES permitted facilities to electronically report and share data. This improvement will enhance transparency by providing a timelier, complete, more accurate and nationally consistent set of data in a more accessible form. As of December 2016, FDEP requires all NPDES wastewater and stormwater facilities to submit DMRs through their web-based Electronic Discharge Monitoring Report System (EzDMR). Compliance data from DMRs is accessible to the public through FDEP’s OCULUS website. Locally, the Environmental Protection Commission of Hillsborough County also maintains records of DMRs.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

@@ -56,6 +56,7 @@ Through December 2022, TBEP and the US Geological Survey continued a collaborati
 Actions already being taken to reduce CO2 emissions from the burning of fossil fuels will help slow the effects of ocean acidification. Furthermore, conserving and restoring marine habitats will strengthen ecosystem resilience to climate change and enhance ecosystem health (See Actions [CC-1](cc1.html), [BH-1](../../docs/wildlife/bh1.html), [FW-3](../../docs/wildlife/fw3.html) and [FW-6](../../docs/wildlife/fw6.html)).
 
 Reducing nutrient loading to estuaries can also help prevent acidification caused by excess CO2 production when nutrient-fueled algal blooms die and decay. Continuing to manage nutrient loading to Tampa Bay is therefore an important action that also helps address global ocean acidification (see Actions [WQ-1](../../docs/water/wq1.html), [WQ-3](../../docs/water/wq3.html), [SW-1](../../docs/water/sw1.html), [SW-8](../../docs/water/sw8.html) and [SW-10](../../docs/water/sw10.html)).
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

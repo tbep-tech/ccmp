@@ -124,4 +124,6 @@ toc: false
 <span class="acronym">__USGS__</span>United States Geological Survey \
 <span class="acronym">__WWTP__</span>Wastewater Treatment Plant \
 
-{{< include footer.qmd >}}
+<span class="blank">@empty</span>
+
+{{< include ../footer.qmd >}}

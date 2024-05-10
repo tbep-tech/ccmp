@@ -161,10 +161,9 @@ website:
               href: docs/communities/li1.qmd
       
     - id: acronyms
-      title: "Acronyms"
-      collapse-level: 1
       contents: 
-        href: docs/acronyms.qmd
+        section: " "
+        href: docs/misc/acronyms.qmd
         
 bibliography: docs/refs.bib
 # suppress-bibliography: true

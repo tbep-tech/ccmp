@@ -86,6 +86,7 @@ Florida law defines a vessel at risk of becoming derelict as:
 It is unlawful in Florida to store, leave or abandon any derelict vessel in state waters. The Florida Fish and Wildlife Conservation Commission (FWC) or any law enforcement agency can relocate or remove any derelict vessel in the state and the vessel owner is liable for all costs. However, the time between initial identification of a derelict vessel and its eventual removal can be a long and drawn-out process, and removal is costly. In 2021, the Legislature passed a new law that empowers law enforcement to take action on at-risk vessels. For 2022, the Florida Legislature allocated $8.3 million for derelict vessel removal statewide.  Hillsborough County owns its own salvage equipment for derelict vessel removal. Pinellas pays a per-foot removal fee to a contracted marine salvage company, with costs covered by the county’s share of boat registration fees. 
 
 The FWC’s At-Risk Vessel Program allows law enforcement agents to identify vessels at risk of becoming derelict, before they become a problem. Law enforcement officers can tag these vessels and issue violation notices to owners who refuse to improve a vessel’s seaworthiness and secure mooring or storage. At-risk vessels are tracked in a [statewide database](https://experience.arcgis.com/experience/decfb6b7ca024ac98f6f900d86784d09?views=View-1){target="_blank"}.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

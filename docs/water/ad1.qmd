@@ -88,7 +88,8 @@ Many opportunities exist to promote energy conservation that saves consumers mon
 * A variety of rebate programs, free energy audits and other incentive programs are sponsored by local utilities such as TECO, FPL and Duke Energy to increase efficiency of appliances, heat pumps, air conditioning ducts and insulation.
 * UF/IFAS Extension provides a wealth of general information about energy efficiency and “living green” including specific information about energy-efficient lighting, heating, cooling and landscaping.
 
-Despite significant reductions in nitrogen emissions from power plants and vehicles and improved energy efficiency of buildings and appliances, rapid population growth in the Tampa Bay Area may offset some of these gains. As population size and energy demand grow, continuing reductions in per capita energy use and air pollution will be needed, especially from vehicles, to maintain and improve the region’s water quality and quality of life. 
+Despite significant reductions in nitrogen emissions from power plants and vehicles and improved energy efficiency of buildings and appliances, rapid population growth in the Tampa Bay Area may offset some of these gains. As population size and energy demand grow, continuing reductions in per capita energy use and air pollution will be needed, especially from vehicles, to maintain and improve the region’s water quality and quality of life.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.533">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -71,6 +91,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/react-18.2.0/react.min.js"></script>
 <script src="../../site_libs/react-18.2.0/react-dom.min.js"></script>
 <script src="../../site_libs/reactwidget-1.0.0/react-tools.js"></script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 <script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="../../site_libs/reactable-0.4.4/reactable.css" rel="stylesheet">
 <script src="../../site_libs/reactable-binding-0.4.4/reactable.js"></script>
@@ -84,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -308,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="wq1.html">WQ-1</a> Implement the Tampa Bay nutrient management strategy <br> <a href="ww1.html">WW-1</a> Expand the beneficial use of reclaimed water</p>
 </section></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/water/ww1.html">Wastewater Discharge</a></li><li class="breadcrumb-item"><a href="../../docs/water/ww3.html">WW-3</a></li></ol></nav>
@@ -330,10 +351,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="require-standardized-monitoring-and-reporting-of-wastewater-discharges" class="level2 sub-title">
+<section id="require-standardized-monitoring-and-reporting-of-wastewater-discharges" class="level2 sub-title page-columns page-full">
 <h2 class="sub-title" data-anchor-id="require-standardized-monitoring-and-reporting-of-wastewater-discharges">Require standardized monitoring and reporting of wastewater discharges</h2>
 <p><a href="#activities">Skip to Activities</a></p>
-<section id="objectives" class="level3">
+<section id="objectives" class="level3 page-columns page-full">
 <h3 data-anchor-id="objectives">OBJECTIVES:</h3>
 <div id="intro">
 <p>Require standardized monitoring and reporting of wastewater discharges to improve the accuracy and timeliness of pollutant loading estimates. Provide access to an up-to-date, publicly accessible database of industrial and domestic wastewater discharges. Develop and maintain an ongoing Tampa Bay-specific summary of information for loadings of core pollutants reported to the monitoring database.</p>
@@ -346,8 +367,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Improved water quality has produced a resurgence of healthy seagrass meadows and associated fish and invertebrate communities in Tampa Bay. Protecting these gains requires diligent monitoring of pollutant inputs (loading) to the bay. The Tampa Bay Estuary Program (TBEP) regularly <a href="https://tbep.org/tampa-bay-nitrogen-loads/" target="_blank">estimates loadings</a> of core pollutants, including total nitrogen (TN), total phosphorus (TP), total suspended solids (TSS) and more recently, biochemical oxygen demand (BOD).</p>
 </section>
 </div>
-<div id="more">
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div id="more" class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../img/WW-3-1_Feature Photo_South Cross Bayou.jpg" class="img-fluid figure-img"></p>
 <figcaption>The South Cross Bayou Water Reclamation Facility is Pinellas County’s largest wastewater treatment plant. SOURCE: Pinellas County</figcaption>
@@ -372,16 +393,18 @@ EzDMR
 </div>
 <p>TBEP’s primary interest is consistent reporting of TN to accurately calculate loading estimates for the Reasonable Assurance process. Consistent reporting of TP, TSS and BOD as appropriate would also be helpful.</p>
 <p>Another challenge to calculating accurate and timely pollutant loading estimates for WWTPs was that facilities traditionally could submit DMRs in hand-written or paper format. This required FDEP to enter data into databases by hand, which took time and could lead to data entry errors and significant lags in reporting data.</p>
-<p>EPA recently promulgated E-reporting rule 80 FR 64063, which requires NPDES permitted facilities to electronically report and share data. This improvement will enhance transparency by providing a timelier, complete, more accurate and nationally consistent set of data in a more accessible form. As of December 2016, FDEP requires all NPDES wastewater and stormwater facilities to submit DMRs through their web-based Electronic Discharge Monitoring Report System (EzDMR). Compliance data from DMRs is accessible to the public through FDEP’s OCULUS website. Locally, the Environmental Protection Commission of Hillsborough County also maintains records of DMRs.</p>
-</div>
+<p>EPA recently promulgated E-reporting rule 80 FR 64063, which requires NPDES permitted facilities to electronically report and share data. This improvement will enhance transparency by providing a timelier, complete, more accurate and nationally consistent set of data in a more accessible form. As of December 2016, FDEP requires all NPDES wastewater and stormwater facilities to submit DMRs through their web-based Electronic Discharge Monitoring Report System (EzDMR). Compliance data from DMRs is accessible to the public through FDEP’s OCULUS website. Locally, the Environmental Protection Commission of Hillsborough County also maintains records of DMRs. <span class="blank"><span class="citation" data-cites="empty"> (<a href="#ref-empty" role="doc-biblioref"> </a>)</span></span></p>
+<div class="no-row-height column-margin column-container"><div id="ref-empty" class="csl-entry" role="listitem">
+.
+</div></div></div>
 <button onclick="readMore()" id="readMore">Read More</button>
 </section>
 <section id="activities" class="level3">
 <h3 data-anchor-id="activities">ACTIVITIES</h3>
 <div class="cell">
 <div class="cell-output-display">
-<div class="reactable html-widget html-fill-item" id="htmlwidget-c2c3a54e778ecb4b8338" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-c2c3a54e778ecb4b8338">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"datin...1.":["WW-3.1","WW-3.2","WW-3.3"]},"columns":[{"id":".details","name":"","type":null,"sortable":false,"resizable":false,"filterable":false,"searchable":false,"width":45,"align":"center","details":[{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Where historic data indicate wastewater discharges contain significant concentrations of pollutants of concern to a waterbody, require standardized measurement and timely reporting of those parameters, particularly TN, and average daily or monthly flow from point-source facilities with defined load allocations in the 2022 Reasonable Assurance document adopted by FDEP. This includes all permittees discharging an average of 100,000 gallons or more of wastewater per day."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["FDEP (lead for data collection and database management)"]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing"]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$ FDEP will implement the E-reporting rule and maintain database"]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide"]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Standardized monitoring and reporting of significant discharges of TN and average daily or monthly flow will facilitate the accurate and timely calculations of total pollutant loading to Tampa Bay."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Accurate and timely monitoring of total pollutant loading to Tampa Bay is essential to adaptive management and resource protection."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Standardized monitoring of significant discharges of TN and average daily or monthly flow. Other monitoring parameters may be included as needed to address specific waterbody or estuary impairments. Standardized and timely reporting of these core parameters through FDEP’s EzDMR System and/or E-reporting rule implementation."]}]},{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Improve access to FDEP’s permit compliance databases and wastewater spill databases. Improve the usability of these databases, reduce the need for duplicative reporting and keep databases up to date."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["FDEP (lead) with review by Tampa Bay NMC"]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing. As of December 2016, FDEP requires NPDES facilities to file DMRs electronically through a web-based EzDMR system."]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$$ FDEP"]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide"]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Timely access to accurate, standardized pollution loading data from WWTPs will increase our understanding of the relationships between pollutant loading and water quality in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Improved knowledge and understanding of pollutant loading and water quality will improve adaptive management and resource protection in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Improved access to online data provided in DMRs, data and database management and user interface."]}]},{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Develop Tampa Bay-specific information from discharge monitoring reports that summarizes loading of core pollutants on an ongoing basis, to facilitate timely preparation of documents required for Reasonable Assurance assessments. This information also can be utilized by local governments to meet TMDLs and other water quality regulations, as well as in BMAPs."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["TBEP to facilitate in partnership with FDEP and with input and review from the NMC."]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing"]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$ NMC participant contributions to RA development once every 5 years"]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide"]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Ability to archive and access accurate, timely and application-specific regional information necessary to inform regional initiatives, models and adaptive management."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Improved resource management and protection in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Timely, updated loading summaries for core pollutants contained in DMRs."]}]}]},{"id":"datin...1.","name":"Activities","type":"character"}],"dataKey":"2eeb2d4f340c9b4904afe6d23a5f9882"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item" id="htmlwidget-8776f1472dd800c36df0" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8776f1472dd800c36df0">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"datin...1.":["WW-3.1","WW-3.2","WW-3.3"]},"columns":[{"id":".details","name":"","type":null,"sortable":false,"resizable":false,"filterable":false,"searchable":false,"width":45,"align":"center","details":[{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Where historic data indicate wastewater discharges contain significant concentrations of pollutants of concern to a waterbody, require standardized measurement and timely reporting of those parameters, particularly TN, and average daily or monthly flow from point-source facilities with defined load allocations in the 2022 Reasonable Assurance document adopted by FDEP. This includes all permittees discharging an average of 100,000 gallons or more of wastewater per day."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["FDEP (lead for data collection and database management)"]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing"]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$ FDEP will implement the E-reporting rule and maintain database"]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide"]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Standardized monitoring and reporting of significant discharges of TN and average daily or monthly flow will facilitate the accurate and timely calculations of total pollutant loading to Tampa Bay."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Accurate and timely monitoring of total pollutant loading to Tampa Bay is essential to adaptive management and resource protection."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Standardized monitoring of significant discharges of TN and average daily or monthly flow. Other monitoring parameters may be included as needed to address specific waterbody or estuary impairments. Standardized and timely reporting of these core parameters through FDEP’s EzDMR System and/or E-reporting rule implementation."]}]},{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Improve access to FDEP’s permit compliance databases and wastewater spill databases. Improve the usability of these databases, reduce the need for duplicative reporting and keep databases up to date."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["FDEP (lead) with review by Tampa Bay NMC"]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing. As of December 2016, FDEP requires NPDES facilities to file DMRs electronically through a web-based EzDMR system."]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$$ FDEP"]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide"]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Timely access to accurate, standardized pollution loading data from WWTPs will increase our understanding of the relationships between pollutant loading and water quality in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Improved knowledge and understanding of pollutant loading and water quality will improve adaptive management and resource protection in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Improved access to online data provided in DMRs, data and database management and user interface."]}]},{"name":"div","attribs":{},"children":[{"name":"h3","attribs":{},"children":["Description"]},{"name":"p","attribs":{},"children":["Develop Tampa Bay-specific information from discharge monitoring reports that summarizes loading of core pollutants on an ongoing basis, to facilitate timely preparation of documents required for Reasonable Assurance assessments. This information also can be utilized by local governments to meet TMDLs and other water quality regulations, as well as in BMAPs."]},{"name":"h3","attribs":{},"children":["Responsible Parties"]},{"name":"p","attribs":{},"children":["TBEP to facilitate in partnership with FDEP and with input and review from the NMC."]},{"name":"h3","attribs":{},"children":["Timeframe"]},{"name":"p","attribs":{},"children":["Ongoing"]},{"name":"h3","attribs":{},"children":["Cost and funding sources"]},{"name":"p","attribs":{},"children":["$ NMC participant contributions to RA development once every 5 years"]},{"name":"h3","attribs":{},"children":["Location"]},{"name":"p","attribs":{},"children":["Baywide"]},{"name":"h3","attribs":{},"children":["Benefit / Metric"]},{"name":"p","attribs":{},"children":["Ability to archive and access accurate, timely and application-specific regional information necessary to inform regional initiatives, models and adaptive management."]},{"name":"h3","attribs":{},"children":["Results"]},{"name":"p","attribs":{},"children":["Improved resource management and protection in Tampa Bay."]},{"name":"h3","attribs":{},"children":["Deliverables"]},{"name":"p","attribs":{},"children":["Timely, updated loading summaries for core pollutants contained in DMRs."]}]}]},{"id":"datin...1.","name":"Activities","type":"character"}],"dataKey":"2eeb2d4f340c9b4904afe6d23a5f9882"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -402,7 +425,7 @@ EzDMR
 </section>
 <section id="endnotes" class="level4">
 <h4 data-anchor-id="endnotes">Endnotes</h4>
-<p><a href="../acronyms.html">Acronyms</a> <a href="https://tbep.org">List of All Actions</a> <a href="https://tbep.org/about-tbep/who-we-are/">Who We Are</a></p>
+<p><a href="../misc/acronyms.html">Acronyms</a> <a href="https://tbep.org">List of All Actions</a> <a href="https://tbep.org/about-tbep/who-we-are/">Who We Are</a></p>
 </section>
 </div>
 </section>
@@ -427,6 +450,7 @@ St.&nbsp;Petersburg, FL 33701<br>
 </section>
 </div>
 </div>
+
 
 
 </section>
@@ -586,7 +610,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {

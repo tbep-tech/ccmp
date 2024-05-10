@@ -70,6 +70,7 @@ TBEP’s Manatee Awareness Coalition (MAC) helps coordinate boater education eff
 Ultimately, additional funds for law enforcement are needed to adequately keep pace with increased use (and potential abuse) of the bay and its valuable habitats and inhabitants. Funding for enforcement, as well as marine research and management, could come from reviving the license fee for shoreline anglers. A \$9 fee enacted in 2009 was expected to generate \$900,000–\$1.2 million a year in revenues, but was repealed a year later. The license is now free and voluntary.
 
 Enforcement funds could also come from requiring that residents and/or non-residents using professional fishing guides purchase an individual fishing license. An estimated 2 million tourists fished in Florida in 2014, far outpacing any other state. Currently, charter captains purchase an annual license that covers all anglers on board their boat.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

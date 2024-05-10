@@ -111,6 +111,7 @@ fw6species_tab(params$id, paste(rmarkdown::metadata$title, 'species'))
 TBEP participates in collaborative partnerships within the Tampa Bay and Southwest Florida region to review and coordinate habitat restoration and protection initiatives (see Actions [BH-1](bh1.html), [BH-2](bh2.html), [BH-3](bh3.html), and [BH-9](bh9.html)). These initiatives include identification of priority sites for acquisition and mitigation. 
 
 TBEP has been a leader in educating bay users about responsible water recreation, through boating guides, ethical fishing information and sponsorship of “Leave No Trace” outdoor etiquette workshops. TBEP also informs waterfront homeowners about ways to enhance their shorelines for fish and wildlife, and about coexisting with wildlife.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}

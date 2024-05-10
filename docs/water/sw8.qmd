@@ -67,6 +67,7 @@ With the passage of the Clean Waterways Act (2020), FDACS is expected to increas
 UF/IFAS Extension Agents provide outreach to both commercial and non-commercial operators to encourage BMP adoption. Outreach to rural hobby operators (e.g., horse boarding facilities, alpaca ranches, rabbit breeding operations), especially with property adjacent to waterways, should be a focus. In addition, education should be extended to urban farmers with a greater potential to contribute pollution to stormwater runoff, including community gardens, backyard gardens and chicken coops. 
 
 With the growing popularity and interest among urban homeowners in backyard chicken coops, Pinellas County (and five of its municipalities), the City of Tampa, Polk County, and Manatee County have adopted backyard chicken ordinances. Some ordinances have setback requirements for the coop, which can help minimize stormwater pollution from waste. UF/IFAS is developing a Backyard Poultry 101 Workshop for Small Farms Agents in several counties, which will likely include recommendations for managing waste.
+<span class="blank">@empty</span>
 :::
   
 ```{=html}
