@@ -175,6 +175,11 @@ website:
         section: " "
         href: docs/misc/implement.qmd
         
+    - id: all-actions
+      contents: 
+        section: " "
+        href: docs/misc/allactions.qmd
+        
 bibliography: docs/refs.bib
 # suppress-bibliography: true
 citeproc: true

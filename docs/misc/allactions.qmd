@@ -1,0 +1,22 @@
+---
+params:
+  id: '1q_upEllo0YniR2G_jEddRwPjP7WtgYBGqfOmSTAcC9g'
+  navtitle: List of All Actions
+toc: false
+---
+
+```{r}
+library(googledrive)
+library(googlesheets4)
+
+gs4_deauth()
+source(here::here('R/funcs.R'))
+```
+
+```{r}
+allactions_tab(params$id)
+```
+
+<span class="blank">@empty</span>
+
+{{< include ../footer.qmd >}}

@@ -806,3 +806,73 @@ researchpriorities_tab <- function(id){
   return(out)
   
 }
+
+allactions_tab <- function(id){
+  
+  sht <- read_sheet(id, sheet = 'CCMP Actions', col_types = 'c')
+  
+  heads <- c('Water Quality and Sediments', 'Bay Habitats', 'Fish and Wildlife', 'Climate Change', 'Public Access, Education, and Involvement')
+  
+  acts <- list(
+    `Clean Water and Sediments` = c("Water Quality", "Stormwater Runoff", "Atmospheric Deposition", 
+                                    "Wastewater Discharge", "Contaminants of Concern", "Pathogens"), 
+    `Thriving Habitats and Abundant Wildlife` = c("Bay Habitats", "Freshwater Inflow", "Fish & Wildlife", "Dredging & Material Mgmt", 
+                                                  "Spill Prevention", "Invasive Species"), 
+    `Informed, Engaged, and Responsible Community` = c("Public Education & Involvement", "Public Access", "Climate Change", "Local Implementation")
+  ) 
+  
+  actstb <- acts |> 
+    tibble::enframe(name = 'Strategy', value = 'Action Plan') |> 
+    tidyr::unnest('Action Plan')
+  
+  totab <- sht |> 
+    tidyr::fill('Action Plan') |> 
+    dplyr::left_join(actstb, by = 'Action Plan') |> 
+    dplyr::select(Strategy, `Action Plan`, Action, Description = `SEE CCMP IMPLEMENTATION SMARTSHEET`) |> 
+    dplyr::mutate(
+      `Action Plan` = ifelse(duplicated(`Action Plan`), '', `Action Plan`), 
+      actionlnk = paste0(tolower(gsub('\\-', '', Action)), '.html'),
+      actionlnk = dplyr::case_when(
+        Strategy == 'Clean Water and Sediments' ~ paste0('https://tbep-tech.github.io/ccmp/docs/water/', actionlnk),
+        Strategy == 'Thriving Habitats and Abundant Wildlife' ~ paste0('https://tbep-tech.github.io/ccmp//docs/wildlife/', actionlnk),
+        Strategy == 'Informed, Engaged, and Responsible Community' ~ paste0('https://tbep-tech.github.io/ccmp//docs/communities/', actionlnk)
+      )
+    ) |> 
+    # dplyr::select(-actionlnk) |> 
+    flextable::as_grouped_data(groups = 'Strategy') |> 
+    dplyr::mutate(
+      `Action Plan` = dplyr::case_when(
+        !is.na(Strategy) ~ Strategy, 
+        TRUE ~ `Action Plan`
+      )
+    ) |> 
+    dplyr::select(-Strategy)
+  
+  cols <- c('#2CAFC0', '#427355', '#534D75')
+  inds <- which(totab$`Action Plan` %in% names(acts))
+  
+  out <- totab |> 
+    flextable::flextable(col_keys = c('Action Plan', 'Action', 'Description')) |>
+    flextable::autofit() |> 
+    flextable::color(i = inds, color = "white", part = "body") |>
+    flextable::bg(bg = cols[1], i = inds[1], part = "body") |> 
+    flextable::bg(bg = cols[2], i = inds[2], part = "body") |> 
+    flextable::bg(bg = cols[3], i = inds[3], part = "body") |> 
+    flextable::merge_at(i = inds[1]) |>
+    flextable::merge_at(i = inds[2]) |>
+    flextable::merge_at(i = inds[3]) |>
+    flextable::color(color = '#db5b25', j = 2, part = 'body') |> 
+    flextable::bold(part = 'header') |> 
+    # flextable::align(align = "center", i = inds, part = 'body') |>
+    flextable::border_remove()
+  
+  out <- flextable::compose(
+    x = out, j = "Action",
+    value = flextable::as_paragraph(
+      flextable::hyperlink_text(x = Action, url = actionlnk)
+    )
+  )
+  
+  return(out)
+  
+}
