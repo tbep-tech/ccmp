@@ -47,6 +47,7 @@ jobs:
             any::reactable
             any::rmarkdown
             any::knitr
+            any::prettymapr
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
