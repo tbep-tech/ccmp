@@ -48,6 +48,8 @@ jobs:
             any::rmarkdown
             any::knitr
             any::prettymapr
+            any::sysfonts
+            any::showtext
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2

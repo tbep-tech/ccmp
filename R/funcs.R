@@ -1,4 +1,8 @@
 
+sysfonts::font_add_google('Roboto')
+showtext::showtext_auto()
+showtext::showtext_opts(dpi = 200)
+
 # utility functions ---------------------------------------------------------------------------
 
 # get rdata from github
@@ -67,14 +71,15 @@ pyro_plo <- function(yr = 2021, mo = c('Jun', 'Oct')){
   
   m <- m + 
     ggplot2::geom_sf(data = tomap, ggplot2::aes(size = count), fill = 'red', color = 'red', pch = 21, alpha = 0.5, inherit.aes = F) +
-    ggplot2::theme_minimal() + 
+    ggplot2::theme_minimal(base_family = 'Roboto') +
     ggplot2::theme(
       panel.grid = ggplot2::element_blank(), 
       axis.title = ggplot2::element_blank(), 
       axis.text.y = ggplot2::element_text(size = 8), 
       axis.text.x = ggplot2::element_text(size = 8, angle = 30, hjust = 1),
       axis.ticks = ggplot2::element_line(colour = 'grey'),
-      panel.background = ggplot2::element_rect(fill = NA, color = 'black')
+      panel.background = ggplot2::element_rect(fill = NA, color = 'black'), 
+      text = ggplot2::element_text(family = 'Roboto')
     ) +
     ggplot2::scale_size_continuous(range = c(2, 10)) +
     ggplot2::labs(
@@ -84,7 +89,7 @@ pyro_plo <- function(yr = 2021, mo = c('Jun', 'Oct')){
     ) 
   
   m <- m +
-    ggspatial::annotation_scale(location = 'br', unit_category = 'metric')
+    ggspatial::annotation_scale(location = 'br', unit_category = 'metric', text_family = 'Roboto')
   m <- m +
     ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), 
                                       width = grid::unit(0.75, "cm"))
@@ -129,10 +134,11 @@ adload_plo <- function(){
     ggplot2::geom_text(ggplot2::aes(label = percent, size = toemph), hjust = -0.25, show.legend = F) +
     ggplot2::scale_fill_manual(values = c('#004F7E', '#958984')) +
     ggplot2::scale_x_continuous(expand = c(0, 0), limits = c(0, 1.1* max(toplo$tn_load / 1000))) +
-    ggplot2::theme_minimal(base_size = 14) +
+    ggplot2::theme_minimal(base_size = 14, base_family = 'Roboto') +
     ggplot2::scale_y_discrete(expand = c(0, 0)) +
     ggplot2::theme(
       panel.grid = ggplot2::element_blank(), 
+      text = ggplot2::element_text(family = 'Roboto')
       # axis.text = ggplot2::element_text(size = 14) 
     ) +
     ggplot2::scale_size_manual(values = c(6, 4)) +
@@ -167,12 +173,13 @@ bacwbid_plo <- function(){
     dplyr::select(-PARAMETER_GROUP, -PARAMETER_ASSESSED) |>
     unique()
   
-  m <- ggplot() +
+  m <- ggplot2::ggplot() +
     annotation_map_tile(zoom = 10, type = 'cartolight', progress = 'none', quiet = T) +
-    ggspatial::annotation_scale(location = 'br', unit_category = 'metric') +
+    ggspatial::annotation_scale(location = 'br', unit_category = 'metric', text_family = 'Roboto') +
     ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
-    geom_sf(data = tbvwbid, fill = 'red', col = 'red', alpha = 0.6) +
-    theme_minimal()
+    ggplot2::geom_sf(data = tbvwbid, fill = 'red', col = 'red', alpha = 0.6) +
+    ggplot2::theme_minimal(base_family = 'Roboto') + 
+    ggplot2::theme(text = ggplot2::element_text(family = 'Roboto'))
   
   return(m)
   
@@ -214,10 +221,11 @@ intertidal_plo <- function(curyr = 2020){
                        color = 'white', fontface = 'bold') +
     ggplot2::facet_wrap(~name) +
     ggplot2::coord_polar('y', start = 0) +
-    ggplot2::theme_void() +
+    ggplot2::theme_void(base_family = 'Roboto') +
     ggplot2::scale_fill_manual(values = c('#028576', '#427355', '#76923C')) + 
     ggplot2::theme(
       legend.position = 'bottom', 
+      text = ggplot2::element_text(family = 'Roboto'),
       strip.text = ggplot2::element_text(size = 15), 
       legend.text = ggplot2::element_text(size = 13)
     ) +  
@@ -249,7 +257,7 @@ cchasites_plo <- function(){
   
   m <- ggplot2::ggplot() +
     ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
-    ggspatial::annotation_scale(location = 'bl', unit_category = 'metric') +
+    ggspatial::annotation_scale(location = 'bl', unit_category = 'metric', text_family = 'Roboto') +
     ggspatial::annotation_north_arrow(location = 'tr', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
     ggplot2::geom_sf(data = tomap, inherit.aes = F, size = 2) +
     ggrepel::geom_text_repel(data = tomap, ggplot2::aes(label = site, x = lon, y = lat), inherit.aes = F) +
@@ -257,7 +265,10 @@ cchasites_plo <- function(){
       x = NULL, 
       y = NULL
     ) +
-    ggplot2::theme_minimal() +
+    ggplot2::theme_minimal(base_family = 'Roboto') +
+    ggplot2::theme(
+      text = ggplot2::element_text(family = 'Roboto')
+    ) +
     ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
   
   return(m)
@@ -288,7 +299,7 @@ tdlcrk_plo <- function(maxyr = 2022){
   
   m <- ggplot2::ggplot() +
     ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
-    ggspatial::annotation_scale(location = 'bl', unit_category = 'metric') +
+    ggspatial::annotation_scale(location = 'bl', unit_category = 'metric', text_family = 'Roboto') +
     ggspatial::annotation_north_arrow(location = 'tr', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
     ggplot2::geom_sf(data = tomap, ggplot2::aes(col = score, fill = score), inherit.aes = F, linewidth = 0.75) +
     ggplot2::scale_color_manual(values = cols) +
@@ -299,7 +310,10 @@ tdlcrk_plo <- function(maxyr = 2022){
       color = NULL, 
       fill = NULL
     ) +
-    ggplot2::theme_minimal() +
+    ggplot2::theme_minimal(base_family = 'Roboto') +
+    ggplot2::theme(
+      text = ggplot2::element_text(family = 'Roboto')
+    ) +
     ggplot2::coord_sf(xlim = dat_ext[c(1, 3)], ylim = dat_ext[c(2, 4)], expand = FALSE, crs = 4326)
   
   return(m)
@@ -343,12 +357,13 @@ scallop_plo <- function(){
       x = NULL, 
       y = 'Scallops found'
     ) +
-    ggplot2::theme_minimal() +
+    ggplot2::theme_minimal(base_family = 'Roboto') +
     ggplot2::theme(
       axis.text.x = ggplot2::element_text(angle = 45, hjust = 1),
       panel.grid.major.x = ggplot2::element_blank(),
       panel.grid.minor.x = ggplot2::element_blank(),
-      panel.grid.minor.y = ggplot2::element_blank()
+      panel.grid.minor.y = ggplot2::element_blank(),
+      text = ggplot2::element_text(family = 'Roboto')
     )
   
   return(p)
@@ -389,7 +404,7 @@ fim_plo <- function(){
       x = NULL, 
       y = 'Number per set'
     ) +
-    ggplot2::theme_minimal() + 
+    ggplot2::theme_minimal(base_family = 'Roboto') + 
     ggplot2::theme(
       legend.position = 'none', 
       panel.grid.minor.y = ggplot2::element_blank(), 
@@ -397,7 +412,8 @@ fim_plo <- function(){
       # panel.grid.major.x = ggplot2::element_blank(),
       panel.grid.minor.x = ggplot2::element_blank(),
       axis.title.y = ggplot2::element_text(size = 12), 
-      axis.text.x = ggplot2::element_text(size = 11)
+      axis.text.x = ggplot2::element_text(size = 11), 
+      text = ggplot2::element_text(family = 'Roboto')
     )
   
   return(p)
@@ -423,7 +439,7 @@ waterbird_plo <- function(){
   
   m <- ggplot2::ggplot() +
     ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
-    ggspatial::annotation_scale(location = 'br', unit_category = 'metric') +
+    ggspatial::annotation_scale(location = 'br', unit_category = 'metric', text_family = 'Roboto') +
     ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
     ggplot2::geom_sf(data = tomap, ggplot2::aes(fill = status), col = 'black', pch = 21, inherit.aes = F, size = 3) +
     # ggplot2::scale_color_manual(values = cols) +
@@ -434,9 +450,10 @@ waterbird_plo <- function(){
       color = NULL, 
       fill = NULL
     ) +
-    ggplot2::theme_minimal() +
+    ggplot2::theme_minimal(base_family = 'Roboto') +
     ggplot2::theme(
-      legend.position = 'top'
+      legend.position = 'top',
+      text = ggplot2::element_text(family = 'Roboto')
     )
   
   return(m)
@@ -496,21 +513,24 @@ gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 5){
     dplyr::mutate(
       x = rep(seq(0, (!!w + padding) * cols - 1, !!w + padding), times = rows),
       y = rep(seq(0, (!!h + padding) * rows - 1, !!h + padding), each = cols),
-      info = stringr::str_wrap(info, 75)
+      info = stringr::str_wrap(info, 80)
     )
   
   p <- ggplot2::ggplot(toplo, ggplot2::aes(x, y, height = h, width = w, label = info)) +
     ggplot2::geom_tile(ggplot2::aes(fill = name)) +
-    ggplot2::geom_text(fontface = "bold", size = 12,
+    ggplot2::geom_text(fontface = "bold", size = 6,
                        ggplot2::aes(label = value, x = x - w/2.2, y = y + h/4, color = name), hjust = 0) +
-    ggplot2::geom_text(size = 7, lineheight = 0.5,
+    ggplot2::geom_text(size = 3.3, lineheight = 1.2,
                        ggplot2::aes(color = name, label = info, x = x - w/2.2, y = y - h/6), hjust = 0) +
     ggplot2::coord_fixed() +
     ggplot2::scale_fill_brewer(type = "cont", palette = "Blues", direction = -1) +
     ggplot2::scale_color_manual(values = toplo$txtcols) +
-    ggplot2::geom_text(size = 32, ggplot2::aes(label = icon, family = font_family,
+    ggplot2::geom_text(size = 17, ggplot2::aes(label = icon, family = font_family,
                                                x = x + w/2.5, y = y + h/14), alpha = 0.25) +
-    ggplot2::theme_void() +
+    ggplot2::theme_void(base_family = 'Roboto') +
+    ggplot2::theme(
+      text = ggplot2::element_text(family = 'Roboto')
+    ) +
     ggplot2::guides(
       fill = 'none', 
       color = 'none'
@@ -566,12 +586,13 @@ seagrassph_plo <- function(){
       x = NULL, 
       fill = NULL
     ) +
-    ggplot2::theme_minimal() +
+    ggplot2::theme_minimal(base_family = 'Roboto') +
     ggplot2::theme(
       legend.position = 'top', 
       panel.grid.minor = ggplot2::element_blank(), 
       axis.text.x = ggplot2::element_text(size = 11), 
-      legend.text = ggplot2::element_text(size = 11)
+      legend.text = ggplot2::element_text(size = 11),
+      text = ggplot2::element_text(family = 'Roboto')
     )
   
   return(p)
