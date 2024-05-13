@@ -628,7 +628,8 @@ sw8_tab <- function(id, action){
   sht <- read_sheet(id, sheet = action, skip = 1, col_types = 'c')
   
   out <- flextable::flextable(sht) |> 
-    flextable::autofit() 
+    flextable::autofit() |> 
+    flextable::font(fontname = 'Roboto', part = 'all') 
   
   return(out)
   
@@ -643,6 +644,7 @@ ww1_tab <- function(id, action){
     flextable::merge_at(i = 1, j = 2:4, part = 'header') |>
     flextable::merge_at(i = 1, j = 5:7, part = 'header') |> 
     flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::font(fontname = 'Roboto', part = 'all') |> 
     flextable::border_remove() |> 
     flextable::hline(i = 4, part = 'body') |> 
     flextable::autofit()
@@ -658,6 +660,7 @@ coc1_tab <- function(id, action){
   out <- flextable::flextable(sht) |> 
     flextable::set_header_labels(`...1` = '') |>
     flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::font(fontname = 'Roboto', part = 'all') |> 
     flextable::border_remove() |> 
     flextable::autofit()
   
@@ -676,6 +679,7 @@ ph5_tab <- function(id, action){
     flextable::merge_at(i = 1, j = 4:5, part = 'header') |> 
     flextable::merge_at(i = 1, j = 6:7, part = 'header') |> 
     flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::font(fontname = 'Roboto', part = 'all') |> 
     flextable::border_remove() |> 
     flextable::align(align = 'center', part = 'all', j = -1) |>
     flextable::vline(j = c(3, 5), part = 'all') |> 
@@ -706,6 +710,7 @@ bh4_tab <- function(){
   out <- flextable::flextable(totab) |> 
     flextable::set_header_labels(i = 1, `segment` = 'Bay segment') |>
     flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::font(fontname = 'Roboto', part = 'all') |> 
     flextable::border_remove() |> 
     flextable::align(align = 'center', part = 'all', j = -1) |>
     flextable::autofit()
@@ -726,6 +731,7 @@ fw1_tab <- function(id, action){
     flextable::colformat_double(j = 2:3, digits = 0, big.mark = ",") |>
     flextable::colformat_double(j = 4, digits = 1) |>
     flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::font(fontname = 'Roboto', part = 'all') |> 
     flextable::align(align = 'left', part = 'all') |> 
     flextable::border_remove() |> 
     flextable::autofit()
@@ -744,6 +750,7 @@ fw6turtles_tab <- function(id, action){
   out <- flextable::flextable(sht) |> 
     flextable::colformat_double(j = 2:ncol(sht), digits = 0, big.mark = ",") |>
     flextable::bg(bg = "lightgray", part = "header") |> 
+    flextable::font(fontname = 'Roboto', part = 'all') |> 
     flextable::align(align = 'left', part = 'all') |> 
     flextable::bold(i = 4) |> 
     flextable::border_remove() |> 
@@ -768,6 +775,7 @@ fw6species_tab <- function(id, action){
   out <- flextable::flextable(sht) |> 
     flextable::bg(bg = "lightgray", part = "header") |>
     flextable::bg(bg = 'lightgrey', part = 'body', i = grys) |>
+    flextable::font(fontname = 'Roboto', part = 'all') |> 
     flextable::align(align = 'left', part = 'all') |> 
     flextable::italic(j = 2, part = 'body') |> 
     flextable::bold(i = grys, part = 'body') |>
@@ -795,6 +803,7 @@ researchpriorities_tab <- function(id){
     flextable::autofit() |> 
     flextable::align(align = "center", part = "header") |>
     flextable::bold(part = "header") |>
+    flextable::font(fontname = 'Roboto', part = 'all') |> 
     flextable::color(i = inds, color = "white", part = "body") |>
     flextable::bg(bg = cols[1], i = inds[1], part = "body") |> 
     flextable::bg(bg = cols[2], i = inds[2], part = "body") |> 
@@ -854,6 +863,7 @@ allactions_tab <- function(id){
   out <- totab |> 
     flextable::flextable(col_keys = c('Action Plan', 'Action', 'Description')) |>
     flextable::autofit() |> 
+    flextable::font(fontname = 'Roboto', part = 'all') |> 
     flextable::color(i = inds, color = "white", part = "body") |>
     flextable::bg(bg = cols[1], i = inds[1], part = "body") |> 
     flextable::bg(bg = cols[2], i = inds[2], part = "body") |> 
