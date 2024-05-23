@@ -398,8 +398,13 @@ body.floating .sidebar.sidebar-navigation, .sidebar.margin-sidebar {
   overflow: initial!important;
 }
 .page-columns .page-navigation {
-  grid-row: 9/10;
+  grid-row: 1/10;
   padding: 1em 0;
+}
+#title-block-header {
+    margin-block-end: 1rem;
+    position: relative;
+    margin-top: 30px;
 }
 .sidebar {
   max-height: none;
