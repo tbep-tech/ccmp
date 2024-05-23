@@ -9,7 +9,7 @@ website:
   # issue-url: https://github.com/tbep-tech/ccmp/issues
   # repo-actions: [edit, issue]
   page-navigation: true
-  bread-crumbs: false
+  bread-crumbs: true
   search: true
   page-footer:
     left: |
