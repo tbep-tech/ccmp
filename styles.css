@@ -428,6 +428,7 @@ button#readMore {
   cursor: pointer;
   margin: auto;
   align-self: normal;
+  z-index: 100;
 }
 button#readMore:hover {
   background: var(--tbep-orange-hover);
