@@ -4,6 +4,8 @@ project:
 website:
   open-graph: true
   twitter-card: true
+  google-analytics: 
+    tracking-id: G-FHQ09PXJB4
   site-url: https://tbep-tech.github.io/ccmp
   repo-url: https://github.com/tbep-tech/ccmp
   # issue-url: https://github.com/tbep-tech/ccmp/issues
