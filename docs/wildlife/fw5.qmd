@@ -57,7 +57,7 @@ In light of the 2010 Deepwater Horizon oil spill in the Gulf of Mexico, there is
 #| fig-width: 3
 #| fig-height: 6
 #| fig-align: center
-#| out-width: 40%
+#| out-width: 41%
 show_tbnimatrix(tbniscr)
 ```
 
