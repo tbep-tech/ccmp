@@ -52,14 +52,7 @@ Tidal creek research reinforces the need to learn more about the early life hist
 
 In light of the 2010 Deepwater Horizon oil spill in the Gulf of Mexico, there is renewed urgency and opportunity for improving our understanding of how important offshore fisheries species, such as grey snapper and gag grouper, use the full reach of the estuary for critical portions of their life-history. While the important role of the estuary in sustaining offshore adult populations is well documented, long-term, broad-scale monitoring studies are needed to assess the relative importance of various estuarine habitat types to recruitment processes and fisheries productivity (see Actions [BH-8](bh8.html) and [BH-9](bh9.html)).
 
-```{r}
-#| fig-cap: "The Tampa Bay Nekton Index over time in each of the major bay segments. SOURCE: TBEP"
-#| fig-width: 3
-#| fig-height: 6
-#| fig-align: center
-#| out-width: 41%
-show_tbnimatrix(tbniscr)
-```
+![The Tampa Bay Nekton Index over time in each of the major bay segments. SOURCE: TBEP](https://raw.githubusercontent.com/tbep-tech/state-of-the-bay/master/figures/tbnireport.jpg){width=40% fig-align="center"}
 
 TBERF funded studies by FWRI in 2019 and 2021 used complementary hook-and-line and baited remote underwater video (BRUV) systems to sample fish communities of Tampa Bay’s estuarine hard bottom habitats [@tbep0821]. Use of hard bottom habitat was documented for a variety of economically important species and by unique fish assemblages within the estuary supporting the idea that Tampa Bay hard bottom habitats function as a link between estuarine seagrass nurseries and offshore reefs.
 
