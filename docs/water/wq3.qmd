@@ -46,7 +46,7 @@ Species associated with HABs in Tampa Bay include:
 * *Pyrodinium bahamense* is also a naturally occurring dinoflagellate. It produces saxitoxins, which can accumulate in shellfish and cause poisoning if the shellfish are consumed. No closures of shellfish harvesting areas have been necessary in Tampa Bay to date, largely because no shellfish harvesting is allowed in Old Tampa Bay where blooms most frequently occur. *Pyrodinium* forms resting cysts that settle from the water column to sediments, forming a cyst bed to seed future blooms. There were no recorded occurrences of *Pyrodinium* in the bay between 1983 and 2000. However, blooms have occurred every summer since 2000 [@tbep0721]. In the future, the intensity, timing and duration of *Pyrodinium* blooms may be influenced by increasing summer water temperatures, shifting rainfall patterns and corresponding changes in salinity and nutrient inputs. Additional research is needed to understand the factors associated with blooms of *Pyrodinium* and potential effective management actions.
 
 ```{r}
-#| fig-cap: "Distribution of *Pyrodinium* cysts in Old Tampa Bay. SOURCE: EPCHC"
+#| fig-cap: "Distribution of *Pyrodinium* cells in Old Tampa Bay. SOURCE: EPCHC"
 #| fig-height: 5
 #| fig-width: 6
 pyro_plo()
