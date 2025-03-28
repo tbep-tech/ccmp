@@ -460,16 +460,15 @@ waterbird_plo <- function(){
   
 }
 
-gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 5){
+gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 6){
   
   gaddat <- rdataload('https://github.com/tbep-tech/State-of-the-Bay/raw/master/data/gaddat.RData')
   
   datsum <- gaddat |> 
     dplyr::filter(year >= 2019) |> 
     dplyr::mutate(
-      nvols = nadults + nyouth
+      nvol = nadult + nyouth
     ) |> 
-    # select(-nadults, -nyouth) |> 
     tidyr::pivot_longer(-year, names_to = 'var', values_to = 'val') |> 
     dplyr::group_by(var) |> 
     dplyr::summarise(
@@ -478,26 +477,27 @@ gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 5){
     ) |> 
     tidyr::pivot_wider(names_from = 'var', values_from = 'val') |> 
     dplyr::mutate(
-      ntons = nlbs / 2e3, 
-      ntons = round(ntons, 1)
+      nton = nlb / 2e3, 
+      nton = round(nton, 1)
     ) |> 
     dplyr::mutate_all(function(x) format(x, big.mark = ',', scientific = FALSE))
   
   txt <- tibble::tibble(
-    name = c('nevent', 'nvols', 'nlbs', 'nplants', 'npartner'),
+    name = c('nevent', 'nvol', 'nlb', 'nlbinv', 'nplant', 'npartner'),
     info = c('Event areas are prioritized by the presence of excessive litter & native habitat degradation, often overlapping with neighborhoods that have historically not received the support to facilitate restorative activities.',
-             paste(datsum$nadults, 'adults &', datsum$nyouth, 'youths helped to protect and restore the bay this season.'),
-             'Including trash, invasive plants & marine debris.', 
-             "Native plants increase the bay's resiliency a& restore crucial wildlife habitat.",
+             paste(datsum$nadult, 'adults &', datsum$nyouth, 'youths helped to protect and restore the bay this season.'),
+             'Includes trash & marine debris.', 
+             'Invasive species have a negative impact on the surrounding environment.',
+             "Native plants increase the bay's resiliency & restore crucial wildlife habitat.",
              'Our partners play an invaluable role in recruiting volunteers to help us put in work!'
     ), 
-    txtadd = c('EVENTS', 'VOLUNTEERS', 'LBS REMOVED', 'PLANTS INSTALLED', 'PARTNERS'),
-    icon = paste0('fa-', c('calendar', 'users', 'trash', 'tree', 'handshake-o')), 
-    txtcols = c("#08306B", "#08306B", "#F7FBFF", "#F7FBFF", "#F7FBFF")
+    txtadd = c('EVENTS', 'VOLUNTEERS', 'LBS REMOVED', 'LBS INVASIVES REMOVED', 'PLANTS INSTALLED', 'PARTNERS'),
+    icon = paste0('fa-', c('calendar', 'users', 'trash', 'pagelines', 'tree', 'handshake-o')), 
+    txtcols = c("#08306B", "#08306B", "#08306B", "#F7FBFF", "#F7FBFF", "#F7FBFF")
   )
   
   cols <- nrow(txt) / rows
-  
+
   toplo <- datsum |> 
     tidyr::pivot_longer(dplyr::everything()) |> 
     dplyr::inner_join(txt, by = 'name') |> 
@@ -526,11 +526,11 @@ gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 5){
     ggplot2::scale_fill_brewer(type = "cont", palette = "Blues", direction = -1) +
     ggplot2::scale_color_manual(values = toplo$txtcols) +
     ggplot2::geom_text(size = 17, ggplot2::aes(label = icon, family = font_family,
-                                               x = x + w/2.5, y = y + h/14), alpha = 0.25) +
+                             x = x + w/2.5, y = y + h/14), alpha = 0.25) +
     ggplot2::theme_void(base_family = 'Roboto') +
     ggplot2::theme(
       text = ggplot2::element_text(family = 'Roboto')
-    ) +
+    ) + 
     ggplot2::guides(
       fill = 'none', 
       color = 'none'
