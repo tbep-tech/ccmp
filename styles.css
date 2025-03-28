@@ -115,6 +115,11 @@ nav.navbar.navbar-expand-lg {
   background: white;
 }
 
+.nav-icon {
+  height: 1.5em;
+  vertical-align: middle;
+}
+
 li.nav-item:nth-child(1) .nav-link {
   --color: #2CAFC0;
   --color-hover: #1d8391;

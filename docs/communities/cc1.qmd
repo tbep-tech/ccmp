@@ -1,7 +1,7 @@
 ---
 title: "CC-1"
 params:
-  navtitle: <i class="fa fa-handshake"></i> Informed, Engaged, and Responsible Community
+  navtitle: <img src="../../www/pe-icon.svg"/ class="nav-icon"> Informed, Engaged, and Responsible Community
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>

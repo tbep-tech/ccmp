@@ -1,7 +1,7 @@
 ---
 title: "SP-1"
 params:
-  navtitle: <i class="fa fa-fish"></i> Thriving Habitats and Abundant Wildlife
+  navtitle: <img src="../../www/bh-icon.svg"/ class="nav-icon"> Thriving Habitats and Abundant Wildlife
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>

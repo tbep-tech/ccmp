@@ -2,7 +2,7 @@
 title: "SW-1"
 toc: false
 params:
-  navtitle: <i class="bi bi-water"></i>Clean Water and Sediments
+  navtitle: <img src="../../www/wq-icon.svg"/ class="nav-icon">Clean Water and Sediments
 margin-footer: |
   ### RELATED ACTIONS: <br>
   [WW-1](ww1.html) Expand the beneficial use of reclaimed water <br>
