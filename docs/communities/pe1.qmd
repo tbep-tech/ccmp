@@ -52,7 +52,7 @@ TBEP also organizes the Give-A-Day for the Bay volunteer program. Each year, wor
 ```{r}
 #| fig-cap: "Highlights of the Give A Day For The Bay volunteer programs 2019-2023. SOURCE: TBEP"
 #| fig-width: 7
-#| fig-height: 6
+#| fig-height: 7
 #| fig-align: center
 #| out-width: 85%
 gadsum_plo()

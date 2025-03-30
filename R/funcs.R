@@ -460,7 +460,7 @@ waterbird_plo <- function(){
   
 }
 
-gadsum_plo <- function(h = 5.5, w = 30, padding = 0, rows = 6){
+gadsum_plo <- function(h = 5.5, w = 32, padding = 0, rows = 6){
   
   gaddat <- rdataload('https://github.com/tbep-tech/State-of-the-Bay/raw/master/data/gaddat.RData')
   
