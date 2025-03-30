@@ -1,7 +1,7 @@
 ---
 title: "PH-4"
 params:
-  navtitle: <img src="../../www/wq-icon.svg"/ class="nav-icon">Clean Water and Sediments
+  navtitle: <img src="../../www/wq-icon.svg"/ class="nav-icon"> Clean Water and Sediments
 toc: false
 margin-footer: |
   ### RELATED ACTIONS: <br>
