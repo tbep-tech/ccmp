@@ -28,7 +28,7 @@
 #### Endnotes
 [Acronyms](../misc/acronyms.html)
 [List of All Actions](../misc/allactions.html)
-[Who We Are](https://tbep.org/about-tbep/who-we-are/)
+[Who We Are](https://tbep.org/about-tbep/)
 :::
 :::
 
