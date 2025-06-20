@@ -211,8 +211,7 @@ intertidal_plo <- function(curyr = 2020){
       name = factor(name, levels = c('ca1950', as.character(curyr)))
     ) |> 
     dplyr::mutate(
-      Acreslab = formatC(round(Acres, 0), format = 'd', big.mark = ','), 
-      Acreslab = paste0(Acreslab, '\n', HMPU_TARGETS)
+      Acreslab = formatC(round(Acres, 0), format = 'd', big.mark = ',')
     ) |> 
     dplyr::arrange(name, HMPU_TARGETS)
   
@@ -223,9 +222,9 @@ intertidal_plo <- function(curyr = 2020){
     ggplot2::facet_wrap(~name) +
     ggplot2::coord_polar('y', start = 0) +
     ggplot2::theme_void(base_family = 'Roboto') +
-    ggplot2::scale_fill_manual(values = c('#028576', '#427355', '#76923C')) + 
+    ggplot2::scale_fill_manual(values = c('#009E73', '#56B4E9', '#E69F00')) + 
     ggplot2::theme(
-      legend.position = 'none', 
+      legend.position = 'bottom', 
       text = ggplot2::element_text(family = 'Roboto'),
       strip.text = ggplot2::element_text(size = 15), 
       legend.text = ggplot2::element_text(size = 13)

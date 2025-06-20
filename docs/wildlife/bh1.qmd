@@ -93,7 +93,7 @@ TBEP and its partners set 2030 restoration and protection targets for all three 
 ```{r}
 #| fig-cap: "Acres of emergent tidal wetlands: ca1950 and current. SOURCE: TBEP"
 #| fig-width: 7
-#| fig-height: 3.75
+#| fig-height: 4
 #| fig-align: center
 #| out-width: 80%
 intertidal_plo()
