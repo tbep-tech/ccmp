@@ -64,7 +64,7 @@ Habitat data assessment needs are identified in the Habitat Master Plan (2020 Up
 
 Standardized nomenclature to describe critical coastal habitats was developed for the Habitat Master Plan (2020 Update) grouping habitats into subtidal (seagrasses, tidal flats, oyster bars, hard bottom, and artificial reefs), intertidal (mangrove forests, salt marshes, salt barrens, tidal tributaries, and living shorelines), and supratidal (coastal uplands, non-forested freshwater uplands, forested freshwater uplands, and native uplands). TBEP has set 2030  restoration and protection targets and longer-term 2050 goals for these Tampa Bay critical coastal habitats.
 
-![Tampa Bay critical habitat restoration and protection targets and goals adopted in the Habitat Master Plan (2020 Update). SOURCE: Habitat Master Plan, Table ES-4.](https://github.com/tbep-tech/habitat-report-card/blob/main/docs/tabs/target_table_simple.png?raw=true){width=60%} 
+![Tampa Bay critical habitat restoration and protection targets and goals adopted in the Habitat Master Plan (2020 Update). SOURCE: Habitat Master Plan, Table ES-4.](https://github.com/tbep-tech/habitat-report-card/blob/main/docs/tabs/target_table_simple_no_total_intertidal.png?raw=true){width=60%} 
 
 #### Subtidal Habitats
 
@@ -93,7 +93,7 @@ TBEP and its partners set 2030 restoration and protection targets for all three 
 ```{r}
 #| fig-cap: "Acres of emergent tidal wetlands: ca1950 and current. SOURCE: TBEP"
 #| fig-width: 7
-#| fig-height: 4
+#| fig-height: 3.75
 #| fig-align: center
 #| out-width: 80%
 intertidal_plo()
