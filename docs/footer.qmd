@@ -1,3 +1,6 @@
+---
+search: false
+---
 ::: {#action-plans .fullwidth-footer}
 ### Action Plans
 
