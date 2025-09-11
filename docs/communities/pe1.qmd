@@ -50,7 +50,7 @@ In 2015, the CAC embarked on its own initiative to build connections with local 
 TBEP also organizes the Give-A-Day for the Bay volunteer program. Each year, workdays involving several hundred volunteers are held at parks and preserves across the watershed. Activities include invasive plant removal, oyster reef building, planting native shoreline plants and trail maintenance. From 2019-2021, TBEP co-hosted 25 Give-A-Day events with 35 bay-area partners where volunteers planted 2,680 plants and removed 9,175 pounds of debris and litter. TBEP works with local non-profit and government partners to identify projects and assist with project logistics.
 
 ```{r}
-#| fig-cap: "Highlights of the Give A Day For The Bay volunteer programs 2019-2023. SOURCE: TBEP"
+#| fig-cap: "Highlights of the Give A Day For The Bay volunteer programs since 2019. SOURCE: TBEP"
 #| fig-width: 7
 #| fig-height: 7
 #| fig-align: center
