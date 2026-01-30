@@ -1,0 +1,21 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Comprehensive Conservation and Management Plan
+message: Please use this citation if the CCMP is referenced
+type: software
+authors:
+  - name: Tampa Bay Estuary Program
+    address: 263 13th Ave S Suit3 350
+    city: Saint Petersubrg
+    country: US
+    post-code: '33701'
+    region: Florida
+    email: mbeck@tbep.org
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18434988
+repository-code: 'https://github.com/tbep-tech/ccmp'
+url: 'https://tbep-tech.github.io/ccmp/docs/water/wq1'
+license: MIT
