@@ -22,7 +22,7 @@ margin-footer: |
 source(here::here('R/funcs.R'))
 library(tbeptools)
 
-load(file = here::here('data/epcdata.RData'))
+# load(file = here::here('data/epcdata.RData'))
 ```
 
 ## Implement the nutrient management strategy for Tampa Bay {.sub-title}
