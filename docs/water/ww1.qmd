@@ -87,5 +87,3 @@ The Florida-Friendly Landscaping™ Program, delivered by UF/IFAS County Extensi
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

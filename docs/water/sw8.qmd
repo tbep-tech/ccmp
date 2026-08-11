@@ -77,5 +77,3 @@ With the growing popularity and interest among urban homeowners in backyard chic
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

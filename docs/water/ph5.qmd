@@ -96,5 +96,3 @@ The FWC’s At-Risk Vessel Program allows law enforcement agents to identify ves
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

@@ -74,5 +74,3 @@ Finally, advances in quantitative PCR (qPCR) as a rapid test for fecal contamina
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

@@ -121,5 +121,3 @@ TBEP has been a leader in educating bay users about responsible water recreation
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

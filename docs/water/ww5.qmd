@@ -83,5 +83,3 @@ The University of South Florida developed a model to forecast the likelihood of 
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

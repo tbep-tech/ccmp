@@ -65,5 +65,3 @@ Research into future tools to reduce the potential for ship groundings or collis
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

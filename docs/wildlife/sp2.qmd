@@ -73,5 +73,3 @@ In general, the Tampa Bay region has made significant strides in spill readiness
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

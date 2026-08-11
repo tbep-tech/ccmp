@@ -113,5 +113,3 @@ Hunting is an important outdoor sport in areas of the bay watershed. As waterfow
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

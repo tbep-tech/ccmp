@@ -72,5 +72,3 @@ Mitigation for construction-related impacts typically requires permittees to tra
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

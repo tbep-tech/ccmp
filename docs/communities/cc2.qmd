@@ -66,5 +66,3 @@ Reducing nutrient loading to estuaries can also help prevent acidification cause
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

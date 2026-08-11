@@ -109,5 +109,3 @@ As education will always be needed, this action should remain in the CCMP in per
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

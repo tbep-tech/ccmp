@@ -84,5 +84,3 @@ Together, these research, monitoring and restoration efforts represent a compreh
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

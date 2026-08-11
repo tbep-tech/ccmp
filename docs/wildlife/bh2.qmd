@@ -81,5 +81,3 @@ Mitigation criteria for other sensitive habitats, including hard bottom and live
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

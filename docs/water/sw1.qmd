@@ -76,5 +76,3 @@ Additional research is needed to quantify the impact of fertilizer ordinances on
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

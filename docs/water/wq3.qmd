@@ -72,5 +72,3 @@ In April 2021, harmful algae blooms resulted from  an emergency release of ~215 
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

@@ -62,5 +62,3 @@ EPA recently promulgated E-reporting rule 80 FR 64063, which requires NPDES perm
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

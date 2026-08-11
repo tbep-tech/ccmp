@@ -49,5 +49,3 @@ The following funding sources supplement CCMP implementation through local actio
 -   <span class="boldtxt">Philanthropic Donations.</span> The Program has received increasing private donations through 2023. Total annual donations increased from \$21,539 in 2018 to \$42,640 in 2023. Depending upon the donation stipulations, these funds are directed towards unrestricted program operations, the Bay Mini-Grant or TBERF programs to help implement the CCMP. The fund balance as of October 2023 was about \$83,000.
 
 <span class="blank">@empty</span>
-
-{{< include ../footer.qmd >}}

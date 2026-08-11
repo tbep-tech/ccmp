@@ -70,5 +70,3 @@ Hardened structures are often necessary to protect property in areas of high wav
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

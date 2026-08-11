@@ -80,5 +80,3 @@ Enforcement funds could also come from requiring that residents and/or non-resid
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

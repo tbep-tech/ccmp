@@ -85,5 +85,3 @@ Improved coordination and communication about dredging activities, standardized 
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

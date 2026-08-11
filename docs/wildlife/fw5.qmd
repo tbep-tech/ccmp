@@ -66,5 +66,3 @@ A 2019 study evaluated sportfish habitat at restoration sites at Rock Ponds, Ter
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

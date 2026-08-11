@@ -15,11 +15,80 @@ website:
   search: true
   page-footer:
     left: |
-      &copy; [Tampa Bay Estuary Program](https://tbep.org). All Rights Reserved. [Contact](https://tbep.org/about-tbep/contact/) | [Accountability Act](https://tbep.org/uniform-special-district-accountability-act/) | [Privacy](https://tbep.org/privacy-policy/) | [Site Credit](https://tangram3ds.com/)
-    right:
-      - icon: github
-        href: https://github.com/tbep-tech/ccmp
-        aria-label: Quarto GitHub
+      ::: {.page-columns}
+
+      ::: {#action-plans .fullwidth-footer}
+      ### Action Plans
+
+      ::: {.footer-menu}
+
+      #### Clean Water and Sediments
+      [Water Quality](https://tbep-tech.github.io/ccmp/docs/water/wq1.html)
+      [Stormwater](https://tbep-tech.github.io/ccmp/docs/water/sw1.html)
+      [Atmospheric Deposition](https://tbep-tech.github.io/ccmp/docs/water/ad1.html)
+      [Wastewater](https://tbep-tech.github.io/ccmp/docs/water/ww1.html)
+      [Contaminants of Concern](https://tbep-tech.github.io/ccmp/docs/water/coc1.html)
+      [Pathogens](https://tbep-tech.github.io/ccmp/docs/water/ph2.html)
+
+      #### Thriving Habitats & Wildlife
+      [Bay Habitats](https://tbep-tech.github.io/ccmp/docs/wildlife/bh1.html)
+      [Freshwater Inflow](https://tbep-tech.github.io/ccmp/docs/wildlife/fi1.html)
+      [Fish and Wildlife](https://tbep-tech.github.io/ccmp/docs/wildlife/fw1.html)
+      [Invasive Species](https://tbep-tech.github.io/ccmp/docs/wildlife/is2.html)
+      [Dredge Management](https://tbep-tech.github.io/ccmp/docs/wildlife/dr1.html)
+      [Spill Prevention](https://tbep-tech.github.io/ccmp/docs/wildlife/sp1.html)
+
+      #### Informed, Engaged & Responsible Community
+      [Public Access](https://tbep-tech.github.io/ccmp/docs/communities/pa1.html)
+      [Public Education](https://tbep-tech.github.io/ccmp/docs/communities/pe1.html)
+      [Climate Change](https://tbep-tech.github.io/ccmp/docs/communities/cc1.html)
+      [Local Implementation](https://tbep-tech.github.io/ccmp/docs/communities/li1.html)
+
+      #### Endnotes
+      [Acronyms](https://tbep-tech.github.io/ccmp/docs/misc/acronyms.html)
+      [List of All Actions](https://tbep-tech.github.io/ccmp/docs/misc/allactions.html)
+      [Who We Are](https://tbep.org/about-tbep/)
+      :::
+      :::
+
+      ::: {#strategies .fullwidth-footer}
+      ### Strategies
+
+      ::: {.footer-menu}
+
+      [Strategic Plan](https://drive.google.com/file/d/11xohuoaHDxNHRqgXoOHdI37FpWvac_rn/view)
+      [Research Priorities](https://tbep-tech.github.io/ccmp/docs/misc/priorities.html)
+      [Monitoring and Indicators Plan](https://drive.google.com/file/d/1H8_zpDT56m6fEGDlRNbRRoE3-tHYF7lH/view)
+      [Implementing & Financing Plan](https://tbep-tech.github.io/ccmp/docs/misc/implement.html)
+      [Communications Plan](https://drive.google.com/file/d/1cPMlSIDgfinErzVVg6Vdy3Ycb_Xeodel/view)
+      [Climate Action Plan](https://drive.google.com/file/d/1Sc4l2D4s7kZF-7vmbCZUp4-BHwu_24Eq/view?usp=drive_link)
+      [Equity Plan](https://drive.google.com/file/d/1OAS6774u1J76v5FvEgrTpHhVotTmTY6M/view)
+      [Equitable Stakeholder Engagement](https://drive.google.com/file/d/1pzWwyPANaW3Y3jKhofmtroLIsM9AgFS4/view?usp=sharing)
+
+      :::
+      :::
+
+      ::: {#about .fullwidth-footer}
+      ::: {.footer-menu}
+      ### Contact Us
+      Tampa Bay Estuary Program  
+      263 13th Ave. S., Suite 350  
+      St. Petersburg, FL 33701  
+      (727)-893-2765
+      [info@tbep.org](mailto:info@tbep.org)
+
+      ### About TBEP
+
+      The mission of the Tampa Bay Estuary Program is to build partnerships to restore and protect Tampa Bay through implementation of a
+      [scientifically sound, community-based management plan.](https://tbep.org/about-tbep/)
+      :::
+      :::
+
+      :::
+
+      ::: {.footer-copyright}
+      &copy; [Tampa Bay Estuary Program](https://tbep.org). All Rights Reserved. [Contact](https://tbep.org/about-tbep/contact/) | [Accountability Act](https://tbep.org/uniform-special-district-accountability-act/) | [Privacy](https://tbep.org/privacy-policy/) | [Site Credit](https://tangram3ds.com/) &nbsp;&nbsp; [<i class="bi bi-github" role="img" aria-label="Quarto GitHub"></i>](https://github.com/tbep-tech/ccmp)
+      :::
   navbar:
     background: light
     collapse-below: lg

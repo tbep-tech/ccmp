@@ -160,5 +160,3 @@ Coastal land available for restoration and acquisition is dwindling as developme
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

@@ -71,5 +71,3 @@ With an award of EPA’s Trash Free Waters grant in 2019, TBEP and partners depl
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

@@ -59,5 +59,3 @@ Established minimum flows are being met for Crystal Springs, Upper Hillsborough 
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

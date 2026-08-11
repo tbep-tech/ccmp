@@ -88,5 +88,3 @@ Impacts to hard bottom and oyster reef habitats are not easily mitigated, and gr
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

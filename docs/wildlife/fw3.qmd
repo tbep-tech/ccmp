@@ -65,5 +65,3 @@ In the next decade, it is unlikely that scallop populations in Tampa Bay will re
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

@@ -81,5 +81,3 @@ Adopted in 2017 and revised in 2021, Pinellas County’s new [stormwater manual]
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

@@ -100,5 +100,3 @@ This action supports early detection networks and seeks to expand opportunities 
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

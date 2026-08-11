@@ -99,5 +99,3 @@ Despite significant reductions in nitrogen emissions from power plants and vehic
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

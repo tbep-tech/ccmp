@@ -58,5 +58,3 @@ The Crosswalk Project, completed in 2020, shared final recommendations and model
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

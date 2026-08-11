@@ -67,5 +67,3 @@ Locally, city and county permits issued through the National Pollutant Discharge
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

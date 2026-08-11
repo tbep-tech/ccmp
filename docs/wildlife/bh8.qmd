@@ -71,5 +71,3 @@ In the Tampa Bay watershed, coastal uplands are important buffers between sensit
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

@@ -78,5 +78,3 @@ Other potential beneficial uses for dredged material include creation of habitat
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

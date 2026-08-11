@@ -106,5 +106,3 @@ Efforts to implement a similar nutrient management strategy in Tampa Bay tidal s
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

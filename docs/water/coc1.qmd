@@ -88,5 +88,3 @@ Follow-up studies in 2014, funded by the Tampa Bay Environmental Restoration Fun
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

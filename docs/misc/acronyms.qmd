@@ -125,5 +125,3 @@ toc: false
 <span class="acronym">__WWTP__</span>Wastewater Treatment Plant \
 
 <span class="blank">@empty</span>
-
-{{< include ../footer.qmd >}}

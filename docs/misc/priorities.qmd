@@ -18,5 +18,3 @@ researchpriorities_tab(params$id)
 ```
 
 <span class="blank">@empty</span>
-
-{{< include ../footer.qmd >}}

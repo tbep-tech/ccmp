@@ -102,5 +102,3 @@ Significant pet waste educational programming also was sponsored by the Southwes
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

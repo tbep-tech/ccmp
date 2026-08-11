@@ -88,5 +88,3 @@ Recognition also is an important component of successful volunteer programs, thr
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}

@@ -79,5 +79,3 @@ In 2022, TBEP partnered with the National Wildlife Federation to make a short st
 ```{r}
 act_tab(rmarkdown::metadata$title)
 ```
-
-{{< include ../footer.qmd >}}
