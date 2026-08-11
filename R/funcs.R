@@ -425,7 +425,7 @@ waterbird_plo <- function(){
   # from https://myfwc.maps.arcgis.com/apps/webappviewer/index.html?id=cdd4eb21e8284d2dbeb2b0e4596b7ea0
   # rest API here https://atoll.floridamarine.org/arcgis/rest/services/Projects_FWC/WaterBirds/MapServer
   # seems like "water bird colonies" layer uses STATUS90 as status
-  rawdat <- sf::st_read('https://atoll.floridamarine.org/arcgis/rest/services/Projects_FWC/WaterBirds/MapServer/0/query?returnGeometry=true&where=1=1&outFields=*&f=geojson', quiet = T)
+  rawdat <- sf::st_read('https://gis.myfwc.com/mapping/rest/services/Projects_FWC/Historic_Waterbird_Colonies/MapServer/0/query?returnGeometry=true&where=1=1&outFields=*&f=geojson', quiet = T)
   
   data(file = 'tbshed', package = 'tbeptools')
   
