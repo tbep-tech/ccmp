@@ -568,6 +568,14 @@ button#readMore:hover {
   font-size: 1rem;
   letter-spacing: .05rem;
   align-items: center;
+  padding: 0;
+}
+footer.footer .nav-footer {
+  padding: 0;
+}
+.footer-copyright {
+  display: block;
+  padding: 8.5px 17px;
 }
 .nav-footer a {
   color: inherit;
@@ -597,13 +605,22 @@ div#navbarCollapse:not(.show) {
 }
 
 .nav-footer-right {
-  flex: 0;
+  display: none;
 }
 
 #strategies .footer-menu a {
   flex: 0 33%;
   padding: 0 10px;
   /* margin: 0 10%; */
+}
+#action-plans .footer-menu a,
+#strategies .footer-menu a {
+  color: #636363;
+  opacity: 1;
+}
+#action-plans .footer-menu a:hover,
+#strategies .footer-menu a:hover {
+  color: var(--tbep-orange);
 }
 section#activities h3 {
   margin-left: 45px;
