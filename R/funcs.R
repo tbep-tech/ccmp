@@ -182,7 +182,7 @@ bacwbid_plo <- function(){
   # first request gets whole state (long)
   # second request gets tampa bay and tampa bay tributaries group name, note that I can also search by parameter group, but query doesn't allow complex and/or logic
   # vwbid <- st_read('https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/IMPAIRED_WATERS/MapServer/5/query?outFields=*&where=1%3D1&f=geojson', quiet = T)
-  vwbid = st_read("https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/IMPAIRED_WATERS/MapServer/5/query?where=GROUP_NAME%20%3D%20'Tampa%20Bay'%20OR%20GROUP_NAME%20%3D%20'Tampa%20Bay%20Tributaries'&outFields=GROUP_NAME,WATERBODY_CLASS,PARAMETER_ASSESSED,PARAMETER_GROUP,WBID&outSR=4326&f=geojson", quiet = T)
+  vwbid = st_read_retry("https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/IMPAIRED_WATERS/MapServer/5/query?where=GROUP_NAME%20%3D%20'Tampa%20Bay'%20OR%20GROUP_NAME%20%3D%20'Tampa%20Bay%20Tributaries'&outFields=GROUP_NAME,WATERBODY_CLASS,PARAMETER_ASSESSED,PARAMETER_GROUP,WBID&outSR=4326&f=geojson", quiet = T)
   
   vwbid <- st_make_valid(vwbid)
   
