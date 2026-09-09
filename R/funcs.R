@@ -83,8 +83,12 @@ pyro_plo <- function(yr = 2021, mo = c('Jun', 'Oct')){
     sf::st_bbox() |> 
     unname()
   
+  esri_gray <- paste0(
+    'https://services.arcgisonline.com/arcgis/rest/services/',
+    'Canvas/World_Light_Gray_Base/MapServer/tile/${z}/${y}/${x}.jpeg')
+  
   m <- ggplot2::ggplot() +
-    ggspatial::annotation_map_tile(zoom = 12, quiet = TRUE, progress = "none", type = 'cartolight', cachedir = system.file("rosm.cache", package = "ggspatial"))  
+    ggspatial::annotation_map_tile(zoom = 12, quiet = TRUE, progress = "none", type = esri_gray, cachedir = system.file("rosm.cache", package = "ggspatial"))  
   
   ttl <- paste0('Maximum cell count (per 0.1mL), ', yr, ' ', mo[1], ' - ', mo[2])
   
@@ -192,8 +196,12 @@ bacwbid_plo <- function(){
     dplyr::select(-PARAMETER_GROUP, -PARAMETER_ASSESSED) |>
     unique()
   
+  esri_gray <- paste0(
+    'https://services.arcgisonline.com/arcgis/rest/services/',
+    'Canvas/World_Light_Gray_Base/MapServer/tile/${z}/${y}/${x}.jpeg')
+  
   m <- ggplot2::ggplot() +
-    annotation_map_tile(zoom = 10, type = 'cartolight', progress = 'none', quiet = T) +
+    annotation_map_tile(zoom = 10, type = esri_gray, progress = 'none', quiet = T) +
     ggspatial::annotation_scale(location = 'br', unit_category = 'metric', text_family = 'Roboto') +
     ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
     ggplot2::geom_sf(data = tbvwbid, fill = 'red', col = 'red', alpha = 0.6) +
@@ -274,8 +282,12 @@ cchasites_plo <- function(){
     st_bbox() |>
     unname()
   
+  esri_gray <- paste0(
+    'https://services.arcgisonline.com/arcgis/rest/services/',
+    'Canvas/World_Light_Gray_Base/MapServer/tile/${z}/${y}/${x}.jpeg')
+  
   m <- ggplot2::ggplot() +
-    ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
+    ggspatial::annotation_map_tile(zoom = 10, type = esri_gray, quiet = T, progress = 'none') +
     ggspatial::annotation_scale(location = 'bl', unit_category = 'metric', text_family = 'Roboto') +
     ggspatial::annotation_north_arrow(location = 'tr', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
     ggplot2::geom_sf(data = tomap, inherit.aes = F, size = 2) +
@@ -316,8 +328,12 @@ tdlcrk_plo <- function(maxyr = 2022){
     st_bbox() |>
     unname()
   
+  esri_gray <- paste0(
+    'https://services.arcgisonline.com/arcgis/rest/services/',
+    'Canvas/World_Light_Gray_Base/MapServer/tile/${z}/${y}/${x}.jpeg')
+  
   m <- ggplot2::ggplot() +
-    ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
+    ggspatial::annotation_map_tile(zoom = 10, type = esri_gray, quiet = T, progress = 'none') +
     ggspatial::annotation_scale(location = 'bl', unit_category = 'metric', text_family = 'Roboto') +
     ggspatial::annotation_north_arrow(location = 'tr', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
     ggplot2::geom_sf(data = tomap, ggplot2::aes(col = score, fill = score), inherit.aes = F, linewidth = 0.75) +
@@ -456,8 +472,12 @@ waterbird_plo <- function(){
   
   cols <- c(Active = '#2DC938', Inactive = '#CC3231', `Not checked` = '#E9C318')
   
+  esri_gray <- paste0(
+    'https://services.arcgisonline.com/arcgis/rest/services/',
+    'Canvas/World_Light_Gray_Base/MapServer/tile/${z}/${y}/${x}.jpeg')
+  
   m <- ggplot2::ggplot() +
-    ggspatial::annotation_map_tile(zoom = 10, type = 'cartolight', quiet = T, progress = 'none') +
+    ggspatial::annotation_map_tile(zoom = 10, type = esri_gray, quiet = T, progress = 'none') +
     ggspatial::annotation_scale(location = 'br', unit_category = 'metric', text_family = 'Roboto') +
     ggspatial::annotation_north_arrow(location = 'tl', which_north = "true", height = grid::unit(0.75, "cm"), width = grid::unit(0.75, "cm")) +
     ggplot2::geom_sf(data = tomap, ggplot2::aes(fill = status), col = 'black', pch = 21, inherit.aes = F, size = 3) +
